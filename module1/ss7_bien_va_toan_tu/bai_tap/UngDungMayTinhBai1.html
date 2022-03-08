@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    caculator
+</h1>
+
+
+
+<input id="number1" type="text" placeholder="nhap vao day">
+<input id="number2" type="text"><br>
+
+<button type="submit"onclick="convert()">Addition(+)</button>
+<button type="submit"onclick="subtraction()">subtraction(-)</button>
+<button type="submit"onclick="multiplication()">multiplication(*)</button>
+<button type="submit"onclick="division()">division(/)</button><br>
+
+result division<input id="result division">
+
+
+    <script>
+        function convert(){
+            let a=parseInt(document.getElementById("number1").value);
+            let b=parseInt(document.getElementById("number2").value);
+            let result =a+b;
+
+document.getElementById('result division').value =result;
+}
+        function subtraction(){
+            let a=parseInt(document.getElementById("number1").value);
+            let b=parseInt(document.getElementById("number2").value);
+
+            let result=a-b;
+
+            document.getElementById('result division').value =result;
+        }
+
+        function multiplication(){
+            let a=parseInt(document.getElementById("number1").value);
+            let b=parseInt(document.getElementById("number2").value);
+
+            let result=a*b;
+
+            document.getElementById('result division').value =result;
+        }
+
+        function division(){
+            let a=parseInt(document.getElementById("number1").value);
+            let b=parseInt(document.getElementById("number2").value);
+
+            let result=a/b;
+
+            document.getElementById('result division').value =result;
+        }
+    </script>
+
+</form>
+</body>
+</html>

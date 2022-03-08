@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+<table width="100%">
+    <tr>
+        <td> Amouint<br>
+            <input type="text" id="amount">
+        </td>
+        <td>
+            From Currency<br>
+            <select>
+                <option id="vietnam">Viet Nam</option>
+            </select>
+        </td>
+        <td>
+            To Currency<br>
+            <select>
+                <option id="sud">
+                    usd
+                </option>
+            </select>
+        </td>
+        <td>
+            <button type="submit" onclick="convert()">Convert</button>
+        </td>
+    </tr>
+
+</table>
+
+result:<input id="result">
+
+<script>
+
+    function convert() {
+        let vietnam = parseInt(document.getElementById('amount').value);
+        let usd = vietnam / 23000;
+
+        document.getElementById('result').value = usd
+    }
+</script>
+</body>
+</html>
