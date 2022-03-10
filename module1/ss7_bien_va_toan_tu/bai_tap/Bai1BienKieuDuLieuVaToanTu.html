@@ -6,19 +6,13 @@
 </head>
 <body>
 <script>
-    let inputLy;
-    let inputHoa;
-    let inputSinh;
-    inputLy=prompt('diem mon Ly');
-    inputHoa=prompt('diem mon hoa');
-    inputSinh=prompt('diem mon sinh');
-    let Ly=parseInt(inputLy);
-    let Hoa=parseInt(inputHoa);
-    let Sinh=parseInt(inputSinh);
-    let diemtrungbinh = (Ly+Hoa+Sinh)/3;
-    let tongdiem =(Ly+Hoa+Sinh);
-    document.write('diem trung binh la '+diemtrungbinh+'<br>')
-    document.write('tong diem la '+tongdiem)
+    let ly=parseInt(prompt('diem mon Ly'));
+    let hoa=parseInt(prompt('diem mon HOA'));
+    let sinh=parseInt(prompt('diem mon SINH'));
+    let diemTrungBinh = (ly+hoa+sinh)/3;
+    let tongDiem =(ly+hoa+sinh);
+    document.write('diem trung binh la '+diemTrungBinh)
+    document.write('tong diem la '+tongDiem)
 
 </script>
 </body>

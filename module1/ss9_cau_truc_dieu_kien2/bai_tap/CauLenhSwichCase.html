@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text"  id="soThang"placeholder="nhap so thang">
+<button type="button"onclick="doiThang()">tinh so ngay</button><br>
+
+<script>
+    function doiThang() {
+        let a =parseInt(document.getElementById("soThang").value);
+
+        switch (a) {
+            case (1):
+            case (3):
+            case (5):
+            case (7):
+            case (8):
+            case (10):
+            case (12):
+                document.write('thang co 31 ngay')
+                // neu cho them <span id = xuat><span>
+                // => document.getElementById('xuat').innerHTML='thang co 31 ngay'
+                break;
+            case (2):
+                document.write('thang 2 co 28 hoac 29 ngay');
+                break;
+            case(11):
+            case (9) :
+            case(6):
+            case(4):
+                document.write('thang co 30 ngay ');
+                break;
+
+
+        }
+
+
+
+
+    }
+</script>
+</body>
+</html>

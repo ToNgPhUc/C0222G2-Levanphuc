@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('kwh da dung'))
+    let tongTien = 0
+    if (a < 60) {
+        tongTien = a * 2000;
+        document.write('tong tien ' + tongTien);
+
+    } else if (a > 60 && a < 100) {
+        tongTien = 60 * 2000 + (a - 60) * 3000
+        document.write('tong tien ' + tongTien)
+    } else if (a > 100 && a < 200) {
+        tongTien = 60 * 2000 + 40 * 3000 + (a - 100) * 4000;
+        document.write('tong tien' + tongTien)
+    } else {
+        document.write(' khong gia tri')
+    }
+
+
+</script>
+</body>
+</html>
