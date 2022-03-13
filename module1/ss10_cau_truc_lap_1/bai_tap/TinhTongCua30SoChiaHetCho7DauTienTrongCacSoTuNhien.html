@@ -5,7 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let n = 1;
+    let tong = 0;
+    let dem = 0;
+    for (let i = 0; i < n; i++) {
+        if (dem < 30) {
+            if (i % 7 === 0) {
+                tong = tong + i;
+                dem = dem + 1;
+                console.log("gia tri"+i)
+                console.log("dem"+dem)
+                console.log("tong"+tong)
+            }
+            n = n + 1
+        }
 
+    }
+    console.log(tong)
+
+</script>
 
 </body>
 </html>
