@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = 'cong hoa xa hoi chu nghia viet nam'
+
+    let chuHoa = 'ABCDRFGHIKLMNOPQ)'
+    let chuThuong = 'abcdefghiklmnopq'
+    let result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (chuHoa.indexOf(str[i]) !== -1) {
+            result.push(str[i].toLowerCase()) // up thanh chuw thuong
+
+        } else if (chuThuong.indexOf(str[i]) !== -1) {
+            result.push(str[i].toUpperCase());//up thanh chu hoa
+
+        }else {
+            result.push((str[i]))
+        }
+    }console.log(result.join(''))
+
+</script>
+</body>
+</html>

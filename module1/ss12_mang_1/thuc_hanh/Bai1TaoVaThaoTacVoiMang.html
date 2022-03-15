@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding-top: 50px
+        }
+    </style>
+</head>
+<body>
+<h1>Sample Screen</h1>
+<input type="text" id="num1">
+<button type="button" id="num2" onclick="them_phan_tu_vao_mang()">add</button>
+<button type="button" id="=num3" onclick="mang_hien_thi()">display</button>
+<div id="result"></div>
+</body>
+<script>
+    let x = 0;
+    let array = Array();
+
+    function them_phan_tu_vao_mang() {
+        array[x] = document.getElementById("num1").value;
+        // gán giá trị của array(x) bằng cách lấy giá trị value của input mang id là num1 theo get element by id .
+        alert("da them=" + array[x] + "vao muc=" + x);
+        x++
+        document.getElementById("num1").value = "";
+    }
+
+    function mang_hien_thi() {
+        let e = "<hr/>";
+        // thẻ <hr> để phân chia 2 phần trên bảng hiển thị với result.
+        for (let i = 0; i < array.length; i++) {
+            e += "vị trí" + i + "=" + array[i] + "<br/>"
+        }
+        document.getElementById("result").innerHTML = e;
+        //in giá trị mang id result vào thẻ hr(e) để hiện kết quả sau 1 dòng gạch ngang
+    }
+
+</script>
+
+</html>

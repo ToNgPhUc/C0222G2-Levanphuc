@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("nhập mảng")
+    let myarr = num.toString()//chuyen tu mang sang chuoi
+    let result = [myarr[0]];
+    for (let i = 0; i < myarr.length; i++) {
+        if (myarr[i - 1] % 2 === 0 && myarr[i] % 2 === 0) {// vi tri i vaf vi tri i-1 chia het cho 2
+            // => vi tri truoc va sau deu chia het cho 2
+            result.push("-", myarr[i]);//them phan tu - vao mang
+        } else result.push(myarr[i])
+    }
+    console.log(result.join(''))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num1" placeholder="nhap tu tim kiem"><br>
+<button type="button" id="num2" onclick="tuDien()">tim kiem</button><br>
+<dev id="num3">kiem tra</dev>
+<script>
+    function tuDien() {
+        let nhapTimKiem = document.getElementById("num1").value;
+        let tiengAnh = ["read", "to listen", "understand"];
+        let tiengViet = ["doc", "nghe", "hieu"];
+        let ketQua="";
+        for (let i = 0; i < tiengAnh.length; i++) {
+            if (nhapTimKiem ===tiengAnh[i]){
+                ketQua=tiengViet[i];
+                break;
+            }
+            ketQua="khong co"
+        }
+        document.getElementById("num3").innerHTML=ketQua;
+
+    }
+
+
+</script>
+</body>
+</html>
