@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myString = prompt("nhap chuoi");
+    let dem = 0;
+    for (let i = 0; i < myString.length; i++) {
+        if (isNaN(myString[i])) {
+            dem = dem + 1
+        }
+    }
+    document.write("so ki tu trong chuoi la " + dem)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt("nhap chuoi 1");
+    let chuoi2 = prompt("nhap chuoi 2");
+    let ketQua;
+    for (let i = 1; i < chuoi1.length; i++) {
+        for (let j = 1; j < chuoi2.length; j++) {
+            if (chuoi1[i] === chuoi2[j]) {
+                ketQua = "chuoi 1 =chuoi 2"
+                break;
+            }
+            ketQua = "chuoi 1 khac chuoi 2"
+        }
+    }
+    document.write(ketQua)
+</script>
+</body>
+</html>
