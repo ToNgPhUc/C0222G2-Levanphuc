@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let arr = "123-4-5-h-hhh-";
+    let dem = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] == "-" && !isNaN(arr[i + 1])) {//isNaN có nghĩa là không phải là số.ở đây điều kiện là
+            dem = dem + 1                         // giá trị i phải là số âm,và số tiếp theo phải là số.
+        }
+    }
+    document.write("so luong so am la"+dem)
+
+</script>
+</html>

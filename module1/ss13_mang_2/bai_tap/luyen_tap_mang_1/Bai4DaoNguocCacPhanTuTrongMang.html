@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Array = [1,2,3,4,5,6,7,8]
+    let fist = 0; //vi tri phaan tu dau tien trng mang
+    let last = Array.length - 1;// vi tr phan tu cuoi trong mang
+    let i = 0;
+    while (fist < last) {
+        let i = Array[fist];
+        Array[fist] = Array[last];
+        Array[last] = i;
+        fist++
+        last--
+
+    } document.write(Array)
+
+
+</script>
+</body>
+</html>
