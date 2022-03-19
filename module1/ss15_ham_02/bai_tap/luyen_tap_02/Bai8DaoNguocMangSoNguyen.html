@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSo = prompt("nhap so nguyen")
+
+    let arr = nhapSo.split("");
+
+    function daoMang(arr) {
+        let fist=0;
+        let last =arr.length-1
+
+        while (fist<last){
+            let i =arr[fist];
+            arr[fist]=arr[last];
+            arr[last]=i;
+            fist++
+            last--
+        }
+    }
+    daoMang(arr)
+    console.log(arr)
+</script>
+</body>
+</html>

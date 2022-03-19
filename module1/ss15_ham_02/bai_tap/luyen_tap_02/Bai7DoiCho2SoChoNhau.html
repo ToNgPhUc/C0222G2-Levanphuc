@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let a=prompt("nhap a");
+   let b=prompt("nhap b");
+   let arr =[a,b]
+
+    function doiViTri(arr){
+           let tam=arr[0]
+        arr[0]=arr[1]
+        arr[1]=tam
+
+    }
+   doiViTri(arr)
+   console.log(arr)
+</script>
+</body>
+</html>

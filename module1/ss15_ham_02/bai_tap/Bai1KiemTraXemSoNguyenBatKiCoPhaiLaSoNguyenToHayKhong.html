@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyen = parseInt(prompt("Nhap so can kiem tra: "));
+    alert(isPrime(soNguyen));// gan soNguyen vao ham mang ten isprime()
+
+    function isPrime(number) {
+        let dem = 0;// so lan chia het cho 1 vaf chinh no se laf 2 lan:
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                dem++;
+            }
+        }
+        if (dem === 2) {//neu so lan chia het laf 2 lan thi do la so nguyen to
+            return (number + " la so nguyen to!");
+        } else {
+            return (number + " khong phai la so nguyen to!");
+            // neu so lan chia het khac 2 lan thi do khong phai la so nguyen to
+        }
+    }
+</script>
+</body>
+</html>

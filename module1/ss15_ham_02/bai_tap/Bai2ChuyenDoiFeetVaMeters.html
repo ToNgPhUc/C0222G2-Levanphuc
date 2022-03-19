@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num1" placeholder="nhap du lieu">
+<select id="doiFeed">
+    <option value="feed">feed</option>
+    <option value="meter">meter</option>
+</select>
+<select id="doiMeter">
+    <option value="meter">meter</option>
+    <option value="feed">feed</option>
+</select>
+<button type="button" id="chuyenDoi" onclick="chuyenDoi()">chuyen doi</button>
+<br>
+<p id="ketQua"></p>
+<script>
+
+    function chuyenDoi() {
+        let nhapDuLieu = parseFloat(document.getElementById("num1").value);
+        let doiFeed = document.getElementById("doiFeed").value;
+        let doiMeter = document.getElementById("doiMeter").value;
+        ketQua = 0;
+        if (doiFeed === "feed" && doiMeter === "meter") {
+            ketQua = nhapDuLieu * 0.305;
+            document.write(ketQua);
+        } else if (doiFeed === "meter" && doiMeter === "feed") {
+            ketQua = nhapDuLieu * 3.279;
+            document.write(ketQua);
+        } else document.write("ket qua = 1:");
+
+    }
+
+
+</script>
+</body>
+</html>

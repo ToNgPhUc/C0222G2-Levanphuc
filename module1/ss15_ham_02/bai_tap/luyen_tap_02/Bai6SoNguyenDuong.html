@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let flag = true
+    let a = prompt("nhap so ");
+
+    function soNguyen(num) {
+        for (let i = 0; i < num; i++) {
+            if (num[i] > 0 && !isNaN(num[i])) {
+                flag = false
+                break;
+
+            }
+        }
+    }
+
+    soNguyen(a)
+    if (flag) {
+        alert("khong phai so nguyen duong")
+    } else {
+        alert("la so nguyen duong")
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag=true
+    let nhapKiTu = prompt("nhap ki tu");
+    function soNguyen(num) {
+        for (let i = 0; i < num.length; i++) {
+            if (!isNaN(num[i]) ) {
+             flag=false;
+             break;
+            }
+        }
+    }
+
+    soNguyen(nhapKiTu)
+    if (flag){
+        alert("khong co ki tu so")
+    }else alert("la ki tu so")
+</script>
+</body>
+</html>
