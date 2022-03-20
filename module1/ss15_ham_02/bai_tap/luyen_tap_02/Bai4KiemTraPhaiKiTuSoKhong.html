@@ -6,21 +6,21 @@
 </head>
 <body>
 <script>
-    let flag=true
+    let flag = true;
     let nhapKiTu = prompt("nhap ki tu");
+
     function soNguyen(num) {
         for (let i = 0; i < num.length; i++) {
-            if (!isNaN(num[i]) ) {
-             flag=false;
-             break;
+            if (!isNaN(num[i])) {
+                flag = false;
+                break;
             }
         }
     }
-
     soNguyen(nhapKiTu)
-    if (flag){
-        alert("khong co ki tu so")
-    }else alert("la ki tu so")
+    if (flag) {
+        alert("khong co ki tu so");
+    } else alert("la ki tu so");
 </script>
 </body>
 </html>

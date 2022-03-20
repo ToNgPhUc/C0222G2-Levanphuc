@@ -6,24 +6,22 @@
 </head>
 <body>
 <script>
-    let nhapSo = prompt("nhap so nguyen")
 
-    let arr = nhapSo.split("");
-
+let arr=[1,2,3,4,5,6,3,322,3];
     function daoMang(arr) {
         let fist=0;
-        let last =arr.length-1
+        let last =arr.length-1;
 
         while (fist<last){
             let i =arr[fist];
             arr[fist]=arr[last];
             arr[last]=i;
-            fist++
-            last--
+            fist++;
+            last--;
         }
     }
-    daoMang(arr)
-    console.log(arr)
+    daoMang(arr);
+    console.log(arr);
 </script>
 </body>
 </html>

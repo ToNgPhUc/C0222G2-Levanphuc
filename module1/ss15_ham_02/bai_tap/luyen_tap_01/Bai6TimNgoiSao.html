@@ -8,20 +8,30 @@
 <script>
     let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
     let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
-    let arr3 = prompt("nhap chuoi")
+    let str = prompt("nhap sao")
+    let  flag=false
 
-    function timSAo() {
-        for (let i = 1; i < arr1.length; i++) {
-            if (arr1[i] === arr3[i]) {
-
-
-
+    function kiemTra(arr2,arr1,str) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] === str) {
+                flag = true;
+                break;
             }
+        }
+        if (flag === true) {
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] === str) {
+                    return arr2[i];
+                }
+            }
+        } else {
+            return "khong tim thay";
         }
     }
 
- timSAo(arr3)
-    if ()
+    alert(kiemTra(arr2,arr1,str));
+
+
 </script>
 </body>
 </html>

@@ -6,22 +6,31 @@
 </head>
 <body>
 <script>
-    let a=prompt("nhap tu bat ki");
-    let b=prompt("nhap mang");
-    let arr=new Array(b)
-    dem=0;
-    function kiemTra(){
-        for (let i =0;i<arr.length;i++){
-            if ( a=== arr[i]){
-                alert("a co nam trong mang")
-                dem=dem+1
+    let arr = [1, 1, 1, 1, 2, 3, 4, 5, 6, "h", "k"];
+    let a = prompt("nhap ki tu");
+    let flag = false;
+    let dem = 0;
+
+    function kiemTra(arr, a) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == a) {
+                flag = true;
+                break;
             }
-
-
         }
+        if (flag === true) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == a) {
+                    dem += 1
+                }
+            }
+            return dem
+        } else {
+            return -1
+        }
+    }
 
-    }kiemTra(arr)
-    alert(dem)
+    alert(kiemTra(arr, a))
 
 
 </script>

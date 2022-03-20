@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Circle {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+
+        }
+        getRadius() {
+            return this.radius;
+        }
+        getArea() {
+            return Math.PI *radius*radius;
+        }
+        getColor(){
+            return this.color;
+        }
+        setRadius(banKinh){
+            this.radius=banKinh;
+        }
+        setColor(mauSac){
+            this.color=mauSac;
+        }
+
+    }
+
+
+    let circle = new Circle(4,"red")
+    let radius = circle.getRadius()
+    console.log(radius);
+    let area =circle.getArea();
+    console.log(area);
+    let color =circle.getColor()
+    console.log(color)
+    circle.setRadius(4)
+    console.log(circle.getRadius());
+    circle.setColor("blue");
+    console.log(circle.getColor())
+    circle.setRadius(5);
+    circle.setRadius(6);
+    circle.setRadius(7);
+alert("ban kinh :"+radius+"dien tich :"+area)
+
+</script>
+</body>
+</html>
