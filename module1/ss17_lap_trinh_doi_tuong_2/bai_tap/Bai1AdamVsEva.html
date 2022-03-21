@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Apple {
+        constructor() {
+            this.khoiLuong = 10;
+
+        }
+
+        getKLTao() {
+            return this.khoiLuong;
+        }
+
+        setKLTao(khoiLuong) {
+            this.khoiLuong = khoiLuong;
+        }
+    }
+
+    class Human {
+        constructor() {
+            this.ten = "";
+            this.gioiTinh = "";
+            this.canNang = 0;
+            this.apple = null;
+
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        setTen(ten) {
+            this.ten = ten;
+        }
+
+        getGioiTinh() {
+            return this.gioiTinh;
+        }
+
+        setGioiTinh(gioiTinh) {
+            this.gioiTinh = gioiTinh;
+        }
+
+        getCanNang() {
+            return this.canNang;
+        }
+
+        setCanNang(CanNang) {
+            this.canNang = CanNang;
+        }
+
+        getApple() {
+            return this.apple;
+        }
+
+        setApple(Apple) {
+            this.apple = Apple;
+        }
+
+        noiChuyen(tinNhan) {
+            console.log(tinNhan);
+        }
+
+        anTao() {
+            if (this.apple.getKLTao() > 0) {
+                this.apple.setKLTao(this.apple.getKLTao() - 1);
+                this.setCanNang(parseInt(this.getCanNang()) + 1);
+            }
+
+        }
+    }
+
+    let apple = new Apple()
+    let human1 = new Human();
+    let human2 = new Human();
+    human1.setTen("eva");
+    human1.setGioiTinh("nu");
+    human1.setCanNang('42');
+    human1.setApple(apple);
+    console.log("ten " + human1.getTen() + "\n" + " gioi tinh: " + human1.getGioiTinh() + "\n" + "  can nang : " + human1.getCanNang() + "kg");
+
+    human2.setTen('adam');
+    human2.setGioiTinh('nam');
+    human2.setCanNang(58);
+    human2.setApple(apple);
+    console.log("ten " + human2.getTen() + "\n" + " gioi tinh: " + human2.getGioiTinh() + "\n" + "  can nang : " + human2.getCanNang() + "kg");
+    human1.anTao();
+    human1.noiChuyen("hello");
+    human2.anTao();
+    human2.anTao()
+</script>
+</body>
+</html>

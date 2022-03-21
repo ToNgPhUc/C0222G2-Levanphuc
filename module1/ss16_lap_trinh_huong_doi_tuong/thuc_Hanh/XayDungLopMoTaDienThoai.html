@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class dienThoai {
+        constructor() {
+            this.trangThai = true;//mac dinh
+            this.pin = 100;
+            this.vungNhoSoanThao = "";
+            this.vungNhoTinNhanDaGui = [];
+            this.vungNhoTinNhanDen = [];
+        }
+
+        gettrangThai() {
+            if (this.trangThai) {
+                console.log("dien thoai dang bat");
+
+            } else {
+                console.log("dien thoai dang tat");
+            }
+        }
+
+        batTat() {
+            this.trangThai = !this.trangThai;
+        }
+
+        sacPin() {
+            this.pin = 100;
+        }
+
+        soanTin(text) {
+            if (this.trangThai && this.pin > 10) {
+                this.vungNhoSoanThao = text;
+            } else {
+                console.log("điện gần hết pin. Vui long sạc pin")
+            }
+            this.pin--;
+        }
+
+        nhanTin(message) {
+            this.vungNhoTinNhanDen = message
+        }
+
+        guiTin(mobile, message) {
+            this.soanTin(message);
+            this.vungNhoTinNhanDaGui.push(this.vungNhoSoanThao)// đưa tin nhắn soản thảo vào trong vùng nhớ đã gửi
+            mobile.nhanTin(this.vungNhoSoanThao); // nhận tin nhắn từ điện thoại goc
+            this.vungNhoSoanThao = "";//gui xong thi xoa.
+        }
+
+        hienThiTinNhanDaNhan() {
+            console.log(this.vungNhoTinNhanDen)
+        }
+
+        hienThiTinDaGui() {
+            console.log(this.vungNhoTinNhanDaGui);
+        }
+
+    }
+
+    // viet chuong trinh
+
+
+    let nokia = new dienThoai();
+    let iphone = new dienThoai();
+    let sumSung = new dienThoai();
+
+    nokia.guiTin(iphone, "xin chào iphone");
+    iphone.hienThiTinNhanDaNhan();
+    iphone.guiTin(nokia, "mình khỏe. Mình là iphone")
+    nokia.hienThiTinNhanDaNhan();
+    nokia.guiTin(sumSung, "hello samsung");
+    sumSung.hienThiTinNhanDaNhan();
+    nokia.guiTin(iphone,"hello");
+    nokia.hienThiTinDaGui();
+</script>
+</body>
+</html>

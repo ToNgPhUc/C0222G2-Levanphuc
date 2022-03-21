@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class bongDen {
+        constructor() {
+            this.trangThai = false;//den dang tat
+        }
+
+        denBat() {
+            return this.trangThai = true //bat den sang
+        }
+
+        denTat() {
+            return this.trangThai = false //tat den
+        }
+
+        KTraTrangThai() {
+            if (this.trangThai) {
+                alert("den dang sang")
+            } else {
+                alert("den dang tat")
+            }
+        }
+    }
+
+    class congTac {
+        constructor() {
+            this.trangThai = false;
+            this.bongDen = null;
+        }
+
+        ketNoiBongDen(bongDen) {
+            this.bongDen = bongDen;
+        }
+
+        batCongTac() {
+            this.trangThai = true
+            this.bongDen.denBat();
+        }
+
+        tatCongTac() {
+            this.trangThai = false;
+            this.bongDen.denTat();
+
+        }
+
+    }
+
+    let bongDen1 = new bongDen();
+    bongDen1.KTraTrangThai();
+
+    let congTac1 = new congTac()
+    congTac1.ketNoiBongDen(bongDen1);
+    congTac1.batCongTac(bongDen1);
+    bongDen1.KTraTrangThai(bongDen1)
+
+
+    congTac1.tatCongTac(bongDen1);
+    bongDen1.KTraTrangThai(bongDen1)
+
+
+</script>
+</body>
+</html>

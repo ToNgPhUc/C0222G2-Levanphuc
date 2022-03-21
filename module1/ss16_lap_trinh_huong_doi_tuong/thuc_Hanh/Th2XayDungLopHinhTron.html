@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class HTron {
+        constructor(radius, color) {
+            this.banKinh = radius;
+            this.color = color;
+        }
+        getBanKinh() {
+            return this.banKinh;
+        }
+        getDienTich() {
+            return Math.PI *this.banKinh*this.banKinh;
+        }
+    }
+    let hinhtron = new HTron(50,"red");
+    console.log(hinhtron.getBanKinh());
+    console.log((hinhtron.getDienTich()));
+
+
+    let hinhTron2=new HTron(100,"blue");
+    console.log(hinhTron2.getBanKinh());
+    console.log(hinhTron2.getDienTich())
+</script>
+</body>
+</html>

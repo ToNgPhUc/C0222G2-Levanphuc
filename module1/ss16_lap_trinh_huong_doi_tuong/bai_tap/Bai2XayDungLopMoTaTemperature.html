@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(C,) {
+            this.doC=C;
+
+        }
+        getdoF(){
+            return 9/5*this.doC+32
+        }
+        getKenVin(){
+            return this.doC+273.15
+        }
+
+    }
+    let doC=new Temperature(-50);
+    console.log(doC.getdoF());
+    console.log(doC.getKenVin())
+</script>
+</body>
+</html>
