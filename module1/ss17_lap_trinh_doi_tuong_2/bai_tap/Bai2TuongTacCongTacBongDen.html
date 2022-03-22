@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class bongDen {
+        constructor() {
+            this.trangThai = false;//trang thai dang sang
+        }
+
+        denBat() {
+            return this.trangThai = true;
+        }
+
+        denTat() {
+            return this.trangThai = false;
+        }
+
+        kiemTraTrangThai() {
+            if (this.trangThai === true) {
+                alert("bong den dang sang");
+            } else {
+                alert("bong den dang tat");
+            }
+        }
+
+    }
+
+    class congTac {
+        constructor() {
+            this.bongDen = null;
+            this.trangThai = false;//trang thai den sang
+        }
+
+        ketNoiBongDen(bongDen) {
+            this.bongDen = bongDen;
+        }
+
+        batCongTac() {
+            this.trangThai = true;
+            this.bongDen.denBat()
+        }
+
+        tatCongTac() {
+            this.trangThai = false;
+            this.bongDen.denTat()
+        }
+
+    }
+
+
+    let bongDen1 = new bongDen();
+    bongDen1.kiemTraTrangThai();
+
+    let congTac1 = new congTac();
+
+    function batCongTac1() {
+        for (let i = 1; i <= 10; i++) {
+            congTac1.ketNoiBongDen(bongDen1);
+            congTac1.batCongTac(bongDen1);
+            bongDen1.kiemTraTrangThai(bongDen1);
+        }
+    }
+
+    batCongTac1(congTac1);
+
+</script>
+</body>
+</html>

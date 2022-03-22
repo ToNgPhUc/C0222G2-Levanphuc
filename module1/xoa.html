@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor() {
+            this.weight =10;
+        }
+        // trọng lượng giảm đi 1 đơn vị
+        decrease(){
+            if (this.weight>0){
+                this.weight--;
+            }
+        }
+        isEmpty(){
+            if(this.weight==0){
+                console.log("Táo đã hết")
+                return true;
+            }else {
+                return false;
+            }
+        }
+
+    }
+    class Human{
+        constructor(ten, canNang, gioiTinh) {
+            this.name =ten;
+            this.weight= canNang;
+            this.gender = gioiTinh; // NAM / NU
+        }
+        setGender(gioiTinh){
+            this.gender=gioiTinh;
+        }
+        isMale(){
+            if (this.gender=="NAM"){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        checkApple(tao){
+            if (tao.isEmpty()){
+                return false; // táo đã hết
+            }else {
+                return  true; // tạo còn
+            }
+        }
+        eat(quaTao){
+            if (this.checkApple(quaTao)){
+                this.weight++;
+                quaTao.decrease();
+            }
+        }
+        say(text){
+            console.log( this.name + " : "+ text)
+        }
+        setName(name){
+            this.name = name;
+        }
+        getName(){
+            return this.name;
+        }
+        setWeight(weight){
+            this.weight =weight;
+        }
+        getWeight(){
+            return this.weight;
+        }
+    }
+
+    // viêt chuong trình
+    let apple1 = new Apple();
+    let adam = new Human("Adam", 50,"NAM");
+    let eva = new Human("Eva", 40, "NU");
+    adam.say("Eva em an tao di");
+    eva.say("Dạ để em an");
+    eva.eat(apple1);
+    eva.say("Adam anh ăn di");
+    adam.say("ok em");
+    adam.eat(apple1);
+    adam.eat(apple1);
+    adam.eat(apple1);
+    adam.eat(apple1);
+
+
+    console.log("khối lươngj quả táo: "+ apple1.weight); //4 kg
+    console.log("khối lươngj Eva: "+ eva.getWeight());  //41  kg
+    console.log("khối lươngj Adam: "+ adam.getWeight());// 55 kg
+</script>
+</body>
+</html>
+</body>
+</html>

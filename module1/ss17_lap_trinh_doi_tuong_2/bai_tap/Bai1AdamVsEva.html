@@ -10,90 +10,101 @@
     class Apple {
         constructor() {
             this.khoiLuong = 10;
-
         }
 
-        getKLTao() {
-            return this.khoiLuong;
+        giamKhoiLuongTao() {
+            if (this.khoiLuong > 0) {
+                this.khoiLuong--;
+            }
         }
 
-        setKLTao(khoiLuong) {
-            this.khoiLuong = khoiLuong;
+        kiemTRaKhoiLuongTao() {
+            if (this.khoiLuong === 0) {
+                console.log("tao da het")
+                return true;
+
+            }else {
+                return false;
+            }
         }
     }
 
     class Human {
-        constructor() {
-            this.ten = "";
-            this.gioiTinh = "";
-            this.canNang = 0;
-            this.apple = null;
-
-        }
-
-        getTen() {
-            return this.ten;
-        }
-
-        setTen(ten) {
+        constructor(ten, canNang, gioiTinh) {
             this.ten = ten;
-        }
-
-        getGioiTinh() {
-            return this.gioiTinh;
+            this.canNang = canNang;
+            this.gioiTinh = gioiTinh;
         }
 
         setGioiTinh(gioiTinh) {
             this.gioiTinh = gioiTinh;
         }
 
-        getCanNang() {
-            return this.canNang;
+        kiemTraGioiTinh() {
+            if (this.gioiTinh == "NAM") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        kiemTraTao(tao) {
+            if (tao.kiemTRaKhoiLuongTao()) {
+                return false;  //tao da het
+            } else {
+                return true; //tao van con
+            }
+        }
+
+        an(quaTao) {
+            if (this.kiemTraTao(quaTao)) {
+                this.canNang++;
+                quaTao.giamKhoiLuongTao()
+            }
+        }
+
+        noi(text) {
+            console.log(this.ten + "..." + text)
+        }
+
+        setTen(ten) {
+            this.ten = ten;
+        }
+
+        getTen(ten) {
+            return this.ten;
         }
 
         setCanNang(CanNang) {
             this.canNang = CanNang;
         }
 
-        getApple() {
-            return this.apple;
-        }
-
-        setApple(Apple) {
-            this.apple = Apple;
-        }
-
-        noiChuyen(tinNhan) {
-            console.log(tinNhan);
-        }
-
-        anTao() {
-            if (this.apple.getKLTao() > 0) {
-                this.apple.setKLTao(this.apple.getKLTao() - 1);
-                this.setCanNang(parseInt(this.getCanNang()) + 1);
-            }
-
+        getCanNang() {
+            return this.canNang;
         }
     }
+    let apple1=new Apple()
+    let adam=new Human("adam",60,"Nam");
+    let eva=new Human("Eva",50,"Nu");
+    adam.noi("an tao di eva")
+    eva.an(apple1)
+    eva.noi("an tao di adam")
+    adam.an(apple1)
+    adam.an(apple1);
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
+    adam.an(apple1)
 
-    let apple = new Apple()
-    let human1 = new Human();
-    let human2 = new Human();
-    human1.setTen("eva");
-    human1.setGioiTinh("nu");
-    human1.setCanNang('42');
-    human1.setApple(apple);
-    console.log("ten " + human1.getTen() + "\n" + " gioi tinh: " + human1.getGioiTinh() + "\n" + "  can nang : " + human1.getCanNang() + "kg");
+console.log("khoi luong qua tao "+apple1.khoiLuong)
+    console.log("can nang eva "+eva.getCanNang())
+console.log("can nang adam "+adam.getCanNang())
 
-    human2.setTen('adam');
-    human2.setGioiTinh('nam');
-    human2.setCanNang(58);
-    human2.setApple(apple);
-    console.log("ten " + human2.getTen() + "\n" + " gioi tinh: " + human2.getGioiTinh() + "\n" + "  can nang : " + human2.getCanNang() + "kg");
-    human1.anTao();
-    human1.noiChuyen("hello");
-    human2.anTao();
-    human2.anTao()
 </script>
 </body>
 </html>
