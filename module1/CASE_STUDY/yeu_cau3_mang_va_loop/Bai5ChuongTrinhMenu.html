@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tien =0;
+    let soLuong = [];
+    let danhSachDoUong = [];
+    let flag = true;
+    let doUong = ""
+    do {
+        let chon = (prompt("chon do uong" + "1 cafe" + "2 cam vat" + "3 nuoc ep ca rot" + ""))
+        switch (chon) {
+            case "1":
+                doUong = "cafe ";
+                danhSachDoUong.push(doUong);
+                tien +=(soLuong*10000)
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+                break;
+            case "2":
+                doUong = "cam vat ";
+                danhSachDoUong.push(doUong);
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+                break;
+            case "3":
+                doUong = "nuoc ep carot ";
+                danhSachDoUong.push(doUong);
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+                break;
+            case "4":
+                doUong = "nuoc ep ca chua ";
+                danhSachDoUong.push(doUong);
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+                break;
+            case "5":
+                doUong = "nuoc loc ";
+                danhSachDoUong.push(doUong);
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+
+                break;
+            case "6":
+                doUong = "nuoc dua ";
+                danhSachDoUong.push(doUong);
+                soLuong.push(parseInt(prompt("nhap so luong")))
+
+                break;
+            case "7":
+                flag = false;
+                break;
+            default:
+        }
+
+
+    } while (flag)
+    alert(danhSachDoUong)
+    alert(soLuong)
+    alert(tien)
+
+
+
+    // let n = 0;
+    // let money = 0;
+    // let num = 0;
+    //
+    // while (n !== 7) {
+    //     n = Number(prompt("Menu đồ uống: \n" +
+    //         " 1. Cafe \n" +
+    //         " 2. Cam vắt \n" +
+    //         " 3.Nước ép cà rốt \n" +
+    //         " 4.Nước ép cà chua \n" +
+    //         " 5.Nước lọc\n" +
+    //         " 6.Nước dùa \n" +
+    //         " 7.Thoát Menu \n" +
+    //         " Chọn đồ uống: "))
+    //     switch (n) {
+    //         case 1:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 10000;
+    //             console.log("Giá tiền : " + num + " ly cafe là: " + (money * num) + ' Vnd');
+    //             break;
+    //         case 2:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 15000;
+    //             console.log("Giá tiền : " + num + " ly cam vắt là: " + (money * num) + ' Vnd');
+    //             break;
+    //         case 3:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 25000;
+    //             console.log("Giá tiền : " + num + " ly nước ép cà rốt là: " + (money * num) + ' Vnd');
+    //             break;
+    //         case 4:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 25000;
+    //             console.log("Giá tiền : " + num + " ly nước ép cà chua là: " + (money * num) + ' Vnd');
+    //             break;
+    //         case 5:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 5000;
+    //             console.log("Giá tiền : " + num + " ly nước lọc là: " + (money * num) + ' Vnd');
+    //             break;
+    //         case 6:
+    //             num = parseInt(prompt("Nhập số lượng: "))
+    //             money = 30000;
+    //             console.log("Giá tiền : " + num + " ly nước dừa là: " + (money * num) + ' Vnd');
+    //             break;
+    //         default :
+    //             alert('vui lòng nhập theo yêu cầu')
+    //             break;
+    //     }
+    // }
+
+
+</script>
+</body>
+</html>

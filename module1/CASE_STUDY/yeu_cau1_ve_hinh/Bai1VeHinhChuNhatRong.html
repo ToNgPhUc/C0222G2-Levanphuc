@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let rong = 4;
+    let dai = 4;
+    for (let i = 0; i < rong; i++) {
+        document.write("<br>");
+        for (let j = 0; j < dai; j++) {
+            if (i === 0 || i === rong - 1 || j === 0 || j === dai -1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+    }
+</script>
+</body>
+</html>

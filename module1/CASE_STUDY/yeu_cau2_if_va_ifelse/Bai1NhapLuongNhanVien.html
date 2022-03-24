@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luongChuaThue = prompt("nhap so tien luong ");
+    let thueThuNhap ;
+    let luongSauThue;
+
+    if (luongChuaThue >= 15) {
+        thueThuNhap = luongChuaThue * 20 / 100;
+    } else if (luongChuaThue >= 7) {
+        thueThuNhap = luongChuaThue * 10 / 100;
+    } else {
+        thueThuNhap = luongChuaThue * 5 / 100
+    }
+    luongSauThue=(luongChuaThue-thueThuNhap);
+    document.write("thue thu nhap la "+thueThuNhap +"trieu <br>");
+    document.write("luong sau khi tru thue la "+luongSauThue+"trieu")
+
+</script>
+</body>
+</html>
