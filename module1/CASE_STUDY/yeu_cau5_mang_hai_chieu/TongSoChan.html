@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let m =parseInt(prompt("nhap so phan tu n "))
+    // let arr=new Array(m)
+    // for (let i=0;i<m;i++){
+    //     arr[i]=prompt("nhap phan tu thu "+i +":")
+    // }let m =parseInt(prompt("nhap so phan tu n "))
+    // let arr1=new Array(n)
+    // for (let i=0;i<n;i++){
+    //     arr1[i]=prompt("nhap phan tu thu "+i +":")
+    // }
+    let n = parseInt(prompt("nhap n"));
+    let m = parseInt(prompt("nhap m"));
+    let arr = new Array(m * n);
+    let tong = 0;
+    function tongSoChan() {
+        for (let i = 0; i <= m * n; i++) {
+            if (i % 2 == 0) {
+                tong += i;
+            }
+        }
+        return tong;
+    }
+    alert(tongSoChan(arr));
+
+
+</script>
+</body>
+</html>

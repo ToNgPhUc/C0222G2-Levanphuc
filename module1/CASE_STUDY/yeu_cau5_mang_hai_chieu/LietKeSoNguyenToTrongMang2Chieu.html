@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr = [[1, 2, 3, 4], [5, 6, 7, 8]];
+
+
+    let dem = 0
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (kiemTra(arr[i][j])) {
+                dem++
+            }
+
+        }
+    }
+    console.log("so luong so nguyen to trong mang la " + dem)
+
+
+    function kiemTra(arr) {
+        let flag = true;
+        if (arr < 2) {
+            flag = false;
+        } else if (arr === 2) {
+            flag = true;
+        } else if (arr % 2 === 0) {
+            flag = false
+        } else if (arr === 3) {
+            flag = true;
+        } else if (arr % 3 === 0) {
+            flag = false;
+        } else {
+            for (let i = 3; i < arr.length; i++) {
+                if (arr % i == 0) {
+                    flag = true;
+                    break;
+                }
+            }
+        }
+        if (flag) {
+            console.log(arr + "la so nguyen to")
+        } else {
+            console.log(arr + "khong phai la so nguyen to")
+        }
+        return flag;
+
+    }
+
+</script>
+</body>
+</html>

@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
+<script>
+    let str2 = 'truong        tan        haI'
+    console.log(suaXauKiTu(str2))
 
+    function suaXauKiTu(str) {
+        let str1 = str.toLowerCase();
+        let arr = [];
+        for (let i = 0; i < str1.length; i++) {
+            arr.push(str1[i]);
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === " " && arr[i + 1] === " ") {
+                arr.splice(i, 1);
+                arr[i + 1] = arr[i + 1].toUpperCase()
+                i--;
+            }
+        }
+        arr[0] = arr[0].toUpperCase()
+        return arr.join("");
+    }
+
+
+</script>
 </body>
 </html>

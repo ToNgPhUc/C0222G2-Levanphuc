@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "aabcc"
+    let str2 = "adcaa"
+    let arr1 = str.split("");
+    let arr2 = str2.split("");
+
+    function kiTuGiong() {
+
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i]===arr2[j]){
+                   arr1.splice(i,1)
+                    break;
+                }
+            }
+        }return arr1
+    }
+    console.log(kiTuGiong(arr1))
+
+</script>
+</body>
+</html>
