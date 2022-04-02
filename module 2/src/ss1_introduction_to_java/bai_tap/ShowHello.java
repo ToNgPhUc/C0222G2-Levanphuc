@@ -2,11 +2,11 @@ package ss1_introduction_to_java.bai_tap;
 
 import java.util.Scanner;
 
-public class Bai1HienThiLoiChao {
+public class ShowHello {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        System.out.println("enter name");
+        System.out.print("enter name");
         String name = scanner.nextLine();
-        System.out.println("hello "+name);
+        System.out.print("hello "+name);
     }
 }
