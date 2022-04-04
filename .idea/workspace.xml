@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55fd42fe-9b30-46ef-b3fc-740b0eb88710" name="Changes" comment="" />
+    <list default="true" id="55fd42fe-9b30-46ef-b3fc-740b0eb88710" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/bai_tap/Bai1PrimeNumberDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai1PrimeNumberCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai2LoanInterest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai3UCLN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai4MenuDesignForApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/VongLapLongNhau.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="278U21NwAVTway44ooPjBDf3VUK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +44,7 @@
       <workItem from="1648700998558" duration="49000" />
       <workItem from="1648701054198" duration="5000" />
       <workItem from="1648701075759" duration="1000" />
+      <workItem from="1648986066035" duration="18000" />
     </task>
     <servers />
   </component>
