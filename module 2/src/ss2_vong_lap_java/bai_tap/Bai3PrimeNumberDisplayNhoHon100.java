@@ -2,7 +2,7 @@ package ss2_vong_lap_java.bai_tap;
 
 import java.util.Scanner;
 
-public class Bai2PrimeNumberDisplayNhoHon100 {
+public class Bai3PrimeNumberDisplayNhoHon100 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter number");
