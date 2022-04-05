@@ -1,7 +1,6 @@
 package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 
 import java.util.Scanner;
-
 // tìm giá trị lớn nhất trong mãng aray
 public class Bai3FindTheMaximumValueInTheArray {
     public static void main(String[] args) {
@@ -32,15 +31,7 @@ public class Bai3FindTheMaximumValueInTheArray {
         System.out.print("the maximum in a arr " + max + " index: " + index);
 
 
-//        int max = 0;
-//        for (int i = 0; i< arr.length;i ++){
-//            if (arr[i]>max){
-//                max= arr[i];
-//
-//            }
-//            System.out.println("the maximum value: "+max+"index "+i);
 
-//        }
 
 
     }
