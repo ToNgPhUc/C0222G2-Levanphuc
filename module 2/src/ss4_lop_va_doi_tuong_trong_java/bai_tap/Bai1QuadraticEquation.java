@@ -9,9 +9,7 @@ import java.util.Scanner;
         double a;
         double b;
         double c;
-        public Bai1QuadraticEquation(){
 
-        }
     public Bai1QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
@@ -30,7 +28,8 @@ import java.util.Scanner;
         return c;
     }
     public double getDiscriminant(){
-            return b*b-4*a*c;
+
+        return b*b-4*a*c;
     }public double getRoot1(){
 
         return   (Math.sqrt(getDiscriminant())-b)/(2*a);
