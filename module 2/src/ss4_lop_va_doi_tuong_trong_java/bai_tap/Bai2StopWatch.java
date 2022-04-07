@@ -47,11 +47,10 @@ return this.endTime-this.startTime;
     public static void main(String[] args) {
        Bai2StopWatch stop=new Bai2StopWatch();
        stop.Start();
-       int a=100;
-       int b;
+       int a=100000;
 
-        for (int i = 0; i < 10000000; i++) {
-      a=100+100;
+        for (int i = 0; i < a; i++) {
+      a++;
 
         }stop.Stop();
         System.out.println(stop.getElapsedTime());
