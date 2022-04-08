@@ -1,16 +1,14 @@
 package ss4_lop_va_doi_tuong_trong_java.bai_tap;
 
-import ss4_lop_va_doi_tuong_trong_java.thuc_hanh.Bai1RectangularClass;
-
 import java.util.Scanner;
 
 //phuong trinh bac hai
-    public class Bai1QuadraticEquation {
+    public class QuadraticEquation {
         double a;
         double b;
         double c;
 
-    public Bai1QuadraticEquation(double a, double b, double c) {
+    public QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -50,7 +48,7 @@ import java.util.Scanner;
         double b= Double.parseDouble(sc.nextLine());
         System.out.println("enter c");
         double c= Double.parseDouble(sc.nextLine());
-        Bai1QuadraticEquation quadraticEquation= new Bai1QuadraticEquation(a,b,c);
+        QuadraticEquation quadraticEquation= new QuadraticEquation(a,b,c);
         System.out.println(quadraticEquation.Display());
 
         if (quadraticEquation.getDiscriminant()>0){//nếu delta > 0

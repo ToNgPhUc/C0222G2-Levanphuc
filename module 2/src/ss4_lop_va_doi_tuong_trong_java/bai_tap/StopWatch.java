@@ -1,16 +1,16 @@
 package ss4_lop_va_doi_tuong_trong_java.bai_tap;
 
 
-public class Bai2StopWatch {
+public class StopWatch {
 
     private long startTime;
     private long endTime;
 
-    public Bai2StopWatch() {
+    public StopWatch() {
 
     }
 
-    public Bai2StopWatch(long startTime, long endTime) {
+    public StopWatch(long startTime, long endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
     }
@@ -45,7 +45,7 @@ return this.endTime-this.startTime;
     }
 
     public static void main(String[] args) {
-       Bai2StopWatch stop=new Bai2StopWatch();
+       StopWatch stop=new StopWatch();
        stop.Start();
        int a=100000;
 

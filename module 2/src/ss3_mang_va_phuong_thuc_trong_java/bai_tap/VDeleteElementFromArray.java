@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Bai1VDeleteElementFromArray {
+public class VDeleteElementFromArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] array = {1, 3, 4, 7, 2,5,6,7};

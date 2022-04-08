@@ -3,7 +3,7 @@ package ss2_vong_lap_java.bai_tap;
 import java.util.Scanner;
 
 // hiển thị các loại hình
-public class Bai1DisplayTypes {
+public class DisplayTypes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("chon"+"\n"+

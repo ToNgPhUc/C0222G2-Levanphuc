@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 import java.util.Scanner;
 
 //gộp mãng
-public class Bai3MergeArray {
+public class MergeArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr1 = new int[3];

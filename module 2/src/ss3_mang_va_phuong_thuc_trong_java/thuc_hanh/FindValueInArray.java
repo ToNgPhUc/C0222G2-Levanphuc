@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 import java.util.Scanner;
 
 // tìm giá trị trong mãng
-public class Bai2FindValueInArray {
+public class FindValueInArray {
     public static void main(String[] args) {
         String[] Students = {"le van phuc", "tran thuan", "tran duc phuong"};
         Scanner sc = new Scanner(System.in);

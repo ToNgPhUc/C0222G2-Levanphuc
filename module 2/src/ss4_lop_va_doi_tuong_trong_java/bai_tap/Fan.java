@@ -1,6 +1,6 @@
 package ss4_lop_va_doi_tuong_trong_java.bai_tap;
 
-public class Bai3Fan {
+public class Fan {
     private int speed ;
     private boolean on = false;
     private double radius = 5;
@@ -10,7 +10,7 @@ public class Bai3Fan {
     final int FAST = 3;
 
 
-    public Bai3Fan(int speed, boolean on, double radius, String color) {
+    public Fan(int speed, boolean on, double radius, String color) {
         this.speed = speed;
         this.on = on;
         this.radius = radius;
@@ -49,7 +49,7 @@ public class Bai3Fan {
         this.color = color;
     }
 
-    public Bai3Fan() {
+    public Fan() {
 
     }
 

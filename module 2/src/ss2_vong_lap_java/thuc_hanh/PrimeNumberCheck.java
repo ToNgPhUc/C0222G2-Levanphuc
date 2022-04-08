@@ -3,7 +3,7 @@ package ss2_vong_lap_java.thuc_hanh;
 
 import java.util.Scanner;
          //kiem tra co phai la so nguyen to hay khong
-public class Bai1PrimeNumberCheck {
+public class PrimeNumberCheck {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
         System.out.print("Enter number");

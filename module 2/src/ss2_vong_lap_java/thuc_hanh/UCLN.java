@@ -2,7 +2,7 @@ package ss2_vong_lap_java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class Bai3UCLN {
+public class UCLN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("nhap so nguyen a");

@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 import java.util.Scanner;
 
 // chuyển đổi nhiệt độ
-public class Bai4TemperatureSwitch {
+public class TemperatureSwitch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("menu" + "\n" +

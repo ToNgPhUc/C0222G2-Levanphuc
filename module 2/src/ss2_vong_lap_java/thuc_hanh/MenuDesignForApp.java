@@ -2,7 +2,7 @@ package ss2_vong_lap_java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class Bai4MenuDesignForApp {
+public class MenuDesignForApp {
     public static void main(String[] args) {
 
 int choice= -1;

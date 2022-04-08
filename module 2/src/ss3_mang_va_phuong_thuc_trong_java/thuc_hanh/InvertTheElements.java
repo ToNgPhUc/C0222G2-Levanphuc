@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 import java.util.Scanner;
 
 // đảo ngược các phần tử trong mảng
-public class Bai1InvertTheElements {
+public class InvertTheElements {
     public static void main(String[] args) {
         int size;
         int [] arr;

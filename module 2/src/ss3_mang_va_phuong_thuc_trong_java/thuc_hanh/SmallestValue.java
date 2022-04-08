@@ -1,6 +1,6 @@
 package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 //tìm giá trị nhỏ nhất trong mảng
-public class Bai5SmallestValue {
+public class SmallestValue {
     public static void main(String[] args) {
         int[] arr = {5, 6, 7, 8, 1, 6, 9};
         int min = minValue(arr);

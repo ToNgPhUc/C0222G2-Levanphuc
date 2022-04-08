@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc_trong_java.thuc_hanh;
 
 import java.util.Scanner;
 // tìm giá trị lớn nhất trong mãng aray
-public class Bai3FindTheMaximumValueInTheArray {
+public class FindTheMaximumValueInTheArray {
     public static void main(String[] args) {
         int[] arr;
         int size;

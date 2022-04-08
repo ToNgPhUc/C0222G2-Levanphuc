@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 import java.util.Scanner;
 
 //gia tri lon nhat trong mang 2 chieu
-public class Bai4MaxElementInTheArray {
+public class MaxElementInTheArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] arr = {

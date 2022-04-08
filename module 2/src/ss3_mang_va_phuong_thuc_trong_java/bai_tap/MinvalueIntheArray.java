@@ -3,7 +3,7 @@ package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 import java.util.Scanner;
 
 //gias trij nhor nhaats trong mang
-public class Bai5MinvalueIntheArray {
+public class MinvalueIntheArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
