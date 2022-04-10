@@ -1,8 +1,8 @@
 package ss6_ke_thua.bai_tap;
 
 public class Point1 {
-float x = 0.0f;
-float y = 0.0f;
+private float x = 0.0f;
+private float y = 0.0f;
 
     public Point1() {
     }

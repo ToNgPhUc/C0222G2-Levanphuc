@@ -1,8 +1,8 @@
 package ss6_ke_thua.bai_tap;
 
 public class MoveablePoint extends Point1{
-    float xSpeed=0.0f;
-    float ySpeed=0.0f;
+    private float xSpeed=0.0f;
+    private float ySpeed=0.0f;
     public MoveablePoint(){
 
     }
@@ -43,12 +43,7 @@ return arr2;
                 "xSpeed= " + xSpeed +
                 ", ySpeed= " + ySpeed +"\n"+
                 super.toString()+"\n"
-                +"  dia chi arr= "+getSpeed()+"\n";
+                +"  address arr= "+getSpeed()+"\n";
     }
-    public MoveablePoint  move(){
-      this.x+=this.xSpeed;
-      this.y+=this.ySpeed;
-      return this;
 
-    }
 }

@@ -1,9 +1,9 @@
 package ss6_ke_thua.bai_tap;
 //hinh tron
 public class Circle {
-    double radius =2.0;
-    String color = "blue";
-    public double area;
+    private double radius =2.0;
+    private String color = "blue";
+    private  double area;
     public Circle(){
 
     }

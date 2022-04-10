@@ -1,8 +1,8 @@
 package ss6_ke_thua.bai_tap;
 
 public class Point2D {
-    float x = 0.0f;
-    float y = 0.0f;
+    private float x = 0.0f;
+   private float y = 0.0f;
 
     public Point2D() {
     }
@@ -35,8 +35,8 @@ public class Point2D {
         float[] arr = new float[2];
          arr[0]=x;arr[1]=y;
          return arr;
-
     }
+
 
     @Override
     public String toString() {

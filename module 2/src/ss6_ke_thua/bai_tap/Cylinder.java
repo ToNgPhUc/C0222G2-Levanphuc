@@ -1,7 +1,7 @@
 package ss6_ke_thua.bai_tap;
 
 public class Cylinder  extends  Circle{
-    double height =1.0;
+   private double height =1.0;
 
     public Cylinder(){
 
@@ -29,9 +29,7 @@ public class Cylinder  extends  Circle{
     @Override
     public String toString() {
         return "Cylinder{" +
-                "radius=" + radius +
-                ", color='" + color + '\'' +
-                ", height=" + height +
+                "height=" + height +
                 "V= "+getV()+
                 super.toString();
     }
