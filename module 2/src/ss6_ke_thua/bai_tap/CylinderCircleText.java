@@ -17,5 +17,7 @@ public class CylinderCircleText {
         cylinder1= new Cylinder(3.0,"blue",3.0);
         System.out.println(cylinder1);
 
+        System.out.println(circle1.getColor());
+
     }
 }

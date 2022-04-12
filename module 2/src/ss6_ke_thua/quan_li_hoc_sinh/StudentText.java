@@ -1,4 +1,4 @@
-package ss6_ke_thua.quan_liHocSinh;
+package ss6_ke_thua.quan_li_hoc_sinh;
 
 import java.util.Scanner;
 
