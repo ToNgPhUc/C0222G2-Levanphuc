@@ -10,9 +10,9 @@ public class PrimeNumberDisplay {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("nhap number");
+        System.out.print("enter number");
         int number = sc.nextInt();
-        System.out.print("so nguyen to la ");
+        System.out.print("prime");
         int count = 0;
         int soNto = 0;
         while (count < number) {

@@ -19,7 +19,7 @@ public class MaxElementInTheArray {
             }
 
         }
-        System.out.println("gia tri lon nhat la "+max);
+        System.out.println("the max "+max);
 
 
 

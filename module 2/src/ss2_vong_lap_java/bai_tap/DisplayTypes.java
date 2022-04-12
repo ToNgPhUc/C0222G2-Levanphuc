@@ -6,11 +6,10 @@ import java.util.Scanner;
 public class DisplayTypes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("chon"+"\n"+
-        "1:chon hinh vuong"+
-                "\n"+"1:chon hinh vuong"
-                +"\n"+"2:chon hinh tam giac vuong goc trai duoi"
-                +"\n"+"3:chon hinh tam giac vuong goc trai tren");
+        System.out.print("choose"+"\n"+
+                "\n"+"1:choose square"
+                +"\n"+"2:choose right triangle the left "
+                +"\n"+"3:choose right triangle the right");
         int choice= sc.nextInt();
         switch (choice){
             case 1: {

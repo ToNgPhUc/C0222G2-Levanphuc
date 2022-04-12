@@ -8,13 +8,13 @@ public class MergeArray {
         Scanner sc = new Scanner(System.in);
         int[] arr1 = new int[3];
         for (int i = 0; i < arr1.length; i++) {
-            System.out.print("nhap phan tu thu " + (i + 1) + " :");
+            System.out.print("enter element " + (i + 1) + " :");
             arr1[i] = Integer.parseInt(sc.nextLine());
         }
 
         int[] arr2 = new int[2];
         for (int i = 0; i < arr2.length; i++) {
-            System.out.print("nhap phan tu thu " + (i + 1) + " :");
+            System.out.print("enter element " + (i + 1) + " :");
             arr2[i] = Integer.parseInt(sc.nextLine());
 
         }

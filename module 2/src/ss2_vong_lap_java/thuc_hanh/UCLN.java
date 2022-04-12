@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class UCLN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("nhap so nguyen a");
+        System.out.print("enter number a");
         int a = sc.nextInt();
-        System.out.print("nhap so nguyen b");
+        System.out.print("enter number b");
         int b = sc.nextInt();
         a=Math.abs(a);
         b=Math.abs(b);
         if (a == 0 && b == 0) {
-            System.out.print("khong co uoc chung lon nhat");
+            System.out.print("no UCLN");
         }
         while (a != b) {
             if (a > b) {
@@ -21,6 +21,6 @@ public class UCLN {
                 b = b - a;
             }
         }
-        System.out.println("uoc chung lon nhat la " + a);
+        System.out.println("the UCLN=  " + a);
     }
 }
