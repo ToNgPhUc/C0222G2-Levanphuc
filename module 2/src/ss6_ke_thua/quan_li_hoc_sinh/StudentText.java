@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class StudentText {
 
     public static void main(String[] args) {
-        Student student1=new Student();
+
         Scanner scanner= new Scanner(System.in);
+
         boolean flag = true;
         do {
             System.out.println("menu"+"\n"+
@@ -20,12 +21,20 @@ public class StudentText {
             int chooseMenu = Integer.parseInt(scanner.nextLine());
             switch (chooseMenu){
                 case 1:
-
-                    student1 = new Student(1,"phuc1",25,"code gym");
+                    Student student1=new Student(1,"phuc1",25,"code gym1");
                     System.out.println(student1);
-                    Student student2= new Student(2,"Phuc2",26,"DTan");
+                    Student student2=new Student(2,"phuc2",26,"code gym2");
+                    System.out.println(student2);
+                    Student student3=new Student(3,"phuc3",27,"code gym3");
+                    System.out.println(student3);
+                    Student student4=new Student(4,"phuc4",28,"code gym4");
+                    System.out.println(student4);
+
+
                 case 2:
-                    student1.input();
+                    Student student= new Student();
+                    student.input();
+                    System.out.println(student);
             }
 
         }while (false);

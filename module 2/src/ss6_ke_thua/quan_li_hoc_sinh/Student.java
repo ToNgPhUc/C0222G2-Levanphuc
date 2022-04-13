@@ -60,7 +60,7 @@ public class Student {
         System.out.println("enter age");
         this.age= Integer.parseInt(new Scanner(System.in).nextLine());
 
-        System.out.println("enter id");
+        System.out.println("enter school");
         this.school= new Scanner(System.in).nextLine();
 
 
