@@ -3,10 +3,10 @@ package ss6_ke_thua.quan_li_hoc_sinh;
 import java.util.Scanner;
 
 public class Student {
-    int id ;
-    String name;
-    int age;
-    String school;
+    public int id ;
+    public String name;
+    public int age;
+    public String school;
 
     public Student() {
     }
