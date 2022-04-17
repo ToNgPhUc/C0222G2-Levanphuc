@@ -1,14 +1,14 @@
 package ss0_bai_tap_oop.model;
 
-public class XeMay extends DanhSachXe {
+public class XeMay extends Xe {
     private int congSuat;
 
     public XeMay(int congSuat) {
         this.congSuat = congSuat;
     }
 
-    public XeMay(int bks, String tenHangSX, int namSX, String chuSoHuu, int congSuat) {
-        super(bks, tenHangSX, namSX, chuSoHuu);
+    public XeMay(String bks, HangSanXuat hangSanXuat, int namSX, String chuSoHuu, int congSuat) {
+        super(bks, hangSanXuat, namSX, chuSoHuu);
         this.congSuat = congSuat;
     }
 
@@ -18,5 +18,10 @@ public class XeMay extends DanhSachXe {
 
     public void setCongSuat(int congSuat) {
         this.congSuat = congSuat;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "congSuat="    + congSuat;
     }
 }

@@ -1,19 +1,20 @@
 package ss0_bai_tap_oop.model;
 
-public class Oto extends DanhSachXe {
+public class XeOto extends Xe {
     private int SoChoNgoi;
     private String kieuXe;
 
-    public Oto(){
+    public XeOto() {
 
     }
-    public Oto(int soChoNgoi, String kieuXe) {
+
+    public XeOto(int soChoNgoi, String kieuXe) {
         SoChoNgoi = soChoNgoi;
         this.kieuXe = kieuXe;
     }
 
-    public Oto(int bks, String tenHangSX, int namSX, String chuSoHuu, int soChoNgoi, String kieuXe) {
-        super(bks, tenHangSX, namSX, chuSoHuu);
+    public XeOto(String bks, HangSanXuat hangSanXuat, int namSX, String chuSoHuu, int soChoNgoi, String kieuXe) {
+        super(bks, hangSanXuat, namSX, chuSoHuu);
         SoChoNgoi = soChoNgoi;
         this.kieuXe = kieuXe;
     }
@@ -33,4 +34,10 @@ public class Oto extends DanhSachXe {
     public void setKieuXe(String kieuXe) {
         this.kieuXe = kieuXe;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "so cho ngoi= " + this.SoChoNgoi + "kieu xe: " + this.kieuXe;
+    }
+
 }
