@@ -6,16 +6,18 @@ import ss0_bai_tap_oop.model.Xe;
 import java.util.ArrayList;
 
 public abstract class QuanLyPhuongTien implements IQuanLyPhuongTien {
-   public static ArrayList<Xe> danhSachXe;
+    public static ArrayList<Xe> danhSachXe;
     public static ArrayList<HangSanXuat> danhSachHang;
 
     public QuanLyPhuongTien() {
-        this.danhSachXe = new ArrayList<Xe>();
-        this.danhSachHang = new ArrayList<HangSanXuat>();
+        danhSachXe = new ArrayList<Xe>();
+
+        danhSachHang = new ArrayList<HangSanXuat>();
         danhSachHang.add(new HangSanXuat("001", "Honda", "VN"));
         danhSachHang.add(new HangSanXuat("002", "Yamaha", "VN"));
         danhSachHang.add(new HangSanXuat("003", "Toyota", "VN"));
     }
+
 
     @Override
     public void themPhuongTien(Xe xe) {
@@ -41,7 +43,7 @@ public abstract class QuanLyPhuongTien implements IQuanLyPhuongTien {
     public Xe timKiemPhuongTien(String bks) {
         Xe xeTimThay = null;
         for (Xe xe : this.danhSachXe) {
-            if (xe.getBks().equals(bks)) {
+            if (xe.getBienKiemSoat().equals(bks)) {
                 xeTimThay = xe;
                 break;
             }

@@ -9,10 +9,12 @@ public class InvertElement<T> {
         Stack<Integer> stack = new Stack<>();
 
         Scanner scanner = new Scanner(System.in);
-        int n;
-        System.out.println("enter n");
-        n= scanner.nextInt();
-        int []arr=new int[n];
+        //đảo mãng;
+        System.out.println("Invert Element");
+        int element;
+        System.out.println("enter element");
+        element= scanner.nextInt();
+        int []arr=new int[element];
         for (int i = 0; i < arr.length; i++) {
             System.out.println("enter number "+(i+1));
             arr[i]= scanner.nextInt();
@@ -23,22 +25,22 @@ public class InvertElement<T> {
         Stack<Integer>wstack=new Stack<>();
         for (int i = 0; i < stack.size();) {
             wstack.push(stack.pop());
-        } System.out.println(wstack);
+        } System.out.println("after invert element "+wstack);
 
-
-
-        Stack <String>stackchuoi=new Stack<>();
-        String chuoi;
+        // đảo chuỗi
+        System.out.println("chain island ");
+        Stack <String>stringStack=new Stack<>();
+        String strings;
         Scanner scanner1= new Scanner(System.in);
-        System.out.println("enter string");
-        chuoi=scanner1.nextLine();
+        System.out.println("enter strings");
+        strings=scanner1.nextLine();
 
-        for (int i = 0; i < chuoi.length(); i++) {
-            stackchuoi.push(chuoi.charAt(i)+"");
+        for (int i = 0; i < strings.length(); i++) {
+            stringStack.push(strings.charAt(i)+"");
         }
         System.out.println("---------------");
-        for (int i = 0; i < chuoi.length(); i++) {
-            System.out.print(stackchuoi.pop());
+        for (int i = 0; i < strings.length(); i++) {
+            System.out.print(stringStack.pop());
         }
 
 

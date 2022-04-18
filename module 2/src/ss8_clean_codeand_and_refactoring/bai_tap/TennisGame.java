@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class TennisGame {
 
-    public static final int zero = 0;
-    public static final int one = 1;
-    public static final int two = 2;
-    public static final int three = 3;
+    public static final int ZERO = 0;
+    public static final int ONE = 1;
+    public static final int TWO = 2;
+    public static final int THREE = 3;
 
     public static String getScore(String player1Name, String player2Name, int firstScore, int secondScore) {
         String score = "";
@@ -18,16 +18,16 @@ public class TennisGame {
         {
             switch (firstScore)
             {
-                case zero:
+                case ZERO:
                     score = "Love-All";
                     break;
-                case one:
+                case ONE:
                     score = "Fifteen-All";
                     break;
-                case two:
+                case TWO:
                     score = "Thirty-All";
                     break;
-                case three:
+                case THREE:
                     score = "Forty-All";
                     break;
                 default:
@@ -57,16 +57,16 @@ public class TennisGame {
                     else { score+="-"; tempScore = secondScore;}
                     switch(tempScore)
                     {
-                        case zero:
+                        case ZERO:
                             score+="Love";
                             break;
-                        case one:
+                        case ONE:
                             score+="Fifteen";
                             break;
-                        case two:
+                        case TWO:
                             score+="Thirty";
                             break;
-                        case three:
+                        case THREE:
                             score+="Forty";
                             break;
                     }

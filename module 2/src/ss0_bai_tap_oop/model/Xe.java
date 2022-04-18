@@ -1,27 +1,27 @@
 package ss0_bai_tap_oop.model;
 
 public abstract class Xe {
-    private String bks;
+    private String bienKiemSoat;
     private HangSanXuat hangSanXuat;
-    private int namSX;
+    private int namwSanXuat;
     private String chuSoHuu;
 
     public Xe() {
     }
 
     public Xe(String bks, HangSanXuat hangSanXuat, int namSX, String chuSoHuu) {
-        this.bks = bks;
+        this.bienKiemSoat = bks;
         this.hangSanXuat = hangSanXuat;
-        this.namSX = namSX;
+        this.namwSanXuat = namSX;
         this.chuSoHuu = chuSoHuu;
     }
 
-    public String getBks() {
-        return bks;
+    public String getBienKiemSoat() {
+        return bienKiemSoat;
     }
 
-    public void setBks(String bks) {
-        this.bks = bks;
+    public void setBienKiemSoat(String bienKiemSoat) {
+        this.bienKiemSoat = bienKiemSoat;
     }
 
     public HangSanXuat getHangSanXuat() {
@@ -32,12 +32,12 @@ public abstract class Xe {
         this.hangSanXuat = hangSanXuat;
     }
 
-    public int getNamSX() {
-        return namSX;
+    public int getNamwSanXuat() {
+        return namwSanXuat;
     }
 
-    public void setNamSX(int namSX) {
-        this.namSX = namSX;
+    public void setNamwSanXuat(int namwSanXuat) {
+        this.namwSanXuat = namwSanXuat;
     }
 
     public String getChuSoHuu() {
@@ -51,9 +51,9 @@ public abstract class Xe {
     @Override
     public String toString() {
         return "Xe{" +
-                "bks='" + bks + '\'' +
+                "bks='" + bienKiemSoat + '\'' +
                 ", tenHangSX='" + hangSanXuat + '\'' +
-                ", namSX=" + namSX +
+                ", namSX=" + namwSanXuat +
                 ", chuSoHuu='" + chuSoHuu + '\'' +
                 '}';
     }

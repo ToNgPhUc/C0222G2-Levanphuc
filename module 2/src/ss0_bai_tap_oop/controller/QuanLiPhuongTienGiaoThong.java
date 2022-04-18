@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class QuanLiPhuongTienGiaoThong {
     static Scanner scanner = new Scanner(System.in);
-
-    public static void main(String[] args) {
+public void hienThiPhuongTien(){
+//    public static void main(String[] args) {
         QuanLyXeMay quanLyXeMay = new QuanLyXeMay();
         QuanLyXeTai quanLyXeTai = new QuanLyXeTai();
         QuanLyXeOTo quanLyXeOTo = new QuanLyXeOTo();
