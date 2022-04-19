@@ -1,5 +1,6 @@
 package ss12_java_collection_framwork.thuc_hanh.comparable_and_comparator;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 //sap xep voi comparable va comparator
@@ -51,4 +52,5 @@ public class Student implements Comparable<Student> {
     public int compareTo(Student student) {
         return this.getName().compareTo(student.getName());
     }
+
 }
