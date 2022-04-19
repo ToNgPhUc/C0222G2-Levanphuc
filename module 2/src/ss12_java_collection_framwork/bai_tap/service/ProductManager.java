@@ -84,11 +84,9 @@ public class ProductManager implements IProductManager {
             if (name.contains(listProduct.get(i).getName())) {
                 System.out.println(listProduct.get(i));
             }
-            System.out.println("name: " + name + " no of listProduct");
-            break;
         }
     }
-    
+
     @Override
     public void sortProduct() {
         Collections.sort(listProduct, new Comparator<Product>() {

@@ -13,8 +13,8 @@ public class XeOtoService implements IPhuongTienXeOto {
     private static List<XeOto> xeOtoList = new ArrayList<>();
 
     static {
-        xeOtoList.add(new XeOto("73H1=55022", "toyota", 1995, "phuc1", 40, "Du lich"));
-        xeOtoList.add(new XeOto("73H1=55023", "yamaha", 1996, "phuc2", 41, "cho hang"));
+        xeOtoList.add(new XeOto("73H3", "toyota3", 3, "phuc3", 1, "Du lich"));
+        xeOtoList.add(new XeOto("73H4", "toyota4", 4, "phuc4", 2, "cho hang"));
     }
 
     @Override
@@ -38,16 +38,55 @@ public class XeOtoService implements IPhuongTienXeOto {
 
     @Override
     public void hienThiPhuongTien() {
-
+        for (XeOto xeOto:xeOtoList) {
+            System.out.println(xeOto);
+        }
     }
 
     @Override
-    public void xoaPhuongTien() {
+    public void xoaPhuongTien( ) {
+        boolean flag = false;
+        System.out.println("nhap bien Kiem soat");
+        String bienKiemSoat = scanner.nextLine();
 
+        for (int i = 0; i < xeOtoList.size(); i++) {
+            if (bienKiemSoat.equals(xeOtoList.get(i).getBienKiemSoat())) {
+                System.out.println("yes or no");
+                flag = true;
+            }
+            if (flag) {
+                String luaChon = scanner.nextLine();
+                if (luaChon.equals("yes")) {
+                    xeOtoList.remove(i);
+                    System.out.println("da xoa thanh cong");
+                    break;
+                } else if (luaChon.equals("no")) {
+                    System.out.println("ban da khong xoa");
+                }
+            } else {
+                System.out.println("ban nhap sai");
+                break;
+            }
+        }
     }
 
     @Override
     public void timKiemPhuongTien() {
+        boolean flag = false;
+        System.out.println("nhap bien Kiem soat");
+        String bienKiemSoat = scanner.nextLine();
 
+        for (int i = 0; i < xeOtoList.size(); i++) {
+            if (bienKiemSoat.contains(xeOtoList.get(i).getBienKiemSoat())) {
+                flag = true;
+            }
+            if (flag) {
+                System.out.println(xeOtoList);
+            } else {
+                System.out.println("khong tim thay trong list");
+                break;
+            }
+        }
     }
+
 }

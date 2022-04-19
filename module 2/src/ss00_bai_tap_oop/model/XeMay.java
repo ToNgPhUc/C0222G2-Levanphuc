@@ -26,8 +26,8 @@ public class XeMay extends Xe {
 
     @Override
     public String toString() {
-        return "XeMay: "+super.toString() +
-                "congSuat: " + congSuat+
-                super.toString();
+        return "XeMay: " + super.toString()+
+                ",congSuat: " + congSuat;
+
     }
 }

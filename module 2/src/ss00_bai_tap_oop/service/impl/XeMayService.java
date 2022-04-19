@@ -1,6 +1,7 @@
 package ss00_bai_tap_oop.service.impl;
 
 
+import ss00_bai_tap_oop.controller.QuanLiPhuongTien;
 import ss00_bai_tap_oop.model.XeMay;
 import ss00_bai_tap_oop.service.IPhuongTienXeMay;
 
@@ -13,8 +14,8 @@ public class XeMayService implements IPhuongTienXeMay {
     private static List<XeMay> xeMayList = new ArrayList<>();
 
     static {
-        xeMayList.add(new XeMay("73H1=55022", "toyota", 1995, "phuc1", 100));
-        xeMayList.add(new XeMay("73H2=55022", "yamaha", 1996, "phuc2", 200));
+        xeMayList.add(new XeMay("73H1", "toyota", 1995, "phuc1", 100));
+        xeMayList.add(new XeMay("73H2", "toyota", 1996, "phuc2", 200));
     }
 
     @Override
@@ -35,16 +36,54 @@ public class XeMayService implements IPhuongTienXeMay {
 
     @Override
     public void hienThiPhuongTien() {
-
+        for (XeMay xeMay : xeMayList) {
+            System.out.println(xeMay);
+        }
     }
 
     @Override
     public void xoaPhuongTien() {
+        boolean flag = false;
+        System.out.println("nhap bien Kiem soat");
+        String bienKiemSoat = scanner.nextLine();
 
+        for (int i = 0; i < xeMayList.size(); i++) {
+            if (bienKiemSoat.equals(xeMayList.get(i).getBienKiemSoat())) {
+                System.out.println("yes or no");
+                flag = true;
+            }
+            if (flag) {
+                String luaChon = scanner.nextLine();
+                if (luaChon.equals("yes")) {
+                    xeMayList.remove(i);
+                    System.out.println("da xoa thanh cong");
+                    break;
+                } else if (luaChon.equals("no")) {
+                    System.out.println("ban da khong xoa");
+                }
+            } else {
+                System.out.println("ban nhap sai");
+                break;
+            }
+        }
     }
 
     @Override
     public void timKiemPhuongTien() {
+        boolean flag = false;
+        System.out.println("nhap bien Kiem soat");
+        String bienKiemSoat = scanner.nextLine();
 
+        for (int i = 0; i < xeMayList.size(); i++) {
+            if (bienKiemSoat.contains(xeMayList.get(i).getBienKiemSoat())) {
+                flag = true;
+            }
+            if (flag) {
+                System.out.println(xeMayList);
+            } else {
+                System.out.println("khong tim thay trong list");
+                break;
+            }
+        }
     }
 }
