@@ -18,6 +18,10 @@ public class XeMayService implements IPhuongTienXeMay {
         xeMayList.add(new XeMay("73H2", "toyota", 1996, "phuc2", 200));
     }
 
+    public static List<XeMay> getXeMayList() {
+        return xeMayList;
+    }
+
     @Override
     public void themPhuongTien() {
         System.out.println("nhap bien kiem soat");
@@ -32,6 +36,7 @@ public class XeMayService implements IPhuongTienXeMay {
         Integer congSuat = Integer.parseInt(scanner.nextLine());
         XeMay xeMay = new XeMay(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu, congSuat);
         xeMayList.add(xeMay);
+        PhuongTienService.getPhuongTiens().add(xeMay);
     }
 
     @Override

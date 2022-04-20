@@ -1,6 +1,6 @@
 package ss00_bai_tap_oop.model;
 
-public class XeTai extends Xe {
+public class XeTai extends PhuongTien {
     private double trongTai;
 
     public XeTai() {

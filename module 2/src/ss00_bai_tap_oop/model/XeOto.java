@@ -1,6 +1,6 @@
 package ss00_bai_tap_oop.model;
 
-public class XeOto extends Xe {
+public class XeOto extends PhuongTien {
     private Integer SoChoNgoi;
     private String kieuXe;
 

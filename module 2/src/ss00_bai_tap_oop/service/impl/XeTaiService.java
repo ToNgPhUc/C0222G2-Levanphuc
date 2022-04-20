@@ -13,8 +13,12 @@ public class XeTaiService implements IPhuongTienXeTai {
     private static List<XeTai> xeTaiList = new ArrayList<>();
 
     static {
-    xeTaiList.add(new XeTai("73H5","toyota",1999,"phuc5",300));
-    xeTaiList.add(new XeTai("73H6","toyota6",1999,"phuc6",300));
+        xeTaiList.add(new XeTai("73H5", "toyota", 1999, "phuc5", 300));
+        xeTaiList.add(new XeTai("73H6", "toyota6", 1999, "phuc6", 300));
+    }
+
+    public static List<XeTai> getXeTaiList() {
+        return xeTaiList;
     }
 
     @Override
@@ -31,6 +35,7 @@ public class XeTaiService implements IPhuongTienXeTai {
         Integer trongTai = Integer.parseInt(scanner.nextLine());
         XeTai xeTai = new XeTai(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu, trongTai);
         xeTaiList.add(xeTai);
+        PhuongTienService.getPhuongTiens().add(xeTai);
     }
 
     @Override

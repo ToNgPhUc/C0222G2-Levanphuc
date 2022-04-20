@@ -1,6 +1,6 @@
 package ss00_bai_tap_oop.model;
 
-public class XeMay extends Xe {
+public class XeMay extends PhuongTien {
     private Integer congSuat;
 
     public XeMay() {

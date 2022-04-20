@@ -17,6 +17,10 @@ public class XeOtoService implements IPhuongTienXeOto {
         xeOtoList.add(new XeOto("73H4", "toyota4", 4, "phuc4", 2, "cho hang"));
     }
 
+    public static List<XeOto> getXeOtoList() {
+        return xeOtoList;
+    }
+
     @Override
     public void themPhuongTien() {
         System.out.println("nhap bien kiem soat");
@@ -34,6 +38,7 @@ public class XeOtoService implements IPhuongTienXeOto {
 
         XeOto xeOto = new XeOto(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu, soChoNgoi, kieuXe);
         xeOtoList.add(xeOto);
+        PhuongTienService.getPhuongTiens().add(xeOto);
     }
 
     @Override

@@ -22,6 +22,7 @@ public void hienThiPhuongTien(){
                 chucNang = chonChucNang();
                 switch (chucNang) {
                     case 1:
+
                         loaiXe = chonLoaiXe();
                         switch (loaiXe) {
                             case 1:
