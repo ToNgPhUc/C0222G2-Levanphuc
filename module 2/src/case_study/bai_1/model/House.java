@@ -9,6 +9,9 @@ public class House extends Facility {
         this.soTang = soTang;
     }
 
+    public House() {
+    }
+
     public House(String tenDichVu, double area, double chiPhiThue, int peopleMax, int kieuThue, String tieuCHuanPhong, int soTang) {
         super(tenDichVu, area, chiPhiThue, peopleMax, kieuThue);
         this.tieuCHuanPhong = tieuCHuanPhong;

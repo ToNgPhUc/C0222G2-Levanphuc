@@ -14,10 +14,12 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
     static {
         employeeList.add(new Employee("phuc1", "14/2/95", "nam", 194539633, 123, "tongphuc1495@gmail.com", "123h1", "caodang", "giam doc", 1000.0));
     }
-//(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan,
+
+    //(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan,
 // Integer soDienThoai, String email, String maNhanVien, String trinhDo, String viTri, double luong) {
     @Override
     public void display() {
+        System.out.println("----DANH SÁCH NHÂN VIÊN----");
         for (Employee employee : employeeList) {
             System.out.println(employee);
         }
@@ -25,38 +27,39 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
 
     @Override
     public void add() {
-        System.out.println("chương trình thêm mới");
-        System.out.println("xin mời thêm mới  họ tên");
-        String hoTen=scanner.nextLine();
+        System.out.println("----CHƯƠNG TRÌNH ADD NHÂN VIÊN----");
+        System.out.println("xin mời thêm mới họ tên");
+        String hoTen = scanner.nextLine();
         System.out.println("xin mời thêm mới ngày sinh");
-        String ngaySinh=scanner.nextLine();
+        String ngaySinh = scanner.nextLine();
         System.out.println("xin mời thêm mới giới tính");
-        String gioiTinh=scanner.nextLine();
+        String gioiTinh = scanner.nextLine();
         System.out.println("xin mời thêm mới chứng minh nhân dân");
-        Integer soChungMinhNhanDan= Integer.parseInt(scanner.nextLine());
+        Integer soChungMinhNhanDan = Integer.parseInt(scanner.nextLine());
         System.out.println("xin mời thêm mới số điện thoại");
-        Integer soDienThoai=Integer.parseInt(scanner.nextLine());
+        Integer soDienThoai = Integer.parseInt(scanner.nextLine());
         System.out.println("xin mời thêm mới email");
-        String email= scanner.nextLine();
+        String email = scanner.nextLine();
         System.out.println("xin mời thêm mới mã nhân viên");
-        String maNhanVien= scanner.nextLine();
+        String maNhanVien = scanner.nextLine();
         System.out.println("xin mời thêm mới trình độ");
         String trinhDo = scanner.nextLine();
         System.out.println("xin mời thêm mới vị trí");
-        String viTri= scanner.nextLine();
+        String viTri = scanner.nextLine();
         System.out.println("xin mời thêm mới lương");
-        double luong= Double.parseDouble(scanner.nextLine());
-        Employee employee= new Employee(hoTen,ngaySinh,gioiTinh,soChungMinhNhanDan,soDienThoai,email,maNhanVien,trinhDo,viTri,luong);
+        double luong = Double.parseDouble(scanner.nextLine());
+        Employee employee = new Employee(hoTen, ngaySinh, gioiTinh, soChungMinhNhanDan, soDienThoai, email, maNhanVien, trinhDo, viTri, luong);
         employeeList.add(employee);
 
     }
 
     @Override
     public void edit() {
+        System.out.println("----CHƯƠNG TRÌNH EDIT NHÂN VIÊN-----");
         System.out.println("nhap ma nhan vien");
-        String maNhanVien= scanner.nextLine();
+        String maNhanVien = scanner.nextLine();
         for (int i = 0; i < employeeList.size(); i++) {
-            if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())){
+            if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())) {
                 System.out.println("xin mời sửa tên");
                 employeeList.get(i).setHoTen(scanner.nextLine());
                 System.out.println("xin mời sửa ngày sinh");
@@ -76,25 +79,14 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
                 System.out.println("xin mời sửa vị trí");
                 employeeList.get(i).setViTri(scanner.nextLine());
                 System.out.println("xin mời sửa lương");
-                employeeList.get(i).setLuong(scanner.nextDouble());
-
+                employeeList.get(i).setLuong(Double.parseDouble(scanner.nextLine()));
+            }
+            else {
+                System.out.println("không có mã nhân viên "+maNhanVien+" ở trong danh sách");
+                break;
             }
         }
-    }
-
-    @Override
-    public void delete() {
-        System.out.println("nhap ma nhan vien");
-        String maNhanVien= scanner.nextLine();
-        for (int i = 0; i < employeeList.size(); i++) {
-            if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())){
-                employeeList.remove(i);
-            }
-        }
-    }
-
-    @Override
-    public void search() {
 
     }
+
 }

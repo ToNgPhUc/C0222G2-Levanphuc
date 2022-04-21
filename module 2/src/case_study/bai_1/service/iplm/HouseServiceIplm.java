@@ -18,14 +18,5 @@ public class HouseServiceIplm implements IHouseService {
 
     }
 
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void search() {
-
-    }
 
 }

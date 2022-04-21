@@ -1,6 +1,7 @@
 package case_study.bai_1.model;
 
 public abstract class Facility {      // facility: co so vat chat
+
    private String tenDichVu;
     private double dienTich;
     private double chiPhiThue;
