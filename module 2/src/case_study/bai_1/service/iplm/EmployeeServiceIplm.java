@@ -25,25 +25,26 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
 
     @Override
     public void add() {
-        System.out.println("enter name");
+        System.out.println("chương trình thêm mới");
+        System.out.println("xin mời thêm mới  họ tên");
         String hoTen=scanner.nextLine();
-        System.out.println("enter Date");
+        System.out.println("xin mời thêm mới ngày sinh");
         String ngaySinh=scanner.nextLine();
-        System.out.println("enter gioi tinh");
+        System.out.println("xin mời thêm mới giới tính");
         String gioiTinh=scanner.nextLine();
-        System.out.println("enter chung minh nhan dan");
+        System.out.println("xin mời thêm mới chứng minh nhân dân");
         Integer soChungMinhNhanDan= Integer.parseInt(scanner.nextLine());
-        System.out.println("enter number");
+        System.out.println("xin mời thêm mới số điện thoại");
         Integer soDienThoai=Integer.parseInt(scanner.nextLine());
-        System.out.println("enter email");
+        System.out.println("xin mời thêm mới email");
         String email= scanner.nextLine();
-        System.out.println("enter ma nhan vien");
+        System.out.println("xin mời thêm mới mã nhân viên");
         String maNhanVien= scanner.nextLine();
-        System.out.println("enter trinh do");
+        System.out.println("xin mời thêm mới trình độ");
         String trinhDo = scanner.nextLine();
-        System.out.println("enter vi tri");
+        System.out.println("xin mời thêm mới vị trí");
         String viTri= scanner.nextLine();
-        System.out.println("enter luong");
+        System.out.println("xin mời thêm mới lương");
         double luong= Double.parseDouble(scanner.nextLine());
         Employee employee= new Employee(hoTen,ngaySinh,gioiTinh,soChungMinhNhanDan,soDienThoai,email,maNhanVien,trinhDo,viTri,luong);
         employeeList.add(employee);
@@ -52,12 +53,44 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
 
     @Override
     public void edit() {
+        System.out.println("nhap ma nhan vien");
+        String maNhanVien= scanner.nextLine();
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())){
+                System.out.println("xin mời sửa tên");
+                employeeList.get(i).setHoTen(scanner.nextLine());
+                System.out.println("xin mời sửa ngày sinh");
+                employeeList.get(i).setNgaySinh(scanner.nextLine());
+                System.out.println("xin mời sửa giới tính");
+                employeeList.get(i).setGioiTinh(scanner.nextLine());
+                System.out.println("xin mời sửa số chứng minh nhân dân ");
+                employeeList.get(i).setSoChungMinhNhanDan(Integer.parseInt(scanner.nextLine()));
+                System.out.println("xin mời sửa số điện thoại");
+                employeeList.get(i).setSoDienThoai(Integer.parseInt(scanner.nextLine()));
+                System.out.println("xin mời sửa email");
+                employeeList.get(i).setEmail(scanner.nextLine());
+                System.out.println("xin mời sửa mã nhân viên");
+                employeeList.get(i).setMaNhanVien(scanner.nextLine());
+                System.out.println("xin mời sửa trình độ");
+                employeeList.get(i).setTrinhDo(scanner.nextLine());
+                System.out.println("xin mời sửa vị trí");
+                employeeList.get(i).setViTri(scanner.nextLine());
+                System.out.println("xin mời sửa lương");
+                employeeList.get(i).setLuong(scanner.nextDouble());
 
+            }
+        }
     }
 
     @Override
     public void delete() {
-
+        System.out.println("nhap ma nhan vien");
+        String maNhanVien= scanner.nextLine();
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())){
+                employeeList.remove(i);
+            }
+        }
     }
 
     @Override

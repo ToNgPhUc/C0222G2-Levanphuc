@@ -60,8 +60,10 @@ public class FuramaController {
                 employee.add();
                 break;
             case 3:
+                employee.edit();
                 break;
             case 4:
+                employee.delete();
                 break;
         }
     } private void CustomerManagement() {
