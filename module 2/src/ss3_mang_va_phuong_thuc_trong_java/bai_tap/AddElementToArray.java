@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AddElementToArray {
     public static void main(String[] args) {
+
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int x;
         int index;
@@ -30,7 +31,7 @@ public class AddElementToArray {
             System.out.print(daySoMoi[i]+" ,");
         }
 
-    }
+  }
 }
 
 

@@ -1,5 +1,7 @@
 package ss6_ke_thua.bai_tap;
 
+import java.util.Objects;
+
 public class Cylinder  extends  Circle{
    private double height =1.0;
 
@@ -32,5 +34,19 @@ public class Cylinder  extends  Circle{
                 "height=" + height +
                 "V= "+getV()+
                 super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Cylinder cylinder = (Cylinder) o;
+        return Double.compare(cylinder.height, height) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return 1;
     }
 }

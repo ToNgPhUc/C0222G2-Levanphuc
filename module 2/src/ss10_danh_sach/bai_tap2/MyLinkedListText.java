@@ -49,24 +49,24 @@ public class MyLinkedListText {
         myLinkedList.addFist(student1);
         myLinkedList.addFist(student2);
         myLinkedList.addLast(student3);
-       myLinkedList.add(1,student1);
-       myLinkedList.remove(2);
-        System.out.println(myLinkedList.size());
-        myLinkedList.remove(student1);
-
-//          copy mang hien tai:
-        System.out.println(myLinkedList.clone());
-        for (int i = 0; i < myLinkedList.clone().size(); i++) {
-            Student student= (Student) myLinkedList.clone().get(i);
-            System.out.println(myLinkedList.clone().get(i));
-        }
-
-
-        for (int i = 0; i < myLinkedList.size(); i++) {
-            Student student= (Student) myLinkedList.get(i);
-            System.out.println(student.getName());
-
-        }
+//       myLinkedList.add(1,student1);
+//       myLinkedList.remove(2);
+//        System.out.println(myLinkedList.size());
+//        myLinkedList.remove(student1);
+//
+////          copy mang hien tai:
+//        System.out.println(myLinkedList.clone());
+//        for (int i = 0; i < myLinkedList.clone().size(); i++) {
+//            Student student= (Student) myLinkedList.clone().get(i);
+//            System.out.println(myLinkedList.clone().get(i));
+//        }
+//
+//
+//        for (int i = 0; i < myLinkedList.size(); i++) {
+//            Student student= (Student) myLinkedList.get(i);
+//            System.out.println(student.getName());
+//
+//        }
 
 
     }

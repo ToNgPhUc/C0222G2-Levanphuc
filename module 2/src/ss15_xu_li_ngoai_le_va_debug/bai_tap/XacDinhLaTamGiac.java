@@ -6,20 +6,8 @@ public class XacDinhLaTamGiac {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        System.out.println();
-//            System.out.println("nhap canh a ");
-//            int a = scanner.nextInt();
-//            System.out.println("nhap canh b");
-//            int b = scanner.nextInt();
-//            System.out.println("nhap canh c");
-//            int c = scanner.nextInt();
-//            if (a==b&&b==c&&c==a){
-//                System.out.println("la tam giac can");
-//            }
-
-        boolean flag = true;
+        Boolean flag = true;
         while (flag) {
-            System.out.println();
             System.out.println("nhap canh a ");
             int a = scanner.nextInt();
             System.out.println("nhap canh b");
@@ -27,21 +15,52 @@ public class XacDinhLaTamGiac {
             System.out.println("nhap canh c");
             int c = scanner.nextInt();
             try {
-                System.out.println("Dung yeu cau la canh tam giac");
-                setTriangle(a, b, c);
+                System.out.println("la tam giac can");
+                setTamGiac(a, b, c);
                 flag = false;
-            } catch (Exception e) {
+            } catch (Exception e){
                 e.printStackTrace();
-                System.out.println("Nhap lai");
-                flag = true;
-
+                System.out.println("vui long nhap lai");
+                flag= true;
             }
+
+        }
+
+//        if (a == b && b == c) {
+//            System.out.println("la tam giac can");
+//        }
+
+//        boolean flag = true;
+//        while (flag) {
+//            System.out.println();
+//            System.out.println("enter a");
+//            int a = scanner.nextInt();
+//            System.out.println("enter b b");
+//            int b = scanner.nextInt();
+//            System.out.println("enter c");
+//            int c = scanner.nextInt();
+//            try {
+//                System.out.println("the is a Triangle");
+//                setTriangle(a, b, c);
+//                flag = false;
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                System.out.println("please re-enter");//vui long nhập lại
+//                flag = true;
+//
+//            }
+//        }
+//    }
+//    public static void setTriangle(int a, int b, int c) throws MyTriangleException {
+//        if (a <= 0 || b <= 0 || c <= 0) {
+//            throw new MyTriangleException("Gia tri nho hon 0");
+//        }
+    }
+
+    public static void setTamGiac(int a, int b, int c)throws MyTriangleException {
+        if (a != b || b != c) {
+            throw new MyTriangleException("cacs canh ko bang nhau");
         }
     }
-    public static void setTriangle(int a, int b, int c) throws MyTriangleException {
-        if (a <= 0 || b <= 0 || c <= 0) {
-            throw new MyTriangleException("Gia tri nho hon 0");
-        }
- }
 
 }

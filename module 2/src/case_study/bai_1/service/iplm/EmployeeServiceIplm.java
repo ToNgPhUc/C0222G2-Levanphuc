@@ -14,9 +14,7 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
     static {
         employeeList.add(new Employee("phuc1", "14/2/95", "nam", 194539633, 123, "tongphuc1495@gmail.com", "123h1", "caodang", "giam doc", 1000.0));
     }
-
-    //(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan,
-// Integer soDienThoai, String email, String maNhanVien, String trinhDo, String viTri, double luong) {
+    
     @Override
     public void display() {
         System.out.println("----DANH SÁCH NHÂN VIÊN----");

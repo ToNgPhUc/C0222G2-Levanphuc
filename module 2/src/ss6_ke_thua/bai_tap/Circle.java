@@ -1,4 +1,9 @@
 package ss6_ke_thua.bai_tap;
+
+import java.util.LinkedHashSet;
+import java.util.Objects;
+import java.util.Set;
+
 //hinh tron
 public class Circle {
     private double radius =2.0;
@@ -41,4 +46,18 @@ public class Circle {
                 ", area=" + getArea() +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(circle.radius, radius) == 0 && Double.compare(circle.area, area) == 0 && Objects.equals(color, circle.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) this.radius;
+    }
+
 }
