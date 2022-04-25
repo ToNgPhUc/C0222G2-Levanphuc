@@ -15,11 +15,11 @@ public class XacDinhLaTamGiac {
             System.out.println("nhap canh c");
             int c = scanner.nextInt();
             try {
-                System.out.println("la tam giac can");
                 setTamGiac(a, b, c);
+                System.out.println("la tam giac can");
                 flag = false;
-            } catch (Exception e){
-                e.printStackTrace();
+            } catch (MyTriangleException e){
+                System.err.println(e.getMessage());
                 System.out.println("vui long nhap lai");
                 flag= true;
             }
@@ -57,9 +57,9 @@ public class XacDinhLaTamGiac {
 //        }
     }
 
-    public static void setTamGiac(int a, int b, int c)throws MyTriangleException {
+    public static void setTamGiac(int a, int b, int c) throws MyTriangleException {
         if (a != b || b != c) {
-            throw new MyTriangleException("cacs canh ko bang nhau");
+            throw new MyTriangleException("cac canh ko bang nhau");
         }
     }
 

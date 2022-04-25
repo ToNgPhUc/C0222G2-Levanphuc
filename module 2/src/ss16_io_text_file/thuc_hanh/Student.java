@@ -1,4 +1,4 @@
-package ss16_io_text_file;
+package ss16_io_text_file.thuc_hanh;
 
 public class Student {
     private String name;
