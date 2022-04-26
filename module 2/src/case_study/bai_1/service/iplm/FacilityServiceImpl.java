@@ -17,8 +17,8 @@ public class FacilityServiceImpl implements IFacilityService {
 
     static {
         facilityHashMap.put(new House(), 0);
-        facilityHashMap.put(new Villa(), 0);
-        facilityHashMap.put(new Room(), 0);
+        facilityHashMap.put(new Villa(), 1);
+        facilityHashMap.put(new Room(), 2);
     }
 
     @Override

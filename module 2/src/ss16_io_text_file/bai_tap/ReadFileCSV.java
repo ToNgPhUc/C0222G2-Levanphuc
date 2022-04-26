@@ -1,16 +1,14 @@
 package ss16_io_text_file.bai_tap;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class ReadFileCSV {
     private static List<Country> countryList = new ArrayList<>();
-    public List<Country> copyReaderFile(String filePath) {
 
+    public List<Country> copyReaderFile(String filePath) {
 
         try {
             FileReader fileReader = new FileReader(filePath);
@@ -38,9 +36,9 @@ public class ReadFileCSV {
     }
 
     public static void main(String[] args) {
-        ReadFileCSV readFileCSV= new ReadFileCSV();
-        countryList= readFileCSV.copyReaderFile("ss16_io_text_file/bai_tap/CSV");
-        for (Country country:countryList) {
+        ReadFileCSV readFileCSV = new ReadFileCSV();
+        countryList = readFileCSV.copyReaderFile("ss16_io_text_file/bai_tap/CSV.csv");
+        for (Country country : countryList) {
             System.out.println(country.toString());
         }
 //        System.out.println("enter filePath");
