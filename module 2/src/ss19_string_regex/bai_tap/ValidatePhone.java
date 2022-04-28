@@ -1,4 +1,4 @@
-package string_regex.bai_tap;
+package ss19_string_regex.bai_tap;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
