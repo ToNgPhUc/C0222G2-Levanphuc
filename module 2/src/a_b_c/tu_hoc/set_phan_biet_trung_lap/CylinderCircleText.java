@@ -19,14 +19,14 @@ public class CylinderCircleText {
         // do đối tượng 1 với đối tượng 3 giông nhau ..nhờ có equals và hashcode nên
         // mới phân biệt được 2 đối tượng giống nhau và chỉ in ra 1 đối tượng
         for (Cylinder c : set) {
-            System.out.println(c.getHeight());
+            System.out.println("height "+c.getHeight());
         }
 
 
         System.out.println("sau khi xoa");
         set.remove(new Cylinder(1, "blue", 1));
         for (Cylinder c : set) {
-            System.out.println(c.getHeight());
+            System.out.println("height: "+c.getHeight());
         }
 
 //        Circle circle1= new Circle();

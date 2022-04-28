@@ -74,7 +74,7 @@ public class FuramaController {
                     flag = false;
                     break;
                 default:
-                    System.out.println("Choice again!");
+                    System.out.println("xin hãy chọn lại");
             }
         }
     }
@@ -117,16 +117,17 @@ public class FuramaController {
                             "4\tReturn main menu\n");
             System.out.println("xin moi chon menu");
             int chonEmployee = scanner.nextInt();
+
             switch (chonEmployee) {
                 case 1:
-                    facilityService.add();
                     facilityService.display();
-
                     break;
                 case 2:
-
+                    facilityService.add();
+                    facilityService.display();
                     break;
                 case 3:
+                    facilityService.edit();
                     break;
                 case 4:
                     flag = false;

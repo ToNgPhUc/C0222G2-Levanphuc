@@ -53,8 +53,10 @@ public class CustomerServiceIplm implements InterfaceService<Customer> {
         System.out.println("----CHƯƠNG TRÌNH EDIT KHÁCH HÀNG----");
         System.out.println("nhập mã khách hàng để kiểm tra");
         String maKhachHang= scanner.nextLine();
+        boolean flag = false;
         for (int i = 0; i < customerList.size(); i++) {
             if (maKhachHang.contains(customerList.get(i).getMaKhachHang())){
+                flag= true;
                 System.out.println("xin mời sửa lại họ tên");
                 customerList.get(i).setHoTen(scanner.nextLine());
 
@@ -71,19 +73,20 @@ public class CustomerServiceIplm implements InterfaceService<Customer> {
                 customerList.get(i).setSoDienThoai(Integer.parseInt(scanner.nextLine()));
 
                 System.out.println("xin mời sửa lại email");
-                customerList.get(i).setHoTen(scanner.nextLine());
+                customerList.get(i).setEmail(scanner.nextLine());
 
                 System.out.println("xin mời sửa lại mã khách hàng");
-                customerList.get(i).setHoTen(scanner.nextLine());
+                customerList.get(i).setMaKhachHang(scanner.nextLine());
 
                 System.out.println("xin mời sửa lại loại khách");
-                customerList.get(i).setHoTen(scanner.nextLine());
+                customerList.get(i).setLoaiKhach(scanner.nextLine());
 
                 System.out.println("xin mời sửa lại địa chỉ");
-                customerList.get(i).setHoTen(scanner.nextLine());
-            }else {
-                System.out.println("không có mã khách hang "+maKhachHang+" ở trong danh sách");
+                customerList.get(i).setDiaChi(scanner.nextLine());
             }
+        }
+        if (flag== false){
+                System.out.println("không có mã khách hang "+maKhachHang+" ở trong danh sách");
         }
     }
 }

@@ -14,7 +14,7 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
     static {
         employeeList.add(new Employee("phuc1", "14/2/95", "nam", 194539633, 123, "tongphuc1495@gmail.com", "123h1", "caodang", "giam doc", 1000.0));
     }
-    
+
     @Override
     public void display() {
         System.out.println("----DANH SÁCH NHÂN VIÊN----");
@@ -56,8 +56,10 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
         System.out.println("----CHƯƠNG TRÌNH EDIT NHÂN VIÊN-----");
         System.out.println("nhap ma nhan vien");
         String maNhanVien = scanner.nextLine();
+        Boolean flag = false;
         for (int i = 0; i < employeeList.size(); i++) {
             if (maNhanVien.contains(employeeList.get(i).getMaNhanVien())) {
+                flag = true;
                 System.out.println("xin mời sửa tên");
                 employeeList.get(i).setHoTen(scanner.nextLine());
                 System.out.println("xin mời sửa ngày sinh");
@@ -79,12 +81,12 @@ public class EmployeeServiceIplm implements InterfaceService<Employee> {
                 System.out.println("xin mời sửa lương");
                 employeeList.get(i).setLuong(Double.parseDouble(scanner.nextLine()));
             }
-            else {
-                System.out.println("không có mã nhân viên "+maNhanVien+" ở trong danh sách");
-                break;
-            }
         }
-
+        if (flag == false) {
+            System.out.println("không có mã nhân viên " + maNhanVien + " ở trong danh sách");
+        }
     }
 
 }
+
+

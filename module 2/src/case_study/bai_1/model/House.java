@@ -1,10 +1,18 @@
 package case_study.bai_1.model;
 
+import java.util.Objects;
+
 public class House extends Facility {
     private String tieuCHuanPhong;
-    private int soTang;
+    private Integer soTang;
 
     public House(String tieuCHuanPhong, int soTang) {
+        this.tieuCHuanPhong = tieuCHuanPhong;
+        this.soTang = soTang;
+    }
+
+    public House(String maDichVu, String tenDichVu, double dienTich, double chiPhiThue, int soNguoiToiDa, String kieuThue, String tieuCHuanPhong, int soTang) {
+        super(maDichVu, tenDichVu, dienTich, chiPhiThue, soNguoiToiDa, kieuThue);
         this.tieuCHuanPhong = tieuCHuanPhong;
         this.soTang = soTang;
     }
@@ -12,7 +20,7 @@ public class House extends Facility {
     public House() {
     }
 
-    public House(String tenDichVu, double area, double chiPhiThue, int peopleMax, int kieuThue, String tieuCHuanPhong, int soTang) {
+    public House(String tenDichVu, double area, double chiPhiThue, int peopleMax, String kieuThue, String tieuCHuanPhong, int soTang) {
         super(tenDichVu, area, chiPhiThue, peopleMax, kieuThue);
         this.tieuCHuanPhong = tieuCHuanPhong;
         this.soTang = soTang;
@@ -26,18 +34,31 @@ public class House extends Facility {
         this.tieuCHuanPhong = tieuCHuanPhong;
     }
 
-    public int getSoTang() {
+    public Integer getSoTang() {
         return soTang;
     }
 
-    public void setSoTang(int soTang) {
+    public void setSoTang(Integer soTang) {
         this.soTang = soTang;
     }
 
     @Override
     public String toString() {
-        return "DichVuHouse: " + super.toString() +
-                "tieuCHuanPhong: " + tieuCHuanPhong + '\'' +
-                ", soTang: " + soTang;
+        return "House: " + super.toString() +
+                "tieuCHuanPhong: " + tieuCHuanPhong +
+                ", soTang: " + soTang+" }";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        House house = (House) o;
+        return soTang == house.soTang && Objects.equals(tieuCHuanPhong, house.tieuCHuanPhong);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.soTang;
     }
 }

@@ -3,14 +3,14 @@ package case_study.bai_1.model;
 public class Contract {
     private String soHopDong;
     private String maBooking;
-    private String tienCocTruoc;
-    private String tongTienThanhToan;
+    private Double tienCocTruoc;
+    private Double tongTienThanhToan;
     private String maKhachHang;
 
     public Contract() {
     }
 
-    public Contract(String soHopDong, String maBooking, String tienCocTruoc, String tongTienThanhToan, String maKhachHang) {
+    public Contract(String soHopDong, String maBooking, Double tienCocTruoc, Double tongTienThanhToan, String maKhachHang) {
         this.soHopDong = soHopDong;
         this.maBooking = maBooking;
         this.tienCocTruoc = tienCocTruoc;
@@ -34,19 +34,19 @@ public class Contract {
         this.maBooking = maBooking;
     }
 
-    public String getTienCocTruoc() {
+    public Double getTienCocTruoc() {
         return tienCocTruoc;
     }
 
-    public void setTienCocTruoc(String tienCocTruoc) {
+    public void setTienCocTruoc(Double tienCocTruoc) {
         this.tienCocTruoc = tienCocTruoc;
     }
 
-    public String getTongTienThanhToan() {
+    public Double getTongTienThanhToan() {
         return tongTienThanhToan;
     }
 
-    public void setTongTienThanhToan(String tongTienThanhToan) {
+    public void setTongTienThanhToan(Double tongTienThanhToan) {
         this.tongTienThanhToan = tongTienThanhToan;
     }
 

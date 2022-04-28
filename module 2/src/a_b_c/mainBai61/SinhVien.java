@@ -57,4 +57,21 @@ public class SinhVien {
                 ", diemTrungBinh=" + diemTrungBinh +
                 '}';
     }
+
+    int[] arr = {-1, 150, 190, -1, 100, -1, 40};
+
+    public int[] sapXep(int[] arr){
+        int temp;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i-1; j <arr.length ; j++) {
+
+            }
+
+        }
+        return arr;
+    }
+    public static void main(String[] args) {
+
+
+    }
 }
