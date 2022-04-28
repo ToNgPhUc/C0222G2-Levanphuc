@@ -1,13 +1,14 @@
 package case_study.bai_1.service.iplm;
 
 import case_study.bai_1.model.Customer;
+import case_study.bai_1.service.ICustomerService;
 import case_study.bai_1.service.InterfaceService;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CustomerServiceIplm implements InterfaceService<Customer> {
+public class CustomerServiceIplm implements ICustomerService {
     private static Scanner scanner = new Scanner(System.in);
     private static List<Customer> customerList = new LinkedList<>();
 

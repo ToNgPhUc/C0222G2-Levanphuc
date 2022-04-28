@@ -1,13 +1,14 @@
 package case_study.bai_1.service.iplm;
 
 import case_study.bai_1.model.Employee;
+import case_study.bai_1.service.IEmployeeService;
 import case_study.bai_1.service.InterfaceService;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EmployeeServiceIplm implements InterfaceService<Employee> {
+public class EmployeeServiceIplm implements IEmployeeService {
     private static Scanner scanner = new Scanner(System.in);
     private static List<Employee> employeeList = new ArrayList<>();
 

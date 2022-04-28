@@ -1,4 +1,4 @@
-package ss17_io_binary_file_serialization.bai_tap;
+package ss17_io_binary_file_serialization.bai_tap.model;
 
 public class Product {
     private int maSanPham;

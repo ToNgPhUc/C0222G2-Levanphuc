@@ -13,12 +13,12 @@ import static java.lang.String.valueOf;
 
 public class FacilityServiceImpl implements IFacilityService {
     private static Scanner scanner = new Scanner(System.in);
-    private static LinkedHashMap<Facility, Integer> facilityHashMap = new LinkedHashMap<>();
+    private static Map<Facility, Integer> facilityHashMap = new LinkedHashMap<Facility,Integer>();
 
     static {
-        facilityHashMap.put(new House("SVHO-1234", "Cho Thuê ", 100, 100000, 10, "theo tháng", "5 sao", 5), 5);
-        facilityHashMap.put(new Villa("SVVL-1234", " Khu nghỉ dưỡng ", 1000, 1000000, 10, "theo tháng", "5 sao", 100, 10), 5);
-        facilityHashMap.put(new Room("SVRO-1234", "Cho thuê", 100, 100000, 10, "theo tháng", "miễn phí ăn sáng"), 4);
+        facilityHashMap.put(new House("SVHO-1234", "Cho Thuê ", 100, 100000, 10, "theo tháng", "5 sao", 5), 6);
+        facilityHashMap.put(new Villa("SVVL-1234", " Khu nghỉ dưỡng ", 1000, 1000000, 10, "theo tháng", "5 sao", 100, 10), 3);
+        facilityHashMap.put(new Room("SVRO-1234", "Cho thuê", 100, 100000, 10, "theo tháng", "miễn phí ăn sáng"), 1);
     }
 
     @Override
@@ -186,26 +186,19 @@ public class FacilityServiceImpl implements IFacilityService {
 
     }
 
-    //    Set<String> keySet = studentPerformanceMap.keySet();
-//
-//    // Creating an ArrayList of keys
-//    List<String> listOfKeys = new ArrayList<String>(keySet);
-//
-//        System.out.println("ArrayList Of Keys :");
-//        for (String key : listOfKeys) {
-//        System.out.println(key);
-//    }
-//
-//        System.out.println("--------------------------");
     @Override
-    public void edit() {
+    public void displayFacilityManagement() {
+
         Set<Facility> keySet = facilityHashMap.keySet();
         for (Facility key : keySet) {
             if (facilityHashMap.get(key) > 4) ;
-            System.out.println(key + " " + facilityHashMap.get(key));
+            System.out.println(key +" "+ facilityHashMap.get(key));
 
         }
+    }
+    @Override
 
+    public void edit() {
 //        System.out.println("nhập mã dịch vụ");
 //        String maDichVu = scanner.nextLine();
 //
@@ -224,3 +217,15 @@ public class FacilityServiceImpl implements IFacilityService {
 
     }
 }
+
+//    Set<String> keySet = studentPerformanceMap.keySet();
+//
+//    // Creating an ArrayList of keys
+//    List<String> listOfKeys = new ArrayList<String>(keySet);
+//
+//        System.out.println("ArrayList Of Keys :");
+//        for (String key : listOfKeys) {
+//        System.out.println(key);
+//    }
+//
+//        System.out.println("--------------------------");

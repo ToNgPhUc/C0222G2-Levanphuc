@@ -1,7 +1,5 @@
 package case_study.bai_1.controller;
 
-import case_study.bai_1.model.Customer;
-import case_study.bai_1.model.Facility;
 import case_study.bai_1.service.iplm.CustomerServiceIplm;
 import case_study.bai_1.service.iplm.EmployeeServiceIplm;
 import case_study.bai_1.service.iplm.FacilityServiceImpl;
