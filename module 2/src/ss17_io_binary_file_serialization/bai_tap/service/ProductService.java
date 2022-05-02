@@ -14,13 +14,13 @@ public class ProductService implements IProduct {
 
     static {
         Product product1= new Product(1,"xeOto1","toyota",1000);
-//        Product product2= new Product(2,"xeOto2","toyota",10000);
-//        Product product3= new Product(5,"xeOto3","toyota",100000);
+        Product product2= new Product(2,"xeOto2","toyota",10000);
+        Product product3= new Product(5,"xeOto3","toyota",100000);
 
 
         products.add(product1);
-//        productList.add(product2);
-//        productList.add(product3);
+        products.add(product2);
+        products.add(product3);
         System.out.println(products);
         WriteAndRead.writerFile(products);
     }

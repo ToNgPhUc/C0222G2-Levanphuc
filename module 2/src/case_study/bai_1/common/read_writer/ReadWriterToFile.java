@@ -1,10 +1,8 @@
 package case_study.bai_1.common.read_writer;
 
 import case_study.bai_1.model.Employee;
-import ss16_io_text_file.thuc_hanh.Student;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,14 +15,14 @@ public class ReadWriterToFile {
         try {
             FileWriter fW= new FileWriter("case_study/bai_1/common/data/employee.csv");
             BufferedWriter bW= new BufferedWriter(fW);
-            for (Employee employee:employeeList) {
+            for (Employee employee:list) {
                 bW.write(employee.displayEmployee());
                 bW.newLine();
             }
             bW.close();
             fW.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
     }
     public List<Employee> readToFileEmployee (){
@@ -38,27 +36,26 @@ public class ReadWriterToFile {
                     if (line==null){
                         break;
                     }
-                    String [] csv= line.split(";");
+                    String [] arr= line.split(";");
 
-                  for (int i = 0;i<csv.length;i++){
-                      System.out.println(Arrays.toString(csv));
+                  for (int i = 0;i<arr.length;i++){
+                      System.out.println(Arrays.toString(arr));
                       break;
                   }
 
-                    String hoTen= csv[0];
-                    String ngaySinh= csv[1];
-                    String gioiTinh= csv[2];
-                    Integer soChungMinhNhanDan= Integer.parseInt(csv[3]);
-                    Integer soDienThoai= Integer.parseInt(csv[4]);
-                    String email= csv[5];
-                    String maNhanVien= csv[6];
-                    String trinhDo= csv[7];
-                    String viTri= csv[8];
-                    Double luong= Double.parseDouble(csv[9]);
+                    String hoTen= arr[0];
+                    String ngaySinh= arr[1];
+                    String gioiTinh= arr[2];
+                    Integer soChungMinhNhanDan= Integer.parseInt(arr[3]);
+                    Integer soDienThoai= Integer.parseInt(arr[4]);
+                    String email= arr[5];
+                    String maNhanVien= arr[6];
+                    String trinhDo= arr[7];
+                    String viTri= arr[8];
+                    Double luong= Double.parseDouble(arr[9]);
                     employeeList.add(new Employee(hoTen,ngaySinh,gioiTinh,soChungMinhNhanDan,soDienThoai,email,maNhanVien,trinhDo,viTri,luong));
                 }
-                bR.close();
-                fd.close();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

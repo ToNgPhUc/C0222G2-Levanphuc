@@ -18,19 +18,6 @@ public class WriteFile {
         WriteFile writeFile= new WriteFile();
         writeFile.writerToFile(studentList);
 
-//        try {
-//            FileWriter fW = new FileWriter("ss16_io_text_file/thuc_hanh/data.txt2");
-//            BufferedWriter bW = new BufferedWriter(fW);
-//            for (Student s : studentList) {
-//                bW.write(s.toString());
-//                bW.newLine();
-//            }
-//            bW.close();
-//            fW.close();
-//
-//        } catch (Exception e) {
-//            System.out.println("is not a file");
-//        }
     }public void writerToFile(List<Student>list){
         try {
             FileWriter fW = new FileWriter("ss16_io_text_file/thuc_hanh/data.txt2",true);

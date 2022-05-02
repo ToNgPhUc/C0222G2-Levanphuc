@@ -37,9 +37,13 @@ public class ReadFileCSV {
     public static void main(String[] args) {
         ReadFileCSV readFileCSV = new ReadFileCSV();
         countryList = readFileCSV.copyReaderFile("ss16_io_text_file/bai_tap/CSV.csv");
-        for (Country country : countryList) {
-            System.out.println(country.toString());
-        }
+//        for (Country country : countryList) {
+//            System.out.println(country.toString());
+//        }
+
+
+
+
 //        System.out.println("enter filePath");
 //        Scanner scanner= new Scanner(System.in);
 //        String filePath= scanner.nextLine();
