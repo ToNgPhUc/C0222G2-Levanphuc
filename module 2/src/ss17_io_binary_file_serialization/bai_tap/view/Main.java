@@ -1,10 +1,15 @@
 package ss17_io_binary_file_serialization.bai_tap.view;
 
-import javafx.scene.control.Menu;
+import ss17_io_binary_file_serialization.bai_tap.controller.ProductController;
 
 public class Main {
+
     public static void main(String[] args) {
-        Menu menu= new Menu();
+        ProductController productController=new ProductController();
+        productController.diplayProductController();
+
 
     }
+
 }
+

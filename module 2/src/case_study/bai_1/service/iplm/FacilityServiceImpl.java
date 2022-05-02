@@ -12,13 +12,30 @@ import java.util.*;
 import static java.lang.String.valueOf;
 
 public class FacilityServiceImpl implements IFacilityService {
+    public static boolean ngoaiLe = true;
     private static Scanner scanner = new Scanner(System.in);
-    private static Map<Facility, Integer> facilityHashMap = new LinkedHashMap<Facility,Integer>();
+    private static Map<Facility, Integer> facilityHashMap = new LinkedHashMap<>();
+
+    private static List<House> houseList = new ArrayList<>();
+    private static List<Villa> villaList = new ArrayList<>();
+    private static List<Room> roomList = new ArrayList<>();
+
 
     static {
-        facilityHashMap.put(new House("SVHO-1234", "Cho Thuê ", 100, 100000, 10, "theo tháng", "5 sao", 5), 6);
-        facilityHashMap.put(new Villa("SVVL-1234", " Khu nghỉ dưỡng ", 1000, 1000000, 10, "theo tháng", "5 sao", 100, 10), 3);
-        facilityHashMap.put(new Room("SVRO-1234", "Cho thuê", 100, 100000, 10, "theo tháng", "miễn phí ăn sáng"), 1);
+        villaList.add(new Villa("SVVL-1234", " Khu nghỉ dưỡng ", 1000, 1000000, 10, "theo tháng", "5 sao", 100, 10));
+        roomList.add(new Room("SVRO-1234", "Cho thuê", 100, 100000, 10, "theo tháng", "miễn phí ăn sáng"));
+        houseList.add(new House("SVHO-1234", "Cho Thuê ", 100, 100000, 10, "theo tháng", "5 sao", 5));
+    }
+
+    static {
+        House house = new House("SVHO-1234", "Cho Thuê ", 100, 100000, 10, "theo tháng", "5 sao", 5);
+        Villa villa = new Villa("SVVL-1234", " Khu nghỉ dưỡng ", 1000, 1000000, 10, "theo tháng", "5 sao", 100, 10);
+        Room room = new Room("SVRO-1234", "Cho thuê", 100, 100000, 10, "theo tháng", "miễn phí ăn sáng");
+
+
+        facilityHashMap.put(house, 6);
+        facilityHashMap.put(villa, 3);
+        facilityHashMap.put(room, 1);
     }
 
     @Override
@@ -31,6 +48,7 @@ public class FacilityServiceImpl implements IFacilityService {
 
     @Override
     public void add() {
+
         boolean flag = true;
         while (flag) {
             System.out.println("1.\tAdd New Villa\n" +
@@ -38,145 +56,23 @@ public class FacilityServiceImpl implements IFacilityService {
                     "3.\tAdd New Room\n" +
                     "4.\tBack to menu\n");
             System.out.println("xin mời chọn thêm loại dịch vụ");
+
             int chon;
             chon = Integer.parseInt(scanner.nextLine());
             switch (chon) {
+
                 case 1:
-                    System.out.println("----CHƯƠNG TRÌNH THÊM MỚI VILLA----");
-                    System.out.println("xin mời thêm mã dịch vụ");
-                    String maDichVuVilla = scanner.nextLine();
+                    addNewVilla();
 
-//                    while (!ValidataFacility.isMatChesMaDichVu(maDichVuVilla)) {
-//                        System.out.println("mã dịch vụ không đúng");
-//                        maDichVuVilla = scanner.nextLine();
-//                    }
-
-                    System.out.println("xin mời thêm tên dịch vụ");
-                    String tenDichVuVilla = scanner.nextLine();
-//
-//                    while (!ValidataFacility.isMatChesTenDichVu(tenDichVuVilla)) {
-//                        System.out.println("tên dịch vụ không đúng");
-//                        tenDichVuVilla = scanner.nextLine();
-//                    }
-                    System.out.println("xin mời thêm diện tích");
-                    Double areaVilla = Double.parseDouble(scanner.nextLine());
-//
-//                    while (!ValidataFacility.isMatChesDienTichSuDung(String.valueOf(areaVilla))) {
-//                    System.out.println("diện tích không phù hợp");
-//                    areaVilla = Double.parseDouble(scanner.nextLine());
-//                }
-
-                System.out.println("xin mời thêm chi phí thuê");
-                Double chiPhiThueVilla = Double.parseDouble(scanner.nextLine());
-
-                System.out.println("xin mời thêm số lượng người tối đa");
-                Integer peoplemaxVilla = Integer.parseInt(scanner.nextLine());
-
-                System.out.println("xin mời thêm kiểu thuê");
-                String kieuThueVilla = scanner.nextLine();
-
-                System.out.println("xin mời thêm tiêu chuẩn phòng");
-                String tieuChuanPhongVilla = scanner.nextLine();
-
-                System.out.println("xin mời thêm diện tích hồ bơi");
-                Double dienTicHoBoi = Double.parseDouble(scanner.nextLine());
-//
-//                while (!ValidataFacility.isMatChesDienTichHoBoi(String.valueOf(dienTicHoBoi))) {
-//                    System.out.println("diện tích không phù hợp");
-//                    dienTicHoBoi = Double.parseDouble(scanner.nextLine());
-//                }
-
-                System.out.println(" xin mời thêm số tầng");
-                Integer soTangVilla = Integer.parseInt(scanner.nextLine());
-
-                Villa villa = new Villa(maDichVuVilla, tenDichVuVilla, areaVilla, chiPhiThueVilla, peoplemaxVilla, kieuThueVilla, tieuChuanPhongVilla, dienTicHoBoi, soTangVilla);
-                facilityHashMap.put(villa, 1);
-                System.out.println(facilityHashMap);
-
-                break;
-                case 2:
-                    System.out.println("----CHƯƠNG TRÌNH THÊM MỚI HOUSE----");
-                    System.out.println("xin mời thêm mã dịch vụ");
-                    String maDichVuHouse = scanner.nextLine();
-//
-//                    while (!ValidataFacility.isMatChesMaDichVu(maDichVuHouse)) {
-//                        System.out.println("mã dịch vụ không đúng");
-//                        maDichVuHouse = scanner.nextLine();
-//                    }
-
-                    System.out.println("xin mời thêm tên dịch vụ");
-                    String tenDichVuHouse = scanner.nextLine();
-
-//                    while (!ValidataFacility.isMatChesTenDichVu(tenDichVuHouse)) {
-//                        System.out.println("mã dịch vụ không đúng");
-//                        tenDichVuHouse = scanner.nextLine();
-//                    }
-
-
-                    System.out.println("xin mời thêm diện tích");
-                    Double areaHouse = Double.parseDouble(scanner.nextLine());
-
-//                    while (!ValidataFacility.isMatChesDienTichSuDung(String.valueOf(areaHouse))) {
-//                        System.out.println("diện tích không phù hợp");
-//                        areaHouse = Double.parseDouble(scanner.nextLine());
-//                    }
-
-                    System.out.println("xin mời thêm chi phí thuê");
-                    Double chiPhiThue = Double.parseDouble(scanner.nextLine());
-
-                    System.out.println("xin mời thêm số lượng người tối đa");
-                    Integer peoplemax = Integer.parseInt(scanner.nextLine());
-
-                    System.out.println("xin mời thêm kiểu thuê");
-                    String kieuThue = scanner.nextLine();
-
-                    System.out.println("xin mời thêm tiêu chuẩn phòng");
-                    String tieuChuanPhong = scanner.nextLine();
-
-                    System.out.println("xin mời thêm số tầng");
-                    Integer soTang = Integer.parseInt(scanner.nextLine());
-                    House house = new House(maDichVuHouse, tenDichVuHouse, areaHouse, chiPhiThue, peoplemax, kieuThue, tieuChuanPhong, soTang);
-                    facilityHashMap.put(house, 1);
                     break;
+                case 2:
+                    addNewHouse();
+                    break;
+
                 case 3:
-                    System.out.println("----CHƯƠNG TRÌNH THÊM MỚI ROOM----");
-                    System.out.println("xin mời thêm mã dịch vụ");
-                    String maDichVuRoom = scanner.nextLine();
+                    addNewRoom();
+                    break;
 
-                    while (!ValidataFacility.isMatChesMaDichVu(maDichVuRoom)) {
-                        System.out.println("mã dịch vụ không đúng");
-                        maDichVuRoom = scanner.nextLine();
-                    }
-
-                    System.out.println("xin mời thêm tên dịch vụ");
-                    String tenDichVuRoom = scanner.nextLine();
-                    while (!ValidataFacility.isMatChesTenDichVu(tenDichVuRoom)) {
-                        System.out.println("mã dịch vụ không đúng");
-                        tenDichVuRoom = scanner.nextLine();
-                    }
-
-                    System.out.println("xin mời thêm diện tích");
-                    Double areaRoom = Double.valueOf(scanner.nextLine());
-                    while (!ValidataFacility.isMatChesDienTichSuDung(String.valueOf(areaRoom))) {
-                    System.out.println("diện tích không phù hợp");
-                    areaRoom = Double.valueOf(scanner.nextLine());
-                }
-
-                System.out.println("xin mời thêm chi phí thuê");
-                double chiPhiThueRoom = Double.parseDouble(scanner.nextLine());
-
-                System.out.println("xin mời thêm số lượng người tối đa");
-                int peoplemaxRoom = Integer.parseInt(scanner.nextLine());
-
-                System.out.println("xin mời thêm kiểu thuê");
-                String kieuThueRoom = scanner.nextLine();
-
-                System.out.println(" xin mời thêm dịch vụ miễn phí đi kèm");
-                String dichVuMienPhi = scanner.nextLine();
-                Room room = new Room(maDichVuRoom, tenDichVuRoom, areaRoom, chiPhiThueRoom, peoplemaxRoom, kieuThueRoom, dichVuMienPhi);
-                facilityHashMap.put(room, 1);
-
-                break;
                 case 4:
                     flag = false;
                 default:
@@ -186,16 +82,273 @@ public class FacilityServiceImpl implements IFacilityService {
 
     }
 
+    private void addNewRoom() {
+        while (ngoaiLe) {
+            try {
+
+                System.out.println("----CHƯƠNG TRÌNH THÊM MỚI ROOM----");
+                System.out.println("xin mời thêm mã dịch vụ");
+                String maDichVuRoom = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhMaDichVuRoom(maDichVuRoom)) {
+                    System.out.println("mã dịch vụ không đúng");
+                    maDichVuRoom = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm tên dịch vụ");
+                String tenDichVuRoom = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhTenDichVu(tenDichVuRoom)) {
+                    System.out.println("mã dịch vụ không đúng");
+                    tenDichVuRoom = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm diện tích");
+                Double areaRoom = Double.parseDouble(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhDienTichSuDungVaHoBoi(String.valueOf(areaRoom))) {
+                    System.out.println("diện tích không phù hợp");
+                    areaRoom = Double.parseDouble(scanner.nextLine());
+                }
+
+                System.out.println("xin mời thêm chi phí thuê");
+                double chiPhiThueRoom = Double.parseDouble(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhChiPhiThue(String.valueOf(chiPhiThueRoom))) {
+                    System.out.println("nhập chi phí thuê không phù hợp");
+                    chiPhiThueRoom = Double.parseDouble(scanner.nextLine());
+                }
+
+                System.out.println("xin mời thêm số lượng người tối đa");
+                int soLuongNguoiToiDa = Integer.parseInt(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhsoNguoiToiDa(String.valueOf(soLuongNguoiToiDa))) {
+                    System.out.println("nhập số người không phù hợp");
+                    soLuongNguoiToiDa = Integer.parseInt(scanner.nextLine());
+
+                }
+
+                System.out.println("xin mời thêm kiểu thuê");
+                String kieuThueRoom = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhKieuThue(kieuThueRoom)) {
+                    System.out.println("nhập kiểu thuê không phù hợp");
+                    kieuThueRoom = scanner.nextLine();
+                }
+
+
+                System.out.println(" xin mời thêm dịch vụ miễn phí đi kèm");
+                String dichVuMienPhi = scanner.nextLine();
+                Room room = new Room(maDichVuRoom, tenDichVuRoom, areaRoom, chiPhiThueRoom, soLuongNguoiToiDa, kieuThueRoom, dichVuMienPhi);
+                facilityHashMap.put(room, 1);
+
+                ngoaiLe = false;
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }
+        }
+    }
+
+    private void addNewHouse() {
+        while (ngoaiLe) {
+            try {
+
+                System.out.println("----CHƯƠNG TRÌNH THÊM MỚI HOUSE----");
+                System.out.println("xin mời thêm mã dịch vụ");
+                String maDichVuHouse = scanner.nextLine();
+////
+                while (!ValidataFacility.soSanhMaDichVuHouse(maDichVuHouse)) {
+                    System.out.println("mã dịch vụ không đúng");
+                    maDichVuHouse = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm tên dịch vụ");
+                String tenDichVuHouse = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhTenDichVu(tenDichVuHouse)) {
+                    System.out.println("mã dịch vụ không đúng");
+                    tenDichVuHouse = scanner.nextLine();
+                }
+
+
+                System.out.println("xin mời thêm diện tích");
+                double dienTichHouse = Double.parseDouble(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhDienTichSuDungVaHoBoi(String.valueOf(dienTichHouse))) {
+                    System.out.println("diện tích không phù hợp");
+                    dienTichHouse = Double.parseDouble(scanner.nextLine());
+                }
+
+
+                System.out.println("xin mời thêm chi phí thuê");
+                Double chiPhiThueHouse = Double.parseDouble(scanner.nextLine());
+
+
+                while (!ValidataFacility.soSanhChiPhiThue(String.valueOf(chiPhiThueHouse))) {
+                    System.out.println("nhập chi phí thuê không phù hợp");
+                    chiPhiThueHouse = Double.parseDouble(scanner.nextLine());
+                }
+
+                System.out.println("xin mời thêm số lượng người tối đa");
+                Integer soNguoiToiDaHouse = Integer.parseInt(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhsoNguoiToiDa(String.valueOf(soNguoiToiDaHouse))) {
+                    System.out.println("nhập số người không phù hợp");
+                    soNguoiToiDaHouse = Integer.parseInt(scanner.nextLine());
+
+                }
+
+                System.out.println("xin mời thêm kiểu thuê");
+                String kieuThueHouse = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhKieuThue(kieuThueHouse)) {
+                    System.out.println("nhập kiểu thuê không phù hợp");
+                    kieuThueHouse = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm tiêu chuẩn phòng");
+                String tieuChuanPhongHouse = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhTieuChuanPhong(tieuChuanPhongHouse)) {
+                    System.out.println("nhập tiêu chuẩn phòng không phù hợp");
+                    tieuChuanPhongHouse = scanner.nextLine();
+                }
+                System.out.println("xin mời thêm số tầng");
+                Integer soTangHouse = Integer.parseInt(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhSoTang(String.valueOf(soTangHouse))) {
+                    System.out.println("nhập số tầng không phù hợp");
+                    soTangHouse = Integer.parseInt(scanner.nextLine());
+                }
+
+                House house = new House(maDichVuHouse, tenDichVuHouse, dienTichHouse, chiPhiThueHouse, soNguoiToiDaHouse, kieuThueHouse, tieuChuanPhongHouse, soTangHouse);
+                facilityHashMap.put(house, 1);
+
+                ngoaiLe = false;
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }
+        }
+    }
+
+    private void addNewVilla() {
+        while (ngoaiLe) {
+            try {
+
+                System.out.println("----CHƯƠNG TRÌNH THÊM MỚI VILLA----");
+                System.out.println("xin mời thêm mã dịch vụ");
+                String maDichVuVilla = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhMaDichVuVilla(maDichVuVilla)) {
+                    System.out.println("nhập mã dịch vụ không phù hợp");
+                    maDichVuVilla = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm tên dịch vụ");
+                String tenDichVuVilla = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhTenDichVu(tenDichVuVilla)) {
+                    System.out.println("nhập tên dịch vụ không phù hợp");
+                    tenDichVuVilla = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm diện tích");
+                Double areaVilla = Double.parseDouble(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhDienTichSuDungVaHoBoi(String.valueOf(areaVilla))) {
+                    System.out.println("nhập diện tích không phù hợp");
+                    areaVilla = Double.valueOf(scanner.nextLine());
+                }
+
+                System.out.println("xin mời thêm chi phí thuê");
+                Double chiPhiThueVilla = Double.parseDouble(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhChiPhiThue(String.valueOf(chiPhiThueVilla))) {
+                    System.out.println("nhập chi phí thuê không phù hợp");
+                    chiPhiThueVilla = Double.parseDouble(scanner.nextLine());
+                }
+
+                System.out.println("xin mời thêm số lượng người tối đa");
+                Integer peoplemaxVilla = Integer.parseInt(scanner.nextLine());
+
+                while (!ValidataFacility.soSanhsoNguoiToiDa(String.valueOf(peoplemaxVilla))) {
+                    System.out.println("nhập số người không phù hợp");
+                    peoplemaxVilla = Integer.parseInt(scanner.nextLine());
+
+                }
+                System.out.println("xin mời thêm kiểu thuê");
+                String kieuThueVilla = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhKieuThue(kieuThueVilla)) {
+                    System.out.println("nhập kiểu thuê không phù hợp");
+                    kieuThueVilla = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm tiêu chuẩn phòng");
+                String tieuChuanPhongVilla = scanner.nextLine();
+
+                while (!ValidataFacility.soSanhTieuChuanPhong(tieuChuanPhongVilla)) {
+                    System.out.println("nhập tiêu chuẩn phòng không phù hợp");
+                    tieuChuanPhongVilla = scanner.nextLine();
+                }
+
+                System.out.println("xin mời thêm diện tích hồ bơi");
+                Double dienTicHoBoiVilla = Double.parseDouble(scanner.nextLine());
+//
+                while (!ValidataFacility.soSanhDienTichSuDungVaHoBoi(String.valueOf(dienTicHoBoiVilla))) {
+                    System.out.println("nhập diện tích không phù hợp");
+                    dienTicHoBoiVilla = Double.parseDouble(scanner.nextLine());
+                }
+
+                System.out.println(" xin mời thêm số tầng");
+                Integer soTangVilla = Integer.parseInt(scanner.nextLine());
+//
+                while (!ValidataFacility.soSanhSoTang(String.valueOf(soTangVilla))) {
+                    System.out.println("nhập số tầng không phù hợp");
+                    soTangVilla = Integer.parseInt(scanner.nextLine());
+                }
+
+                Villa villa = new Villa(maDichVuVilla, tenDichVuVilla, areaVilla, chiPhiThueVilla, peoplemaxVilla, kieuThueVilla, tieuChuanPhongVilla, dienTicHoBoiVilla, soTangVilla);
+                facilityHashMap.put(villa, 1);
+                System.out.println(villa);
+
+                ngoaiLe = false;
+            } catch (NumberFormatException e) {
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+                System.out.println("bạn nhập không hợp lệ, vui lòng nhập lại từ đầu");
+                ngoaiLe = true;
+            }
+        }
+    }
+
     @Override
     public void displayFacilityManagement() {
 
         Set<Facility> keySet = facilityHashMap.keySet();
         for (Facility key : keySet) {
-            if (facilityHashMap.get(key) > 4) ;
-            System.out.println(key +" "+ facilityHashMap.get(key));
+            if (facilityHashMap.get(key) > 4) {
+                System.out.println(key + " " + facilityHashMap.get(key));
+            }
 
         }
     }
+
     @Override
 
     public void edit() {

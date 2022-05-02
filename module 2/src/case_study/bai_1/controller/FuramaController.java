@@ -8,13 +8,33 @@ import java.util.Scanner;
 
 public class FuramaController {
     public static Scanner scanner = new Scanner(System.in);
+    int chon;
     EmployeeServiceIplm employee = new EmployeeServiceIplm();
     CustomerServiceIplm customerServiceIplm = new CustomerServiceIplm();
     FacilityServiceImpl facilityService = new FacilityServiceImpl();
 
+
+    private int getChon() {
+        do {
+            try {
+                chon = Integer.parseInt(scanner.nextLine());
+                return chon;
+            } catch (NumberFormatException e) {
+                System.err.print(e.getMessage());
+                System.out.print("chọn không hợp lệ, xin hãy chọn lại theo menu ở trên");
+                System.out.println("");
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            }
+
+        } while (true);
+    }
+
+
     public void displayMainMenu() {
 
         while (true) {
+
             System.out.println(
                     "1.\tEmployee Management\n" +//quan li nhan su
                             "2.\tCustomer Management\n" +//quan li khach hang
@@ -22,10 +42,10 @@ public class FuramaController {
                             "4.\tBooking Management\n" +//Quản lý đặt chỗ
                             "5.\tPromotion Management\n" +//nguoi quan li khuyen mai
                             "6.\tExit\n");
-
             System.out.println("xin hay chon chuc nang");
-            int chonMenu = scanner.nextInt();
-            switch (chonMenu) {
+            getChon();
+            switch (chon) {
+
                 case 1:
                     employeeManagement();
                     break;
@@ -57,8 +77,8 @@ public class FuramaController {
                             "3\tEdit employee\n" +
                             "4\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            int chonEmployee = scanner.nextInt();
-            switch (chonEmployee) {
+            getChon();
+            switch (chon) {
                 case 1:
                     employee.display();
                     break;
@@ -86,8 +106,8 @@ public class FuramaController {
                             "3.\tEdit customer\n" +
                             "4.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            int chonEmployee = scanner.nextInt();
-            switch (chonEmployee) {
+            getChon();
+            switch (chon) {
                 case 1:
                     customerServiceIplm.display();
                     break;
@@ -108,15 +128,16 @@ public class FuramaController {
     private void FacilityManagement() {
         boolean flag = true;
         while (flag) {
+
             System.out.println(
                     "1\tDisplay list facility\n" +
                             "2\tAdd new facility\n" +
                             "3\tDisplay list facility maintenance\n" +
                             "4\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            int chonEmployee = scanner.nextInt();
+            getChon();
 
-            switch (chonEmployee) {
+            switch (chon) {
                 case 1:
                     facilityService.display();
                     break;
@@ -125,7 +146,7 @@ public class FuramaController {
                     facilityService.display();
                     break;
                 case 3:
-                    facilityService.edit();
+                    facilityService.displayFacilityManagement();
                     break;
                 case 4:
                     flag = false;
@@ -146,8 +167,8 @@ public class FuramaController {
                             "5.\tEdit contracts\n" +
                             "6.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            int chonEmployee = scanner.nextInt();
-            switch (chonEmployee) {
+            getChon();
+            switch (chon) {
                 case 1:
                     break;
                 case 2:
@@ -162,7 +183,6 @@ public class FuramaController {
                     flag = false;
                 default:
                     System.out.println("xin hãy chọn lại");
-
             }
         }
     }
@@ -175,10 +195,9 @@ public class FuramaController {
                             "2.\tDisplay list customers get voucher\n" +
                             "3.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            int chonEmployee = scanner.nextInt();
-            switch (chonEmployee) {
+            getChon();
+            switch (chon) {
                 case 1:
-
                     break;
                 case 2:
                     break;

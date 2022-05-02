@@ -7,7 +7,6 @@ import java.util.List;
 
 public class ReadFileCSV {
     private static List<Country> countryList = new ArrayList<>();
-
     public List<Country> copyReaderFile(String filePath) {
 
         try {

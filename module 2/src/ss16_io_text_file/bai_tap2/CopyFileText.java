@@ -7,7 +7,6 @@ import java.util.List;
 public class CopyFileText {
     private static final String SOURCE_FILE = "ss16_io_text_file/bai_tap2/sourcefile.csv";
     private static final String TATGET_FILE = "ss16_io_text_file/bai_tap2/targetfile.csv";
-
     public List<String> readFile(String source) {
         List<String> stringList = new ArrayList<>();
         try {

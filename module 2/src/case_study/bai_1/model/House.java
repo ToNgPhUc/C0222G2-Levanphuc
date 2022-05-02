@@ -20,12 +20,6 @@ public class House extends Facility {
     public House() {
     }
 
-    public House(String tenDichVu, double area, double chiPhiThue, int peopleMax, String kieuThue, String tieuCHuanPhong, int soTang) {
-        super(tenDichVu, area, chiPhiThue, peopleMax, kieuThue);
-        this.tieuCHuanPhong = tieuCHuanPhong;
-        this.soTang = soTang;
-    }
-
     public String getTieuCHuanPhong() {
         return tieuCHuanPhong;
     }
@@ -46,7 +40,7 @@ public class House extends Facility {
     public String toString() {
         return "House: " + super.toString() +
                 "tieuCHuanPhong: " + tieuCHuanPhong +
-                ", soTang: " + soTang+" }";
+                ", soTang: " + soTang + " }";
     }
 
     @Override

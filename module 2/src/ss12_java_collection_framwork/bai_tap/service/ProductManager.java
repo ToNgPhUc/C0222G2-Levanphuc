@@ -30,28 +30,28 @@ public class ProductManager implements IProductManager {
     @Override
     public void editProductOfId() {
         boolean flag = false;
-        System.out.println("enter id");
+        System.out.println("kiểm tra  id");
         int id = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < listProduct.size(); i++) {
             if (id == listProduct.get(i).getId()) {
                 flag = true;
+                System.out.println("enter id");
+                int id1 = Integer.parseInt(scanner.nextLine());
+                System.out.println("enter name");
+                String name = scanner.nextLine();
+                System.out.println("enter weight");
+                double weight = Double.parseDouble(scanner.nextLine());
+                Product product = new Product(id1, name, weight);
+                listProduct.add(product);
+                for (Product p : listProduct) {
+                    System.out.println(p);
+                }
                 break;
             }
         }
-        if (flag) {
-            System.out.println("enter id");
-            int id1 = Integer.parseInt(scanner.nextLine());
-            System.out.println("enter name");
-            String name = scanner.nextLine();
-            System.out.println("enter weight");
-            double weight = Double.parseDouble(scanner.nextLine());
-            Product product = new Product(id1, name, weight);
-            for (int i = 0; i < listProduct.size(); i++) {
-                if (id == listProduct.get(i).getId()) {
-                    listProduct.set(i, product);
-                    break;
-                }
-            }
+        if (flag==false) {
+            System.out.println("không có id "+id+"  ở trong danh danh sách ");
+            System.out.println("xin mời nhập lại");
         }
     }
 

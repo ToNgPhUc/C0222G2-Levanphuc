@@ -52,10 +52,17 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "Employee: " + super.toString() + " " +
-                "maNhanVien: " + maNhanVien + '\'' +
-                ", trinhDo: " + trinhDo + '\'' +
-                ", viTri: " + viTri + '\'' +
+        return "Employee: " + super.toString() + ";" +
+                "maNhanVien: " + maNhanVien + ';' +
+                ", trinhDo: " + trinhDo + ';' +
+                ", viTri: " + viTri + ';' +
                 ", luong: " + luong;
     }
+    public String displayEmployee(){
+        String displayEmployee=super.displayPerson()+";"+this.maNhanVien+";"+
+                this.trinhDo+";"+this.viTri+";"+this.luong;
+        return displayEmployee;
+    }
+
+
 }

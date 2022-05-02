@@ -42,9 +42,9 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "Customer: " +super.toString()+" "+
-                "maKhachHang: " + maKhachHang + '\'' +
-                ", loaiKhach: " + loaiKhach + '\'' +
+        return "Customer: " +super.toString()+";"+
+                "maKhachHang: " + maKhachHang + ';' +
+                ", loaiKhach: " + loaiKhach + ';' +
                 ", diaChi: " + diaChi;
     }
 }

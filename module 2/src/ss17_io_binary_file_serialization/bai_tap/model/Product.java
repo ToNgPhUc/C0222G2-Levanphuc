@@ -1,24 +1,28 @@
 package ss17_io_binary_file_serialization.bai_tap.model;
 
-public class Product {
-    private int maSanPham;
+import java.io.Serializable;
+
+public class Product implements Serializable {
+    private Integer maSanPham;
     private String tenSanPham;
-    private Double gia;
+    private String hangSanXuat;
+    private Integer gia;
 
     public Product() {
     }
 
-    public Product(int maSanPham, String tenSanPham, Double gia) {
+    public Product(Integer maSanPham, String tenSanPham, String hangSanXuat, Integer gia) {
         this.maSanPham = maSanPham;
         this.tenSanPham = tenSanPham;
+        this.hangSanXuat = hangSanXuat;
         this.gia = gia;
     }
 
-    public int getMaSanPham() {
+    public Integer getMaSanPham() {
         return maSanPham;
     }
 
-    public void setMaSanPham(int maSanPham) {
+    public void setMaSanPham(Integer maSanPham) {
         this.maSanPham = maSanPham;
     }
 
@@ -30,19 +34,28 @@ public class Product {
         this.tenSanPham = tenSanPham;
     }
 
-    public Double getGia() {
+    public String getHangSanXuat() {
+        return hangSanXuat;
+    }
+
+    public void setHangSanXuat(String hangSanXuat) {
+        this.hangSanXuat = hangSanXuat;
+    }
+
+    public Integer getGia() {
         return gia;
     }
 
-    public void setGia(Double gia) {
+    public void setGia(Integer gia) {
         this.gia = gia;
     }
 
     @Override
     public String toString() {
-        return "Product: " +
+        return "Product " +
                 "maSanPham: " + maSanPham +
-                ", tenSanPham: " + tenSanPham  +
-                ", gia: " + gia;
+                ", tenSanPham: " + tenSanPham + '\'' +
+                ", hangSanXuat: " + hangSanXuat + '\'' +
+                ", gia: " + gia +"\n";
     }
 }
