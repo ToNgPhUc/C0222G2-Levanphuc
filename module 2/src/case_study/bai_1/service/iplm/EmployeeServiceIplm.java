@@ -26,7 +26,7 @@ public class EmployeeServiceIplm implements IEmployeeService {
     @Override
     public void display() {
         System.out.println("----DANH SÁCH NHÂN VIÊN----");
-        employeeList= readWriterToFile.readToFileEmployee();
+        employeeList= readWriterToFile.readToFileEmployee("case_study/bai_1/common/data/employee.csv");
     }
 
     @Override

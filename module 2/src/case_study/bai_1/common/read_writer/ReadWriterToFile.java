@@ -25,10 +25,10 @@ public class ReadWriterToFile {
             System.err.println(e.getMessage());
         }
     }
-    public List<Employee> readToFileEmployee (){
+    public List<Employee> readToFileEmployee (String filePath){
 
             try {
-                FileReader fd = new FileReader("case_study/bai_1/common/data/employee.csv");
+                FileReader fd = new FileReader(filePath);
                 BufferedReader bR= new BufferedReader(fd);
                 String line ="";
                 while (true){
