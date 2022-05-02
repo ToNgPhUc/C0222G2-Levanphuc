@@ -16,16 +16,17 @@ public class EmployeeServiceIplm implements IEmployeeService {
     private static Scanner scanner = new Scanner(System.in);
     public static List<Employee> employeeList = new ArrayList<>();
 
-    static {
-        employeeList.add(new Employee("phuc1", "14/2/95", "nam", 194539633, 123, "tongphuc1495@gmail.com", "123h1", "caodang", "giam doc", 1000.0));
-        readWriterToFile.writerToFileEmployee(employeeList);
-//        employeeList= readWriterToFile.readToFileEmployee();
-
-    }
+//    static {
+//        employeeList.add(new Employee("phuc1", "14/2/95", "nam", 194539633, 123, "tongphuc1495@gmail.com", "123h1", "caodang", "giam doc", 1000.0));
+//        readWriterToFile.writerToFileEmployee(employeeList);
+//        employeeList= readWriterToFile.readToFileEmployee("case_study/bai_1/common/data/employee.csv");
+//
+//    }
 
     @Override
     public void display() {
         System.out.println("----DANH SÁCH NHÂN VIÊN----");
+        readWriterToFile.writerToFileEmployee(employeeList);
         employeeList= readWriterToFile.readToFileEmployee("case_study/bai_1/common/data/employee.csv");
     }
 
