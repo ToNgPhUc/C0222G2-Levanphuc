@@ -82,11 +82,11 @@ public abstract class Person {
     }
 
     public String displayPerson() {
-        String displayPerson = this.hoTen + ";" +
-                this.ngaySinh + ";" +
-                this.gioiTinh + ";" +
-                this.soChungMinhNhanDan + ";" +
-                this.soDienThoai + ";" +
+        String displayPerson = this.hoTen + "," +
+                this.ngaySinh + "," +
+                this.gioiTinh + "," +
+                this.soChungMinhNhanDan + "," +
+                this.soDienThoai + "," +
                 this.email;
         return displayPerson;
     }

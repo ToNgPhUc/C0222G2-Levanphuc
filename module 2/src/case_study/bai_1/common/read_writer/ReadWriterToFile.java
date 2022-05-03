@@ -9,6 +9,7 @@ import java.util.List;
 import static case_study.bai_1.service.iplm.EmployeeServiceIplm.employeeList;
 
 public class ReadWriterToFile {
+
     public static ReadWriterToFile readWriterToFile = new ReadWriterToFile();
 
     public void writerToFileEmployee(List<Employee> list){
@@ -23,12 +24,14 @@ public class ReadWriterToFile {
             fW.close();
         } catch (IOException e) {
             System.err.println(e.getMessage());
+        }catch (Exception e){
+            System.err.println(e.getMessage());
         }
     }
-    public List<Employee> readToFileEmployee (String filePath){
+    public List<Employee> readToFileEmployee (){
 
             try {
-                FileReader fd = new FileReader(filePath);
+                FileReader fd = new FileReader("case_study/bai_1/common/data/employee.csv");
                 BufferedReader bR= new BufferedReader(fd);
                 String line ="";
                 while (true){
@@ -36,7 +39,7 @@ public class ReadWriterToFile {
                     if (line==null){
                         break;
                     }
-                    String [] arr= line.split(";");
+                    String [] arr= line.split(",");
 
                   for (int i = 0;i<arr.length;i++){
                       System.out.println(Arrays.toString(arr));
