@@ -1,50 +1,62 @@
 package case_study.bai_1.model;
 
-public class Customer extends Person {
-    private String maKhachHang;
-    private String loaiKhach;
-    private String diaChi;
+import java.util.Comparator;
 
-    public Customer(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan, Integer soDienThoai, String email) {
-        super(hoTen, ngaySinh, gioiTinh, soChungMinhNhanDan, soDienThoai, email);
+public class Customer extends Person implements Comparable<Customer> {
+    private String customerCode;
+    private String typeOfGuest;
+    private String address;
+
+    public Customer(String name, String dateOfBirth, String gender, Integer identityCardNumber, Integer phoneNumber, String email) {
+        super(name, dateOfBirth, gender, identityCardNumber, phoneNumber, email);
     }
 
-    public Customer(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan, Integer soDienThoai, String email, String maKhachHang, String loaiKhach, String diaChi) {
-        super(hoTen, ngaySinh, gioiTinh, soChungMinhNhanDan, soDienThoai, email);
-        this.maKhachHang = maKhachHang;
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+    public Customer(String name, String dateOfBirth, String gender, Integer identityCardNumber, Integer phoneNumber, String email, String customerCode, String typeOfGuest, String address) {
+        super(name, dateOfBirth, gender, identityCardNumber, phoneNumber, email);
+        this.customerCode = customerCode;
+        this.typeOfGuest = typeOfGuest;
+        this.address = address;
     }
 
-    public String getMaKhachHang() {
-        return maKhachHang;
+    public String getCustomerCode() {
+        return customerCode;
     }
 
-    public void setMaKhachHang(String maKhachHang) {
-        this.maKhachHang = maKhachHang;
+    public void setCustomerCode(String customerCode) {
+        this.customerCode = customerCode;
     }
 
-    public String getLoaiKhach() {
-        return loaiKhach;
+    public String getTypeOfGuest() {
+        return typeOfGuest;
     }
 
-    public void setLoaiKhach(String loaiKhach) {
-        this.loaiKhach = loaiKhach;
+    public void setTypeOfGuest(String typeOfGuest) {
+        this.typeOfGuest = typeOfGuest;
     }
 
-    public String getDiaChi() {
-        return diaChi;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
     public String toString() {
-        return "Customer: " +super.toString()+";"+
-                "maKhachHang: " + maKhachHang + ';' +
-                ", loaiKhach: " + loaiKhach + ';' +
-                ", diaChi: " + diaChi;
+        return "Customer: " + super.toString() +
+                ",customerCode: " + customerCode +
+                ",typeOfGuest: " + typeOfGuest +
+                ",address: " + address;
+    }
+
+    @Override
+    public String getInFor() {
+        return super.getInFor() + "," + this.customerCode + "," + this.typeOfGuest + "," + this.address;
+    }
+
+    @Override
+    public int compareTo(Customer o) {
+        return this.getIdentityCardNumber() - o.getIdentityCardNumber();
     }
 }

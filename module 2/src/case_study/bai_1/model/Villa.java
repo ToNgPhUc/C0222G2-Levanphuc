@@ -3,65 +3,61 @@ package case_study.bai_1.model;
 import java.util.Objects;
 
 public class Villa extends Facility {
-    private String tieuChuanPhong;
-    private Double dienTicHoBoi;
-    private Integer soTang;
+    private String roomStandard;
+    private Double swimmingPoolArea;
+    private Integer numberOfFloors;
 
-    public Villa(String tieuChuanPhong, double dienTicHoBoi, int soTang) {
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.dienTicHoBoi = dienTicHoBoi;
-        this.soTang = soTang;
+    public Villa() {
     }
 
-    public Villa(String maDichVu, String tenDichVu, double dienTich, double chiPhiThue, int soNguoiToiDa, String kieuThue, String tieuChuanPhong, double dienTicHoBoi, int soTang) {
-        super(maDichVu, tenDichVu, dienTich, chiPhiThue, soNguoiToiDa, kieuThue);
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.dienTicHoBoi = dienTicHoBoi;
-        this.soTang = soTang;
+    public Villa(String roomStandard, Double swimmingPoolArea, Integer numberOfFloors) {
+        this.roomStandard = roomStandard;
+        this.swimmingPoolArea = swimmingPoolArea;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public String getTieuChuanPhong() {
-        return tieuChuanPhong;
+    public Villa(String serviceCode, String serviceName, Double area, Double rentalCosts, Integer maximumNumberOfPeople, String rentalType, String roomStandard, Double swimmingPoolArea, Integer numberOfFloors) {
+        super(serviceCode, serviceName, area, rentalCosts, maximumNumberOfPeople, rentalType);
+        this.roomStandard = roomStandard;
+        this.swimmingPoolArea = swimmingPoolArea;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public void setTieuChuanPhong(String tieuChuanPhong) {
-        this.tieuChuanPhong = tieuChuanPhong;
+    public String getRoomStandard() {
+        return roomStandard;
     }
 
-    public Double getDienTicHoBoi() {
-        return dienTicHoBoi;
+    public void setRoomStandard(String roomStandard) {
+        this.roomStandard = roomStandard;
     }
 
-    public void setDienTicHoBoi(Double dienTicHoBoi) {
-        this.dienTicHoBoi = dienTicHoBoi;
+    public Double getSwimmingPoolArea() {
+        return swimmingPoolArea;
     }
 
-    public Integer getSoTang() {
-        return soTang;
+    public void setSwimmingPoolArea(Double swimmingPoolArea) {
+        this.swimmingPoolArea = swimmingPoolArea;
     }
 
-    public void setSoTang(Integer soTang) {
-        this.soTang = soTang;
+    public Integer getNumberOfFloors() {
+        return numberOfFloors;
+    }
+
+    public void setNumberOfFloors(Integer numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 
     @Override
     public String toString() {
         return "Villa: " + super.toString() +
-                "tieuChuanPhong: " + tieuChuanPhong + '\'' +
-                ", dienTicHoBoi: " + dienTicHoBoi +
-                ", soTang: " + soTang + " }";
+                ",tieuChuanPhong: " + roomStandard + '\'' +
+                ", dienTicHoBoi: " + swimmingPoolArea +
+                ", soTang: " + numberOfFloors ;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Villa villa = (Villa) o;
-        return Double.compare(villa.dienTicHoBoi, dienTicHoBoi) == 0 && soTang == villa.soTang && Objects.equals(tieuChuanPhong, villa.tieuChuanPhong);
+    public String getInFor1() {
+        return super.getInFor1()+","+this.roomStandard+","+this.swimmingPoolArea+","+this.numberOfFloors;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(tieuChuanPhong, dienTicHoBoi, soTang);
-    }
 }

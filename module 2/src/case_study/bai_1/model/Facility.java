@@ -3,102 +3,98 @@ package case_study.bai_1.model;
 import java.util.Objects;
 
 public abstract class Facility {      // facility: co so vat chat
-    private String maDichVu;
-    private String tenDichVu;
-    private Double dienTich;
-    private Double chiPhiThue;
-    private Integer soNguoiToiDa;
-    private String kieuThue;
+    private String serviceCode;
+    private String serviceName;
+    private Double area;
+    private Double rentalCosts;
+    private Integer maximumNumberOfPeople;
+    private String rentalType;
 
     public Facility() {
     }
 
-    public Facility(String maDichVu, String tenDichVu, double dienTich, double chiPhiThue, int soNguoiToiDa, String kieuThue) {
-        this.maDichVu = maDichVu;
-        this.tenDichVu = tenDichVu;
-        this.dienTich = dienTich;
-        this.chiPhiThue = chiPhiThue;
-        this.soNguoiToiDa = soNguoiToiDa;
-        this.kieuThue = kieuThue;
+    public Facility(String serviceCode, String serviceName, Double area, Double rentalCosts, Integer maximumNumberOfPeople, String rentalType) {
+        this.serviceCode = serviceCode;
+        this.serviceName = serviceName;
+        this.area = area;
+        this.rentalCosts = rentalCosts;
+        this.maximumNumberOfPeople = maximumNumberOfPeople;
+        this.rentalType = rentalType;
     }
 
-    public Facility(String tenDichVu, double area, double chiPhiThue, int peopleMax, String kieuThue) {
-        this.tenDichVu = tenDichVu;
-        this.dienTich = area;
-        this.chiPhiThue = chiPhiThue;
-        this.soNguoiToiDa = peopleMax;
-        this.kieuThue = kieuThue;
+    public String getServiceCode() {
+        return serviceCode;
     }
 
-    public String getMaDichVu() {
-        return maDichVu;
+    public void setServiceCode(String serviceCode) {
+        this.serviceCode = serviceCode;
     }
 
-    public void setMaDichVu(String maDichVu) {
-        this.maDichVu = maDichVu;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public String getTenDichVu() {
-        return tenDichVu;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
-    public void setTenDichVu(String tenDichVu) {
-        this.tenDichVu = tenDichVu;
+    public Double getArea() {
+        return area;
     }
 
-    public Double getDienTich() {
-        return dienTich;
+    public void setArea(Double area) {
+        this.area = area;
     }
 
-    public void setDienTich(Double dienTich) {
-        this.dienTich = dienTich;
+    public Double getRentalCosts() {
+        return rentalCosts;
     }
 
-    public Double getChiPhiThue() {
-        return chiPhiThue;
+    public void setRentalCosts(Double rentalCosts) {
+        this.rentalCosts = rentalCosts;
     }
 
-    public void setChiPhiThue(Double chiPhiThue) {
-        this.chiPhiThue = chiPhiThue;
+    public Integer getMaximumNumberOfPeople() {
+        return maximumNumberOfPeople;
     }
 
-    public Integer getSoNguoiToiDa() {
-        return soNguoiToiDa;
+    public void setMaximumNumberOfPeople(Integer maximumNumberOfPeople) {
+        this.maximumNumberOfPeople = maximumNumberOfPeople;
     }
 
-    public void setSoNguoiToiDa(Integer soNguoiToiDa) {
-        this.soNguoiToiDa = soNguoiToiDa;
+    public String getRentalType() {
+        return rentalType;
     }
 
-    public String getKieuThue() {
-        return kieuThue;
-    }
-
-    public void setKieuThue(String kieuThue) {
-        this.kieuThue = kieuThue;
+    public void setRentalType(String rentalType) {
+        this.rentalType = rentalType;
     }
 
     @Override
     public String toString() {
         return "Facility: { " +
-                "maDichVu: " + maDichVu + '\'' +
-                ", tenDichVu: " + tenDichVu + '\'' +
-                ", dienTich: " + dienTich +
-                ", chiPhiThue: " + chiPhiThue +
-                ", soNguoiToiDa: " + soNguoiToiDa +
-                ", kieuThue: " + kieuThue ;
+                "serviceCode: " + serviceCode +
+                ", serviceName: " + serviceName +
+                ", area: " + area +
+                ", rentalCosts: " + rentalCosts +
+                ", maximumNumberOfPeople: " + maximumNumberOfPeople +
+                ", rentalType: " + rentalType;
     }
+
+public String getInFor1(){
+        return this.serviceCode+","+this.serviceName+","+this.area+","+this.rentalCosts+","+this.maximumNumberOfPeople+","+this.rentalType;
+}
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Facility facility = (Facility) o;
-        return Double.compare(facility.dienTich, dienTich) == 0 && Double.compare(facility.chiPhiThue, chiPhiThue) == 0 && soNguoiToiDa == facility.soNguoiToiDa && Objects.equals(maDichVu, facility.maDichVu) && Objects.equals(tenDichVu, facility.tenDichVu) && Objects.equals(kieuThue, facility.kieuThue);
+        return Objects.equals(serviceName, facility.serviceName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(maDichVu, tenDichVu, dienTich, chiPhiThue, soNguoiToiDa, kieuThue);
+        return Objects.hash(serviceName);
     }
 }

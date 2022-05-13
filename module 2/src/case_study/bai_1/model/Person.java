@@ -1,65 +1,63 @@
 package case_study.bai_1.model;
 
 public abstract class Person {
-    private String hoTen;
-    private String ngaySinh;
-    private String gioiTinh;
-    private Integer soChungMinhNhanDan;
-    private Integer soDienThoai;
+    private String name;
+    private String dateOfBirth;
+    private String gender;
+    private Integer identityCardNumber;
+    private Integer phoneNumber;
     private String email;
 
-    public void Person() {
-
+    public Person() {
     }
 
-    public Person(String hoTen, String ngaySinh, String gioiTinh, Integer soChungMinhNhanDan, Integer soDienThoai, String email) {
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.soChungMinhNhanDan = soChungMinhNhanDan;
-        this.soDienThoai = soDienThoai;
+    public Person(String name, String dateOfBirth, String gender, Integer identityCardNumber, Integer phoneNumber, String email) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.identityCardNumber = identityCardNumber;
+        this.phoneNumber = phoneNumber;
         this.email = email;
-
     }
 
-    public String getHoTen() {
-        return hoTen;
+    public String getName() {
+        return name;
     }
 
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNgaySinh() {
-        return ngaySinh;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setNgaySinh(String ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public String getGender() {
+        return gender;
     }
 
-    public void setGioiTinh(String gioiTinh) {
-        this.gioiTinh = gioiTinh;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public Integer getSoChungMinhNhanDan() {
-        return soChungMinhNhanDan;
+    public Integer getIdentityCardNumber() {
+        return identityCardNumber;
     }
 
-    public void setSoChungMinhNhanDan(Integer soChungMinhNhanDan) {
-        this.soChungMinhNhanDan = soChungMinhNhanDan;
+    public void setIdentityCardNumber(Integer identityCardNumber) {
+        this.identityCardNumber = identityCardNumber;
     }
 
-    public Integer getSoDienThoai() {
-        return soDienThoai;
+    public Integer getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setSoDienThoai(Integer soDienThoai) {
-        this.soDienThoai = soDienThoai;
+    public void setPhoneNumber(Integer phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
@@ -72,22 +70,15 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person: " +
-                "hoTen: " + hoTen + ';' +
-                ", ngaySinh: " + ngaySinh + ';' +
-                ", gioiTinh: " + gioiTinh + ';' +
-                ", soChungMinhNhanDan: " + soChungMinhNhanDan + ';' +
-                ", soDienThoai: " + soDienThoai + ';' +
-                ", email: " + email;
+        return "name: " + name + ',' +
+                " dateOfBirth: " + dateOfBirth + ',' +
+                " gender: " + gender + ',' +
+                " identityCardNumber: " + identityCardNumber +',' +
+                " phoneNumber: " + phoneNumber +',' +
+                " email: " + email ;
     }
 
-    public String displayPerson() {
-        String displayPerson = this.hoTen + "," +
-                this.ngaySinh + "," +
-                this.gioiTinh + "," +
-                this.soChungMinhNhanDan + "," +
-                this.soDienThoai + "," +
-                this.email;
-        return displayPerson;
+    public String getInFor() {
+        return this.name + "," + this.dateOfBirth + "," + this.gender + "," + this.identityCardNumber + "," + this.phoneNumber + "," + this.email;
     }
 }

@@ -3,44 +3,33 @@ package case_study.bai_1.model;
 import java.util.Objects;
 
 public class Room extends Facility {
-    private String dichVuMienPhiDiKem;
+    private String freeService;
 
     public Room() {
     }
 
-    public Room(String dichVuMienPhiDiKem) {
-        this.dichVuMienPhiDiKem = dichVuMienPhiDiKem;
+    public Room(String serviceCode, String serviceName, Double area, Double rentalCosts, Integer maximumNumberOfPeople, String rentalType, String freeService) {
+        super(serviceCode, serviceName, area, rentalCosts, maximumNumberOfPeople, rentalType);
+        this.freeService = freeService;
     }
 
-    public Room(String maDichVu, String tenDichVu, double dienTich, double chiPhiThue, int soNguoiToiDa, String kieuThue, String dichVuMienPhiDiKem) {
-        super(maDichVu, tenDichVu, dienTich, chiPhiThue, soNguoiToiDa, kieuThue);
-        this.dichVuMienPhiDiKem = dichVuMienPhiDiKem;
+    public String getFreeService() {
+        return freeService;
     }
 
-    public String getDichVuMienPhiDiKem() {
-        return dichVuMienPhiDiKem;
-    }
-
-    public void setDichVuMienPhiDiKem(String dichVuMienPhiDiKem) {
-        this.dichVuMienPhiDiKem = dichVuMienPhiDiKem;
+    public void setFreeService(String freeService) {
+        this.freeService = freeService;
     }
 
     @Override
     public String toString() {
         return "Room: " + super.toString() +
-                "dichVuMienPhiDiKem: " + dichVuMienPhiDiKem + " }";
+                ",freeService: " + freeService ;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Room room = (Room) o;
-        return Objects.equals(dichVuMienPhiDiKem, room.dichVuMienPhiDiKem);
+    public String getInFor1() {
+        return super.getInFor1()+","+this.freeService;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(dichVuMienPhiDiKem);
-    }
 }

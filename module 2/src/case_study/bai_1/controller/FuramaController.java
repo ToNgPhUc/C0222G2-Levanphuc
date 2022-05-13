@@ -1,39 +1,21 @@
 package case_study.bai_1.controller;
 
+import case_study.bai_1.common.check_try_catch.CheckTryCatch;
 import case_study.bai_1.service.iplm.CustomerServiceIplm;
 import case_study.bai_1.service.iplm.EmployeeServiceIplm;
-import case_study.bai_1.service.iplm.FacilityServiceImpl;
+import case_study.bai_1.service.iplm.FacilityServiceIplm;
 
 import java.util.Scanner;
 
 public class FuramaController {
-    public static Scanner scanner = new Scanner(System.in);
-    int chon;
     EmployeeServiceIplm employee = new EmployeeServiceIplm();
     CustomerServiceIplm customerServiceIplm = new CustomerServiceIplm();
-    FacilityServiceImpl facilityService = new FacilityServiceImpl();
-
-
-    private int getChon() {
-        do {
-            try {
-                chon = Integer.parseInt(scanner.nextLine());
-                return chon;
-            } catch (NumberFormatException e) {
-                System.err.print(e.getMessage());
-                System.out.print("chọn không hợp lệ, xin hãy chọn lại theo menu ở trên");
-                System.out.println("");
-            } catch (Exception e) {
-                System.err.println(e.getMessage());
-            }
-
-        } while (true);
-    }
-
+    FacilityServiceIplm facilityService = new FacilityServiceIplm();
 
     public void displayMainMenu() {
 
-        while (true) {
+        boolean flag = true;
+        while (flag) {
 
             System.out.println(
                     "1.\tEmployee Management\n" +//quan li nhan su
@@ -43,8 +25,8 @@ public class FuramaController {
                             "5.\tPromotion Management\n" +//nguoi quan li khuyen mai
                             "6.\tExit\n");
             System.out.println("xin hay chon chuc nang");
-            getChon();
-            switch (chon) {
+            int choice = CheckTryCatch.getChoiceInteger();
+            switch (choice) {
 
                 case 1:
                     employeeManagement();
@@ -63,12 +45,15 @@ public class FuramaController {
                     break;
                 case 6:
                     System.exit(0);
+                default:
+                    System.out.println("không hợp lệ xin hãy chọn lại");
 
             }
         }
     }
 
     private void employeeManagement() {
+
         boolean flag = true;
         while (flag) {
             System.out.println(
@@ -77,8 +62,9 @@ public class FuramaController {
                             "3\tEdit employee\n" +
                             "4\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            getChon();
-            switch (chon) {
+            int choiceEmployee = CheckTryCatch.getChoiceInteger();
+
+            switch (choiceEmployee) {
                 case 1:
                     employee.display();
                     break;
@@ -98,6 +84,7 @@ public class FuramaController {
     }
 
     private void CustomerManagement() {
+
         boolean flag = true;
         while (flag) {
             System.out.println(
@@ -106,8 +93,9 @@ public class FuramaController {
                             "3.\tEdit customer\n" +
                             "4.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            getChon();
-            switch (chon) {
+
+            int choiceCustomer = CheckTryCatch.getChoiceInteger();
+            switch (choiceCustomer) {
                 case 1:
                     customerServiceIplm.display();
                     break;
@@ -126,6 +114,7 @@ public class FuramaController {
     }
 
     private void FacilityManagement() {
+
         boolean flag = true;
         while (flag) {
 
@@ -135,15 +124,13 @@ public class FuramaController {
                             "3\tDisplay list facility maintenance\n" +
                             "4\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            getChon();
-
-            switch (chon) {
+            int choiceFacility = CheckTryCatch.getChoiceInteger();
+            switch (choiceFacility) {
                 case 1:
                     facilityService.display();
                     break;
                 case 2:
                     facilityService.add();
-                    facilityService.display();
                     break;
                 case 3:
                     facilityService.displayFacilityManagement();
@@ -157,6 +144,7 @@ public class FuramaController {
     }
 
     private void BookingManagement() {
+
         boolean flag = true;
         while (flag) {
             System.out.println(
@@ -167,8 +155,9 @@ public class FuramaController {
                             "5.\tEdit contracts\n" +
                             "6.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            getChon();
-            switch (chon) {
+            int choiceBooking = CheckTryCatch.getChoiceInteger();
+
+            switch (choiceBooking) {
                 case 1:
                     break;
                 case 2:
@@ -188,6 +177,7 @@ public class FuramaController {
     }
 
     private void PromotionManagement() {
+
         boolean flag = true;
         while (flag) {
             System.out.println(
@@ -195,8 +185,9 @@ public class FuramaController {
                             "2.\tDisplay list customers get voucher\n" +
                             "3.\tReturn main menu\n");
             System.out.println("xin moi chon menu");
-            getChon();
-            switch (chon) {
+            int choicePromotion = CheckTryCatch.getChoiceInteger();
+
+            switch (choicePromotion) {
                 case 1:
                     break;
                 case 2:

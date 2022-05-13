@@ -3,56 +3,46 @@ package case_study.bai_1.model;
 import java.util.Objects;
 
 public class House extends Facility {
-    private String tieuCHuanPhong;
-    private Integer soTang;
+    private String roomStandard;
+    private Integer numberOfFloors;
 
-    public House(String tieuCHuanPhong, int soTang) {
-        this.tieuCHuanPhong = tieuCHuanPhong;
-        this.soTang = soTang;
+    public House(String roomStandard, Integer numberOfFloors) {
+        this.roomStandard = roomStandard;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public House(String maDichVu, String tenDichVu, double dienTich, double chiPhiThue, int soNguoiToiDa, String kieuThue, String tieuCHuanPhong, int soTang) {
-        super(maDichVu, tenDichVu, dienTich, chiPhiThue, soNguoiToiDa, kieuThue);
-        this.tieuCHuanPhong = tieuCHuanPhong;
-        this.soTang = soTang;
+    public House(String serviceCode, String serviceName, Double area, Double rentalCosts, Integer maximumNumberOfPeople, String rentalType, String roomStandard, Integer numberOfFloors) {
+        super(serviceCode, serviceName, area, rentalCosts, maximumNumberOfPeople, rentalType);
+        this.roomStandard = roomStandard;
+        this.numberOfFloors = numberOfFloors;
     }
 
-    public House() {
+    public String getRoomStandard() {
+        return roomStandard;
     }
 
-    public String getTieuCHuanPhong() {
-        return tieuCHuanPhong;
+    public void setRoomStandard(String roomStandard) {
+        this.roomStandard = roomStandard;
     }
 
-    public void setTieuCHuanPhong(String tieuCHuanPhong) {
-        this.tieuCHuanPhong = tieuCHuanPhong;
+    public Integer getNumberOfFloors() {
+        return numberOfFloors;
     }
 
-    public Integer getSoTang() {
-        return soTang;
-    }
-
-    public void setSoTang(Integer soTang) {
-        this.soTang = soTang;
+    public void setNumberOfFloors(Integer numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 
     @Override
     public String toString() {
         return "House: " + super.toString() +
-                "tieuCHuanPhong: " + tieuCHuanPhong +
-                ", soTang: " + soTang + " }";
+                ",roomStandard: " + roomStandard +
+                ", numberOfFloors: " + numberOfFloors ;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        House house = (House) o;
-        return soTang == house.soTang && Objects.equals(tieuCHuanPhong, house.tieuCHuanPhong);
+    public String getInFor1() {
+        return super.getInFor1()+","+this.roomStandard+","+this.numberOfFloors;
     }
 
-    @Override
-    public int hashCode() {
-        return this.soTang;
-    }
 }

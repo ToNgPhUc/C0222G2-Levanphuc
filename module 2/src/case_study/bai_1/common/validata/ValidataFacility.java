@@ -2,54 +2,56 @@ package case_study.bai_1.common.validata;
 
 public class ValidataFacility {
 
-    private static final String MA_DICH_VU_VILLA = "^(SV)[VL]{2}-[0-9]{4}";
-    private static final String MA_DICH_VU_HOUSE = "^(SV)[HO]{2}-[0-9]{4}";
-    private static final String MA_DICH_VU_ROOM = "^(SV)[RO]{2}-[0-9]{4}";
+    private static final String SERVICE_CODE_VILLA = "^(SV)[VL]{2}-[0-9]{4}";
+    private static final String SERVICE_CODE_HOUSE = "^(SV)[HO]{2}-[0-9]{4}";
+    private static final String SERVICE_CODE_ROOM = "^(SV)[RO]{2}-[0-9]{4}";
+    private static final String SERVICE_NAME = "^[A-Z][a-z]{1,}$";
+    private static final String AREA = "^((([3-9][0-9])|([1-9][0-9]{2,}))\\.[0-9]{1,})$";
+    private static final String RENTAL_COSTS = "^[0-9]+\\.[0-9]+$";
+    private static final String PEOPLE_MAX = "^(([1-9])|([1][0-9])|[2][0])$";
+    private static final String ROOM_STANDARD = "^[A-Z][a-z]{1,}$";
+    private static final String NUMBER_OF_FLOORS_HOUSE ="^[0-9]+$";
+    private static final String RENTAL_TYPE = "^[A-Z][a-z]{1,}$";
 
-    public static boolean soSanhMaDichVuVilla(String maDichVu) {
-        return maDichVu.matches(MA_DICH_VU_VILLA);
-    }
-    public static boolean soSanhMaDichVuHouse(String maDichVu) {
-        return maDichVu.matches(MA_DICH_VU_HOUSE);
-    }
-    public static boolean soSanhMaDichVuRoom(String maDichVu) {
-        return maDichVu.matches(MA_DICH_VU_ROOM);
-    }
 
-    private static final String TEN_DICH_VU = "^[A-Z][a-z]{1,}$";
-    public static Boolean soSanhTenDichVu(String tenDichVu){
-        return tenDichVu.matches(TEN_DICH_VU);
-    }
 
-    private static final String DIEN_TICH_HO_BOI_VA_HO_BOI = "^((([3-9][0-9])|([1-9][0-9]{2,}))\\.[0-9]{1,})$";
-    public static boolean soSanhDienTichSuDungVaHoBoi(String dienTich){
-        return dienTich.matches(DIEN_TICH_HO_BOI_VA_HO_BOI);
+    public static boolean matchesServiceCodeVilla(String serviceCodeVilla) {
+        return serviceCodeVilla.matches(SERVICE_CODE_VILLA);
     }
-
-    private static final String CHI_PHI_THUE = "^[0-9]+\\.[0-9]+$"; //
-    public static boolean soSanhChiPhiThue(String chiPhiThue){
-        return chiPhiThue.matches(CHI_PHI_THUE);
+    public static boolean matchesServiceCodeHouse(String ServiceCodeHouse) {
+        return ServiceCodeHouse.matches(SERVICE_CODE_HOUSE);
     }
-    private static final String SO_NGUOI_TOI_DA= "^(([1-9])|([1][0-9])|[2][0])$";
-//    private static final String SO_NGUOI_TOI_DA= "^((([1-9])|([1][0-9])|([2][0-9]))\\.[0-9]|([3][0])\\.[0])$";
-    //các số nhỏ hơn 30.0
-
-    public static boolean soSanhsoNguoiToiDa(String soNguoiToiDa){
-        return soNguoiToiDa.matches(SO_NGUOI_TOI_DA);
-    }
-    private static final String SO_TANG="^[0-9]+$";
-    public static boolean soSanhSoTang(String soTang){
-        return soTang.matches(SO_TANG);
+    public static boolean matchesServiceCodeRoom(String serviceCodeRoom) {
+        return serviceCodeRoom.matches(SERVICE_CODE_ROOM);
     }
 
-    private static final String TIEU_CHUAN_PHONG = "^[A-Z][a-z]{1,}$";
-    public static boolean soSanhTieuChuanPhong(String tieuChuanPhong){
-        return tieuChuanPhong.matches(TIEU_CHUAN_PHONG);
+    public static Boolean matchesServiceName(String serviceName){
+        return serviceName.matches(SERVICE_NAME);
     }
 
-    private static final String KIEU_THUE = "^[A-Z][a-z]{1,}$";
-    public static boolean soSanhKieuThue(String kieuThue){
-        return kieuThue.matches(KIEU_THUE);
+    public static boolean matchesArea(String area){
+        return area.matches(AREA);
+    }
+
+    public static boolean matchesRentalCosts(String rentalCosts){
+        return rentalCosts.matches(RENTAL_COSTS);
+    }
+
+    public static boolean matchesPeopleMax(String peopleMax){
+        return peopleMax.matches(PEOPLE_MAX);
+    }
+
+    public static boolean matchesNumberOfFloors(String numberOfFloors ){
+        return numberOfFloors .matches(NUMBER_OF_FLOORS_HOUSE);
+    }
+
+
+    public static boolean matchesRoomStandard(String roomStandard){
+        return roomStandard.matches(ROOM_STANDARD);
+    }
+
+    public static boolean matchesRentalType(String rentalType){
+        return rentalType.matches(RENTAL_TYPE);
     }
 
 

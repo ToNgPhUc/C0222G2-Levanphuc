@@ -1,118 +1,145 @@
 package case_study.bai_1.service.iplm;
 
+import case_study.bai_1.common.check_try_catch.CheckTryCatch;
+import case_study.bai_1.common.read_writer.ReadWriterToFileCustomer;
 import case_study.bai_1.model.Customer;
+import case_study.bai_1.model.IdComparator;
+import case_study.bai_1.model.NameComparator;
 import case_study.bai_1.service.ICustomerService;
-import case_study.bai_1.service.InterfaceService;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class CustomerServiceIplm implements ICustomerService {
+    private static ReadWriterToFileCustomer readWriterToFileCustomer = new ReadWriterToFileCustomer();
     private static Scanner scanner = new Scanner(System.in);
-    private static List<Customer> customerList = new LinkedList<>();
-
-    static {
-        customerList.add(new Customer("Phuc", "14/2/1995", "nam", 194539633, 1234567890, "phuc@gmail.com", "1", "vip", "Quang Binh"));
-    }
+    public static List<Customer> customerList = new LinkedList<>();
 
     @Override
     public void display() {
         System.out.println("-----DANH SÁCH KHÁCH HÀNG-----");
+
+        customerList = readWriterToFileCustomer.readToFileCustomer();
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
+        System.out.println("chon sap xeeps");
+        boolean flag = true;
+        while (flag) {
+            System.out.println(" 1 sap xep theo ten\n" +
+                    "2.sapws xeeps theo id");
+            System.out.println(" nhap lua chon");
+            int chon = CheckTryCatch.getChoiceInteger();
+            switch (chon) {
+                case 1:
+                    Collections.sort(customerList, new NameComparator());
+                    System.out.println(" sau khi sap xep theo ten");
+
+                    for (Customer customer : customerList) {
+                        System.out.println(customer);
+                    }
+                    break;
+                case 2:
+//                    Collections.sort(customerList);
+                    Collections.sort(customerList, new IdComparator());
+                    System.out.println(" sau khi sap xep id");
+
+                    for (Customer customer : customerList) {
+                        System.out.println(customer.getInFor());
+                    }
+                    break;
+                case 3:flag= false;
+                break;
+                default:
+                    System.out.println("nhaapj ngu nhaapj laij");
+                    break;
+            }
+        }
+
+
+
     }
 
     @Override
     public void add() {
-        boolean flag = true;
-        while (flag){
-            try {
-                System.out.println("-----CHƯƠNG TRÌNH ADD KHÁCH HÀNG-------");
-                System.out.println("xin mời thêm mới họ tên");
-                String hoTen = scanner.nextLine();
-                System.out.println("xin mời thêm mới ngày sinh");
-                String ngaySinh = scanner.nextLine();
-                System.out.println("xin mời thêm mới giới tính");
-                String gioiTinh = scanner.nextLine();
-                System.out.println("xin mời thêm mới chứng minh nhân dân");
-                Integer soChungMinhNhanDan = Integer.parseInt(scanner.nextLine());
-                System.out.println("xin mời thêm mới số điện thoại");
-                Integer soDienThoai = Integer.parseInt(scanner.nextLine());
-                System.out.println("xin mời thêm mới email");
-                String email = scanner.nextLine();
-                System.out.println("xin mời thêm mới mã khách hàng");
-                String maKhachHang = scanner.nextLine();
-                System.out.println("xin mời thêm mới loại khách");
-                String loaiKhach = scanner.nextLine();
-                System.out.println("xin mời thêm mới địa chỉ");
-                String diaChi = scanner.nextLine();
-                Customer customer = new Customer(hoTen, ngaySinh, gioiTinh, soChungMinhNhanDan, soDienThoai, email, maKhachHang, loaiKhach, diaChi);
-                customerList.add(customer);
+        customerList = readWriterToFileCustomer.readToFileCustomer();
 
-                flag= false;
-            }catch (NumberFormatException e){
-                System.err.println(e.getMessage());
-                System.out.println("xin nhập lại từ đầu");
+        System.out.println("-----ADD NEW CUSTOMER-------");
 
-                flag= true;
-            }
-        }
+        System.out.println(" xin mời thêm mới họ tên ");
+        String name = scanner.nextLine();
+        System.out.println(" xin mời thêm mới ngày sinh ");
+        String dateOfBirth = scanner.nextLine();
+        System.out.println(" xin mời thêm mới giới tính ");
+        String gender = scanner.nextLine();
+
+        System.out.println("xin mời thêm mới chứng minh nhân dân");
+        Integer identityCardNumber = CheckTryCatch.getChoiceInteger();
 
 
+        System.out.println("xin mời thêm mới số điện thoại");
+        Integer phoneNumber = CheckTryCatch.getChoiceInteger();
+
+        System.out.println("xin mời thêm mới email");
+        String email = scanner.nextLine();
+        System.out.println("xin mời thêm mới mã khách hàng");
+        String customerCode = scanner.nextLine();
+        System.out.println("xin mời thêm mới loại khách");
+        String typeOfGuest = scanner.nextLine();
+        System.out.println("xin mời thêm mới địa chỉ");
+        String address = scanner.nextLine();
+        Customer customer = new Customer(name, dateOfBirth, gender, identityCardNumber, phoneNumber, email,
+                customerCode, typeOfGuest, address);
+        customerList.add(customer);
+        readWriterToFileCustomer.writerToFileCustomer(customerList);
     }
 
     @Override
     public void edit() {
-        boolean ngoaiLe = true;
-        while (ngoaiLe){
-            try {
-                System.out.println("----CHƯƠNG TRÌNH EDIT KHÁCH HÀNG----");
-                System.out.println("nhập mã khách hàng để kiểm tra");
-                String maKhachHang= scanner.nextLine();
-                boolean flag = false;
-                for (int i = 0; i < customerList.size(); i++) {
-                    if (maKhachHang.equals( customerList.get(i).getMaKhachHang())){
-                        flag= true;
-                        System.out.println("xin mời sửa lại họ tên");
-                        customerList.get(i).setHoTen(scanner.nextLine());
+        customerList = readWriterToFileCustomer.readToFileCustomer();
+        System.out.println("---- EDIT CUSTOMER----");
+        System.out.println("nhập mã khách hàng để kiểm tra");
+        String customerCode = scanner.nextLine();
+        boolean flag = false;
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerCode.equals(customerList.get(i).getCustomerCode())) {
+                flag = true;
 
-                        System.out.println("xin mời sửa lại ngày sinh");
-                        customerList.get(i).setNgaySinh(scanner.nextLine());
+                System.out.println("xin mời sửa lại họ tên");
+                customerList.get(i).setName(scanner.nextLine());
 
-                        System.out.println("xin mời sửa lại giới tính");
-                        customerList.get(i).setGioiTinh(scanner.nextLine());
+                System.out.println("xin mời sửa lại ngày sinh");
+                customerList.get(i).setDateOfBirth(scanner.nextLine());
 
-                        System.out.println("xin mời sửa lại chứng minh nhân dân");
-                        customerList.get(i).setSoChungMinhNhanDan(Integer.parseInt(scanner.nextLine()));
+                System.out.println("xin mời sửa lại giới tính");
+                customerList.get(i).setGender(scanner.nextLine());
 
-                        System.out.println("xin mời sửa lại số điện thoại");
-                        customerList.get(i).setSoDienThoai(Integer.parseInt(scanner.nextLine()));
+                System.out.println("xin mời sửa lại chứng minh nhân dân");
+                Integer IdentityCardNumber = CheckTryCatch.getChoiceInteger();
+                customerList.get(i).setIdentityCardNumber(IdentityCardNumber);
 
-                        System.out.println("xin mời sửa lại email");
-                        customerList.get(i).setEmail(scanner.nextLine());
 
-                        System.out.println("xin mời sửa lại mã khách hàng");
-                        customerList.get(i).setMaKhachHang(scanner.nextLine());
+                System.out.println("xin mời sửa lại số điện thoại");
+                Integer phoneNumber = CheckTryCatch.getChoiceInteger();
+                customerList.get(i).setPhoneNumber(phoneNumber);
 
-                        System.out.println("xin mời sửa lại loại khách");
-                        customerList.get(i).setLoaiKhach(scanner.nextLine());
+                System.out.println("xin mời sửa lại email");
+                customerList.get(i).setEmail(scanner.nextLine());
 
-                        System.out.println("xin mời sửa lại địa chỉ");
-                        customerList.get(i).setDiaChi(scanner.nextLine());
-                    }
-                }
-                if (flag== false){
-                    System.out.println("không có mã khách hang "+maKhachHang+" ở trong danh sách");
-                }
-                ngoaiLe= false;
-            }catch (NumberFormatException e){
-                System.err.println(e.getMessage());
-                System.out.println("xin nhập lại từ đầu");
-                ngoaiLe= true;
+                System.out.println("xin mời sửa lại mã khách hàng");
+                customerList.get(i).setCustomerCode(scanner.nextLine());
+
+                System.out.println("xin mời sửa lại loại khách");
+                customerList.get(i).setTypeOfGuest(scanner.nextLine());
+
+                System.out.println("xin mời sửa lại địa chỉ");
+                customerList.get(i).setAddress(scanner.nextLine());
+
+                readWriterToFileCustomer.writerToFileCustomer(customerList);
+
             }
-
+        }
+        if (flag) {
+            System.out.println("không có mã khách hàng " + customerCode + " ở trong danh sách");
         }
 
     }
