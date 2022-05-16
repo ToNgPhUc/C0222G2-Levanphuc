@@ -1,4 +1,5 @@
-create database furama_resort;
+drop database if exists furama_resort;
+create database if not exists furama_resort;
 
 use furama_resort;
 
