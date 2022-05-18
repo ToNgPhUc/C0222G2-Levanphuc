@@ -31,6 +31,7 @@ public class AddElementToArray {
             System.out.print(daySoMoi[i]+" ,");
         }
 
+
   }
 }
 

@@ -29,5 +29,6 @@ public class MergeArray {
         for (int i = 0; i < arr3.length; i++) {
             System.out.print(arr3[i]+",");
         }
+
     }
 }
