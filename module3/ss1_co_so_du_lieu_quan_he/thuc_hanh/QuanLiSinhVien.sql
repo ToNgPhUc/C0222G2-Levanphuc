@@ -22,6 +22,7 @@ sub_name varchar (30) not null ,
 credit tinyint not null default 1 check (credit >=1) ,
 status_1 bit default 1
 );
+
 create table mark(
 mark_id    int not null auto_increment primary key,
 sub_id     int not null,
@@ -30,5 +31,5 @@ mark       float  default 0 check (mark between 0 and 100),
 exam_times tinyint default 1,
 unique (sub_id,student_id),
 foreign key (sub_id) references subject_1(sub_id),
-foreign key (student_id)references student(student_id)
+foreign key (student_id)references Student(student_id)
 );
