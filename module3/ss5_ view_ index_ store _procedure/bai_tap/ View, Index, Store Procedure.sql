@@ -1,10 +1,10 @@
 create database demo;
 use demo;
 create table Products(
-id int primary key,
+id int auto_increment primary key,
 product_Code int ,
 product_Name varchar (255),
-product_Price double, -- gia sp
+product_Price int, -- gia sp
 product_Amount int,   -- sluong sp
 product_Description varchar (255),-- Mô tả Sản phẩm
 product_Status bit(1) default 0);-- trang thai sp
@@ -17,7 +17,7 @@ insert into Products (id,product_Code, product_Name, product_Price, product_Amou
 -- b3 Tạo Unique Index trên bảng Products (sử dụng cột productCode để tạo chỉ mục)
 explain select * from products;
 create unique index unique_index on products(product_code);
-create index composite_index on products (products_name,product_prince);  -- composite_index chi so tong hop
+create index composite_index on products(product_name,product_price);  -- composite_index chi so tong hop
 explain select * from products;
 
 -- b4 Bước 4:
@@ -56,4 +56,19 @@ begin
 end //
 delimiter ;
 call procedure_products();
+
+
+delimiter //
+create procedure add_new_products( `name` varchar(255), price int,inout amount int,inout `description` varchar(255))
+begin 
+	insert into products (product_name,product_Price ,product_Amount,product_Description) values(`name`, price,amount,`description`);
+end //
+delimiter ;
+
+set @`name` = 'xe lua';
+set @price = 20;
+set @amount = 1;
+set @`description` = 'mau tim';
+call add_new_products(@`name`,@price,@amount ,@`description`);
+
 
