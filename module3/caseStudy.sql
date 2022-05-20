@@ -4,22 +4,27 @@ create database furama_resort;
 use furama_resort;
 
 create table vi_tri(
-	ma_vi_tri int,
+	ma_vi_tri int primary key,
     ten_vi_tri varchar(45),
-    primary key(ma_vi_tri)
+    `status` bit default 0
+    
 );
 
 
 create table trinh_do(
 	ma_trinh_do int,
     ten_trinh_do varchar(45),
+	`status` bit default 0,
     primary key(ma_trinh_do)
+ 
 );
 
 create table bo_phan(
 	ma_bo_phan int,
     ten_bo_phan varchar(45),
+     `status` bit default 0,
     primary key(ma_bo_phan)
+      
 );
 
 create table nhan_vien(
@@ -34,16 +39,20 @@ create table nhan_vien(
     ma_vi_tri int,
     ma_trinh_do int,
     ma_bo_phan int,
+    `status` bit default 0,
     foreign key(ma_vi_tri) references vi_tri(ma_vi_tri),
     foreign key(ma_trinh_do) references trinh_do(ma_trinh_do),
     foreign key(ma_bo_phan) references bo_phan(ma_bo_phan),
-    primary key(ma_nhan_vien)
+    primary key(ma_nhan_vien) 
+    
 );
 
 create table loai_khach(
 	ma_loai_khach int,
     ten_loai_khach varchar(45),
+       `status` bit default 0,
     primary key(ma_loai_khach)
+    
 );
 
 create table khach_hang(
@@ -57,19 +66,24 @@ create table khach_hang(
     so_dien_thoai varchar(45),
     email varchar(45),
     dia_chi varchar(45),
+      `status` bit default 0,
     primary key(ma_khach_hang)
 );
 
 create table loai_dich_vu(
 	ma_loai_dich_vu int,
     ten_loai_dich_vu varchar(45),
+     `status` bit default 0,
     primary key(ma_loai_dich_vu)
+      
 );
 
 create table kieu_thue(
 	ma_kieu_thue int,
     ten_kieu_thue varchar(45),
+      `status` bit default 0,
     primary key(ma_kieu_thue)
+     
 );
 
 create table dich_vu(
@@ -80,6 +94,7 @@ create table dich_vu(
     so_nguoi_toi_da int,
     ma_kieu_thue int,
     ma_loai_dich_vu int,
+    `status` bit default 0,
     foreign key(ma_kieu_thue) references kieu_thue(ma_kieu_thue),
     foreign key(ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu),
     tieu_chuan_phong varchar(45),
@@ -87,6 +102,7 @@ create table dich_vu(
     dien_tich_ho_boi double,
     so_tang int,
     primary key(ma_dich_vu)
+       
 );
 
 create table hop_dong(
@@ -97,10 +113,12 @@ create table hop_dong(
     ma_nhan_vien int,
     ma_khach_hang int,
     ma_dich_vu int,
+    `status` bit default 0,
     foreign key(ma_nhan_vien) references nhan_vien(ma_nhan_vien),
     foreign key(ma_khach_hang) references khach_hang(ma_khach_hang),
     foreign key(ma_dich_vu) references dich_vu(ma_dich_vu),
     primary key(ma_hop_dong)
+       
 );
 
 
@@ -110,7 +128,8 @@ create table dich_vu_di_kem(
     gia double,
     don_vi varchar(10),
     trang_thai varchar(45),
-    primary key(ma_dich_vu_di_kem)
+    primary key(ma_dich_vu_di_kem),
+       `status` bit default 0
 );
 
 create table hop_dong_chi_tiet(
@@ -120,11 +139,12 @@ create table hop_dong_chi_tiet(
     foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
     foreign key(ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem),
     so_luong int,
-    primary key(ma_hop_dong_chi_tiet)
+    primary key(ma_hop_dong_chi_tiet),
+       `status` bit default 0
 );
 insert into vi_tri(ma_vi_tri,ten_vi_tri) values (1,'quan Lý'),(2,'nhân viên');
 insert into trinh_do (ma_trinh_do,ten_trinh_do) values (1,'trung cấp'),(2,'cao đẳng'),(3, 'đại học'),(4, ' sau đại học');
-insert into bo_phan(ma_bo_phan,ten_bo_phan) values (1,'Sale-Marketing'),(2,'Hành chính'),(3,'phục vụ'),(4, 'Quan Lý');
+insert into bo_phan(ma_bo_phan,ten_bo_phan) values (1,'Sale-Marketing'),(2,'Hành chính'),(3,'phục vụ'),(4,'Quan Lý');
 insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan) values 
  (1,'Nguyễn Văn An','19701107',456231786,10000000,0901234121,'annguyen@gmail.com','295 nguyễn tất thành ,đà dẵng',1,3,1),
 (2,'Lê văn Bình','19970409',654231234,7000000,0934212314,'binhlv@gmail.com','22 yên bái Đà nẵng',1,2,2),
@@ -327,11 +347,11 @@ where year(hop_dong.ngay_lam_hop_dong)= 2020 and
 -- tack 13	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng.
  -- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
  
- select   dich_vu_di_kem.ten_dich_vu_di_kem,dich_vu_di_kem.ma_dich_vu_di_kem,
+ select dich_vu_di_kem.ten_dich_vu_di_kem,dich_vu_di_kem.ma_dich_vu_di_kem,
  sum(hop_dong_chi_tiet.so_luong) as so_lan_su_dung_nhieu_nhat from hop_dong_chi_tiet
 join dich_vu_di_kem on hop_dong_chi_tiet.ma_dich_vu_di_kem= dich_vu_di_kem.ma_dich_vu_di_kem
  group by dich_vu_di_kem.ma_dich_vu_di_kem
-having so_lan_su_dung_nhieu_nhat = (select max(hop_dong_chi_tiet.so_luong) from hop_dong_chi_tiet)
+having so_lan_su_dung_nhieu_nhat = (select max(hop_dong_chi_tiet.so_luong) from hop_dong_chi_tiet);
  
 
 
@@ -340,12 +360,80 @@ having so_lan_su_dung_nhieu_nhat = (select max(hop_dong_chi_tiet.so_luong) from 
  -- (được tính dựa trên việc count các ma_dich_vu_di_kem).
 
 
+
+select hop_dong.ma_hop_dong, loai_dich_vu.ten_loai_dich_vu, dich_vu_di_kem.ten_dich_vu_di_kem,
+count(dich_vu_di_kem.ma_dich_vu_di_kem) as so_lan_su_dung
+from dich_vu_di_kem
+join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+join loai_dich_vu on dich_vu.ma_loai_dich_vu= loai_dich_vu.ma_loai_dich_vu
+group by dich_vu_di_kem.ten_dich_vu_di_kem
+having so_lan_su_dung=1
+order by ma_hop_dong;
+ 
+ 
+ 
+          -- tack 15.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien, ho_ten, ten_trinh_do, ten_bo_phan,
+          -- so_dien_thoai, dia_chi mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021.
+ 
+ select nhan_vien.ma_nhan_vien, nhan_vien.ho_va_ten, trinh_do.ten_trinh_do, bo_phan.ten_bo_phan,
+        nhan_vien.so_dien_thoai, nhan_vien.dia_chi
+ from nhan_vien
+ join trinh_do on nhan_vien.ma_trinh_do = trinh_do.ma_trinh_do
+ join bo_phan on nhan_vien.ma_bo_phan = bo_phan.ma_bo_phan
+ join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
+ where hop_dong.ngay_lam_hop_dong between '2019-12-31' and '2021-12-31'
+ group by nhan_vien.ma_nhan_vien
+having count(hop_dong.ma_hop_dong)<=3;
+
+           -- tack 16.	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021.
+set sql_safe_updates= 0;
+update nhan_vien 
+set `status`=1
+where nhan_vien.ma_nhan_vien 
+not in  (select hop_dong.ma_nhan_vien
+from hop_dong
+where (hop_dong.ngay_lam_hop_dong between '2019-01-01' and '2021-12-31')
+group by nhan_vien.ma_nhan_vien);
+set sql_safe_updates= 1;
+
+
+ -- tack  17.	Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum lên Diamond,
+--  chỉ cập nhật những khách hàng đã từng đặt phòng với Tổng Tiền thanh toán 
+--  trong năm 2021 là lớn hơn 10.000.000 VNĐ.
+
+select khach_hang.ma_khach_hang, khach_hang.ho_ten, loai_khach.ma_loai_khach from khach_hang
+join loai_khach on khach_hang.ma_loai_khach= loai_khach.ma_loai_khach
+join hop_dong on khach_hang.ma_khach_hang= hop_dong.ma_khach_hang
+join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+join hop_dong_chi_tiet on hop_dong.ma_hop_dong= hop_dong_chi_tiet.ma_hop_dong
+join dich_vu_di_kem on hop_dong_chi_tiet.ma_dich_vu_di_kem= dich_vu_di_kem.ma_dich_vu_di_kem
+where year(hop_dong.ngay_lam_hop_dong) = 2021 and loai_khach.ten_loai_khach ="Platinium"
+group by  khach_hang.ma_khach_hang, khach_hang.ho_ten, loai_khach.ma_loai_khach
+having  sum(dich_vu.chi_phi_thue + (hop_dong_chi_tiet.so_luong*dich_vu_di_kem.gia)) > 10000000;
+
+             -- tack 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
+
+set sql_safe_updates= 0;
+update khach_hang 
+set `status`=1
+where khach_hang.ma_khach_hang in ( select hop_dong.ma_khach_hang from hop_dong
+where year(hop_dong.ngay_lam_hop_dong)<2021);
+set sql_safe_updates= 1;
+
+ 
+          -- tack19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
  
  
  
  
  
- 
- 
- 
- 
+ set sql_safe_updates= 0;
+update dich_vu_di_kem 
+set gia = gia*2
+where  dich_vu_di_kem.ma_dich_vu_di_kem in (select hop_dong_chi_tiet.ma_dich_vu_di_kem from hop_dong_chi_tiet
+join hop_dong on hop_dong_chi_tiet.ma_hop_dong= hop_dong.ma_hop_dong
+where year(hop_dong.ngay_lam_hop_dong) = 2020
+having sum(dich_vu_di_kem.ma_dich_vu_di_kem)>10 );
+set sql_safe_updates= 1;
