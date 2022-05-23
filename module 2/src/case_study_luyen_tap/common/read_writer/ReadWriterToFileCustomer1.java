@@ -1,6 +1,5 @@
 package case_study_luyen_tap.common.read_writer;
 
-import case_study.bai_1.model.Customer;
 import case_study_luyen_tap.model.Customer1;
 
 import java.io.*;

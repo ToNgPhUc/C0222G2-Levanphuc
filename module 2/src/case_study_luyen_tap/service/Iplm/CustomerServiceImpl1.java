@@ -1,6 +1,6 @@
 package case_study_luyen_tap.service.Iplm;
 
-import case_study.bai_1.common.check_try_catch.CheckTryCatch;
+import case_study.common.check_try_catch.CheckTryCatch;
 import case_study_luyen_tap.common.read_writer.ReadWriterToFileCustomer1;
 import case_study_luyen_tap.model.Customer1;
 import case_study_luyen_tap.service.CustomerService1;

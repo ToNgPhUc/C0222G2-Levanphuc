@@ -1,6 +1,6 @@
 package case_study_luyen_tap.controller;
 
-import case_study.bai_1.common.check_try_catch.CheckTryCatch;
+import case_study.common.check_try_catch.CheckTryCatch;
 import case_study_luyen_tap.service.Iplm.CustomerServiceImpl1;
 
 import java.util.Scanner;

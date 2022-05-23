@@ -239,7 +239,7 @@ order by so_lan_dat_phong;
  --                     (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
  SET SQL_MODE = '';
  select khach_hang.ma_khach_hang, khach_hang.ho_ten, loai_khach.ten_loai_khach, dich_vu.ten_dich_vu, hop_dong.ma_hop_dong,
- hop_dong.ngay_lam_hop_dong, hop_dong.ngay_ket_thuc,   (dich_vu.chi_phi_thue+ (hop_dong_chi_tiet.so_luong*dich_vu_di_kem.gia)) as tong_tien
+ hop_dong.ngay_lam_hop_dong, hop_dong.ngay_ket_thuc,    sum(ifnull (dich_vu.chi_phi_thue,0)+ ifnull (hop_dong_chi_tiet.so_luong*dich_vu_di_kem.gia, 0)) as tong_tien
  from khach_hang
  left join loai_khach on khach_hang.ma_loai_khach= loai_khach.ma_loai_khach
  left join hop_dong on khach_hang.ma_khach_hang= hop_dong.ma_khach_hang
@@ -392,8 +392,7 @@ set sql_safe_updates= 0;
 update nhan_vien 
 set `status`=1
 where nhan_vien.ma_nhan_vien 
-not in  (select hop_dong.ma_nhan_vien
-from hop_dong
+not in  (select hop_dong.ma_nhan_vien from hop_dong 
 where (hop_dong.ngay_lam_hop_dong between '2019-01-01' and '2021-12-31')
 group by nhan_vien.ma_nhan_vien);
 set sql_safe_updates= 1;
@@ -426,8 +425,11 @@ set sql_safe_updates= 1;
           -- tack19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
  
  
- 
- 
+--  select hop_dong_chi_tiet.ma_dich_vu_di_kem from dich_vu_di_kem
+--  join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem= hop_dong_chi_tiet.ma_dich_vu_di_kem
+-- join hop_dong on hop_dong_chi_tiet.ma_hop_dong= hop_dong.ma_hop_dong
+-- where year(hop_dong.ngay_lam_hop_dong) = 2020
+-- having sum(dich_vu_di_kem.ma_dich_vu_di_kem)>10 ;
  
  set sql_safe_updates= 0;
 update dich_vu_di_kem 
@@ -437,3 +439,13 @@ join hop_dong on hop_dong_chi_tiet.ma_hop_dong= hop_dong.ma_hop_dong
 where year(hop_dong.ngay_lam_hop_dong) = 2020
 having sum(dich_vu_di_kem.ma_dich_vu_di_kem)>10 );
 set sql_safe_updates= 1;
+
+         --    task 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống, thông tin hiển thị bao gồm 
+          -- id (ma_nhan_vien, ma_khach_hang), ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi.
+
+select nhan_vien.ma_nhan_vien as 'id', nhan_vien.ho_va_ten, 'nhan_vien'as 'role',nhan_vien.email,nhan_vien.so_dien_thoai,nhan_vien.ngay_sinh,nhan_vien.dia_chi from nhan_vien
+union
+select khach_hang.ma_khach_hang as 'id', khach_hang.ho_ten,'khach_hang'as 'role',khach_hang.email,khach_hang.so_dien_thoai,khach_hang.ngay_sinh,khach_hang.dia_chi from khach_hang;
+
+
+

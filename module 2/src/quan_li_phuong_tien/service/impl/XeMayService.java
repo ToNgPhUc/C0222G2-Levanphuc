@@ -1,7 +1,7 @@
 package quan_li_phuong_tien.service.impl;
 
 
-import case_study.bai_1.common.check_try_catch.CheckTryCatch;
+import case_study.common.check_try_catch.CheckTryCatch;
 import quan_li_phuong_tien.common.check_try_catch.ThrowException;
 import quan_li_phuong_tien.common.read_writer.ReadWriterToFileXeMay;
 import quan_li_phuong_tien.common.read_writer.ReadWriterToFilephuongTien;
