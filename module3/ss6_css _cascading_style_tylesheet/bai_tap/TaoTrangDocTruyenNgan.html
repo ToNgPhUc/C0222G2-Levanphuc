@@ -6,6 +6,32 @@
 
 
     <style type="text/css">
+
+html{
+    background-color: black;
+}
+        header {
+            position: static;
+        }
+
+        #button {
+            position: absolute;
+            right: 225px;
+        }
+
+        #button1 {
+            position: absolute;
+            right: 100px;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+
+        .directional {
+            background-color: black;
+        }
+
         nav {
             background-color: black;
         }
@@ -22,76 +48,99 @@
             background-color: #333;
         }
 
-        h3 {
-            display: inline-block;
+        .input {
+            background-color: bisque;
+            font-size: 20px;
         }
 
-        .content {
-            border: 1px;
-        }
         button {
             background-color: cornflowerblue;
         }
 
-       button {
-           display: inline-block;
-
-           font-size: 20px;
-           color: white;
-           text-decoration: none;
-       }
-       .content {
-           width: 300px;
-           height: 300px;
+        button {
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            text-align: right;
         }
 
+        .content {
+            font-size: 20px;
+            background-color: black;
+            position: absolute;
+            left: 230px;
+        }
 
+        .img {
+            width: 500px;
+            height: 500px;
+        }
+        .sum{
+            background-color: black;
+            width: 100%;
 
+        }
     </style>
 
 </head>
 <body>
+<div class="sum">
 <header class="header">
     <img src="http://st.truyenqqpro.com/template/frontend/images/logo-icon.png">
-    <h3>TRUYỆN <b style="color: rosybrown">QQ</b></h3>
-    <button>
-bạn muốn tìm truyện gì
-    </button>
-    <button > đăng kí </button>
-    <button>đăng nhập</button>
+    <h3><b style="color: aliceblue">TRUYỆN</b> <b style="color: rosybrown">QQ</b></h3>
+    <input class="input" type="search" placeholder="nhập tên truyện" onclick="timKiem">
+    <input class="input" type="submit" value="tìm kiếm">
+    <button id="button"> đăng kí</button>
+    <button id="button1">đăng nhập</button>
 </header>
 <div class="directional">
     <nav>
-        <a>trang chủ</a> |
-        <a>thể loại</a> |
+        <a href="http://truyenqqpro.com/">trang chủ</a> |
+        <a href="http://truyenqqpro.com/#:~:text=Th%E1%BB%83-,Lo%E1%BA%A1i,-Action">thể loại</a> |
         <a>xếp hạng</a> |
         <a>con gái</a> |
-        <a>con trai</a>|
-        <a>tìm truyện</a>|
-        <a herf="https://www.facebook.com/groups/438911163131883">lịch sử </a>|
-        <a> theo dõi</a>|
-        <a>tải app</a>|
-        <a> thảo luận</a>|
+        <a href="http://truyenqqpro.com/truyen-con-trai.html">con trai</a>|
+        <a href="http://truyenqqpro.com/tim-kiem-nang-cao.html">tìm truyện</a>|
+        <a href="http://truyenqqpro.com/lich-su.html">lịch sử </a>|
+        <a href="http://truyenqqpro.com/truyen-dang-theo-doi.html"> theo dõi</a>|
+        <a href="javascript:popup('app')">tải app</a>|
+        <a href="https://www.facebook.com/groups/438911163131883"> thảo luận</a>|
     </nav>
 </div>
-<div class="content ">
-    <a href="http://truyenqqpro.com/truyen-tranh/boku-no-hero-academia-380-chap-352.html"
-    ><img src="http://i.truyenvua.com/slider/290x191/slider_1560573084.jpg?r=r8645456"></a>
+<div class="content">
+    <table>
+        <tr>
+            <td>
+                <a href="http://truyenqqpro.com/truyen-tranh/boku-no-hero-academia-380-chap-352.html">
+                    <img class="img" src="http://i.truyenvua.com/slider/290x191/slider_1560573084.jpg?r=r8645456"> <br>chap
+                    130</a>
+            </td>
+            <td>
+                <a class="right" href="http://truyenqqpro.com/truyen-tranh/black-clover-499-chap-331.html">
+                    <img class="img" src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456"
+                         class="right"><br>chap 190</a>
+            </td>
 
+        </tr>
+        <tr>
+            <td>
+                <a href="http://truyenqqpro.com/truyen-tranh/kingdom-vuong-gia-thien-ha-245-chap-719.html">
+                    <img class="img" src="http://i.truyenvua.com/slider/290x191/slider_1567830171.jpg?r=r8645456"> <br>chap
+                    300</a>
 
-    <a herf="http://truyenqqpro.com/truyen-tranh/black-clover-499-chap-331.html">
-        <img src="http://i.truyenvua.com/slider/290x191/slider_1560493497.jpg?r=r8645456"></a>
+            </td>
+            <td>
+                <a href="http://truyenqqpro.com/truyen-tranh/fairy-tail-100-year-quest-5212-chap-107.html">
+                    <img class="img" src="http://i.truyenvua.com/slider/290x191/slider_1561609693.jpg?r=r8645456"><br>chap
+                    250</a>
 
-    <a herf=http://truyenqqpro.com/truyen-tranh/black-clover-499-chap-331.html">
-        <img src="http://i.truyenvua.com/slider/583x386/slider_1559213484.jpg?r=r8645456"></a>
+            </td>
+        </tr>
 
-    <a herf="http://truyenqqpro.com/truyen-tranh/kingdom-vuong-gia-thien-ha-245-chap-719.html">
-        <img src="http://i.truyenvua.com/slider/290x191/slider_1567830171.jpg?r=r8645456"></a>
-
-    <a herf="http://truyenqqpro.com/truyen-tranh/fairy-tail-100-year-quest-5212-chap-107.html">
-        <img src="http://i.truyenvua.com/slider/290x191/slider_1561609693.jpg?r=r8645456">
-    </a>
+    </table>
 </div>
 
+</div>
 </body>
 </html>
