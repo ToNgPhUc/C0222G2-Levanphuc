@@ -1,41 +1,80 @@
-body{
+body {
     font-family: Arial;
-}
-img{
-    height: 30px;
-    width: 30px;
-}
-header {
-    position: static;
+    background: black;
+    padding: 0;
+    margin: 0;
 }
 
-#menu, #menu ul, #menu li{
-    padding:0;
-    margin:0;
+header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-#menu li{
-    list-style: none;
-    position: relative;
-    width:100px;
+
+.div-left{
+    width: 33.3%;
+    background: beige;
+    float: left;
+    height: 100px;
+
+}
+.div-left1{
+    width: 25%;
+    float: left;
+    background: #CDCDCD;
+}
+.div-left2{
+    width: 50%;
+    float: left;
+    background: #CDCDCD;
+    text-align: center;
+}
+.div-left3{
+    width: 10%;
+    float: left;
+    padding: 5px;
+}
+#border{
+    border: 1px solid red;
+
+}
+nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+img {
     height: 30px;
-    padding:0 20px;
-    background-color: black;
-    line-height: 30px;
-    cursor:pointer;
+    width: 30px;
+  
 }
-#menu li a{
-    text-decoration:none;
-    color: white;
+.img-center {
+    height: 200px;
+    width: 172px;
 }
-#menu li:hover{
-    background-color:blue;
+
+#left {
+    padding: 30px;
+    float: left;
 }
-#menu ul ul{
-    position: absolute;
-    top:0;
-    left:140px;
-    visibility:hidden;
+#left img{
+    border: 3px black;
 }
-#menu ul li:hover ul{
-    visibility:visible;
+#parent{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
 }
+
+
+
+
+
