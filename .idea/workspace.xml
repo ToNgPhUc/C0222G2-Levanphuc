@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="55fd42fe-9b30-46ef-b3fc-740b0eb88710" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/bai_tap/Bai1PrimeNumberDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai1PrimeNumberCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai2LoanInterest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai3UCLN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/Bai4MenuDesignForApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module 2/src/ss2_vong_lap_java/thuc_hanh/VongLapLongNhau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/ss8_bootstrap/bai_tap/TaoGalleryDonGianBootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/tomcat123/src/main/java/ServerTimeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/untitled/src/main/java/ServerTimeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/exam/exam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C0222G2-Levanphuc/module2/module3 CSS/module3 CSS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/.idea/module3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss7_thiet_ke_bo_cuc_trang_web/bai_tap/Hoat_Hinh_Truc_Tuyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss7_thiet_ke_bo_cuc_trang_web/bai_tap/HoatHinhTrucTuyen.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +62,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,6 +80,8 @@
       <workItem from="1648701054198" duration="5000" />
       <workItem from="1648701075759" duration="1000" />
       <workItem from="1648986066035" duration="18000" />
+      <workItem from="1653750599586" duration="4000" />
+      <workItem from="1653751062642" duration="3934000" />
     </task>
     <servers />
   </component>
