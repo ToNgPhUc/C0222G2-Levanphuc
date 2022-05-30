@@ -12,12 +12,12 @@
   </head>
   <body>
   <h2>Vietnamese Dictionary</h2>
-  <form action="/dictionary" method="post">
+  <form action="dictionary" method="post">
     <input type="text" name="search" placeholder="Enter your word: "/>
     <input type = "submit" id = "submit" value = "Search"/>
   </form>
-  ${"word"+search}<br>
-  ${"result"+result}<br>
-  ${"alert"+alert}
+
+  <h1>Result : ${result}</h1>
+  <h1>Result : ${alert}</h1>
   </body>
 </html>
