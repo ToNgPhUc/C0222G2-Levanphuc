@@ -5,181 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4d6383-fbe6-460a-988b-eef1c304fa03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/chuyen_doi_tien_te/src/main/java/ConverterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/simple_login/src/main/java/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/thuc_hanh1/src/main/java/ThucHanh1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/untitled/src/main/java/ServerTimeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace 2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/quan_li_khach_hang/src/main/java/service/impl/CustomerServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/repository/iplm/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/java/service/iplm/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/webapp/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_mvc/thuc_hanh/student/src/main/webapp/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/server-time-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-time/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-time/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/build/libs/tomcat-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/chuyen_doi_tien_te/src/main/webapp/ChuyenDoiTienCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/build/classes/java/main/ServerTimeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/build/libs/tomcat123-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/src/main/java/ServerTimeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat123/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/build/classes/java/main/ServerTimeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/build/libs/untitled-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/ServerTimeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_jSP_va_ jSTL/bai_tap/calculator/src/main/java/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_jSP_va_ jSTL/bai_tap/calculator/src/main/java/CalculatorServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,6 +143,7 @@
       <updated>1653874312109</updated>
       <workItem from="1653874316905" duration="472000" />
       <workItem from="1653897537577" duration="136000" />
+      <workItem from="1654007934856" duration="244000" />
     </task>
     <servers />
   </component>
@@ -318,5 +160,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
