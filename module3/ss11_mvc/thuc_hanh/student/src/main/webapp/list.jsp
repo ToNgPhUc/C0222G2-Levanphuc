@@ -12,22 +12,31 @@
     <title>Title</title>
 </head>
 <body>
-<a href="Student?action=create"> <button>create student</button></a><br>
+<a href="Student?action=create">
+    <button>create student</button>
+</a><br>
+
 <table border="1">
     <tr>
         <th>Code Student</th>
         <th> Name Student</th>
         <th> Point</th>
         <th> Gender</th>
+        <th> Update</th>
+        <th> Delete</th>
+
     </tr>
 
-    <c:forEach var="temp" items="${listStudent}">
-<tr>
-    <td>${temp.codeStudent}</td>
-    <td>${temp.nameStudent}</td>
-    <td>${temp.point}</td>
-    <td>${temp.gender}</td>
-</tr>
+    </tr>
+    <c:forEach items='${requestScope["listStudent"]}' var="temp">
+        <tr>
+            <td>${temp.getCodeStudent()}</td>
+            <td>${temp.getNameStudent()}</td>
+            <td>${temp.getPoint()}</td>
+            <td>${temp.getGender()}</td>
+            <td><a href="/Student?action=update&codeStudent=${temp.getCodeStudent()}">update</a></td>
+            <td><a href="/Student?action=delete=${temp.getCodeStudent()}">delete</a></td>
+        </tr>
     </c:forEach>
 </table>
 </body>
