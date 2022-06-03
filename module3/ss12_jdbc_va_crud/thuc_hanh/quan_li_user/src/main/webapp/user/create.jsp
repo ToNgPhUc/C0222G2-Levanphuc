@@ -13,29 +13,28 @@
 <body>
 <fieldset>
     <legend>user form</legend>
-    <table border="1">
-        <tr>
-            <td>ID</td>
-            <td> <input type="text"name="id"></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td> <input type="text"name="name"></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td> <input type="text"name="email"></td>
-        </tr>
-        <tr>
-            <td>Country</td>
-            <td> <input type="text"name="country"></td>
-        </tr>
-        <tr>
-            <td><a href="/User"></a> </td>
-            <td></td>
-        </tr>
+    <form method="post"action="/User?action=create">
+        <table>
+            <tr>
+                <td>name</td>
+                <td> <input type="text"name="name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> <input type="text"name="email"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td> <input type="text"name="country"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><a href="/User"><button type="button"> back to User List</button></a></td>
+            </tr>
 
-    </table>
+        </table>
+    </form>
+
 </fieldset>
 </body>
 </html>

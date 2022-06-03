@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface IUserRepository {
    List<User> getAll();
-//   List<User> getAll();
+
+   void save(User user);
 }

@@ -14,8 +14,10 @@ public class UserServiceIplm implements IUserService {
     public List<User> getAll() {
         return userRepository.getAll();
     }
-//    @Override
-//    public List<User> selectAllUsers() {
-//        return userRepository.getAll();
-//    }
+
+    @Override
+    public void save(User user) {
+        userRepository.save(user);
+    }
+
 }
