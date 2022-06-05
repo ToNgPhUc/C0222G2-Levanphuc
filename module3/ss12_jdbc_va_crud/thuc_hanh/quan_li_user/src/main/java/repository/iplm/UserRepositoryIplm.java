@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserRepositoryIplm implements IUserRepository {
+    private static final String UPDATE_USER = "update user set name = ?, email = ?, country = ? where id = ?;";
+    private static final String DELETE_USER="delete from user where id=?;";
     Database database = new Database();
 
     @Override
@@ -45,8 +47,49 @@ public class UserRepositoryIplm implements IUserRepository {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getCountry());
-
             preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    @Override
+    public void edit(User user) {
+        Connection connection = database.getConnectionJavaToDB();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER);
+            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(2, user.getEmail());
+            preparedStatement.setString(3, user.getCountry());
+            preparedStatement.setInt(4, user.getId());
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    @Override
+    public void deletes(int id) {
+        Connection connection= database.getConnectionJavaToDB();
+        try {
+            PreparedStatement preparedStatement= connection.prepareStatement(DELETE_USER);
+            preparedStatement.setInt(1,id);
+            preparedStatement.executeUpdate();
+
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
@@ -56,15 +99,5 @@ public class UserRepositoryIplm implements IUserRepository {
                 e.printStackTrace();
             }
         }
-
     }
-//    Database database = new Database();
-//
-//    private static final String USER_SELECT_SQL = "select * from user";
-//    private static final String USER_UPDATE_SQL = "update user set name = ?, email = ?, country = ? where id = ?;";
-//    private static final String USER_CREATE_SQL = "insert  into user(name,email,country) values(?,?,?)";
-//    private static final String USER_DELETE_SQL = "delete from user  where id = ?;";
-//    private static final String USER_SEARCH_SQL = "select*from user where country like ?";
-//    private static final String USER_SORT_SQL = "select * from user order by name;";
-
 }

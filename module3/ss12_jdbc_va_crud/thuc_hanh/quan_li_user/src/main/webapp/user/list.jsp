@@ -36,32 +36,5 @@
  </c:forEach>
 
 </table>
-
-
-
-<%--<h1> user list</h1>--%>
-<%--<a href="/User?action=create"> add new user</a>--%>
-<%--<table border="1">--%>
-<%--    <tr>--%>
-<%--        <th>ID</th>--%>
-<%--        <th>Name</th>--%>
-<%--        <th>Email</th>--%>
-<%--        <th>Country</th>--%>
-<%--        <th>Edit</th>--%>
-<%--        <th>Delete</th>--%>
-<%--    </tr>--%>
-
-<%--        <c:forEach items="${userList}" var="user">--%>
-<%--    <tr>--%>
-<%--            <td>${user.getId()}</td>--%>
-<%--            <td>${user.getName()}</td>--%>
-<%--            <td>${user.getEmail()}</td>--%>
-<%--            <td>${user.getCountry()}</td>--%>
-<%--            <td><a href="/User?action=edit&id=${user.getId()}"> edit</a></td>--%>
-<%--            <td><a href="/User?action=delete&id=${user.getId()}">delete</a></td>--%>
-<%--    </tr>--%>
-<%--        </c:forEach>--%>
-
-<%--</table>--%>
 </body>
 </html>

@@ -20,4 +20,13 @@ public class UserServiceIplm implements IUserService {
         userRepository.save(user);
     }
 
+    @Override
+    public void edit(User user) {
+        userRepository.edit(user);
+    }
+    @Override
+    public void deletes(int id) {
+        userRepository.deletes(id);
+    }
+
 }

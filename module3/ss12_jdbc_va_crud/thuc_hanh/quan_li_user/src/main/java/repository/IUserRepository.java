@@ -8,4 +8,8 @@ public interface IUserRepository {
    List<User> getAll();
 
    void save(User user);
+
+   void edit(User user);
+
+   void deletes(int id);
 }

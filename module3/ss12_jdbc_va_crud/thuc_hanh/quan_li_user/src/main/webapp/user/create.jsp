@@ -17,7 +17,7 @@
         <table>
             <tr>
                 <td>name</td>
-                <td> <input type="text"name="name"></td>
+                <td> <input type="text"name="name" ></td>
             </tr>
             <tr>
                 <td>Email</td>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/connection/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/iplm/CustomerRepositoryIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/iplm/CustomerServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/bai_tap/quan_li_san_pham/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/bai_tap/quan_li_san_pham/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/repository/iplm/UserRepositoryIplm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/repository/iplm/UserRepositoryIplm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/service/iplm/UserServiceIplm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/classes/java/main/service/iplm/UserServiceIplm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/libs/quan_li_user-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/libs/quan_li_user-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/repository/iplm/UserRepositoryIplm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/repository/iplm/UserRepositoryIplm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/service/iplm/UserServiceIplm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/java/service/iplm/UserServiceIplm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_va_crud/thuc_hanh/quan_li_user/src/main/webapp/user/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2A6K9PeDB8afdZB4JvjrgGrb3jS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : case_study_jsp-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5dc7a116-597f-4da6-8a69-67e52d502c13" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55478" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : case_study_jsp-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="" />
+      <created>1654324453332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654324453332</updated>
+      <workItem from="1654324455101" duration="76000" />
+      <workItem from="1654324977169" duration="449000" />
+      <workItem from="1654325517783" duration="35000" />
+      <workItem from="1654333802221" duration="7907000" />
+      <workItem from="1654344531837" duration="10088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
