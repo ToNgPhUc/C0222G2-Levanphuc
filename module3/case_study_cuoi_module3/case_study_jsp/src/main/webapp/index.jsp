@@ -14,69 +14,81 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .container-fluid {
-            background: white;
+
         }
-        #hear{
-            background: burlywood;
-            color: brown;
+
+        #hear {
+            height: 100px;
+            background: skyblue;
+            color: darkred;
         }
-        #nav{
+
+        #nav {
             background: burlywood;
             color: brown;
         }
 
-     #left{
-         width: 30%;
-         height: 100%;
-         border: 1px solid black;
-         float: left;
+        #left {
+            width: 30%;
+            height: 100%;
+            border: 1px solid black;
+            float: left;
+            background: url("https://thieuhoa.com.vn/wp-content/uploads/2022/03/wU2ZkMOUPAI65uRVtlQSydZfRVOvKmJrcqTHIdVj.jpg") center/cover no-repeat;
+        }
 
-     }
-     #right{
-         width: 70%;
-         height: 100%;
-         border: 1px solid black;
-         float: left;
-     }
+        #right {
+            width: 70%;
+            height: 100%;
+            border: 1px solid black;
+            float: left;
+            background: url("https://anhdep123.com/wp-content/uploads/2020/05/h%C3%ACnh-bi%E1%BB%83n-%C4%91%E1%BA%B9p.jpg");
+
+        }
+        .center{
+            border: 1px solid black;
+            background: lightsalmon;
+            text-align: center;
+        }
     </style>
 
 </head>
 <body>
 <div class="container-fluid" style="width: 100%">
     <div id="hear">
-        <h1 style="text-align: center">furama_resort</h1>
+        <h1 style="text-align: center">chào mừng đến với khu nghĩ dưỡng furama resort</h1>
     </div>
 
-        <nav id="nav" class="navbar navbar-light">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">Home</a>
-                <a href="#" class="navbar-brand">Employee</a>
-                <a href="#" class="navbar-brand">Customer</a>
-                <a href="#" class="navbar-brand">Service</a>
-                <a href="#" class="navbar-brand">Contract</a>
+    <nav id="nav" class="navbar navbar-light">
+        <div class="container-fluid">
+            <a href="http://localhost:8080/" class="navbar-brand">Home</a>
+            <a href="http://localhost:8080/Employee" class="navbar-brand">Employee</a>
+            <a href="http://localhost:8080/Customer" class="navbar-brand">Customer</a>
+            <a href="#" class="navbar-brand">Service</a>
+            <a href="#" class="navbar-brand">Contract</a>
 
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
 
-            </div>
-        </nav>
-
+        </div>
+    </nav>
 
 
     <div style="height: 600px">
         <div id="left">
-            <div> <a href="#">item one</a></div>
-            <div> <a href="#">item two</a></div>
-            <div> <a href="#">item three</a></div>
+            <div><a href="#">item one</a></div>
+            <div><a href="#">item two</a></div>
+            <div><a href="#">item three</a></div>
+        </div>
+
+        <div id="right">
 
         </div>
-        <div id="right">
-            <p>cái quần què gì cũng được</p>
-        </div>
     </div>
-    <div style="border: 1px solid black"><p>footer</p></div>
+    <div class="center">
+    <p>HotLine : 0911463781</p>
+    </div>
 </div>
 </body>
 

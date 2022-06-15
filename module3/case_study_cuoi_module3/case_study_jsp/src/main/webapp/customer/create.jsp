@@ -9,63 +9,87 @@
 <html>
 <head>
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    input{
+        width: 100%;
+        height: 50px;
+        background: palegoldenrod;
+        color: hotpink;
+
+    }
+    label{
+        color: brown;
+    }
+    select{
+        width: 100%;
+        height: 50px;
+        background: palegoldenrod;
+        color: hotpink;
+    }
+    #menu{
+        background: skyblue;
+    }
+
+</style>
 </head>
 <body>
-<fieldset>
-    <form method="post"action="/Customer?action=create">
 
-        <table>
-            <legend>ADD NEW CUSTOMER</legend>
-            <tr>
-                <td>Id</td>
-                <td><input type="text"name="customer_id"hidden></td>
-            </tr>
-            <tr>
-                <td>Type Id</td>
-                <td> <input type="text"name="customer_type_id"></td>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td><input type="text"name="customer_name"></td>
-            </tr>
-            <tr>
-                <td> Birthday</td>
-                <td> <input type="text"name="customer_birthday"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td> <input type="text"name="customer_gender"></td>
-            </tr>
-            <tr>
-                <td>Id Card</td>
-                <td><input type="text"name="customer_id_card"></td>
-            </tr>
-            <tr>
-                <td>Phone Number</td>
-                <td> <input type="text"name="customer_phone"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="text"name="customer_email"></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td><input type="text"name="customer_address"></td>
-            </tr>
-            <tr>
-                <td>status</td>
-                <td><input type="text"name="status"></td>
-            </tr>
+        <div id="menu" class="container mt-3">
+            <h2 style="text-align: center"> ADD NEW CUSTOMER</h2>
 
-            <tr>
-                <td><input type="submit"></td>
-                <td><a href="/Customer"><input type="button"value="BACK TO CUSTOMER LIST"></a></td>
-            </tr>
+            <form method="post">
+                <div class="mb-3 mt-3">
+                    <label>Type Id:</label>
+                    <select name="customer_type_id">
+                        <option value="1">Diamond</option>
+                        <option value="2">Platinium</option>
+                        <option value="3">Gold</option>
+                        <option value="4">Silver</option>
+                        <option value="5">Member</option>
+                    </select>
 
-        </table>
-    </form>
+                </div>
+                <div class="mb-3">
+                    <label>Name:</label>
+                    <input type="text"name="customer_name">
+                </div>
+                <div class="mb-3">
+                    <label>Birthday:</label>
+                    <input type="date"name="customer_birthday">
+                </div>
+                <div class="mb-3">
+                    <label>Gender:</label>
+                    <select name="customer_gender">
+                        <option value="0">nữ</option>
+                        <option value="1">nam</option>
 
-</fieldset>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label>Id Card:</label>
+                    <input type="text"name="customer_id_card">
+                </div>
+                <div class="mb-3">
+                    <label>Phone Number:</label>
+                    <input type="text"name="customer_phone">
+                </div>
+                <div class="mb-3">
+                    <label>Email:</label>
+                    <input type="text"name="customer_email">
+                </div>
+                <div class="mb-3">
+                    <label>Address:</label>
+                    <input type="text"name="customer_address">
+                </div>
 
+                <div class="mb-3">
+                    <input type="submit" value="submit">
+                    <a href="/Customer"><input type="button"value="BACK TO CUSTOMER LIST"></a>
+                </div>
+            </form>
+        </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
