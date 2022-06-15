@@ -10,18 +10,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class DictionaryController {
     @Autowired
-    IDictionnaryService iDictionnaryService;
+    private IDictionnaryService iDictionnaryService;
+
     @GetMapping(value = "/convert")
-    public String dictionary(@RequestParam String 日本語, Model model){
+    public String dictionary(@RequestParam String 日本語, Model model) {
 
-String value = iDictionnaryService.convert(日本語);
-if (value==null){
-    model.addAttribute("not","không có trong từ điển");
-}else {
-    model.addAttribute("vietnamese",value);
-    model.addAttribute("日本語",日本語);
+        String str = iDictionnaryService.convert(日本語);
+        if (str == null) {
+            model.addAttribute("daMeDeSu", "この言葉がない");
+            model.addAttribute("日本語", 日本語);
+        } else {
+            model.addAttribute("vietnamese", str);
+            model.addAttribute("日本語", 日本語);
 
-}
-        return "/日本語";
+        }
+        return "日本語";
     }
 }

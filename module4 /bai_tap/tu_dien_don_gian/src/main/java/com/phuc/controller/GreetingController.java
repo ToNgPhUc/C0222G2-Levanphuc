@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class GreetingController {
-    @GetMapping (value = "greeting")
+    @GetMapping (value = "/greeting")
     public String goGreeting(){
 
-        return "/日本語";
+        return "日本語";
     }
 }

@@ -16,7 +16,7 @@
     <fieldset>
         <legend>dictionary</legend>
         <tr>
-            <td><label>english</label></td>
+            <td><label>日本語</label></td>
             <td>
                 <input type="text"name="日本語"value="${日本語}">
             </td>
@@ -35,6 +35,7 @@
         </tr>
 
     </fieldset>
+    <h4>${daMeDeSu}</h4>
 </form>
 </body>
 </html>

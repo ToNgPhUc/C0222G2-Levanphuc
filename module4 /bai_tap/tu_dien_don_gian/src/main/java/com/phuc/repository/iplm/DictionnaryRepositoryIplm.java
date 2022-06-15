@@ -16,7 +16,6 @@ public class DictionnaryRepositoryIplm implements IDictionnaryRepository {
         dictionaryMap.put("こんばんは","chào buổi tối" );
     }
 
-
     @Override
     public String convert(String 日本語) {
         for (String str : dictionaryMap.keySet())
