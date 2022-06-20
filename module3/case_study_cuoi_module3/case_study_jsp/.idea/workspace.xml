@@ -4,159 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/case_study_jsp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/bai_tap/hien_thi_danh_sach_sanwich/untitled/src/main/resources/al.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/bai_tap/hien_thi_danh_sach_sanwich/untitled/src/main/resources/webapp/employee/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/bai_tap/hien_thi_danh_sach_sanwich/untitled/src/main/resources/webapp/employee/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/bai_tap/hien_thi_danh_sach_sanwich/untitled/src/main/resources/webapp/employee/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/modules/kiem_tra_email_hop_le.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/src/main/java/com/codegym/controller/EmailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss2_spring_controller/thuc_hanh/kiem_tra_email_hop_le/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/config/CharsetFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/controller/DictionaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/controller/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/model/Dictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/repository/IDictionnaryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/repository/iplm/DictionnaryRepositoryIplm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/service/IDictionnaryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/classes/java/main/com/phuc/service/iplm/DictionnaryServiceIplm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/libs/tu_dien_don_gian-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/config/CharsetFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/controller/DictionaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/model/Dictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/repository/IDictionnaryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/repository/iplm/DictionnaryRepositoryIplm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/service/IDictionnaryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/java/com/phuc/service/iplm/DictionnaryServiceIplm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/webapp/WEB-INF/views/日本語.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/tu_dien_don_gian/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build/classes/java/main/com/controller/Convert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build/classes/java/main/com/controller/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build/libs/ung_dung_chuyen_doi_tien_te-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/java/com/controller/Convert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/java/com/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/webapp/WEB-INF/views/convert.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /bai_tap/ung_dung_chuyen_doi_tien_te/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /module4_buil/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /module4_buil/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /module4_buil/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/build/classes/java/main/com/codegym/controller/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/build/libs/thuc_hanh-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/java/com/codegym/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4 /thuc_hanh/src/main/webapp/index.jsp" beforeDir="false" />
-    </list>
+    <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,12 +48,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -335,6 +187,7 @@
       <workItem from="1655312017530" duration="37000" />
       <workItem from="1655350463312" duration="212000" />
       <workItem from="1655389884234" duration="192000" />
+      <workItem from="1655736709920" duration="1998000" />
     </task>
     <servers />
   </component>
@@ -351,5 +204,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label>ID</label></td>
+        <td th:text="${product.idProduct}"> </td>
+    </tr>
+    <tr>
+        <td><label>NAME</label></td>
+        <td th:text="${product.nameProduct}"> </td>
+    </tr>
+    <tr>
+        <td><label>PRICE</label></td>
+        <td th:text="${product.priceProduct}"> </td>
+    </tr>
+    <tr>
+        <td><label>describe</label></td>
+        <td th:text="${product.describeProduct}"> </td>
+    </tr>
+    <tr>
+        <td><label>producer</label></td>
+        <td th:text="${product.producerProduct}"> </td>
+    </tr>
+</table>
+</body>
+</html>
+<!--private Integer idProduct;-->
+<!--private String nameProduct;-->
+<!--private Double priceProduct;-->
+<!--private String describeProduct;-->
+<!--private String producerProduct;-->

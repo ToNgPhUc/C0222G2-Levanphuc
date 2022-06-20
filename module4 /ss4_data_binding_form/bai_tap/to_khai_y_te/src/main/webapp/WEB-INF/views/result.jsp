@@ -13,37 +13,37 @@
 <body>
 <table>
     <tr>
-        <td>name: ${name}</td>
+        <td>name: ${medicalDeclaration.name}</td>
     </tr>
     <tr>
-        <td>birthday: ${birthday}</td>
+        <td>birthday: ${medicalDeclaration.birthday}</td>
     </tr>
     <tr>
-        <td>gender: ${gender}</td>
+        <td>gender: ${medicalDeclaration.gender}</td>
     </tr>
     <tr>
-        <td>nationality: ${nationality}</td>
+        <td>nationality: ${medicalDeclaration.nationality}</td>
     </tr>
     <tr>
-        <td>idCard: ${idCard}</td>
+        <td>idCard: ${medicalDeclaration.idCard}</td>
     </tr>
     <tr>
-        <td>vehicle: ${vehicle}</td>
+        <td>vehicle: ${medicalDeclaration.vehicle}</td>
     </tr>
     <tr>
-        <td>vehicleNumber: ${vehicleNumber}</td>
+        <td>vehicleNumber: ${medicalDeclaration.vehicleNumber}</td>
     </tr>
     <tr>
-        <td>seats: ${seats}</td>
+        <td>seats: ${medicalDeclaration.seats}</td>
     </tr>
     <tr>
-        <td>departureDay: ${departureDay}</td>
+        <td>departureDay: ${medicalDeclaration.departureDay}</td>
     </tr>
     <tr>
-        <td>endDate: ${endDate}</td>
+        <td>endDate: ${medicalDeclaration.endDate}</td>
     </tr>
     <tr>
-        <td>information: ${information}</td>
+        <td>information: ${medicalDeclaration.information}</td>
     </tr>
 </table>
 
