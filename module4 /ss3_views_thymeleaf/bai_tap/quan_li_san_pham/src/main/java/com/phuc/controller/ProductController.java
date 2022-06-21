@@ -32,6 +32,7 @@ public class ProductController {
       iProductService.save(product);
         return "redirect:/product";
     }
+
     @GetMapping(value = "/{idProduct}/edit")
     public String showFormEdit(@PathVariable int idProduct,  Model model ){
         model.addAttribute("product",iProductService.findById(idProduct));

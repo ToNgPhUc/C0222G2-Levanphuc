@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/music/delete}"th:object="${music}"method="post">
+    <table>
+        <tr>
+            <td><input type="hidden"th:field="*{idMusic}"></td>
+        </tr>
+        <tr>
+            <td>NAME:</td>
+            <td><input type="text"th:field="*{nameMusic}"></td>
+        </tr>
+        <tr>
+            <td>SINGER:</td>
+            <td><input type="text"th:field="*{singerMusic}"></td>
+        </tr>
+
+        <tr>
+            <td>KIND OF MUSIC:</td>
+            <td><input type="text"th:field="*{kindOfMusic}"></td>
+        </tr>
+
+        <tr>
+            <td>FILE:</td>
+            <td><input type="text"th:field="*{fileMusic}"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"value="delete"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

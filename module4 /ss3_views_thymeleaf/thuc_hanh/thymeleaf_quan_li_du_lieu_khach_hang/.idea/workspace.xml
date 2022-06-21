@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="569e719f-88ac-48fb-9426-4e913c9ffd6e" name="Default Changelist" comment="" />
+    <list default="true" id="569e719f-88ac-48fb-9426-4e913c9ffd6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/upload_file/.idea/modules/upload_file.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/quan_li_san_pham/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/quan_li_san_pham/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +175,7 @@
       <workItem from="1655656872173" duration="5844000" />
       <workItem from="1655707768876" duration="3189000" />
       <workItem from="1655711174295" duration="9076000" />
+      <workItem from="1655798305406" duration="164000" />
     </task>
     <servers />
   </component>
