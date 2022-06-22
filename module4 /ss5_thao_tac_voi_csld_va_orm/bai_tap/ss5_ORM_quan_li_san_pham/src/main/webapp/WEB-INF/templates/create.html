@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/product/save}"th:object="${product}"method="post">
+    <table>
+        <tr>
+            <td><input type="hidden"th:field="*{idProduct}"></td>
+        </tr>
+         <tr>
+             <td>name:</td>
+            <td><input type="text"th:field="*{nameProduct}"></td>
+        </tr>
+        <tr>
+             <td>price:</td>
+            <td><input type="text"th:field="*{priceProduct}"></td>
+        </tr>
+
+        <tr>
+            <td>describe:</td>
+            <td><input type="text"th:field="*{describeProduct}"></td>
+        </tr>
+
+        <tr>
+            <td>producer:</td>
+            <td><input type="text"th:field="*{producerProduct}"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"value="save"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html><!--private Integer idProduct;-->
+<!--private String nameProduct;-->
+<!--private Double priceProduct;-->
+<!--private String describeProduct;-->
+<!--private String producerProduct;-->

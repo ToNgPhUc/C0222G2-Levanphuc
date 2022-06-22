@@ -1,0 +1,18 @@
+com/phuc/AppInit.java
+ com.phuc.AppInit
+com/phuc/AppConfig.java
+ com.phuc.AppConfig
+com/phuc/model/Product.java
+ com.phuc.model.Product
+com/phuc/repository/BaseRepository.java
+ com.phuc.repository.BaseRepository
+com/phuc/repository/IProductRepository.java
+ com.phuc.repository.IProductRepository
+com/phuc/service/IProductService.java
+ com.phuc.service.IProductService
+com/phuc/service/iplm/ProductServiceIplm.java
+ com.phuc.service.iplm.ProductServiceIplm
+com/phuc/repository/iplm/ProductRepositoryIplm.java
+ com.phuc.repository.iplm.ProductRepositoryIplm
+com/phuc/controller/ProductController.java
+ com.phuc.controller.ProductController

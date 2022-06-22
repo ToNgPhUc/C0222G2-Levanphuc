@@ -4,7 +4,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651c4381-8535-4b56-99d5-20231c10bb8f" name="Default Changelist" comment="" />
+    <list default="true" id="651c4381-8535-4b56-99d5-20231c10bb8f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/bai_tap/quan_li_san_pham/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/bai_tap/quan_li_san_pham/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/model/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/libs/ung_dung_nghe_nhac-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/resources/main/hibernate.conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/model/Music.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/resources/hibernate.conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/modules/ung_dung_nghe_nhac_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_1/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/build/libs/ung_dung_nghe_nhac_2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/build/libs/ung_dung_nghe_nhac_2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/list_music.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/list_music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +140,8 @@
       <updated>1655747074905</updated>
       <workItem from="1655747078049" duration="975000" />
       <workItem from="1655781236310" duration="47000" />
+      <workItem from="1655863594874" duration="149000" />
+      <workItem from="1655865226835" duration="68000" />
     </task>
     <servers />
   </component>

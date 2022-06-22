@@ -34,7 +34,12 @@
         <td th:text="${music.getNameMusic()}"></td>
         <td th:text="${music.getSingerMusic()}"></td>
         <td th:text="${music.getKindOfMusic()}"></td>
-        <td th:text="${music.getFileMusic()}"></td>
+
+<!--        <td th:text="${music.getFileMusic()}"></td>-->
+        <td>
+            <audio controls th:attr="src=${music.getFileMusic()}"></audio>
+        </td>
+
         <td><a th:href="@{/music/{idMusic}/edit(idMusic=${music.getIdMusic()})}">edit</a></td>
         <td><a th:href="@{/music/{idMusic}/delete(idMusic=${music.getIdMusic()})}">delete</a></td>
 <!--        <td><a th:href="@{/music/{idMusic}/view(idMusic=${music.getIdMusic()})}">view</a></td>-->

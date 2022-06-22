@@ -5,42 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf7efbf-7ba0-4064-9274-a3ffcf37c0ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/modules/ung_dung_nghe_nhac_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/modules/ung_dung_nghe_nhac_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/modules/ung_dung_nghe_nhac_2.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/repository/IMusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/repository/iplm/MusicRepositoryIplm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/service/IMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/java/com/phuc/service/iplm/HibernateMusicServiceIplm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/list_music.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/upload_file/.idea/modules/upload_file.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phuc/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/modules/ung_dung_nghe_nhac.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/classes/java/main/com/phuc/model/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/libs/ung_dung_nghe_nhac-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/resources/main/hibernate.conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/java/com/phuc/model/Music.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/resources/hibernate.conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/modules/ung_dung_nghe_nhac_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_1/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/build/libs/ung_dung_nghe_nhac_2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/build/libs/ung_dung_nghe_nhac_2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/list_music.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/bai_tap/ung_dung_nghe_nhac_2/src/main/webapp/WEB-INF/templates/list_music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +254,7 @@
       <workItem from="1655707572886" duration="3279000" />
       <workItem from="1655710920299" duration="16541000" />
       <workItem from="1655781284451" duration="221000" />
-      <workItem from="1655822703006" duration="5908000" />
+      <workItem from="1655822703006" duration="6456000" />
     </task>
     <servers />
   </component>

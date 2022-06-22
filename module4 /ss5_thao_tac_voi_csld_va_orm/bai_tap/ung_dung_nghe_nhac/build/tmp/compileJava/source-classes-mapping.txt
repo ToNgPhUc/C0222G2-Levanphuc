@@ -1,6 +1,0 @@
-com/phuc/AppInit.java
- com.phuc.AppInit
-com/phuc/AppConfig.java
- com.phuc.AppConfig
-com/phuc/model/Music.java
- com.phuc.model.Music
