@@ -31,7 +31,7 @@ public class BlogController {
     }
     @GetMapping(value = "/{id}/edit")
     public String showFormEdit(@PathVariable int id, Model model ){
-        model.addAttribute("blog",iBlogService.findById(id));
+        model.addAttribute("blog",iBlogService.findByIdBlog(id));
         return "/edit";
     }
     @PostMapping(value = "/edit")
@@ -41,7 +41,7 @@ public class BlogController {
     }
     @GetMapping(value = "/{id}/delete")
     public String showFormDelete( @PathVariable int id, Model model){
-        model.addAttribute("blog",iBlogService.findById(id));
+        model.addAttribute("blog",iBlogService.findByIdBlog(id));
         return "/delete";
     }
 
@@ -52,8 +52,8 @@ public class BlogController {
     }
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
-        model.addAttribute("blog", iBlogService.findById(id));
-        return "/view";
+        model.addAttribute("blog", iBlogService.findByIdBlog(id));
+        return "view";
     }
 
 }
