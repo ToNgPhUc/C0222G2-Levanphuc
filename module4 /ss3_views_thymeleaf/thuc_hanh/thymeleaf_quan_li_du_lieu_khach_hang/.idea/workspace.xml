@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569e719f-88ac-48fb-9426-4e913c9ffd6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/IBlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

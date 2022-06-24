@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="" />
+    <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module4 /ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4 /ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4 /ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4 /ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4 /ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +57,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,6 +196,7 @@
       <workItem from="1655389884234" duration="192000" />
       <workItem from="1655736709920" duration="1998000" />
       <workItem from="1655780860523" duration="395000" />
+      <workItem from="1655966745172" duration="740000" />
     </task>
     <servers />
   </component>

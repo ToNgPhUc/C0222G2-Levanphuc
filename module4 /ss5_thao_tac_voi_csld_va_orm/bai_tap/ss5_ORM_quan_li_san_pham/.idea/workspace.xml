@@ -5,50 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf7efbf-7ba0-4064-9274-a3ffcf37c0ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/src/main/java/com/phuc/controller/BlogSpringBootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/src/main/java/com/phuc/controller/blogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_spring_boot/src/test/java/com/phuc/controller/BlogSpringBootApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/BlogSpringbootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/test/java/com/phuc/blog_springboot/BlogSpringbootApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/.idea/ung_dung_quan_li_khach_hang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/repository/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/repository/IGeneralRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/repository/iplm/CustomerRepositoryIplm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/service/IGeneralService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/com/phuc/service/iplm/CustomerServiceIplm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/WEB-INF/templates/form_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +186,7 @@
       <workItem from="1655865302403" duration="5643000" />
       <workItem from="1655880256459" duration="3186000" />
       <workItem from="1655911289004" duration="1370000" />
+      <workItem from="1656055085165" duration="629000" />
     </task>
     <servers />
   </component>
