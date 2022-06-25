@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+    </style>
+</head>
+<body>
+<div  id="menu" class="col-lg-12">
+    <div class="container">
+        <form action="/user/save" method="post" th:object="${userDto}">
+            <div class="mb-3 mt-3">
+                <label for="firstName" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter firstName" name="firstName"
+                       th:field="*{firstName}">
+            </div>
+                <div style="color: red" th:errors="*{firstName}" ></div>
+
+
+            <div class="mb-3 mt-3">
+                <label for="lastName" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter lastName" name="lastName"
+                       th:field="*{lastName}">
+            </div>
+                <div style="color: red"th:errors="*{lastName}"></div>
+
+
+            <div class="mb-3 mt-3">
+                <label for="phoneNumber" class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phoneNumber" name="phoneNumber"
+                       th:field="*{phoneNumber}">
+            </div>
+                <div style="color: red"th:errors="*{phoneNumber}"></div>
+
+            <div class="mb-3 mt-3">
+                <label for="age" class="form-label">Age:</label>
+                <input type="text" class="form-control" id="age" placeholder="Enter age" name="age" th:field="*{age}">
+            </div>
+                <div style="color: red"th:errors="*{age}"></div>
+
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"
+                       th:field="*{email}">
+            </div>
+                <div style="color: red" th:errors="*{email}"></div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/user/" class="btn btn-info">Back to List</a>
+        </form>
+
+        <div class="alert alert-success" role="alert" th:if="${success}">
+            <div th:text="${success}"></div>
+        </div>
+    </div>
+</div>
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+</html>

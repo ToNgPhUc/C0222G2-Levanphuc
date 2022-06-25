@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+    </style>
+</head>
+<body>
+<div id="menu" class="col-lg-12">
+
+    <div class="container-fluid" style="width: 100%">
+        <div>
+            <a th:href="@{/user/create}">
+                <button type="submit" class="btn btn-success ">CREATE</button>
+            </a>
+        </div>
+        <div>
+            <nav id="nav" class="navbar navbar-light">
+                <form action="/user" class="d-flex">
+                    <input type="text" name="keyword" th:value="${keywordVar}"placeholder="search">
+                    <button class="btn btn-success "type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+
+    </div>
+
+    <form>
+        <table id="tableStudent" class="table table-dark table-borderless" style="width: 100%">
+            <tr>
+                <td>ID</td>
+                <td>first Name</td>
+                <td>last name</td>
+                <td> phone number</td>
+                <td> age</td>
+                <td> email</td>
+            </tr>
+            <tr th:each="user:${userList}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.firstName}"></td>
+                <td th:text="${user.lastName}"></td>
+                <td th:text="${user.phoneNumber}"></td>
+                <td th:text="${user.age}"></td>
+                <td th:text="${user.email}"></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+</body>
+
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+
+</html>
