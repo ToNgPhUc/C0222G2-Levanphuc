@@ -5,29 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ae9111d-2d15-471e-abb6-9ee31f5e2ea0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/ValidateFormDangKiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/model/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/java/com/phuc/validate_form_dang_ki/service/iplm/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/resources/templates/common-html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/main/resources/templates/user_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/bai_tap/validate_form_dang_ki/src/test/java/com/phuc/validate_form_dang_ki/ValidateFormDangKiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/thuc_hanh/validatting_form_input/src/main/java/com/phuc/validatting_form_input/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/thuc_hanh/validatting_form_input/src/main/java/com/phuc/validatting_form_input/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/thuc_hanh/validatting_form_input/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4 /ss8_validation/thuc_hanh/validatting_form_input/src/main/resources/templates/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
     </list>
