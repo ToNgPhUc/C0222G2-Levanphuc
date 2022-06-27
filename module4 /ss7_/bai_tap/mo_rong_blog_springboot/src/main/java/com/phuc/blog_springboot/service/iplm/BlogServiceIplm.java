@@ -41,6 +41,6 @@ public class BlogServiceIplm implements IBlogService {
 
     @Override
     public Page<Blog> findAllByName(String keywordVar, Pageable pageable) {
-        return iBlogRepository.findAllByName(keywordVar,pageable);
+        return iBlogRepository.findAllByName("%" + keywordVar + "%",pageable);
     }
 }

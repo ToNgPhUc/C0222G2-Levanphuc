@@ -23,7 +23,7 @@ public interface IBlogRepository extends JpaRepository<Blog, Integer> {
 //    @Query(value = "select * from blog where name_blog like :keywordVar", nativeQuery = true)
 //    Page<Blog> findAllByName(@Param("keywordVar") String keywordVar, Pageable pageable);
 
-    @Query(value = " select * from blog where name_blog like :keywordVar ", nativeQuery = true)
-
+    @Query(value = " select * from blog where name_blog like :keywordVar ", nativeQuery = true ,
+            countQuery = " select count(*) from (select * from blog where name_blog like :keywordVar) temp_table ")
     Page<Blog> findAllByName(@Param("keywordVar") String  keywordVar,Pageable pageable);
 }

@@ -23,11 +23,11 @@ public class BlogController {
 
     @GetMapping(value = "")
     public String showListBlog(Model model,
-                               @PageableDefault(value = 8) Pageable pageable,
+                               @PageableDefault(value = 3) Pageable pageable,
                                @RequestParam Optional<String> keyword) {
         String keywordVar = keyword.orElse("");
 
-        Page<Blog> blogList= this.iBlogService.findAllByName("%"+keywordVar+"%",pageable);
+        Page<Blog> blogList= this.iBlogService.findAllByName(keywordVar,pageable);
         model.addAttribute("keywordVar", keywordVar);
         model.addAttribute("blogList", blogList);
 
@@ -62,7 +62,6 @@ public class BlogController {
     }
 
     @GetMapping(value = "/{id}/delete")
-
     public String showFormDelete(@PathVariable int id, Model model) {
         model.addAttribute("bloggerList", iBloggerService.findAll());
 

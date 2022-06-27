@@ -37,10 +37,14 @@
 
             <div class="mb-3 mt-3">
                 <label class="form-label">Kind Of Music:</label>
-                <input type="text" class="form-control"  placeholder="Enter Kind Of Music"
-                       th:field="*{kindOfMusic}">
+                <select   th:field="*{idTypeMusic}" >
+                    <option th:each="typeMusic:${typeMusicList}"
+                    th:text="${typeMusic.kindOfMusic}"
+                    th:value="${typeMusic.idTypeMusic}">
+                    </option>
+                </select>
             </div>
-                <div style="color: red"th:errors="*{kindOfMusic}"></div>
+                <div style="color: red"th:errors="*{idTypeMusic}"></div>
 
             <button type="submit" class="btn btn-primary">Save</button>
             <a href="/music/" class="btn btn-info">Back to List</a>

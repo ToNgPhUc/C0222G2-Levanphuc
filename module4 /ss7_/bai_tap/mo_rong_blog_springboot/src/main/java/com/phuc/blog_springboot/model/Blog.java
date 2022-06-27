@@ -10,7 +10,6 @@ public class Blog {
     @Column(name = "name_blog")
     private String nameBlog;
     private String content;
-
     @ManyToOne
     @JoinColumn(name ="id_blogger", referencedColumnName = "id_blogger")
     private Blogger idBlogger;

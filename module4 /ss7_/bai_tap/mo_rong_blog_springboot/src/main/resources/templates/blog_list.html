@@ -29,7 +29,6 @@
     <tr th:each="blog: ${blogList}">
         <td th:text="${blog.getId()}"></td>
         <td th:text="${blog.getNameBlog()}"></td>
-
         <td th:text="${blog.getContent()}"></td>
         <td th:text="${blog.idBlogger.getNameBlogger()}"></td>
 

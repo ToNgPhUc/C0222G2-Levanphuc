@@ -10,17 +10,18 @@ public class Music {
     @Column(name = "name_music")
     private String nameMusic;
     private String singer;
-    @Column( name = "kind_of_music")
-    private String kindOfMusic;
+    @ManyToOne
+    @JoinColumn(name = "id_type_music",referencedColumnName = "id_type_music")
+    private TypeMusic idTypeMusic;
 
     public Music() {
     }
 
-    public Music(Integer id, String nameMusic, String singer, String kindOfMusic) {
+    public Music(Integer id, String nameMusic, String singer, TypeMusic idTypeMusic) {
         this.id = id;
         this.nameMusic = nameMusic;
         this.singer = singer;
-        this.kindOfMusic = kindOfMusic;
+        this.idTypeMusic = idTypeMusic;
     }
 
     public Integer getId() {
@@ -47,11 +48,11 @@ public class Music {
         this.singer = singer;
     }
 
-    public String getKindOfMusic() {
-        return kindOfMusic;
+    public TypeMusic getIdTypeMusic() {
+        return idTypeMusic;
     }
 
-    public void setKindOfMusic(String kindOfMusic) {
-        this.kindOfMusic = kindOfMusic;
+    public void setIdTypeMusic(TypeMusic idTypeMusic) {
+        this.idTypeMusic = idTypeMusic;
     }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+
+</head>
+
+<body>
+<h3>View Product</h3>
+<div class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORJ9AffZnHmcnaCMpdiDVp8VzkAonAbPzZQ&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div >
+            <div>
+                <label>NAME :</label>
+                <label th:text="${product.nameProduct}"></label>
+            </div>
+            <div>
+                <label>price Product:</label>
+                <label th:text="${product.priceProduct}"></label>
+            </div>
+            <div>
+                <label>describe Product:</label>
+                <label th:text="${product.describeProduct}"></label>
+            </div>
+            <div>
+                <label>producer Product:</label>
+                <label th:text="${product.producerProduct}"></label>
+            </div>
+        </div>
+        <a th:href="@{/product}">
+            Back to list</a>
+    </div>
+</div>
+
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+
+</html>

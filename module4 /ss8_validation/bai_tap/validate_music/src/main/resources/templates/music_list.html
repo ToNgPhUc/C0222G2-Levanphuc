@@ -13,7 +13,9 @@
     </style>
 </head>
 <body>
+
 <div id="menu" class="col-lg-12">
+
 
     <div class="container-fluid" style="width: 100%">
         <div>
@@ -23,37 +25,56 @@
         </div>
         <div>
             <nav id="nav" class="navbar navbar-light">
-                <form action="/user" class="d-flex">
-                    <input type="text" name="keyword" th:value="${keywordVar}"placeholder="search">
-                    <button class="btn btn-success "type="submit">Search</button>
+
+                <form action="/music" class="d-flex">
+                    <input type="text" name="search" th:value="${searchType}" placeholder="search">
+                    <button class="btn btn-success " type="submit">Search</button>
                 </form>
             </nav>
         </div>
 
     </div>
 
-    <form>
-        <table id="tableStudent" class="table table-dark table-borderless" style="width: 100%">
-            <tr>
 
-                <td>ID</td>
-                <td>name Music</td>
-                <td>singer</td>
-                <td> kindOfMusic;</td>
-                <td>view</td>
+    <table id="tableStudent" class="table table-dark table-borderless" style="width: 100%">
+        <tr>
 
-            </tr>
-            <tr th:each="music:${musicList}">
-                <td th:text="${music.id}"></td>
-                <td th:text="${music.nameMusic}"></td>
-                <td th:text="${music.singer}"></td>
-                <td th:text="${music.kindOfMusic}"></td>
-                <td><a th:href="@{/music/{id}/view(id=${music.getId()})}">view</a></td>
-            </tr>
-        </table>
+            <td>ID</td>
+            <td>name Music</td>
+            <td>singer</td>
+            <td> kindOfMusic</td>
+            <td>view</td>
 
-    </form>
+        </tr>
+        <tr th:each="music : ${musicList}">
+            <td th:text="${music.getId()}"></td>
+            <td th:text="${music.getNameMusic()}"></td>
+            <td th:text="${music.getSinger()}"></td>
+            <td th:text="${music.idTypeMusic.getKindOfMusic()}"></td>
+            <td><a th:href="@{/music/{id}/view(id=${music.getId()})}">view</a></td>
+        </tr>
+    </table>
+
+    <div  class="alert alert-success" >
+        <a th:if="${musicList.hasPrevious()}"
+           th:href="@{/music/(page=${musicList.number - 1}  , search=${searchType})}"> previous
+        </a>
+        <span th:text="${musicList.number + 1}"> </span>
+        /
+        <span th:text="${musicList.totalPages }"> </span>
+
+        <a th:if="${musicList.hasNext()}"
+           th:href="@{/music/(page=${musicList.number + 1} , search=${searchType})}"> Next
+        </a>
+    </div>
+
+    <div class="alert alert-success" role="alert" th:if="${success}">
+        <div th:text="${success}"></div>
+    </div>
+
+
 </div>
+
 </body>
 
 <th:block th:replace="~{common-html :: boostrapScript}"></th:block>

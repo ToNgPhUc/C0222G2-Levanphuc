@@ -5,13 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf7efbf-7ba0-4064-9274-a3ffcf37c0ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3_views_thymeleaf/thuc_hanh/thymeleaf_quan_li_du_lieu_khach_hang/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/model/TypeMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/repository/ITypeMusicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/ITypeMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/iplm/TypeMusicServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/main/java/com/phuc/validate_quan_li_san_pham_ss8/ValidateQuanLiSanPhamSs8Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/main/java/com/phuc/validate_quan_li_san_pham_ss8/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/test/java/com/phuc/validate_quan_li_san_pham_ss8/ValidateQuanLiSanPhamSs8ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog_springboot/src/main/resources/templates/blog_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_/bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/model/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/model/MusicDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/dto/MusicDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/repository/IMusicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/repository/IMusicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/IMusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/IMusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/iplm/IMusicServiceIplm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/java/com/phuc/validate_music/service/iplm/IMusicServiceIplm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/music_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/music_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +212,7 @@
       <workItem from="1655880256459" duration="3186000" />
       <workItem from="1655911289004" duration="1370000" />
       <workItem from="1656055085165" duration="629000" />
+      <workItem from="1656317034684" duration="933000" />
     </task>
     <servers />
   </component>

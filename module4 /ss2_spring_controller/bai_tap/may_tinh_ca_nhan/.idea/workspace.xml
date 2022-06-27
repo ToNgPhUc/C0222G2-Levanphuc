@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a7de925-9fc1-4a26-8bcc-5b4c7f3b62cb" name="Default Changelist" comment="" />
+    <list default="true" id="1a7de925-9fc1-4a26-8bcc-5b4c7f3b62cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/music_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_validation/bai_tap/validate_music/src/main/resources/templates/music_list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,6 +151,7 @@
       <updated>1655441306655</updated>
       <workItem from="1655441309089" duration="5310000" />
       <workItem from="1655531950979" duration="18000" />
+      <workItem from="1656295680606" duration="1649000" />
     </task>
     <servers />
   </component>
