@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+    </style>
+</head>
+<body>
+<div  id="menu" class="col-lg-12">
+    <div class="container">
+
+        <form th:action="@{/book/brow_book}"method="post" th:object="${detailsBook}">
+
+            <div class="mb-3 mt-3">
+                <input type="hidden" class="form-control"
+                       th:field="*{idDetails}">
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label class="form-label">Name Product:</label>
+                <input type="text" class="form-control"
+                       th:field="*{idBook}">
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label class="form-label">price Product: </label>
+                <input type="text" class="form-control"
+                       th:field="*{status}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">delete</button>
+            <a href="/product/" class="btn btn-info">Back to List</a>
+        </form>
+
+    </div>
+</div>
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+</html>

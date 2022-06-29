@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbc48bcb-5bca-4c04-92ca-00fbf06fb6d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/CasestudyModule4FuramaresortApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/controller/FuramaResortController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/common-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/home_furama_resort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/test/java/com/phuc/casestudy_module4_furamaresort/CasestudyModule4FuramaresortApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/Ss9UngDungMuonSachApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/model/DetailsBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/repository/IBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/repository/IDetailsBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/service/IDetailsBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/service/iplm/BookServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/java/com/phuc/ss9_ung_dung_muon_sach/service/iplm/DetailsBookServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/resources/templates/book_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/resources/templates/brow_book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/resources/templates/common-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/main/resources/templates/details_book_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/bai_tap/ss9_ung_dung_muon_sach/src/test/java/com/phuc/ss9_ung_dung_muon_sach/Ss9UngDungMuonSachApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /ss8_validation/bai_tap/validate_quan_li_san_pham_ss8/src/main/resources/templates/create.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2BD5n3DBMyW0Q1yhBv3CuzW7M6E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbc48bcb-5bca-4c04-92ca-00fbf06fb6d0" name="Default Changelist" comment="" />
+      <created>1656427981079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656427981079</updated>
+      <workItem from="1656427984091" duration="694000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

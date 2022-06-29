@@ -80,6 +80,7 @@ public class ProductController {
         }
         return "redirect:/product";
     }
+
     @GetMapping(value = "/{idProduct}/delete")
     public String showFormDelete(@PathVariable int idProduct, Model model) {
         model.addAttribute("product", iProductService.findByIdProduct(idProduct));
@@ -91,6 +92,7 @@ public class ProductController {
         iProductService.deleteById(product.getIdProduct());
         return "redirect:/product";
     }
+
     @GetMapping("/{idProduct}/view")
     public String view(@PathVariable int idProduct, Model model) {
         model.addAttribute("product", iProductService.findByIdProduct(idProduct));

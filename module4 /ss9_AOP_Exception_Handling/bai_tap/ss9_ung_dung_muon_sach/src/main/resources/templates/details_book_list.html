@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu" class="col-lg-12">
+
+
+    <div class="container-fluid" style="width: 100%">
+        <div>
+            <a th:href="@{/music/create}">
+                <button type="submit" class="btn btn-success ">CREATE</button>
+            </a>
+        </div>
+        <div>
+            <nav id="nav" class="navbar navbar-light">
+
+                <form action="/music" class="d-flex">
+                    <input type="text" name="search" th:value="${searchType}" placeholder="search">
+                    <button class="btn btn-success " type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+
+    </div>
+
+
+    <table id="tableStudent" class="table table-dark table-borderless" style="width: 100%">
+        <tr>
+
+            <td>Id Details</td>
+            <td>name Book</td>
+            <td>status</td>
+            <td>borrow books</td>
+
+        </tr>
+        <tr th:each="detailsBook : ${detailsBookList}">
+            <td th:text="${detailsBook.getIdDetails()}"></td>
+            <td th:text="${detailsBook.idBook.getNameBook()}"></td>
+
+            <td th:if="${detailsBook.status==1}"><p>đã mượn</p>
+            </td>
+            <td th:if="${detailsBook.status==0}"><p>chưa mượn</p>
+            </td>
+            <td><a th:href="@{/detailsBook/{idDetails}/brow_book(idDetails=${detailsBook.getIdDetails()})}">borrow books</a></td>
+
+        </tr>
+    </table>
+</div>
+
+</body>
+
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+
+</html>
