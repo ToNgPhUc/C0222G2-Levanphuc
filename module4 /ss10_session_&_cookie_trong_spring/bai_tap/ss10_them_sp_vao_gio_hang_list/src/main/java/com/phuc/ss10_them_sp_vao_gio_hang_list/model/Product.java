@@ -1,33 +1,33 @@
 package com.phuc.ss10_them_sp_vao_gio_hang_list.model;
 
-
 import javax.persistence.*;
 
 @Entity
-@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
+
     private String name;
-    private double price;
+
+    private Double price;
+
+    private Integer quantity;
+
+    private String img;
+
     private String description;
 
     public Product() {
     }
 
-    public Product(String name, double price, String description) {
+    public Product(Integer id, String name, Double price, Integer quantity, String img, String description) {
+        this.id = id;
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
+        this.img = img;
         this.description = description;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -38,12 +38,28 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getDescription() {
@@ -52,5 +68,13 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

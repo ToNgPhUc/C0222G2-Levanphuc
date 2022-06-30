@@ -12,7 +12,8 @@
 </p>
 
 <div class="card" style="width: 18rem;">
-    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295" alt="...">
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295"
+         alt="...">
     <div class="card-body">
 
     </div>
@@ -25,13 +26,15 @@
         <td>view</td>
     </tr>
 
-    <th:block th:each="product:${products}">
-        <tr>
-            <td th:text="${product.name}"></td>
-            <td th:text="${product.price}"></td>
-            <td><a th:href="@{/{id}/detail(id=${product.getId()})}"><button>view</button></a></td>
-        </tr>
-    </th:block>
+
+    <tr th:each="product:${products}">
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td><a th:href="@{/{id}/detail(id=${product.getId()})}">
+            <button>view</button>
+        </a></td>
+    </tr>
+
 </table>
 </body>
 <th:block th:replace="~{common-html :: boostrapScript}"></th:block>
