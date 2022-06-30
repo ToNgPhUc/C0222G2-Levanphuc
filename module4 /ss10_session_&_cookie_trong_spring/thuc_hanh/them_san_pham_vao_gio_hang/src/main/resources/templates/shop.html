@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+
+</head>
+<body>
+<p>
+    <a href="/shopping-cart">Your cart</a>
+</p>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295" alt="...">
+    <div class="card-body">
+
+    </div>
+</div>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Add To Cart</td>
+        <td>view</td>
+    </tr>
+
+    <th:block th:each="product:${products}">
+        <tr>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td><a th:href="@{/{id}/detail(id=${product.getId()})}"><button>view</button></a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+
+</html>

@@ -29,20 +29,21 @@ public class DetailsBookServiceIplm implements IDetailsBookService {
         return iDetailsBookRepository.findByIdDetailsBook(idDetails);
     }
 
-    @Override
-    public void deleteById(int idDetails) {
-        iDetailsBookRepository.deleteById(idDetails);
-    }
 
     @Override
     public void createDetail(Integer idBook) {
         Book book = this.ibookRepository.getById(idBook);
         for (int i = 0; i < book.getQuantity(); i++) {
-            
+
             DetailsBook detailsBook = new DetailsBook();
             detailsBook.setIdBook(book);
             detailsBook.setStatus(0);
             this.iDetailsBookRepository.save(detailsBook);
         }
+    }
+
+    @Override
+    public void deleteById(Integer idDetails) {
+        iDetailsBookRepository.deleteById(idDetails);
     }
 }

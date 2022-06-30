@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+
+</head>
+
+<body>
+<h3>View Music</h3>
+<div class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORJ9AffZnHmcnaCMpdiDVp8VzkAonAbPzZQ&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div >
+            <div>
+                <label>NAME :</label>
+                <label th:text="${product.name}"></label>
+            </div>
+            <div>
+                <label>price:</label>
+                <label th:text="${product.price}"></label>
+            </div>
+            <div>
+                <label>description:</label>
+                <label th:text="${product.description}"></label>
+            </div>
+        </div>
+        <td><a th:href="@{/add/__${product.id}__(action='list')}"><button>add to list</button></a></td>
+        <a th:href="@{/shop}">
+            Back to blog list</a>
+    </div>
+</div>
+
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+
+</html>

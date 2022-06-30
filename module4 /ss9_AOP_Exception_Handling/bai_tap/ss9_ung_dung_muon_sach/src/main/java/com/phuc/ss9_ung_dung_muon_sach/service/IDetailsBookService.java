@@ -9,7 +9,9 @@ public interface IDetailsBookService {
 
     DetailsBook findByIdDetailsBook(int idDetails);
 
-    void deleteById(int idDetails);
+ 
 
     void createDetail(Integer idBook);
+
+    void deleteById(Integer idDetails);
 }
