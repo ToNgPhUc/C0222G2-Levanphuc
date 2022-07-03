@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create student momo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+    </style>
+</head>
+<body>
+<!-- Just an image -->
+<div id="menu">
+    <div class="container mt-4">
+        <div class="row w-50 mx-auto">
+            <div class="col-lg-12">
+                <h2>Create smartPhone</h2>
+                <div>
+                    <p style="color: red" id="pError"></p>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="inputProducer" class="form-control"/>
+                    <label class="form-label" for="inputProducer">producer</label>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="inputModel" class="form-control"/>
+                    <label class="form-label" for="inputModel">model</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="inputPrice" class="form-control"/>
+                    <label class="form-label" for="inputPrice">price</label>
+                </div>
+
+
+                <a href="http://localhost:63343/mo_rong_quan_li_dien_thoai/smartPhone_list.html?_ijt=sve4h8p6c3r3cpd9m9l9lhdaui&_ij_reload=RELOAD_ON_SAVE">
+                    <button id="btnCreate" type="button" class="btn btn-primary btn-block bg-momo">
+                        Create
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#btnCreate").click(function () {
+            let producer1 = $("#inputProducer").val();
+            let model1 = $("#inputModel").val();
+            let price1 = $("#inputPrice").val();
+
+            console.log(producer1 + " " + model1 + " " + price1);
+
+            let smartPhoneObject = {
+                producer: producer1,
+                model: model1,
+                price:price1
+            }
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST", //GET, DELETE, PUT...
+                url: "http://localhost:8080/smartphones/create",
+                data: JSON.stringify(smartPhoneObject),
+                success: function (resultSuccess) {
+                    console.log(resultSuccess);
+                },
+                error: function (resultError) {
+                    console.log('Co loi xay ra');
+                }
+            });
+
+            console.log(smartPhoneObject);
+
+        });
+    </script>
+
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70c7dc70-cf7e-4034-9941-8a23b5686319" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/BlogSpringbootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/controller/BlogRestfulController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/model/Blogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/repository/IBloggerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/IBlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/IBloggerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BlogServiceIplm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/java/com/phuc/blog_springboot/service/iplm/BloggerServiceIplm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/blog_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/main/resources/templates/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap/mo_rong_blog_springboot/src/test/java/com/phuc/blog_springboot/BlogSpringbootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-customer-management-restful" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/WebserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/service/IGeneralService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phuc/webservice/service/customer/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/phuc/webservice/WebserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2BHlTxgEMlZl6GrS2dmBkNBlHOP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WebserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="webservice.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phuc.webservice.WebserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70c7dc70-cf7e-4034-9941-8a23b5686319" name="Default Changelist" comment="" />
+      <created>1656570906103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656570906103</updated>
+      <workItem from="1656570907606" duration="3396000" />
+      <workItem from="1656576042581" duration="3903000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
