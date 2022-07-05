@@ -18,8 +18,12 @@ public class SmartphoneService implements ISmartphoneService {
 
     @Override
     public Optional<Smartphone> findById(Long id) {
-        return smartPhoneRepository.findById(id);
+        return smartPhoneRepository.findByIdBSmartphone(id);
     }
+//    @Override
+//    public Optional<Smartphone> findById(Long id) {
+//        return smartPhoneRepository.findById(id);
+//    }
 
     @Override
     public Smartphone save(Smartphone smartPhone) {
