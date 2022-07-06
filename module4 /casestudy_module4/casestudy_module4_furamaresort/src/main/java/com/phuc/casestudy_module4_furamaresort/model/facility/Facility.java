@@ -1,4 +1,4 @@
-package com.phuc.casestudy_module4_furamaresort.model;
+package com.phuc.casestudy_module4_furamaresort.model.facility;
 
 import javax.persistence.*;
 

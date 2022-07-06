@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <style>
+        #menu {
+            height: 100%;
+            width: 100%;
+            background: url("https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+        }
+
+        .form-label {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="card text-center">
+    <div id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Furama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Employee</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Other
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Facility</a></li>
+                                <li><a class="dropdown-item" href="#">Contract</a></li>
+                                <li><a class="dropdown-item" href="#">Booking</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" action="/resort/facility">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                               name="keyword">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <div class="row w-50 mx-auto">
+                <div class="row">
+                    <h2>Create facility</h2>
+                    <form th:action="@{/resort/save}" th:object="${facilityOject}" method="post">
+                        <div class="form-outline mb-4">
+                            <input th:field="*{idFacility}" class="form-control" type="hidden"/>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-6">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Name Facility</label>
+                                    <input th:field="*{nameFacility}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Area Facility</label>
+                                    <input th:field="*{areaFacility}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Cost Facility</label>
+                                    <input th:field="*{costFacility}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Max People</label>
+                                    <input th:field="*{maxPeople}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Name Rent Type</label>
+                                    <select th:field="*{rentType}" class="form-select"
+                                            aria-label="Default select example">
+                                        <option th:each="renType: ${rentTypeList}"
+                                                th:value="${renType.idRentType}"
+                                                th:text="${renType.nameRentType}"
+                                        >
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Name Facility Type</label>
+                                    <select th:field="*{facilityType}" class="form-select"
+                                            aria-label="Default select example">
+                                        <option th:each="facilityType: ${facilityTypeList}"
+                                                th:value="${facilityType.idFacilityType}"
+                                                th:text="${facilityType.nameFacilityType}">
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                               <!---------------------------->
+
+                            <div class="col-6">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Standard Room</label>
+                                    <input th:field="*{standardRoom}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Description Other Convenience</label>
+                                    <input th:field="*{descriptionOtherConvenience}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Pool Area</label>
+                                    <input th:field="*{poolArea}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Number Of Floors</label>
+                                    <input th:field="*{numberOfFloors}" class="form-control"/>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Facility Free</label>
+                                    <input th:field="*{facilityFree}" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block bg-momo">
+                            save
+                        </button>
+                        <a th:href="@{/resort/facility}">
+                            <button type="button" class="btn btn-primary btn-block bg-momo">
+                                Back To List
+                            </button>
+                        </a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        ToNgPhUc@gmail.com
+    </div>
+</div>
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+</html>
+

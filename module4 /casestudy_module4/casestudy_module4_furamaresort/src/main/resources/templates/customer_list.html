@@ -45,7 +45,7 @@
                             </li>
                         </ul>
 
-                        <form class="d-flex"action="/resort/facility">
+                        <form class="d-flex"action="/customer/">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"name="keyword" th:value="${keywordVal}">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
@@ -53,55 +53,58 @@
                 </div>
             </nav>
             <div class="container-fluid text-center m-5">
-                <a href="/resort/create" class="btn btn-outline-success">Create New Facility</a>
+                <a href="/customer/create" class="btn btn-outline-success">Create New customer</a>
+            </div>
+            <div class="container-fluid text-center m-5">
+                <a href="/customer/edit" class="btn btn-outline-success">edit customer </a>
             </div>
             <div class="container">
 
                 <table id="tableStudent"class="table table-dark table-hover" style="width: 100%">
                     <thead>
+
                     <tr>
                         <td>STT</td>
                         <td>ID</td>
-                        <td>Name</td>
-                        <td>Area Facility</td>
-                        <td>Cost</td>
-                        <td>Max People</td>
-                        <td>Name Rent Type</td>
-                        <td>name Facility Type</td>
-                        <td>Standard Room</td>
-                        <td>Pool Area</td>
-                        <td>number Of Floors</td>
-                        <td>edit</td>
-                        <td>delete</td>
-
+                        <td>NAME</td>
+                        <td>DATE OF BIRTH</td>
+                        <td>GENDER</td>
+                        <td>ID CARD</td>
+                        <td>PHONE NUMBER</td>
+                        <td>EMAIL</td>
+                        <td>ADDRESS</td>
+                        <td>CUSTOMER TYPE NAME</td>
+                        <td>EDIT</td>
+                        <td>DELETE</td>
 
                     </tr>
                     </thead>
                     <thead>
-                    <tr th:each="facility, loop :  ${facilityList}">
+                    <tr th:each="customer, loop :  ${customerList}">
                         <td th:text="${loop.count}"></td>
-                        <td th:text="${facility.idFacility}"></td>
-                        <td th:text="${facility.nameFacility}"></td>
-                        <td th:text="${facility.areaFacility}"></td>
-                        <td th:text="${facility.costFacility}"></td>
-                        <td th:text="${facility.maxPeople}"></td>
-                        <td th:text="${facility.rentType.nameRentType}"></td>
-                        <td th:text="${facility.facilityType.nameFacilityType}"></td>
-                        <td th:text="${facility.standardRoom}"></td>
-                        <td th:text="${facility.poolArea}"></td>
-                        <td th:text="${facility.numberOfFloors}"></td>
-                        <td><a th:href="@{/resort/{id}/edit(id=${facility.getIdFacility()})}">
-                            <button class="btn btn-success ">edit</button>
-                        </a></td>
+                        <td th:text="${customer.idCustomer}"></td>
+                        <td th:text="${customer.nameCustomer}"></td>
+                        <td th:text="${customer.dateOfBirth}"></td>
+                        <td th:text="${customer.gender}"></td>
+                        <td th:text="${customer.idCard}"></td>
+                        <td th:text="${customer.phoneNumber}"></td>
+                        <td th:text="${customer.email}"></td>
+                        <td th:text="${customer.address}"></td>
+                        <td th:text="${customer.customerType.nameCustomerType}"></td>
+                        <td><a href="customer/edit"></a></td>
+<!--                        <td><a th:href="@{/customer/{id}/edit(id=${customer.getIdCustomer()})}">-->
+<!--                            <button class="btn btn-success ">edit</button></a>-->
+<!--                        </td>-->
+
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                                    th:data-bs-target=" '#exampleModal' + ${facility.idFacility}">
+                                    th:data-bs-target=" '#exampleModal' + ${customer.idCustomer}">
                                 delete
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" th:id="exampleModal  + ${facility.idFacility}" tabindex="-1"
+                            <div class="modal fade" th:id="exampleModal  + ${customer.idCustomer}" tabindex="-1"
                                  aria-labelledby="exampleModalLabel"
                                  aria-hidden="true">
                                 <div class="modal-dialog">
@@ -112,14 +115,14 @@
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body" style="color: green">
-                                            bạn có muốn xóa <span th:text="${facility.facilityType.nameFacilityType}"></span> với id
+                                            bạn có muốn xóa <span th:text="${customer.customerType.nameCustomerType}"></span> với id
                                             = <span
-                                                th:text="${facility.idFacility}"></span> ?
+                                                th:text="${customer.idCustomer}"></span> ?
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                             </button>
-                                            <a th:href="@{/resort/{id}/delete(id=${facility.getIdFacility()})}">
+                                            <a th:href="@{/customer/{id}/delete(id=${customer.getIdCustomer()})}">
                                                 <button class="btn btn-success ">delete</button>
                                             </a>
                                         </div>
@@ -132,15 +135,15 @@
                     </tbody>
                 </table>
                 <div>
-                    <a th:if="${facilityList.hasPrevious()}"
-                       th:href="@{/resort/facility/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">
+                    <a th:if="${customerList.hasPrevious()}"
+                       th:href="@{/customer/(page=${customerList.number - 1} , keyword= ${keywordVal})}">
                         <button>hasPrevious</button>
                     </a>
-                    <span th:text="${facilityList.number +1}"></span>
+                    <span th:text="${customerList.number +1}"></span>
                     /
-                    <span th:text="${facilityList.totalPages}"></span>
-                    <a th:if="${facilityList.hasNext()}"
-                       th:href="@{/resort/facility/(page=${facilityList.number + 1} , keyword= ${keywordVal})}">
+                    <span th:text="${customerList.totalPages}"></span>
+                    <a th:if="${customerList.hasNext()}"
+                       th:href="@{/customer/(page=${customerList.number + 1} , keyword= ${keywordVal})}">
                         <button>next</button>
                     </a>
                 </div>
@@ -152,7 +155,7 @@
 
 
     <div class="card-footer text-muted">
-ToNgPhUc@gmail.com
+        ToNgPhUc@gmail.com
     </div>
 </div>
 

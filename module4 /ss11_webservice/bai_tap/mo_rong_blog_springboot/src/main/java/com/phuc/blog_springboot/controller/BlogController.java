@@ -64,7 +64,6 @@ public class BlogController {
     @GetMapping(value = "/{id}/delete")
     public String showFormDelete(@PathVariable int id, Model model) {
         model.addAttribute("bloggerList", iBloggerService.findAll());
-
         model.addAttribute("blog", iBlogService.findByIdBlog(id));
         return "/delete";
     }

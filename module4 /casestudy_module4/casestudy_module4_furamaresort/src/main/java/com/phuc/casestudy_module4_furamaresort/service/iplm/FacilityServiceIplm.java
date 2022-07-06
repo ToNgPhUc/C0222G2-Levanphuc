@@ -1,6 +1,6 @@
 package com.phuc.casestudy_module4_furamaresort.service.iplm;
 
-import com.phuc.casestudy_module4_furamaresort.model.Facility;
+import com.phuc.casestudy_module4_furamaresort.model.facility.Facility;
 import com.phuc.casestudy_module4_furamaresort.repository.IFacilityRepository;
 import com.phuc.casestudy_module4_furamaresort.service.IFacilityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +16,8 @@ public class FacilityServiceIplm implements IFacilityService {
     private IFacilityRepository iFacilityRepository;
 
     @Override
-    public Page<Facility> findAllByName(Pageable pageable, String keywordVal) {
-        return iFacilityRepository.findAllByName(pageable,"%"+keywordVal+"%");
+    public Page<Facility> findAllByName(String keywordVal, Pageable pageable) {
+        return iFacilityRepository.findAllByName("%"+ keywordVal +"%" ,pageable);
     }
 
     @Override
@@ -29,4 +29,16 @@ public class FacilityServiceIplm implements IFacilityService {
     public void save(Facility facility) {
         this.iFacilityRepository.save(facility);
     }
+
+    @Override
+    public Facility findByIdFacility(int id) {
+        return this.iFacilityRepository.getById(id);
+    }
+
+    @Override
+    public void delete(Integer id) {
+        this.iFacilityRepository.delete(iFacilityRepository.getById(id));
+    }
+
+
 }

@@ -1,6 +1,6 @@
 package com.phuc.casestudy_module4_furamaresort.service;
 
-import com.phuc.casestudy_module4_furamaresort.model.RentType;
+import com.phuc.casestudy_module4_furamaresort.model.facility.RentType;
 
 import java.util.List;
 
