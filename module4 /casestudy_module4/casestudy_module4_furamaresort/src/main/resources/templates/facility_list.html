@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        #menu {
+            width: 100%;
+            height: 800px;
+            background: url("https://asiky.com/files/images/Article/asiky-website-khach-san/chiem-nguong-ve-dep-cua-khach-san-7-sao.jpg")
+        }
+
+        .form-label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu" class="col-lg-12">
+
+
+    <div class="container" style="width: 100%">
+
+        <div>
+            <a th:href="@{/resort/create}">
+                <button class="btn btn-success ">CREATE</button>
+            </a>
+        </div>
+
+
+        <div>
+            <nav id="nav" class="navbar navbar-light">
+
+                <div class="row w-50 mx-auto">
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" id="keyword">
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-success" id="btnSearch">Search</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <table id="tableStudent" class="table table-dark table-borderless" style="width: 100%">
+            <thead>
+            <tr>
+
+                <td>idFacility</td>
+                <td>areaFacility </td>
+                <td>maxPeople</td>
+                <td>nameRentType</td>
+                <td>nameFacilityType</td>
+                <td>standardRoom</td>
+                <td>poolArea</td>
+                <td>numberOfFloors</td>
+                <td>edit</td>
+                <td>delete</td>
+
+
+            </tr>
+            </thead>
+            <thead>
+            <tr th:each="facility: ${facilityList}">
+                <td th:text="${facility.idFacility}"></td>
+                <td th:text="${facility.areaFacility}"></td>
+                <td th:text="${facility.maxPeople}"></td>
+                <td th:text="${facility.rentType.nameRentType}"></td>
+                <td th:text="${facility.facilityType.nameFacilityType}"></td>
+                <td th:text="${facility.standardRoom}"></td>
+                <td th:text="${facility.poolArea}"></td>
+                <td th:text="${facility.numberOfFloors}"></td>
+                <td><a th:href="@{/facility/{id}/edit(id=${facility.getIdFacility()})}">edit</a></td>
+                <td><a th:href="@{/facility/{id}/delete(id=${facility.getIdFacility()})}">delete</a></td>
+
+            </tr>
+            </thead>
+
+
+            </tbody>
+        </table>
+        <div>
+            <a th:if="${facilityList.hasPrevious()}"
+               th:href="@{/resort/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">previous
+            </a>
+            <span th:text="${facilityList.number +1}"></span>
+            /
+            <span th:text="${facilityList.totalPages}"></span>
+            <a th:if="${facilityList.hasNext()}"
+               th:href="@{/resort/(page=${facilityList.number + 1} , keyword= ${keywordVal})}">next
+            </a>
+        </div>
+        
+    </div>
+   </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>

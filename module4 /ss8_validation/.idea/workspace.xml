@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c776ebca-3399-4ab0-9347-045ba2e547b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/model/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/model/FacilityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/model/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/facility_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/bai_tap/ss5_ORM_quan_li_san_pham/.idea/ss5_ORM_quan_li_san_pham.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/controller/FuramaResortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/java/com/phuc/casestudy_module4_furamaresort/controller/FuramaResortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/home_furama_resort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/resources/templates/logoutSuccessfulPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/resources/templates/userInfoPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss14_spring_security/bai_tap/spring_security/src/main/resources/templates/userInfoPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/bai_tap/ss5_ORM_quan_li_san_pham/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/bai_tap/ss5_ORM_quan_li_san_pham/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/bai_tap/ss5_ORM_quan_li_san_pham/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/bai_tap/ss5_ORM_quan_li_san_pham/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2BWKA9nVrRulpc5ckDgT4I5pWfq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c776ebca-3399-4ab0-9347-045ba2e547b2" name="Default Changelist" comment="" />
+      <created>1657016256232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657016256232</updated>
+      <workItem from="1657016257950" duration="745000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

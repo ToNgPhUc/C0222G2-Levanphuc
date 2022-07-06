@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<form th:action="@{/resort/save}" th:object="${facilityOject}"  method="post">
+  <table>
+    <tr>
+      <td><input th:field="*{descriptionOtherConvenience}" type="hidden"></td>
+    </tr>
+    <tr>
+      <td><input th:field="*{costFacility}" type="hidden"></td>
+    </tr>
+    <tr>
+      <td><input th:field="*{idFacility}" type="hidden"></td>
+    </tr>
+    <tr>
+      <td><input th:field="*{nameFacility}" type="hidden"></td>
+    </tr>
+    <tr>
+      <td>areaFacility:</td>
+      <td><input th:field="*{areaFacility}"></td>
+    </tr>
+    <tr>
+      <td>maxPeople:</td>
+      <td><input th:field="*{maxPeople}"></td>
+    </tr>
+
+    <tr>
+      <td> nameRentType :</td>
+      <td>
+        <select th:field="*{rentType}">
+          <option th:each="renType: ${rentTypeList}"
+                  th:value="${renType.idRentType}"
+                  th:text="${renType.nameRentType}"
+          >
+          </option>
+        </select>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td> nameFacilityType :</td>
+      <td>
+        <select th:field="*{facilityType}">
+          <option th:each="facilityType: ${facilityTypeList}"
+                  th:value="${facilityType.idFacilityType}"
+                  th:text="${facilityType.nameFacilityType}"
+          >
+          </option>
+        </select>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>standardRoom:</td>
+      <td><input th:field="*{standardRoom}"></td>
+    </tr>
+    <tr>
+      <td>poolArea:</td>
+      <td><input th:field="*{poolArea}"></td>
+    </tr>
+    <tr>
+      <td>numberOfFloors:</td>
+      <td><input th:field="*{numberOfFloors}"></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="submit" value="save">
+      </td>
+    </tr>
+  </table>
+
+</form>
+</body>
+</html>

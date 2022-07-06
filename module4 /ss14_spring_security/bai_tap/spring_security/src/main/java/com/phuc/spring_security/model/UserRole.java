@@ -34,11 +34,9 @@ public class UserRole {
         return id;
     }
 
-    public UserRole(Long id, AppUser appUser, AppRole appRole) {
-        this.id = id;
-        this.appUser = appUser;
-        this.appRole = appRole;
+    public UserRole() {
     }
+
 
     public void setId(Long id) {
         this.id = id;
