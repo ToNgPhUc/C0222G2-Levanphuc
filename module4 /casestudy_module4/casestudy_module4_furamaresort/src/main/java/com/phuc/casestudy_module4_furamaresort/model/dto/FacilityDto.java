@@ -1,36 +1,45 @@
-package com.phuc.casestudy_module4_furamaresort.model.facility;
+package com.phuc.casestudy_module4_furamaresort.model.dto;
 
-import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
+import com.phuc.casestudy_module4_furamaresort.model.facility.FacilityType;
+import com.phuc.casestudy_module4_furamaresort.model.facility.RentType;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
-@Entity
-@Table( name = "facility")
-public class Facility {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_facility")
+public class FacilityDto {
     private Integer idFacility;
     private String nameFacility;
     private Integer areaFacility;
     private Double costFacility;
     private Integer maxPeople;
-    @ManyToOne
-    @JoinColumn(name = "id_rent_type",referencedColumnName = "id_rent_type")
     private RentType rentType;
-    @ManyToOne
-    @JoinColumn(name = "id_facility_type",referencedColumnName = "id_facility_type")
     private FacilityType facilityType;
     private String standardRoom;
     private String descriptionOtherConvenience;
     private Double poolArea;
     private Integer numberOfFloors;
     private String facilityFree;
-    @OneToMany(mappedBy = "facility")
-    private List<Contract> contractList;
 
-    public Facility() {
+    public FacilityDto() {
+    }
+
+    public FacilityDto(Integer idFacility, String nameFacility, Integer areaFacility, Double costFacility,
+                       Integer maxPeople, RentType rentType, FacilityType facilityType, String standardRoom,
+                       String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors,
+                       String facilityFree) {
+        this.idFacility = idFacility;
+        this.nameFacility = nameFacility;
+        this.areaFacility = areaFacility;
+        this.costFacility = costFacility;
+        this.maxPeople = maxPeople;
+        this.rentType = rentType;
+        this.facilityType = facilityType;
+        this.standardRoom = standardRoom;
+        this.descriptionOtherConvenience = descriptionOtherConvenience;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.facilityFree = facilityFree;
     }
 
     public Integer getIdFacility() {
@@ -127,13 +136,5 @@ public class Facility {
 
     public void setFacilityFree(String facilityFree) {
         this.facilityFree = facilityFree;
-    }
-
-    public List<Contract> getContractList() {
-        return contractList;
-    }
-
-    public void setContractList(List<Contract> contractList) {
-        this.contractList = contractList;
     }
 }

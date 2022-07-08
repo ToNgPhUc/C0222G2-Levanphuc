@@ -5,15 +5,17 @@
     <title>Title</title>
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
     <style>
-        body {
+        #body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #menu {
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 100%;
             width: 100%;
-            background: url("https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
-        }
-        #menu {
-            height: 800px;
-            width: 100%;
-            background: url("https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+            background-image: url("https://anhdep123.com/wp-content/uploads/2020/05/h%C3%ACnh-%E1%BA%A3nh-bi%E1%BB%83n-1.jpg")
         }
 
         .form-label {
@@ -22,11 +24,11 @@
     </style>
 </head>
 <body>
-<div class="card text-center">
+<div id="body" class="card text-center">
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Furama</a>
+                <a class="navbar-brand" th:href="@{resort}">Furama resort</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +37,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Customer</a>
+                            <a class="nav-link" th:href="@{/customer}">Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Employee</a>
+                            <a class="nav-link" th:href="@{/employee}">Employee</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,9 +48,9 @@
                                 Other
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Facility</a></li>
-                                <li><a class="dropdown-item" href="#">Contract</a></li>
-                                <li><a class="dropdown-item" href="#">Booking</a></li>
+                                <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
+                                <li><a class="dropdown-item" th:href="@{/contract}">Contract</a></li>
+                                <li><a class="dropdown-item" th:href="@{/booking}">Booking</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -64,33 +66,46 @@
         <div class="container mt-4">
             <div class="row w-50 mx-auto">
                 <div class="row">
-                    <h2>Edit customer</h2>
-                    <form   method="post">
+                    <h2>Create customer</h2>
+                    <form th:action="@{/customer/edit}" th:object="${customer}" method="post">
                         <div class="form-outline mb-4">
-                            <input class="form-control" type="hidden"/>
+                            <input th:field="*{idCustomer}" class="form-control" type="hidden"/>
                         </div>
                         <div class="row">
 
                             <div class="col-6">
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Name Customer</label>
-                                    <input  class="form-control"/>
+                                    <input th:field="*{nameCustomer}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Date Of Birth</label>
-                                    <input  class="form-control"/>
+                                    <input type="date" th:field="*{dateOfBirth}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Gender</label>
-                                    <input class="form-control"/>
+
+                                    <select class="form-select" aria-label="Default select example"
+                                            th:field="*{gender}">
+                                        <option value="1">
+                                            nam
+                                        </option>
+                                        <option value="0">
+                                            nữ
+                                        </option>
+                                    </select>
+
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">id Card</label>
-                                    <input  class="form-control"/>
+                                    <input th:field="*{idCard}" class="form-control"/>
+
+
                                 </div>
+
 
                             </div>
 
@@ -99,24 +114,26 @@
                             <div class="col-6">
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Phone Number</label>
-                                    <input  class="form-control"/>
+                                    <input th:field="*{phoneNumber}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Email</label>
-                                    <input class="form-control"/>
+                                    <input th:field="*{email}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Address</label>
-                                    <input  class="form-control"/>
+                                    <input th:field="*{address}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Name Customer Type</label>
-                                    <select  class="form-select"
-                                             aria-label="Default select example">
-                                        <option >
+                                    <select th:field="*{customerType}" class="form-select"
+                                            aria-label="Default select example">
+                                        <option th:each="customerType:${customerTypeList}"
+                                                th:text="${customerType.nameCustomerType}"
+                                                th:value="${customerType.customerTypeId}">
 
                                         </option>
                                     </select>
@@ -126,7 +143,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block bg-momo">
-                            save
+                            edit
                         </button>
                         <a th:href="@{/customer}">
                             <button type="button" class="btn btn-primary btn-block bg-momo">

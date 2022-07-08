@@ -1,6 +1,7 @@
 package com.phuc.casestudy_module4_furamaresort.service.iplm;
 
 import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
+import com.phuc.casestudy_module4_furamaresort.model.dto.CustomerDto;
 import com.phuc.casestudy_module4_furamaresort.repository.ICustomerRepository;
 import com.phuc.casestudy_module4_furamaresort.service.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,15 @@ public class CustomerServiceIplm implements ICustomerService {
     @Override
     public void delete(Integer id) {
         iCustomerRepository.delete(iCustomerRepository.getById(id));
+    }
+
+    @Override
+    public void save(Customer customer) {
+        this.iCustomerRepository.save(customer);
+    }
+
+    @Override
+    public Customer findByIdCustomer(int id) {
+        return iCustomerRepository.getByIdCustomer(id);
     }
 }

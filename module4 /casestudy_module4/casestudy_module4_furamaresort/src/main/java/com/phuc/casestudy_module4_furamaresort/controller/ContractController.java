@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ContractController {
     @GetMapping(value = "")
     public String showListContract(){
+
         return "contract_list";
     }
+
 }

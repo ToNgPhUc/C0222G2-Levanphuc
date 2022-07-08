@@ -1,19 +1,17 @@
 package com.phuc.casestudy_module4_furamaresort.controller;
 
 import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
-import com.phuc.casestudy_module4_furamaresort.model.facility.Facility;
+import com.phuc.casestudy_module4_furamaresort.model.dto.CustomerDto;
 import com.phuc.casestudy_module4_furamaresort.service.ICustomerService;
 import com.phuc.casestudy_module4_furamaresort.service.ICustomerTypeService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -35,12 +33,34 @@ public class CustomerController {
         return "customer_list";
     }
     @GetMapping(value = "create")
-    public String showFormCreate(){
+    public String showFormCreate( Model model){
+        model.addAttribute("customerTypeList",this.iCustomerTypeService.findAll());
+        model.addAttribute("customerDto",new CustomerDto());
         return "customer_create";
     }
-    @GetMapping(value = "edit")
-    public String showFormEdit(){
+    @PostMapping(value = "save")
+    public String saveCustomer(@ModelAttribute CustomerDto customerDto){
+        Customer customer= new Customer();
+        BeanUtils.copyProperties(customerDto, customer);
+        iCustomerService.save(customer);
+        return "redirect:/customer";
+    }
+
+    @GetMapping(value = "/{id}/edit")
+    public String showFormEdit(@PathVariable int id, Model model){
+        model.addAttribute("customerTypeList",this.iCustomerTypeService.findAll());
+        model.addAttribute("customer",this.iCustomerService.findByIdCustomer(id));
         return "customer_edit";
+    }
+    @PostMapping(value = "/edit")
+    public String edit(@ModelAttribute Customer customer){
+        iCustomerService.save(customer);
+        return "redirect:/customer";
+    }
+    @GetMapping(value = "/{id}/delete")
+    String delete (@PathVariable int id){
+        iCustomerService.delete(id);
+        return "redirect:/customer";
     }
 
 }

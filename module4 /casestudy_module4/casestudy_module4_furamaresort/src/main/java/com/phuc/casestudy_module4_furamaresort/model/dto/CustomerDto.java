@@ -1,14 +1,10 @@
-package com.phuc.casestudy_module4_furamaresort.model.customer;
+package com.phuc.casestudy_module4_furamaresort.model.dto;
 
-import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
+import com.phuc.casestudy_module4_furamaresort.model.customer.CustomerType;
 
-import javax.persistence.*;
-import java.util.List;
 
-@Entity
-public class Customer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CustomerDto {
+
     private Integer idCustomer;
     private String nameCustomer;
     private String dateOfBirth;
@@ -17,16 +13,12 @@ public class Customer {
     private String phoneNumber;
     private String email;
     private String address;
-    @ManyToOne
-    @JoinColumn(name = "customer_type_id",referencedColumnName ="customer_type_id" )
     private CustomerType customerType;
-    @OneToMany(mappedBy = "customer")
-    private List<Contract> contractList;
 
-    public Customer() {
+    public CustomerDto() {
     }
 
-    public Customer(Integer idCustomer, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType, List<Contract> contractList) {
+    public CustomerDto(Integer idCustomer, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType) {
         this.idCustomer = idCustomer;
         this.nameCustomer = nameCustomer;
         this.dateOfBirth = dateOfBirth;
@@ -36,7 +28,6 @@ public class Customer {
         this.email = email;
         this.address = address;
         this.customerType = customerType;
-        this.contractList = contractList;
     }
 
     public Integer getIdCustomer() {
@@ -109,13 +100,5 @@ public class Customer {
 
     public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
-    }
-
-    public List<Contract> getContractList() {
-        return contractList;
-    }
-
-    public void setContractList(List<Contract> contractList) {
-        this.contractList = contractList;
     }
 }

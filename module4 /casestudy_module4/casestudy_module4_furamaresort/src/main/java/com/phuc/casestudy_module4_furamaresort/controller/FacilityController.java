@@ -1,9 +1,11 @@
 package com.phuc.casestudy_module4_furamaresort.controller;
 
+import com.phuc.casestudy_module4_furamaresort.model.dto.FacilityDto;
 import com.phuc.casestudy_module4_furamaresort.model.facility.Facility;
 import com.phuc.casestudy_module4_furamaresort.service.IFacilityService;
 import com.phuc.casestudy_module4_furamaresort.service.IFacilityTypeService;
 import com.phuc.casestudy_module4_furamaresort.service.IRentTypeService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,7 +18,7 @@ import java.util.Optional;
 
 @Controller
 @RequestMapping(value = "/resort")
-public class FuramaResortController {
+public class FacilityController {
     @Autowired
     private IFacilityService iFacilityService;
     @Autowired
@@ -42,14 +44,16 @@ public class FuramaResortController {
 
     @GetMapping(value = "create")
     public String showFormCreate(Model model) {
-        model.addAttribute("facilityOject", new Facility());
+        model.addAttribute("facilityDto", new FacilityDto());
         model.addAttribute("rentTypeList", this.iRentTypeService.findAll());
         model.addAttribute("facilityTypeList", this.iFacilityTypeService.findAll());
         return "facility_create";
     }
 
     @PostMapping(value = "save")
-    public String createFacility(@ModelAttribute Facility facility) {
+    public String createFacility(@ModelAttribute FacilityDto facilityDto) {
+        Facility facility= new Facility();
+        BeanUtils.copyProperties(facilityDto,facility);
         iFacilityService.save(facility);
         return "redirect:/resort/facility";
     }
@@ -73,8 +77,5 @@ public class FuramaResortController {
         this.iFacilityService.delete(id);
         return "redirect:/resort/facility";
     }
-
-                                        //    customer
-//    ------------------------------------------------------------------------------------------------  //
 
 }
