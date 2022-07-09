@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CustomerServiceIplm implements ICustomerService {
     @Autowired
@@ -32,5 +34,10 @@ public class CustomerServiceIplm implements ICustomerService {
     @Override
     public Customer findByIdCustomer(int id) {
         return iCustomerRepository.getByIdCustomer(id);
+    }
+
+    @Override
+    public List<Customer> findAll() {
+        return iCustomerRepository.findAll();
     }
 }

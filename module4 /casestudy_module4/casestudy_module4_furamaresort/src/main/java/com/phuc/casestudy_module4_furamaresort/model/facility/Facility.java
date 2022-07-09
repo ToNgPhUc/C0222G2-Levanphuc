@@ -1,26 +1,25 @@
 package com.phuc.casestudy_module4_furamaresort.model.facility;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table( name = "facility")
 public class Facility {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_facility")
-    private Integer idFacility;
+    private Integer id;
     private String nameFacility;
     private Integer areaFacility;
     private Double costFacility;
     private Integer maxPeople;
     @ManyToOne
-    @JoinColumn(name = "id_rent_type",referencedColumnName = "id_rent_type")
+    @JoinColumn(name = "rent_type",referencedColumnName = "id")
     private RentType rentType;
     @ManyToOne
-    @JoinColumn(name = "id_facility_type",referencedColumnName = "id_facility_type")
+    @JoinColumn(name = "facility_type",referencedColumnName = "id")
     private FacilityType facilityType;
     private String standardRoom;
     private String descriptionOtherConvenience;
@@ -28,17 +27,34 @@ public class Facility {
     private Integer numberOfFloors;
     private String facilityFree;
     @OneToMany(mappedBy = "facility")
+    @JsonBackReference
     private List<Contract> contractList;
 
     public Facility() {
     }
 
-    public Integer getIdFacility() {
-        return idFacility;
+    public Facility(Integer id, String nameFacility, Integer areaFacility, Double costFacility, Integer maxPeople, RentType rentType, FacilityType facilityType, String standardRoom, String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors, String facilityFree, List<Contract> contractList) {
+        this.id = id;
+        this.nameFacility = nameFacility;
+        this.areaFacility = areaFacility;
+        this.costFacility = costFacility;
+        this.maxPeople = maxPeople;
+        this.rentType = rentType;
+        this.facilityType = facilityType;
+        this.standardRoom = standardRoom;
+        this.descriptionOtherConvenience = descriptionOtherConvenience;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.facilityFree = facilityFree;
+        this.contractList = contractList;
     }
 
-    public void setIdFacility(Integer idFacility) {
-        this.idFacility = idFacility;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNameFacility() {

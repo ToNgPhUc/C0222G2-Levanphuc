@@ -1,5 +1,7 @@
 package com.phuc.casestudy_module4_furamaresort.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -7,27 +9,27 @@ import java.util.List;
 public class CustomerType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_type_id")
-    private Integer customerTypeId;
+    private Integer Id;
     private String nameCustomerType;
     @OneToMany(mappedBy = "customerType")
+    @JsonBackReference
     private List<Customer> customerList;
 
     public CustomerType() {
     }
 
-    public CustomerType(Integer customerTypeId, String nameCustomerType, List<Customer> customerList) {
-        this.customerTypeId = customerTypeId;
+    public CustomerType(Integer id, String nameCustomerType, List<Customer> customerList) {
+        Id = id;
         this.nameCustomerType = nameCustomerType;
         this.customerList = customerList;
     }
 
-    public Integer getCustomerTypeId() {
-        return customerTypeId;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setCustomerTypeId(Integer customerTypeId) {
-        this.customerTypeId = customerTypeId;
+    public void setId(Integer id) {
+        Id = id;
     }
 
     public String getNameCustomerType() {

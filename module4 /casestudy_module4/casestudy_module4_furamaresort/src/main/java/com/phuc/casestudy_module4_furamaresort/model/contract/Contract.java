@@ -1,36 +1,54 @@
 package com.phuc.casestudy_module4_furamaresort.model.contract;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
 import com.phuc.casestudy_module4_furamaresort.model.employee.Employee;
 import com.phuc.casestudy_module4_furamaresort.model.facility.Facility;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.util.List;
 
+@Entity
 public class Contract {
-    private Integer idContract;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String startDate;
     private String endDate;
-    private String deposit;
+    private Double deposit;
     @ManyToOne
-    @JoinColumn(name = "customer_id",referencedColumnName = ("customer_id"))
+    @JoinColumn(name = "customer",referencedColumnName = ("id"))
     private Customer customer;
     @ManyToOne
-    @JoinColumn(name = "employee_id",referencedColumnName = ("employee_id"))
+    @JoinColumn(name = "employee",referencedColumnName = ("id"))
     private Employee employee;
     @ManyToOne
-    @JoinColumn(name="facility_id",referencedColumnName = ("facility_id"))
+    @JoinColumn(name="facility",referencedColumnName = ("id"))
     private Facility facility;
+    @OneToMany(mappedBy = "contract")
+    @JsonBackReference
+    private List<ContractDetail> contractDetailList;
 
     public Contract() {
     }
 
-    public Integer getIdContract() {
-        return idContract;
+    public Contract(Integer id, String startDate, String endDate, Double deposit, Customer customer, Employee employee, Facility facility, List<ContractDetail> contractDetailList) {
+        this.id = id;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.deposit = deposit;
+        this.customer = customer;
+        this.employee = employee;
+        this.facility = facility;
+        this.contractDetailList = contractDetailList;
     }
 
-    public void setIdContract(Integer idContract) {
-        this.idContract = idContract;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getStartDate() {
@@ -49,11 +67,11 @@ public class Contract {
         this.endDate = endDate;
     }
 
-    public String getDeposit() {
+    public Double getDeposit() {
         return deposit;
     }
 
-    public void setDeposit(String deposit) {
+    public void setDeposit(Double deposit) {
         this.deposit = deposit;
     }
 
@@ -79,5 +97,13 @@ public class Contract {
 
     public void setFacility(Facility facility) {
         this.facility = facility;
+    }
+
+    public List<ContractDetail> getContractDetailList() {
+        return contractDetailList;
+    }
+
+    public void setContractDetailList(List<ContractDetail> contractDetailList) {
+        this.contractDetailList = contractDetailList;
     }
 }

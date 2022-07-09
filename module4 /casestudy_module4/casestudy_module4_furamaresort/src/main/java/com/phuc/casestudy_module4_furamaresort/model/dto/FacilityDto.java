@@ -1,14 +1,18 @@
 package com.phuc.casestudy_module4_furamaresort.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.facility.FacilityType;
 import com.phuc.casestudy_module4_furamaresort.model.facility.RentType;
 
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 public class FacilityDto {
-    private Integer idFacility;
+    private Integer id;
     private String nameFacility;
     private Integer areaFacility;
     private Double costFacility;
@@ -20,15 +24,13 @@ public class FacilityDto {
     private Double poolArea;
     private Integer numberOfFloors;
     private String facilityFree;
+    private List<Contract> contractList;
 
     public FacilityDto() {
     }
 
-    public FacilityDto(Integer idFacility, String nameFacility, Integer areaFacility, Double costFacility,
-                       Integer maxPeople, RentType rentType, FacilityType facilityType, String standardRoom,
-                       String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors,
-                       String facilityFree) {
-        this.idFacility = idFacility;
+    public FacilityDto(Integer id, String nameFacility, Integer areaFacility, Double costFacility, Integer maxPeople, RentType rentType, FacilityType facilityType, String standardRoom, String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors, String facilityFree, List<Contract> contractList) {
+        this.id = id;
         this.nameFacility = nameFacility;
         this.areaFacility = areaFacility;
         this.costFacility = costFacility;
@@ -40,14 +42,15 @@ public class FacilityDto {
         this.poolArea = poolArea;
         this.numberOfFloors = numberOfFloors;
         this.facilityFree = facilityFree;
+        this.contractList = contractList;
     }
 
-    public Integer getIdFacility() {
-        return idFacility;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIdFacility(Integer idFacility) {
-        this.idFacility = idFacility;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNameFacility() {
@@ -136,5 +139,13 @@ public class FacilityDto {
 
     public void setFacilityFree(String facilityFree) {
         this.facilityFree = facilityFree;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

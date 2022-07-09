@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+
+    <style>
+        #body{
+            width: 100%;
+            height:100vh;
+        }
+        #menu {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-image: url("//bizweb.dktcdn.net/100/033/603/themes/852890/assets/slider_1.jpg?1649413074140");
+
+        }
+    </style>
+</head>
+<body>
+<div id="body" class="card text-center">
+
+    <div class="card-body">
+        <div id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" th:href="@{resort}">Furama resort</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/customer}">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/employee}">Employee</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Other
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
+                                    <li><a class="dropdown-item"  th:href="@{/contract}">Contract</a></li>
+                                    <li><a class="dropdown-item" href="#">Booking</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex"action="/resort/facility">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"name="id" th:value="${id}">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container text-center m-5">
+                <a href="/resort/create" class="btn btn-outline-success">Create New Facility</a>
+            </div>
+            <div class="container">
+
+                <table class="table table-dark table-striped">
+                    <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>ID</td>
+                        <td>QUANTITY</td>
+                        <td>ATTACH FACILITY</td>
+                        <td>CONTRACT</td>
+                        <td>edit</td>
+                        <td>delete</td>
+
+
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr th:each="contractDetail, loop :  ${contractDetailList}">
+                        <td th:text="${loop.count}"></td>
+                        <td th:text="${contractDetail.id}"></td>
+                        <td th:text="${contractDetail.quantity}"></td>
+                        <td th:text="${contractDetail.attachFacility.nameAttach}"></td>
+                        <td th:text="${contractDetail.contract.customer.nameCustomer}"></td>
+                        <td><a th:href="@{/contractDetail/{id}/edit(id=${contractDetail.getId()})}">
+                            <button class="btn btn-success ">edit</button>
+                        </a></td>
+                    </tr>
+                    </thead>
+                    </tbody>
+                </table>
+                <div>
+                    <a th:if="${contractDetailList.hasPrevious()}"
+                       th:href="@{/contractDetail/(page=${contractDetailList.number - 1} , id= ${id})}">
+                        <button>Previous</button>
+                    </a>
+                    <span th:text="${contractDetailList.number +1}"></span>
+                    /
+                    <span th:text="${contractDetailList.totalPages}"></span>
+                    <a th:if="${contractDetailList.hasNext()}"
+                       th:href="@{/contractDetail/(page=${contractDetailList.number + 1} , id= ${id})}">
+                        <button>next</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        ToNgPhUc@gmail.com
+    </div>
+</div>
+
+
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+</html>
+

@@ -68,7 +68,7 @@
                     <h2>Create facility</h2>
                     <form th:action="@{/resort/edit}" th:object="${facilityOject}" method="post">
                         <div class="form-outline mb-4">
-                            <input th:field="*{idFacility}" class="form-control" type="hidden"/>
+                            <input th:field="*{id}" class="form-control" type="hidden"/>
                         </div>
                         <div class="row">
 
@@ -98,7 +98,7 @@
                                     <select th:field="*{rentType}" class="form-select"
                                             aria-label="Default select example">
                                         <option th:each="renType: ${rentTypeList}"
-                                                th:value="${renType.idRentType}"
+                                                th:value="${renType.id}"
                                                 th:text="${renType.nameRentType}"
                                         >
                                         </option>
@@ -110,7 +110,7 @@
                                     <select th:field="*{facilityType}" class="form-select"
                                             aria-label="Default select example">
                                         <option th:each="facilityType: ${facilityTypeList}"
-                                                th:value="${facilityType.idFacilityType}"
+                                                th:value="${facilityType.id}"
                                                 th:text="${facilityType.nameFacilityType}">
                                         </option>
                                     </select>

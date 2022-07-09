@@ -66,90 +66,67 @@
         <div class="container mt-4">
             <div class="row w-50 mx-auto">
                 <div class="row">
-                    <h2>Create customer</h2>
-                    <form th:action="@{/customer/edit}" th:object="${customer}" method="post">
+                    <h2>Create contract</h2>
+                    <form action="/contract/save" th:object="${contract}" method="post">
                         <div class="form-outline mb-4">
                             <input th:field="*{id}" class="form-control" type="hidden"/>
                         </div>
+
                         <div class="row">
-
-                            <div class="col-6">
+                            <div class="m-auto">
                                 <div class="form-outline mb-4">
-                                    <label class="form-label">Name Customer</label>
-                                    <input th:field="*{nameCustomer}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Date Of Birth</label>
-                                    <input type="date" th:field="*{dateOfBirth}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Gender</label>
-
-                                    <select class="form-select" aria-label="Default select example"
-                                            th:field="*{gender}">
-                                        <option value="1">
-                                            nam
-                                        </option>
-                                        <option value="0">
-                                            nữ
-                                        </option>
-                                    </select>
-
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">id Card</label>
-                                    <input th:field="*{idCard}" class="form-control"/>
-
-
-                                </div>
-
-
-                            </div>
-
-                            <!---------------------------->
-
-                            <div class="col-6">
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Phone Number</label>
-                                    <input th:field="*{phoneNumber}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Email</label>
-                                    <input th:field="*{email}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Address</label>
-                                    <input th:field="*{address}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Name Customer Type</label>
-                                    <select th:field="*{customerType}" class="form-select"
+                                    <label class="form-label">SERVICE</label>
+                                    <select th:field="*{facility}" class="form-select"
                                             aria-label="Default select example">
-                                        <option th:each="customerType:${customerTypeList}"
-                                                th:text="${customerType.nameCustomerType}"
-                                                th:value="${customerType.id}">
+                                        <option th:each="facility:${facilityList}"
+                                                th:text="${facility.nameFacility}"
+                                                th:value="${facility.id}">
 
                                         </option>
                                     </select>
                                 </div>
 
-                            </div>
-                        </div>
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">CUSTOMER</label>
+                                    <select th:field="*{customer}" class="form-select"
+                                            aria-label="Default select example">
+                                        <option th:each="customer:${customerList}"
+                                                th:text="${customer.nameCustomer}"
+                                                th:value="${customer.id}">
 
-                        <button type="submit" class="btn btn-primary btn-block bg-momo">
-                            edit
-                        </button>
-                        <a th:href="@{/customer}">
-                            <button type="button" class="btn btn-primary btn-block bg-momo">
-                                Back To List
-                            </button>
-                        </a>
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">START DAY</label>
+                                    <input th:field="*{startDate}" class="form-control"/>
+
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">END DAY</label>
+                                    <input th:field="*{endDate}" class="form-control"/>
+
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">DEPOSIT</label>
+                                    <input th:field="*{deposit}" class="form-control"/>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block bg-momo">
+                                    save
+                                </button>
+                                <a th:href="@{/contract}">
+                                    <button type="button" class="btn btn-primary btn-block bg-momo">
+                                        Back To List
+                                    </button>
+                                </a>
+
+                            </div>
+
+
+                        </div>
                     </form>
 
                 </div>

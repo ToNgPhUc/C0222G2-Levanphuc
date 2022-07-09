@@ -1,35 +1,36 @@
 package com.phuc.casestudy_module4_furamaresort.model.facility;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "facility_type")
 public class FacilityType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column( name = "id_facility_type")
-    private Integer idFacilityType;
+    private Integer id;
     @Column(name = "name_facility_type")
     private String nameFacilityType;
     @OneToMany(mappedBy = "facilityType")
+    @JsonBackReference
     private List<Facility>facilityList;
 
     public FacilityType() {
     }
 
-    public FacilityType(Integer idFacilityType, String nameFacilityType, List<Facility> facilityList) {
-        this.idFacilityType = idFacilityType;
+    public FacilityType(Integer id, String nameFacilityType, List<Facility> facilityList) {
+        this.id = id;
         this.nameFacilityType = nameFacilityType;
         this.facilityList = facilityList;
     }
 
-    public Integer getIdFacilityType() {
-        return idFacilityType;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIdFacilityType(Integer idFacilityType) {
-        this.idFacilityType = idFacilityType;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNameFacilityType() {

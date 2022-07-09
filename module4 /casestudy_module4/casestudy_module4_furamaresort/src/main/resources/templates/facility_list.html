@@ -86,7 +86,7 @@
                     <thead>
                     <tr th:each="facility, loop :  ${facilityList}">
                         <td th:text="${loop.count}"></td>
-                        <td th:text="${facility.idFacility}"></td>
+                        <td th:text="${facility.id}"></td>
                         <td th:text="${facility.nameFacility}"></td>
                         <td th:text="${facility.areaFacility}"></td>
                         <td th:text="${facility.costFacility}"></td>
@@ -96,18 +96,18 @@
                         <td th:text="${facility.standardRoom}"></td>
                         <td th:text="${facility.poolArea}"></td>
                         <td th:text="${facility.numberOfFloors}"></td>
-                        <td><a th:href="@{/resort/{id}/edit(id=${facility.getIdFacility()})}">
+                        <td><a th:href="@{/resort/{id}/edit(id=${facility.getId()})}">
                             <button class="btn btn-success ">edit</button>
                         </a></td>
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                                    th:data-bs-target=" '#exampleModal' + ${facility.idFacility}">
+                                    th:data-bs-target=" '#exampleModal' + ${facility.id}">
                                 delete
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" th:id="exampleModal  + ${facility.idFacility}" tabindex="-1"
+                            <div class="modal fade" th:id="exampleModal  + ${facility.id}" tabindex="-1"
                                  aria-labelledby="exampleModalLabel"
                                  aria-hidden="true">
                                 <div class="modal-dialog">
@@ -120,12 +120,12 @@
                                         <div class="modal-body" style="color: green">
                                             bạn có muốn xóa <span th:text="${facility.facilityType.nameFacilityType}"></span> với id
                                             = <span
-                                                th:text="${facility.idFacility}"></span> ?
+                                                th:text="${facility.id}"></span> ?
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                             </button>
-                                            <a th:href="@{/resort/{id}/delete(id=${facility.getIdFacility()})}">
+                                            <a th:href="@{/resort/{id}/delete(id=${facility.getId()})}">
                                                 <button class="btn btn-success ">delete</button>
                                             </a>
                                         </div>

@@ -1,15 +1,17 @@
 package com.phuc.casestudy_module4_furamaresort.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "customer")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idCustomer;
+    private Integer id;
     private String nameCustomer;
     private String dateOfBirth;
     private Integer gender;
@@ -18,16 +20,17 @@ public class Customer {
     private String email;
     private String address;
     @ManyToOne
-    @JoinColumn(name = "customer_type_id",referencedColumnName ="customer_type_id" )
+    @JoinColumn(name = "customer_type", referencedColumnName = "id")
     private CustomerType customerType;
     @OneToMany(mappedBy = "customer")
+    @JsonBackReference
     private List<Contract> contractList;
 
     public Customer() {
     }
 
-    public Customer(Integer idCustomer, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType, List<Contract> contractList) {
-        this.idCustomer = idCustomer;
+    public Customer(Integer id, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType, List<Contract> contractList) {
+        this.id = id;
         this.nameCustomer = nameCustomer;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -39,12 +42,12 @@ public class Customer {
         this.contractList = contractList;
     }
 
-    public Integer getIdCustomer() {
-        return idCustomer;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIdCustomer(Integer idCustomer) {
-        this.idCustomer = idCustomer;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNameCustomer() {

@@ -1,11 +1,14 @@
 package com.phuc.casestudy_module4_furamaresort.model.dto;
 
+
+import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.customer.CustomerType;
+import java.util.List;
 
 
 public class CustomerDto {
 
-    private Integer idCustomer;
+    private Integer id;
     private String nameCustomer;
     private String dateOfBirth;
     private Integer gender;
@@ -14,12 +17,13 @@ public class CustomerDto {
     private String email;
     private String address;
     private CustomerType customerType;
+    private List<Contract> contractList;
 
     public CustomerDto() {
     }
 
-    public CustomerDto(Integer idCustomer, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType) {
-        this.idCustomer = idCustomer;
+    public CustomerDto(Integer id, String nameCustomer, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType, List<Contract> contractList) {
+        this.id = id;
         this.nameCustomer = nameCustomer;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -28,14 +32,15 @@ public class CustomerDto {
         this.email = email;
         this.address = address;
         this.customerType = customerType;
+        this.contractList = contractList;
     }
 
-    public Integer getIdCustomer() {
-        return idCustomer;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIdCustomer(Integer idCustomer) {
-        this.idCustomer = idCustomer;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNameCustomer() {
@@ -100,5 +105,13 @@ public class CustomerDto {
 
     public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

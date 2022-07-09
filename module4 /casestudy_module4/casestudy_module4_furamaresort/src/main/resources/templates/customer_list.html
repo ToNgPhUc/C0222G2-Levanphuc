@@ -85,7 +85,7 @@
 
                         <tr th:each="customer, loop :  ${customerList}">
                             <td th:text="${loop.count}"></td>
-                            <td th:text="${customer.idCustomer}"></td>
+                            <td th:text="${customer.id}"></td>
                             <td th:text="${customer.nameCustomer}"></td>
                             <td th:text="${customer.dateOfBirth}"></td>
                             <td th:if="${customer.gender==1}">nam</td>
@@ -95,18 +95,18 @@
                             <td th:text="${customer.email}"></td>
                             <td th:text="${customer.address}"></td>
                             <td th:text="${customer.customerType.nameCustomerType}"></td>
-                            <td><a th:href="@{/customer/{id}/edit(id=${customer.idCustomer})}">
+                            <td><a th:href="@{/customer/{id}/edit(id=${customer.id})}">
                                 <button class="btn btn-success ">edit</button></a>
                             </td>
                             <td>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                                        th:data-bs-target=" '#exampleModal' + ${customer.idCustomer}">
+                                        th:data-bs-target=" '#exampleModal' + ${customer.id}">
                                     delete
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade" th:id="exampleModal  + ${customer.idCustomer}" tabindex="-1"
+                                <div class="modal fade" th:id="exampleModal  + ${customer.id}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel"
                                      aria-hidden="true">
                                     <div class="modal-dialog">
@@ -119,12 +119,12 @@
                                             <div class="modal-body" style="color: green">
                                                 bạn có muốn xóa <span th:text="${customer.customerType.nameCustomerType}"></span> với id
                                                 = <span
-                                                    th:text="${customer.idCustomer}"></span> ?
+                                                    th:text="${customer.id}"></span> ?
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                                 </button>
-                                                <a th:href="@{/customer/{id}/delete(id=${customer.getIdCustomer()})}">
+                                                <a th:href="@{/customer/{id}/delete(id=${customer.getId()})}">
                                                     <button class="btn btn-success ">delete</button>
                                                 </a>
                                             </div>

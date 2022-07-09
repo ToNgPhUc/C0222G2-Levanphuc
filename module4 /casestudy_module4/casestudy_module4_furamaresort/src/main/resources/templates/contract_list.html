@@ -6,10 +6,11 @@
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
 
     <style>
-        #body{
+        #body {
             width: 100%;
-            height:100vh;
+            height: 100vh;
         }
+
         #menu {
             background-repeat: no-repeat;
             background-size: cover;
@@ -64,35 +65,33 @@
                 </div>
             </nav>
             <div class="container-fluid text-center m-5">
-                <a href="/employee/create" class="btn btn-outline-success">Create New employee</a>
+                <a href="/contract/create" class="btn btn-outline-success">Create New contract</a>
             </div>
             <div class="container">
 
                 <table id="tableStudent" class="table table-dark table-hover" style="width: 100%">
-
                     <tr>
                         <td>#</td>
                         <td>SERVICE</td>
-                        <td>CUSTOMER NAME</td>
-                        <td>START DATE</td>
-                        <td>END DATE</td>
+                        <td>CUSTOMER</td>
+                        <td>STAR DAY</td>
+                        <td>END DAY</td>
                         <td>DEPOSIT</td>
-                        <td>TOTAL MONEY</td>
-                        <td>ACCOMPANIED SERVICE</td>
+                        <td>TOTAL</td>
+                        <td colspan="2">OTHER SERVICE </td>
+
 
 
                     </tr>
+                    <tr th:each="contract, loop:${contractList}">
+                        <td th:text="${loop.count}"></td>
+                        <td th:text="${contract.facility.nameFacility}"></td>
+                        <td th:text="${contract.customer.nameCustomer}"></td>
+                        <td th:text="${contract.startDate}"></td>
+                        <td th:text="${contract.endDate}"></td>
+                        <td th:text="${contract.deposit}"></td>
+                        <td th:text="${total}"></td>
 
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>14/02/1995</td>
-                        <td> 14/03/1995</td>
-                        <td> 1000</td>
-
-                        <td>hoan dep trai</td>
-                        <td>phuc xau trai</td>
-                        <td>khu nghi duong</td>
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
@@ -115,11 +114,10 @@
 
                                         <div class="modal-body" style="color: green">
 
-                                            <form method="post">
+                                            <form action="/contract/save" method="post">
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <div class="form-outline mb-4">
-                                                            <label class="form-label">ngày bắt đầu</label>
                                                             <input type="date" class="form-control"/>
                                                         </div>
 
@@ -222,19 +220,19 @@
                         </td>
                     </tr>
                 </table>
-<!--                                <div>-->
-<!--                                    <a th:if="${customerList.hasPrevious()}"-->
-<!--                                       th:href="@{/customer/(page=${customerList.number - 1} , keyword= ${keywordVal})}">-->
-<!--                                        <button>hasPrevious</button>-->
-<!--                                    </a>-->
-<!--                                    <span th:text="${customerList.number +1}"></span>-->
-<!--                                    /-->
-<!--                                    <span th:text="${customerList.totalPages}"></span>-->
-<!--                                    <a th:if="${customerList.hasNext()}"-->
-<!--                                       th:href="@{/customer/(page=${customerList.number + 1} , keyword= ${keywordVal})}">-->
-<!--                                        <button>next</button>-->
-<!--                                    </a>-->
-<!--                                </div>-->
+                <div>
+                    <a th:if="${contractList.hasPrevious()}"
+                       th:href="@{/contract/(page=${contractList.number - 1} , keyword= ${keywordVal})}">
+                        <button>hasPrevious</button>
+                    </a>
+                    <span th:text="${contractList.number +1}"></span>
+                    /
+                    <span th:text="${contractList.totalPages}"></span>
+                    <a th:if="${contractList.hasNext()}"
+                       th:href="@{/contract/(page=${contractList.number + 1} , keyword= ${keywordVal})}">
+                        <button>next</button>
+                    </a>
+                </div>
 
             </div>
         </div>
