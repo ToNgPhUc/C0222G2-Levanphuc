@@ -2,7 +2,7 @@ package com.phuc.casestudy_module4_furamaresort.service.iplm;
 
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDetail;
-import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDto;
+import com.phuc.casestudy_module4_furamaresort.model.dto.ContractDto;
 import com.phuc.casestudy_module4_furamaresort.repository.IContractRepository;
 import com.phuc.casestudy_module4_furamaresort.service.IContractService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -37,11 +36,12 @@ public class ContractServiceIplm implements IContractService {
     public Page<ContractDto> getAllContract(String keywordVal, Pageable pageable) {
         Page<Contract> contractPage = this.iContractRepository.findByName("%"+ keywordVal +"%", pageable);
         List<ContractDto> contractDtoList = new ArrayList<>();
-        Page<ContractDto> contractDtoPage = new PageImpl<>(contractDtoList);
+        Page<ContractDto> contractDtoPage;
         for (int i = 0; i < contractPage.getContent().size(); i++) {
             int total = 0;
             for (ContractDetail contractDetail: contractPage.getContent().get(i).getContractDetailList()) {
-                total += contractDetail.getQuantity() * contractDetail.getAttachFacility().getCode();
+                total += contractDetail.getQuantity() *
+                        contractDetail.getAttachFacility().getCode() + contractDetail.getContract().getFacility().getCostFacility();
             }
             ContractDto contractDto = new ContractDto(contractPage.getContent().get(i).getId(),
                     contractPage.getContent().get(i).getStartDate(),

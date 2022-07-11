@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link target="">
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
     <style>
         #body{
@@ -105,45 +106,59 @@
                                     </select>
                                 </div>
 
+
+                            </div>
+
+                               <!---------------------------->
+
+                            <div class="col-6" >
+                                 <!--                                tạo sự kiện onchange getForm để tạo fusition-->
+
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Name Facility Type</label>
-                                    <select th:field="*{facilityType}" class="form-select"
-                                            aria-label="Default select example">
+                                    <select th:field="*{facilityType}" id="selectType" class="form-select"
+                                            aria-label="Default select example" onchange="getForm()">
+
                                         <option th:each="facilityType: ${facilityTypeList}"
                                                 th:value="${facilityType.id}"
                                                 th:text="${facilityType.nameFacilityType}">
                                         </option>
                                     </select>
                                 </div>
-                            </div>
+                                <div id="room-facility">
 
-                               <!---------------------------->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Facility Free</label>
+                                        <input th:field="*{facilityFree}" class="form-control"/>
+                                    </div>
 
-                            <div class="col-6">
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Standard Room</label>
-                                    <input th:field="*{standardRoom}" class="form-control"/>
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Description Other Convenience</label>
-                                    <input th:field="*{descriptionOtherConvenience}" class="form-control"/>
+                                <div id="villa-facility" style="display: none">
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Pool Area</label>
+                                        <input th:field="*{poolArea}" class="form-control"/>
+                                    </div>
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Pool Area</label>
-                                    <input th:field="*{poolArea}" class="form-control"/>
+                                <div id="house-facility" style="display: none">
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Standard Room</label>
+                                        <input th:field="*{standardRoom}" class="form-control"/>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Description Other Convenience</label>
+                                        <input th:field="*{descriptionOtherConvenience}" class="form-control"/>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Number Of Floors</label>
+                                        <input th:field="*{numberOfFloors}" class="form-control"/>
+                                    </div>
+
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Number Of Floors</label>
-                                    <input th:field="*{numberOfFloors}" class="form-control"/>
-                                </div>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Facility Free</label>
-                                    <input th:field="*{facilityFree}" class="form-control"/>
-                                </div>
+
                             </div>
                         </div>
 
@@ -166,6 +181,30 @@
     </div>
 </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+function getForm(){
+        let valueSelectType = $('#selectType').val();
+        if(valueSelectType === '3'){
+            $('#room-facility').show();
+            $('#villa-facility').hide();
+            $('#house-facility').hide();
+        }
+        if(valueSelectType === '2'){
+            $('#house-facility').show();
+            $('#room-facility').hide();
+            $('#villa-facility').hide();
+        }
+        if(valueSelectType === '1'){
+            $('#villa-facility').show();
+            $('#house-facility').show();
+            $('#room-facility').hide();
+        }
+    }
+
+</script>
 <th:block th:replace="~{common-html :: boostrapScript}"></th:block>
 </html>
 

@@ -14,4 +14,17 @@ public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
 
     @Query(value = "select  * from  customer where id = :id",nativeQuery = true)
     Customer getByIdCustomer(@Param("id") int id);
+
+
+    @Query(value = "select customer.* from customer join contract c on customer.id = c.customer " +
+            " join contract_detail cd on c.id = cd.contract " +
+            " join attach_facility af on af.id = cd.attach_facility " +
+            " join facility f on c.facility = f.id where name_customer like :keywordVal " +
+            " group by customer.id ",nativeQuery = true,
+    countQuery = " select count(*) from (select customer.* from customer join contract c on customer.id = c.customer " +
+            " join contract_detail cd on c.id = cd.contract " +
+            " join attach_facility af on af.id = cd.attach_facility " +
+            " join facility f on c.facility = f.id  where name_customer like :keywordVal " +
+            " group by customer.id ) temp_table ")
+    Page<Customer> findByNameCustomerUserFacility(@Param("keywordVal") String keywordVal, Pageable pageable);
 }

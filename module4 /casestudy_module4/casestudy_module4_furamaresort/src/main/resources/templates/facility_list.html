@@ -29,7 +29,7 @@
         <div id="menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" th:href="@{resort}">Furama resort</a>
+                    <a class="navbar-brand" th:href="@{/resort}">Furama </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -69,7 +69,6 @@
                     <thead>
                     <tr>
                         <td>STT</td>
-                        <td>ID</td>
                         <td>Name</td>
                         <td>Area Facility</td>
                         <td>Cost</td>
@@ -86,8 +85,8 @@
                     </tr>
                     </thead>
                     <thead>
-                    <tr th:each="facility, loop :  ${facilityList}">
-                        <td th:text="${loop.count}"></td>
+                    <tr th:each="facility :  ${facilityList}">
+
                         <td th:text="${facility.id}"></td>
                         <td th:text="${facility.nameFacility}"></td>
                         <td th:text="${facility.areaFacility}"></td>
@@ -115,7 +114,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 style="color: brown" class="modal-title" id="exampleModalLabel">delete facility</h5>
+                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel">Delete Facility</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
@@ -140,28 +139,28 @@
                     </tbody>
                 </table>
 
-                <div>
+                <div style="float: right">
                     <h3>
                         <a th:if="${facilityList.hasPrevious()}"
                            th:href="@{/resort/facility/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">
-                            <i  style="color: black" class="fa-solid fa-backward"></i>
+                            <i  style="color: green" class="fa-solid fa-backward"></i>
                         </a>
                         <span th:text="${facilityList.number +1}"></span>
                         /
                         <span th:text="${facilityList.totalPages}"></span>
                         <a th:if="${facilityList.hasNext()}"
                            th:href="@{/resort/facility/(page=${facilityList.number + 1} , keyword= ${keywordVal})}">
-                            <i style="color: black" class="fa-solid fa-forward"></i>
+                            <i style="color: green" class="fa-solid fa-forward"></i>
                         </a>
                     </h3>
 
                 </div>
 
+
             </div>
         </div>
 
     </div>
-
 
     <div class="card-footer text-muted">
 ToNgPhUc@gmail.com

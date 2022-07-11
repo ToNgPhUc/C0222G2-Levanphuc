@@ -18,4 +18,6 @@ public interface ICustomerService {
     Customer findByIdCustomer(int id);
 
      List<Customer> findAll();
+
+    Page<Customer> findByNameCustomerUserFacility(String keywordVal, Pageable pageable);
 }

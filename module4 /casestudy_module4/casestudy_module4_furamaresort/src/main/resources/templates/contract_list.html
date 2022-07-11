@@ -67,24 +67,27 @@
                     </div>
                 </div>
             </nav>
-            <div class="container-fluid text-center m-5">
+            <div class="container text-center m-5">
                 <a href="/contract/create" class="btn btn-outline-success">Create New contract</a>
             </div>
             <div class="container">
 
                 <table class="table table-dark table-striped">
+                    <thead>
                     <tr>
-                        <td>#</td>
+                        <td>STT</td>
                         <td>SERVICE</td>
                         <td>CUSTOMER</td>
                         <td>STAR DAY</td>
                         <td>END DAY</td>
                         <td>DEPOSIT</td>
                         <td>TOTAL</td>
-                        <td colspan="2">OTHER SERVICE </td>
+                        <td colspan="2">OTHER SERVICE</td>
                     </tr>
+                    </thead>
+                    <thead>
                     <tr th:each="contract, loop:${contractList}">
-                        <td th:text="${loop.count}"></td>
+                        <td th:text="${contract.id}"></td>
                         <td th:text="${contract.facility.nameFacility}"></td>
                         <td th:text="${contract.customer.nameCustomer}"></td>
                         <td th:text="${contract.startDate}"></td>
@@ -94,7 +97,7 @@
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                            th:attr="data-bs-target='#exampleModalCreate'+${contract.id}">
+                                    th:attr="data-bs-target='#exampleModalCreate'+${contract.id}">
                                 +
                             </button>
                             <!-- Modal -->
@@ -104,33 +107,38 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 style="color: brown" class="modal-title" id="exampleModalLabel1">create
+                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel1">create
                                                 contract Detail</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body" style="color: green">
 
-                                            <form action="/contract/saveContractDetail" method="post" th:object="${contractDetail}">
+                                            <form action="/contract/saveContractDetail" method="post"
+                                                  th:object="${contractDetail}">
 
                                                 <div class="row">
                                                     <div class="container">
+
                                                         <div class="form-outline mb-4">
-                                                            <input th:value="${contract.id}" type="text" class="form-control"/>
-                                                        </div>
-                                                        <div class="form-outline mb-4">
-                                                            <input th:field="*{contract.id}" type="text" class="form-control"/>
+                                                            <select class="form-select"
+                                                                    aria-label="Default select example"
+                                                                    th:field="*{contract}" hidden>
+                                                                <option th:value="${contract.id}"></option>
+                                                            </select>
                                                         </div>
 
                                                         <div class="form-outline mb-4">
                                                             <label class="form-label">Quantity</label>
-                                                            <input th:field="*{quantity}" type="text" class="form-control"/>
+                                                            <input th:field="*{quantity}" type="text"
+                                                                   class="form-control"/>
                                                         </div>
 
                                                         <div class="form-outline mb-4">
                                                             <label class="form-label">Attach Facility</label>
-
-                                                            <select class="form-select" aria-label="Default select example" th:field="*{attachFacility}">
+                                                            <select class="form-select"
+                                                                    aria-label="Default select example"
+                                                                    th:field="*{attachFacility}">
                                                                 <option value="1">karaoke</option>
                                                                 <option value="2">thuê xe máy</option>
                                                                 <option value="3">tay vịn</option>
@@ -142,7 +150,9 @@
                                                     </div>
                                                     <div class="modal-footer">
 
-                                                        <a> <button type="submit" class="btn btn-success ">save</button> </a>
+                                                        <a>
+                                                            <button type="submit" class="btn btn-success ">save</button>
+                                                        </a>
                                                         <button type="button" class="btn btn-secondary"
                                                                 data-bs-dismiss="modal">Close
                                                         </button>
@@ -151,35 +161,33 @@
                                             </form>
 
 
+                                            <!--                                            <div>-->
+                                            <!--                                                <p style="color: red" id="pError"></p>-->
+                                            <!--                                            </div>-->
 
+                                            <!--                                            <div class="form-outline mb-4">-->
+                                            <!--                                                <input type="text" id="inputQuantity" class="form-control"/>-->
+                                            <!--                                                <label class="form-label" for="inputQuantity">Quantity</label>-->
+                                            <!--                                            </div>-->
+                                            <!--                                            <div class="form-outline mb-4">-->
 
-<!--                                            <div>-->
-<!--                                                <p style="color: red" id="pError"></p>-->
-<!--                                            </div>-->
+                                            <!--                                            <select id="inputAttachFacility" class="form-control mb-4">-->
+                                            <!--                                                <option value="1">karaoke</option>-->
+                                            <!--                                                <option value="2"> thuê xe máy</option>-->
+                                            <!--                                            </select>-->
+                                            <!--                                                <label class="form-label" for="inputQuantity">Attach Facility</label>-->
 
-<!--                                            <div class="form-outline mb-4">-->
-<!--                                                <input type="text" id="inputQuantity" class="form-control"/>-->
-<!--                                                <label class="form-label" for="inputQuantity">Quantity</label>-->
-<!--                                            </div>-->
-<!--                                            <div class="form-outline mb-4">-->
+                                            <!--                                            </div>-->
+                                            <!--                                            <div class="form-outline mb-4">-->
+                                            <!--                                                <input type="text" id="inputContract" class="form-control"/>-->
+                                            <!--                                                <label class="form-label" for="inputContract">Contract Id</label>-->
+                                            <!--                                            </div>-->
 
-<!--                                            <select id="inputAttachFacility" class="form-control mb-4">-->
-<!--                                                <option value="1">karaoke</option>-->
-<!--                                                <option value="2"> thuê xe máy</option>-->
-<!--                                            </select>-->
-<!--                                                <label class="form-label" for="inputQuantity">Attach Facility</label>-->
-
-<!--                                            </div>-->
-<!--                                            <div class="form-outline mb-4">-->
-<!--                                                <input type="text" id="inputContract" class="form-control"/>-->
-<!--                                                <label class="form-label" for="inputContract">Contract Id</label>-->
-<!--                                            </div>-->
-
-<!--                                            <a href="/contract_detail_restful/create">-->
-<!--                                                <button id="btnCreate" type="button" class="btn btn-primary btn-block bg-momo">-->
-<!--                                                    Create-->
-<!--                                                </button>-->
-<!--                                            </a>-->
+                                            <!--                                            <a href="/contract_detail_restful/create">-->
+                                            <!--                                                <button id="btnCreate" type="button" class="btn btn-primary btn-block bg-momo">-->
+                                            <!--                                                    Create-->
+                                            <!--                                                </button>-->
+                                            <!--                                            </a>-->
 
                                         </div>
 
@@ -191,48 +199,56 @@
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
+                                    th:attr="data-bs-target='#exampleModalDanhSach'+${contract.id}">
                                 danh sách các dịch vụ đi kèm
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                            <div class="modal fade" th:attr="id='exampleModalDanhSach'+${contract.id}" tabindex="-1"
                                  aria-labelledby="exampleModalLabel"
                                  aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel">List Attach Facility</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body" style="color: green">
-                                        <table>
-                                            <tr th:each="contractDetail: ${contractDetailList} ">
-                                                <td th:text="${contractDetail.attachFacility.nameAttach}"></td>
-                                            </tr>
-                                        </table>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>STT</td>
+                                                    <td>Quantity</td>
+                                                    <td>Name Attach</td>
+                                                </tr>
+
+                                                <tr th:each="contractDetail, loop: ${contract.contractDetailList} ">
+                                                    <td th:text="${loop.count}"></td>
+                                                    <td th:text="${contractDetail.quantity}"></td>
+                                                    <td th:text="${contractDetail.attachFacility.nameAttach}"></td>
+                                                </tr>
+                                            </table>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <button type="button" class="btn btn-success " data-bs-dismiss="modal">
                                                 Close
                                             </button>
-                                            <a>
-                                                <button class="btn btn-success ">delete</button>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
+                    </thead>
+
+
                 </table>
 
                 <div>
                     <h3>
                         <a th:if="${contractList.hasPrevious()}"
                            th:href="@{/contract/(page=${contractList.number - 1} , keyword= ${keywordVal})}">
-                            <i  style="color: black" class="fa-solid fa-backward"></i>
+                            <i style="color: black" class="fa-solid fa-backward"></i>
                         </a>
                         <span th:text="${contractList.number +1}"></span>
                         /
@@ -251,12 +267,14 @@
 
     </div>
 
-
     <div class="card-footer text-muted">
         ToNgPhUc@gmail.com
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--thêm mới bằng Ajax-->
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 
 <!--<script>-->
 <!--    $("#btnCreate").click(function () {-->

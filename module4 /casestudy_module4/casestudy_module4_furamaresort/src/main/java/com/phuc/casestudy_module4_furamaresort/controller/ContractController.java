@@ -2,7 +2,7 @@ package com.phuc.casestudy_module4_furamaresort.controller;
 
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDetail;
-import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDto;
+import com.phuc.casestudy_module4_furamaresort.model.dto.ContractDto;
 import com.phuc.casestudy_module4_furamaresort.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -31,7 +31,7 @@ public class ContractController {
 
     @GetMapping(value = "")
     public String showListContract(Model model,
-                                   @PageableDefault(value = 4) Pageable pageable,
+                                   @PageableDefault(value = 50) Pageable pageable,
                                    @RequestParam Optional<String> keyword) {
         String keywordVal = keyword.orElse("");
         Page<ContractDto> contractDtoPage = this.iContractService.getAllContract(keywordVal, pageable);
@@ -39,7 +39,6 @@ public class ContractController {
         model.addAttribute("keywordVal", keywordVal);
 
 //        thêm mới hợp đồng chi tiết
-        model.addAttribute("contractDetailList",this.iContractDetailService.findAll());
         model.addAttribute("contractDetail", new ContractDetail());
         return "contract_list";
     }

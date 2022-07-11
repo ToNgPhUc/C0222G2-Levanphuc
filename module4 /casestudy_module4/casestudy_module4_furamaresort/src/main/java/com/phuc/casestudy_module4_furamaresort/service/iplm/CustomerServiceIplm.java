@@ -18,7 +18,7 @@ public class CustomerServiceIplm implements ICustomerService {
 
     @Override
     public Page<Customer> findAllByName(String keywordVal, Pageable pageable) {
-        return iCustomerRepository.findAllByName("%"+keywordVal+"%",pageable);
+        return iCustomerRepository.findAllByName("%" + keywordVal + "%", pageable);
     }
 
     @Override
@@ -39,5 +39,10 @@ public class CustomerServiceIplm implements ICustomerService {
     @Override
     public List<Customer> findAll() {
         return iCustomerRepository.findAll();
+    }
+
+    @Override
+    public Page<Customer> findByNameCustomerUserFacility(String keywordVal, Pageable pageable) {
+        return iCustomerRepository.findByNameCustomerUserFacility("%" + keywordVal + "%", pageable);
     }
 }

@@ -1,5 +1,6 @@
-package com.phuc.casestudy_module4_furamaresort.model.contract;
+package com.phuc.casestudy_module4_furamaresort.model.dto;
 
+import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDetail;
 import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
 import com.phuc.casestudy_module4_furamaresort.model.employee.Employee;
 import com.phuc.casestudy_module4_furamaresort.model.facility.Facility;
