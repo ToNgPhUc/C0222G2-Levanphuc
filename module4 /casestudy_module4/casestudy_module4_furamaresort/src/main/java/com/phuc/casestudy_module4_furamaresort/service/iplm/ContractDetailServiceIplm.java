@@ -22,9 +22,12 @@ public class ContractDetailServiceIplm implements IContractDetailService {
     }
 
     @Override
-    public Page<ContractDetail> findById(int id, Pageable pageable) {
-        return iContractDetailRepository.findByIdContractDetail(id,pageable);
+    public Page<ContractDetail> findAllContractDetail(Pageable pageable) {
+        return iContractDetailRepository.findAll(pageable);
     }
 
-
+    @Override
+    public ContractDetail save(ContractDetail contractDetail) {
+       return iContractDetailRepository.save(contractDetail);
+    }
 }

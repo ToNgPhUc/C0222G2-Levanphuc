@@ -15,20 +15,39 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
-@RequestMapping(value = "contractDetail")
+@RequestMapping(value = "/contractDetail")
 public class ContractDetailController {
     @Autowired
     private IAttachFacilityService iAttachFacilityService;
     @Autowired
     private IContractDetailService iContractDetailService;
 
-    @GetMapping(value = "")
-    public String showListContract(Model model,
-                                   @PageableDefault(value = 4) Pageable pageable,
-                                   @RequestParam int id){
-        Page<ContractDetail> contractDetailList = this.iContractDetailService.findById(id,pageable);
-        model.addAttribute("contractDetailList",contractDetailList);
-        model.addAttribute("id",id);
-        return "contract_detail_list";
+
+    // gọi đến trang list để list và contractDetairestful làm viecj với nhau
+    @GetMapping("")
+    public String showContractDetail(Model model) {
+        return "contract_detail_list/list";
     }
+
+
+
+
+
+
+
+
+
+
+
+
+//    @GetMapping(value = "")
+//    public String showListContract(Model model,
+//                                   @PageableDefault(value = 4) Pageable pageable){
+//        Page<ContractDetail> contractDetailList = this.iContractDetailService.findAllContractDetail(pageable);
+//        model.addAttribute("contractDetailList",contractDetailList);
+//        return "contract_detail_list";
+//    }
+
+
+
 }

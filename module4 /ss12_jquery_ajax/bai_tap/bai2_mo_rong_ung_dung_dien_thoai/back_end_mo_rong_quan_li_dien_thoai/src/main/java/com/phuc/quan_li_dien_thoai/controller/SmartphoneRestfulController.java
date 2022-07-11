@@ -16,7 +16,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/smartphones")
 @CrossOrigin
-public class SmartphoneController {
+public class SmartphoneRestfulController {
     @Autowired
     private ISmartphoneService ismartphoneService;
 

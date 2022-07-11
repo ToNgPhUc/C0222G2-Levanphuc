@@ -7,9 +7,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-public interface IContractRepository extends JpaRepository<Contract,Integer> {
-    @Query(value = "select * from contract where deposit like:keywordVal",nativeQuery = true,
-    countQuery = "select  count(*) from (select  * from  contract where deposit like :keywordVal)temp_table")
+
+
+public interface IContractRepository extends JpaRepository<Contract, Integer> {
+    @Query(value = "select * from contract where deposit like:keywordVal", nativeQuery = true,
+            countQuery = "select  count(*) from (select  * from  contract where deposit like :keywordVal)temp_table")
     Page<Contract> findByName(@Param("keywordVal") String keywordVal, Pageable pageable);
 
 //    @Query(value = "select * from contract join contract_detail on table contract.id = contract_detail.contract join attach_facility on table contract_detail.attach_facility = attach_facility.id  " +

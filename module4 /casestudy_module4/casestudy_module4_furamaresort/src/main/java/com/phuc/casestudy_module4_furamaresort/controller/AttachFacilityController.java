@@ -29,7 +29,6 @@ public class AttachFacilityController {
                                    @RequestParam Optional<String> keyword){
         String keywordVal= keyword.orElse("");
         Page<AttachFacility> attachFacilityList = this.iAttachFacilityService.findByName(keywordVal,pageable);
-
         model.addAttribute("attachFacilityList",attachFacilityList);
         model.addAttribute("keywordVal",keywordVal);
         return "contract_detail_list";

@@ -2,10 +2,8 @@ package com.phuc.casestudy_module4_furamaresort.controller;
 
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDetail;
-import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
-import com.phuc.casestudy_module4_furamaresort.model.dto.CustomerDto;
+import com.phuc.casestudy_module4_furamaresort.model.contract.ContractDto;
 import com.phuc.casestudy_module4_furamaresort.service.*;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,30 +31,38 @@ public class ContractController {
 
     @GetMapping(value = "")
     public String showListContract(Model model,
-                                   @PageableDefault(value = 4)Pageable pageable,
-                                   @RequestParam Optional<String>keyword){
-        String keywordVal= keyword.orElse("");
-        Page<Contract> contractList = this.iContractService.findByName(keywordVal,pageable);
+                                   @PageableDefault(value = 4) Pageable pageable,
+                                   @RequestParam Optional<String> keyword) {
+        String keywordVal = keyword.orElse("");
+        Page<ContractDto> contractDtoPage = this.iContractService.getAllContract(keywordVal, pageable);
+        model.addAttribute("contractList", contractDtoPage);
+        model.addAttribute("keywordVal", keywordVal);
 
-    model.addAttribute("contractList",contractList);
-    model.addAttribute("keywordVal",keywordVal);
-    model.addAttribute("total",this.iContractService.getTotal(keywordVal,pageable));
+//        thêm mới hợp đồng chi tiết
+        model.addAttribute("contractDetailList",this.iContractDetailService.findAll());
+        model.addAttribute("contractDetail", new ContractDetail());
         return "contract_list";
+    }
+    @PostMapping(value = "saveContractDetail")
+    public String createContractDetail(@ModelAttribute ContractDetail contractDetail){
+        this.iContractDetailService.save(contractDetail);
+        return "redirect:/contract";
     }
 
     @GetMapping(value = "create")
-    public String showFormCreate( Model model){
-        model.addAttribute("contractDetailList",this.iContractDetailService.findAll());
-        model.addAttribute("attachFacilityList",this.iAttachFacilityService.findAll());
-        model.addAttribute("facilityList",iFacilityService.findAll());
-        model.addAttribute("customerList",iCustomerService.findAll());
+    public String showFormCreate(Model model) {
+        model.addAttribute("contractDetailList", this.iContractDetailService.findAll());
+        model.addAttribute("attachFacilityList", this.iAttachFacilityService.findAll());
+        model.addAttribute("facilityList", iFacilityService.findAll());
+        model.addAttribute("customerList", iCustomerService.findAll());
 
 
-        model.addAttribute("contract",new Contract());
+        model.addAttribute("contract", new Contract());
         return "contract_create";
     }
+
     @PostMapping(value = "save")
-    public String saveCustomer(@ModelAttribute Contract contract){
+    public String saveCustomer(@ModelAttribute Contract contract) {
         iContractService.save(contract);
         return "redirect:/contract";
     }

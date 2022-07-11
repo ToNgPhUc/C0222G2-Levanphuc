@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
 
     <style>
@@ -69,7 +72,7 @@
             </div>
             <div class="container">
 
-                <table id="tableStudent" class="table table-dark table-hover" style="width: 100%">
+                <table class="table table-dark table-striped">
                     <tr>
                         <td>#</td>
                         <td>SERVICE</td>
@@ -79,9 +82,6 @@
                         <td>DEPOSIT</td>
                         <td>TOTAL</td>
                         <td colspan="2">OTHER SERVICE </td>
-
-
-
                     </tr>
                     <tr th:each="contract, loop:${contractList}">
                         <td th:text="${loop.count}"></td>
@@ -90,94 +90,97 @@
                         <td th:text="${contract.startDate}"></td>
                         <td th:text="${contract.endDate}"></td>
                         <td th:text="${contract.deposit}"></td>
-                        <td th:text="${total}"></td>
-
+                        <td th:text="${contract.totalMoney}"></td>
                         <td>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success " data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCreate">
+                            th:attr="data-bs-target='#exampleModalCreate'+${contract.id}">
                                 +
                             </button>
-
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModalCreate" tabindex="-1"
+                            <div class="modal fade" th:attr="id='exampleModalCreate'+${contract.id}" tabindex="-1"
                                  aria-labelledby="exampleModalLabel1"
                                  aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 style="color: brown" class="modal-title" id="exampleModalLabel1">create
-                                                contract</h5>
+                                                contract Detail</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
-
                                         <div class="modal-body" style="color: green">
 
-                                            <form action="/contract/save" method="post">
+                                            <form action="/contract/saveContractDetail" method="post" th:object="${contractDetail}">
+
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="container">
                                                         <div class="form-outline mb-4">
-                                                            <input type="date" class="form-control"/>
+                                                            <input th:value="${contract.id}" type="text" class="form-control"/>
+                                                        </div>
+                                                        <div class="form-outline mb-4">
+                                                            <input th:field="*{contract.id}" type="text" class="form-control"/>
                                                         </div>
 
                                                         <div class="form-outline mb-4">
-                                                            <label class="form-label">ngày kết thúc</label>
-                                                            <input type="date" class="form-control"/>
+                                                            <label class="form-label">Quantity</label>
+                                                            <input th:field="*{quantity}" type="text" class="form-control"/>
                                                         </div>
 
                                                         <div class="form-outline mb-4">
-                                                            <label class="form-label">tiền gửi</label>
-                                                            <input class="form-control"/>
+                                                            <label class="form-label">Attach Facility</label>
+
+                                                            <select class="form-select" aria-label="Default select example" th:field="*{attachFacility}">
+                                                                <option value="1">karaoke</option>
+                                                                <option value="2">thuê xe máy</option>
+                                                                <option value="3">tay vịn</option>
+                                                                <option value="4">hồ bơi</option>
+                                                            </select>
+
                                                         </div>
-
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">tổng tiền</label>
-                                                            <input class="form-control"/>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <!---------------------------->
-
-
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">khách hàng thuê dịch vụ</label>
-                                                            <input class="form-control"/>
-                                                        </div>
-
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">dịch vụ</label>
-                                                            <input class="form-control"/>
-                                                        </div>
-
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">dịch vụ đi kèm</label>
-                                                            <input class="form-control"/>
-                                                        </div>
-
-                                                        <!--                                                        <div class="form-outline mb-4">-->
-                                                        <!--                                                            <label class="form-label">Name Customer Type</label>-->
-                                                        <!--                                                            <select  class="form-select"-->
-                                                        <!--                                                                     aria-label="Default select example">-->
-                                                        <!--                                                                <option >-->
-
-                                                        <!--                                                                </option>-->
-                                                        <!--                                                            </select>-->
-                                                        <!--                                                        </div>-->
 
                                                     </div>
-                                                </div>
+                                                    <div class="modal-footer">
 
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close
-                                                    </button>
-                                                    <a>
-                                                        <button class="btn btn-success ">save</button>
-                                                    </a>
+                                                        <a> <button type="submit" class="btn btn-success ">save</button> </a>
+                                                        <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </form>
+
+
+
+
+<!--                                            <div>-->
+<!--                                                <p style="color: red" id="pError"></p>-->
+<!--                                            </div>-->
+
+<!--                                            <div class="form-outline mb-4">-->
+<!--                                                <input type="text" id="inputQuantity" class="form-control"/>-->
+<!--                                                <label class="form-label" for="inputQuantity">Quantity</label>-->
+<!--                                            </div>-->
+<!--                                            <div class="form-outline mb-4">-->
+
+<!--                                            <select id="inputAttachFacility" class="form-control mb-4">-->
+<!--                                                <option value="1">karaoke</option>-->
+<!--                                                <option value="2"> thuê xe máy</option>-->
+<!--                                            </select>-->
+<!--                                                <label class="form-label" for="inputQuantity">Attach Facility</label>-->
+
+<!--                                            </div>-->
+<!--                                            <div class="form-outline mb-4">-->
+<!--                                                <input type="text" id="inputContract" class="form-control"/>-->
+<!--                                                <label class="form-label" for="inputContract">Contract Id</label>-->
+<!--                                            </div>-->
+
+<!--                                            <a href="/contract_detail_restful/create">-->
+<!--                                                <button id="btnCreate" type="button" class="btn btn-primary btn-block bg-momo">-->
+<!--                                                    Create-->
+<!--                                                </button>-->
+<!--                                            </a>-->
+
                                         </div>
 
                                     </div>
@@ -204,7 +207,11 @@
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body" style="color: green">
-
+                                        <table>
+                                            <tr th:each="contractDetail: ${contractDetailList} ">
+                                                <td th:text="${contractDetail.attachFacility.nameAttach}"></td>
+                                            </tr>
+                                        </table>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -220,18 +227,23 @@
                         </td>
                     </tr>
                 </table>
+
                 <div>
-                    <a th:if="${contractList.hasPrevious()}"
-                       th:href="@{/contract/(page=${contractList.number - 1} , keyword= ${keywordVal})}">
-                        <button>hasPrevious</button>
-                    </a>
-                    <span th:text="${contractList.number +1}"></span>
-                    /
-                    <span th:text="${contractList.totalPages}"></span>
-                    <a th:if="${contractList.hasNext()}"
-                       th:href="@{/contract/(page=${contractList.number + 1} , keyword= ${keywordVal})}">
-                        <button>next</button>
-                    </a>
+                    <h3>
+                        <a th:if="${contractList.hasPrevious()}"
+                           th:href="@{/contract/(page=${contractList.number - 1} , keyword= ${keywordVal})}">
+                            <i  style="color: black" class="fa-solid fa-backward"></i>
+                        </a>
+                        <span th:text="${contractList.number +1}"></span>
+                        /
+                        <span th:text="${contractList.totalPages}"></span>
+                        <a th:if="${contractList.hasNext()}"
+                           th:href="@{/contract/(page=${contractList.number + 1} , keyword= ${keywordVal})}">
+                            <i style="color: black" class="fa-solid fa-forward"></i>
+                        </a>
+                    </h3>
+
+
                 </div>
 
             </div>
@@ -244,7 +256,43 @@
         ToNgPhUc@gmail.com
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<!--<script>-->
+<!--    $("#btnCreate").click(function () {-->
+<!--        let quantity = $("#inputQuantity").val();-->
+<!--        let nameAttach = $("#inputAttachFacility").val();-->
+<!--        let contract = $("#inputContract").val();-->
+
+<!--        console.log(quantity + " " + nameAttach + " " + contract);-->
+
+<!--        let contratDetail = {-->
+<!--            quantity: quantity,-->
+<!--            attachFacility:{-->
+<!--                id: nameAttach-->
+<!--            } ,-->
+<!--            contract:contract-->
+<!--        }-->
+<!--        $.ajax({-->
+<!--            headers: {-->
+<!--                'Accept': 'application/json',-->
+<!--                'Content-Type': 'application/json'-->
+<!--            },-->
+<!--            type: "POST", //GET, DELETE, PUT...-->
+<!--            url: "http://localhost:8080/contract_detail_restful/create",-->
+<!--            data: JSON.stringify(contratDetail),-->
+<!--            success: function (resultSuccess) {-->
+<!--                console.log(resultSuccess);-->
+<!--            },-->
+<!--            error: function (resultError) {-->
+<!--                console.log('Co loi xay ra');-->
+<!--            }-->
+<!--        });-->
+
+<!--        console.log(contratDetail);-->
+
+<!--    });-->
+<!--</script>-->
 
 </body>
 <th:block th:replace="~{common-html :: boostrapScript}"></th:block>

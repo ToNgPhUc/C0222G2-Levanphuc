@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
 
     <style>
@@ -137,18 +139,22 @@
                     </thead>
                     </tbody>
                 </table>
+
                 <div>
-                    <a th:if="${facilityList.hasPrevious()}"
-                       th:href="@{/resort/facility/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">
-                        <button>Previous</button>
-                    </a>
-                    <span th:text="${facilityList.number +1}"></span>
-                    /
-                    <span th:text="${facilityList.totalPages}"></span>
-                    <a th:if="${facilityList.hasNext()}"
-                       th:href="@{/resort/facility/(page=${facilityList.number + 1} , keyword= ${keywordVal})}">
-                        <button>next</button>
-                    </a>
+                    <h3>
+                        <a th:if="${facilityList.hasPrevious()}"
+                           th:href="@{/resort/facility/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">
+                            <i  style="color: black" class="fa-solid fa-backward"></i>
+                        </a>
+                        <span th:text="${facilityList.number +1}"></span>
+                        /
+                        <span th:text="${facilityList.totalPages}"></span>
+                        <a th:if="${facilityList.hasNext()}"
+                           th:href="@{/resort/facility/(page=${facilityList.number + 1} , keyword= ${keywordVal})}">
+                            <i style="color: black" class="fa-solid fa-forward"></i>
+                        </a>
+                    </h3>
+
                 </div>
 
             </div>

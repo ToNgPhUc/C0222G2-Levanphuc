@@ -71,6 +71,31 @@
                         <div class="form-outline mb-4">
                             <input th:field="*{id}" class="form-control" type="hidden"/>
                         </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">START DAY</label>
+                            <input type="date" th:field="*{startDate}" class="form-control"/>
+
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">END DAY</label>
+                            <input type="date" th:field="*{endDate}" class="form-control"/>
+
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">DEPOSIT</label>
+                            <input th:field="*{deposit}" class="form-control"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">CUSTOMER</label>
+                            <select th:field="*{customer}" class="form-select"
+                                    aria-label="Default select example">
+                                <option th:each="customer:${customerList}"
+                                        th:text="${customer.nameCustomer}"
+                                        th:value="${customer.id}">
+
+                                </option>
+                            </select>
+                        </div>
 
                         <div class="row">
                             <div class="m-auto">
@@ -85,35 +110,9 @@
                                         </option>
                                     </select>
                                 </div>
+                                    <label class="form-label">Attach Facility</label>
+                                    <a th:href="@{/contract}"><button class="btn btn-success ">+</button></a>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">CUSTOMER</label>
-                                    <select th:field="*{customer}" class="form-select"
-                                            aria-label="Default select example">
-                                        <option th:each="customer:${customerList}"
-                                                th:text="${customer.nameCustomer}"
-                                                th:value="${customer.id}">
-
-                                        </option>
-                                    </select>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">START DAY</label>
-                                    <input th:field="*{startDate}" class="form-control"/>
-
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">END DAY</label>
-                                    <input th:field="*{endDate}" class="form-control"/>
-
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">DEPOSIT</label>
-                                    <input th:field="*{deposit}" class="form-control"/>
-                                </div>
                                 <button type="submit" class="btn btn-primary btn-block bg-momo">
                                     save
                                 </button>
@@ -122,10 +121,7 @@
                                         Back To List
                                     </button>
                                 </a>
-
                             </div>
-
-
                         </div>
                     </form>
 

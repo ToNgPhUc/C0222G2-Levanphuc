@@ -11,5 +11,7 @@ public interface IContractDetailService {
 
      List<ContractDetail> findAll();
 
-    Page<ContractDetail> findById(int id, Pageable pageable);
+    Page<ContractDetail> findAllContractDetail(Pageable pageable);
+
+    ContractDetail save(ContractDetail contractDetail);
 }
