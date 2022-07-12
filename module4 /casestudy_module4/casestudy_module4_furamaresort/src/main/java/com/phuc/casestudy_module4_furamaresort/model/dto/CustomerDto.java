@@ -3,17 +3,29 @@ package com.phuc.casestudy_module4_furamaresort.model.dto;
 
 import com.phuc.casestudy_module4_furamaresort.model.contract.Contract;
 import com.phuc.casestudy_module4_furamaresort.model.customer.CustomerType;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 
-public class CustomerDto {
+public class CustomerDto implements Validator {
 
     private Integer id;
+    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z ]*$", message = "In hoa chữ cái đầu và không có kí tự số")
     private String nameCustomer;
+
     private String dateOfBirth;
+
     private Integer gender;
+    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$", message = "không đúng định dạng: phải là XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9).")
     private String idCard;
+    @Pattern(regexp = "^([0][9][0][0-9]{7})|([0][9][1][0-9]{7})$", message = " không đúng định dạng: phải là 090xxxxxxx hoặc 091xxxxxxx ")
+
     private String phoneNumber;
+    @Email
     private String email;
     private String address;
     private CustomerType customerType;
@@ -113,5 +125,15 @@ public class CustomerDto {
 
     public void setContractList(List<Contract> contractList) {
         this.contractList = contractList;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return false;
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+
     }
 }

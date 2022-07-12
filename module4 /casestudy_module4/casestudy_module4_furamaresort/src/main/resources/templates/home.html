@@ -198,61 +198,31 @@
 
                                 <li class="nav-item active"><a class="nav-link" th:href="@{resort}">Home</a></li>
 
-
-                                <li class="nav-item "><a class="nav-link" th:href="@{/employee}">Employee</a></li>
-
-
                                 <li class="nav-item "><a class="nav-link" th:href="@{/customer}">Customer</a></li>
-
-
-                                <li class="nav-item "><a class="nav-link" th:href="@{/resort/facility}">facility</a>
-                                </li>
-
+                                <li class="nav-item "><a class="nav-link" th:href="@{/resort/facility}">facility</a></li>
                                 <li class="nav-item "><a class="nav-link" th:href="@{contract}">Contract</a></li>
-                                <li class="nav-item "><a class="nav-link" th:href="@{contractDetail}">Contract Detail</a></li>
 
                                 <li class="nav-item ">
                                     <a href="/collections/all" class="nav-link">
-                                        <span>Product</span>
+                                        <span>OTHER</span>
                                         <i class="fa fa-angle-down" data-toggle="dropdown"></i>
                                     </a>
+
                                     <ul class="dropdown-menu">
 
                                         <li class="dropdown-submenu nav-item-lv2">
-                                            <a class="nav-link" href="/du-lich-chau-a">
-                                                <span>Du lịch Châu Á</span>
-
-                                            </a>
+                                            <a class="nav-link" th:href="@{contractDetail}">Contract Detail</a>
 
                                         </li>
 
                                         <li class="dropdown-submenu nav-item-lv2">
-                                            <a class="nav-link" href="/du-lich-chau-au">
-                                                <span>Du lịch Châu Âu</span>
-
-                                            </a>
-
-                                        </li>
-
-                                        <li class="dropdown-submenu nav-item-lv2">
-                                            <a class="nav-link" href="/du-lich-trong-nuoc">
-                                                <span>Du lịch trong nước</span>
-
-                                            </a>
-
-                                        </li>
-
-                                        <li class="dropdown-submenu nav-item-lv2">
-                                            <a class="nav-link" href="/du-lich-trai-nghiem">
-                                                <span>Du lịch trải nghiệm</span>
-
-                                            </a>
+                                            <a class="nav-link" th:href="@{/customerUserFacility}">customer User Facility</a>
 
                                         </li>
 
                                         <li class="dropdown-submenu nav-item-lv2">
                                             <a class="nav-link" href="/tour-trang-mat">
-                                                <span>Tour trăng mật</span>
+                                                <span>Secret Week</span>
 
                                             </a>
 
@@ -260,7 +230,7 @@
 
                                         <li class="dropdown-submenu nav-item-lv2">
                                             <a class="nav-link" href="/ve-may-bay">
-                                                <span>Vé máy bay</span>
+                                                <span>Plane Ticket</span>
 
                                             </a>
 

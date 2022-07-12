@@ -1,6 +1,7 @@
 package com.phuc.casestudy_module4_furamaresort.controller;
 
 import com.phuc.casestudy_module4_furamaresort.model.customer.Customer;
+import com.phuc.casestudy_module4_furamaresort.model.customer.CustomerType;
 import com.phuc.casestudy_module4_furamaresort.model.dto.CustomerDto;
 import com.phuc.casestudy_module4_furamaresort.service.ICustomerService;
 import com.phuc.casestudy_module4_furamaresort.service.ICustomerTypeService;
@@ -11,8 +12,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -22,6 +27,12 @@ public class CustomerController {
     private ICustomerService iCustomerService;
     @Autowired
     private ICustomerTypeService iCustomerTypeService;
+
+//    @ModelAttribute(value = "customerTypeList")
+//    public List<CustomerType> getAllCustomerType(){
+//        return this.iCustomerTypeService.findAll();
+//    }
+
     @GetMapping(value = "")
     public String showListCustomer(Model model,
         @PageableDefault(value = 3) Pageable pageable,
@@ -38,8 +49,14 @@ public class CustomerController {
         model.addAttribute("customerDto",new CustomerDto());
         return "customer_create";
     }
+
     @PostMapping(value = "save")
-    public String saveCustomer(@ModelAttribute CustomerDto customerDto){
+    public String saveCustomer(@Valid @ModelAttribute CustomerDto customerDto, BindingResult bindingResult,
+           Model model){
+        if (bindingResult.hasErrors()){
+            model.addAttribute("customerTypeList",this.iCustomerTypeService.findAll());
+            return "customer_create";
+        }
         Customer customer= new Customer();
         BeanUtils.copyProperties(customerDto, customer);
         iCustomerService.save(customer);
@@ -52,11 +69,13 @@ public class CustomerController {
         model.addAttribute("customer",this.iCustomerService.findByIdCustomer(id));
         return "customer_edit";
     }
+
     @PostMapping(value = "/edit")
     public String edit(@ModelAttribute Customer customer){
         iCustomerService.save(customer);
         return "redirect:/customer";
     }
+
     @GetMapping(value = "/{id}/delete")
     String delete (@PathVariable int id){
         iCustomerService.delete(id);

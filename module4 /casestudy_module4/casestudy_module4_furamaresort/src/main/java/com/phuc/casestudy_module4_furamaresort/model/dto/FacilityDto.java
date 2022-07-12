@@ -9,10 +9,12 @@ import javax.persistence.Column;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Pattern;
 import java.util.List;
 
 public class FacilityDto {
     private Integer id;
+    @Pattern(regexp = "")
     private String nameFacility;
     private Integer areaFacility;
     private Double costFacility;
