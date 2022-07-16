@@ -27,11 +27,12 @@ public class CustomerController {
     private ICustomerService iCustomerService;
     @Autowired
     private ICustomerTypeService iCustomerTypeService;
+                        // giúp tạo customerType có thể gửi đến tất cả phương thức của controller
 
-//    @ModelAttribute(value = "customerTypeList")
-//    public List<CustomerType> getAllCustomerType(){
-//        return this.iCustomerTypeService.findAll();
-//    }
+                        //    @ModelAttribute(value = "customerTypeList")
+                        //    public List<CustomerType> getAllCustomerType(){
+                        //        return this.iCustomerTypeService.findAll();
+                        //    }
 
     @GetMapping(value = "")
     public String showListCustomer(Model model,

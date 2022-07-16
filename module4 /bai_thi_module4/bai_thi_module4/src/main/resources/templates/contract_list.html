@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+
+    <style>
+        #body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #menu {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-image: url("//bizweb.dktcdn.net/100/033/603/themes/852890/assets/slider_1.jpg?1649413074140");
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="body" class="card text-center">
+
+    <div class="card-body">
+        <div id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" th:href="@{/resort}">Furama </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/customer}">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/customerUserFacility}">customer-Facility</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Other
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
+                                    <li><a class="dropdown-item"  th:href="@{/contract}">Contract</a></li>
+                                    <li><a class="dropdown-item"  th:href="@{/employee}">Employee</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <form class="d-flex" action="/customer/">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                   name="keyword" th:value="${keywordVal}">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container text-center m-5">
+                <a href="/contract/create" class="btn btn-outline-success">Create New contract</a>
+            </div>
+            <div class="container">
+
+
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Mã Hợp Đồng</td>
+                        <td>Mã Phòng</td>
+                        <td>Tên Người Thuê</td>
+                        <td>Ngày Làm Hợp Đồng</td>
+                        <td>Thời Gian thuê</td>
+                        <td>tổng tiền</td>
+                        <td>xóa</td>
+
+                    </tr>
+
+
+                    <tr th:each="contract : ${contractList}">
+
+                        <td th:if="${contract.contractCode==1}">HD-01</td>
+                        <td th:if="${contract.contractCode==2}">HD-02</td>
+                        <td th:if="${contract.contractCode==3}">HD-03</td>
+                        <td th:text="${contract.room.roomCode}"></td>
+                        <td th:text="${contract.personName}"></td>
+                        <td th:text="${contract.dateRent}"></td>
+                        <td th:text="${contract.timeRent}"></td>
+                        <td th:text="${contract.timeRent*contract.room.price}"></td>
+
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-success " data-bs-toggle="modal"
+                                    th:data-bs-target=" '#exampleModal' + ${contract.id}">
+                                xóa
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" th:id="exampleModal  + ${contract.id}" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel">Delete
+                                                Customer </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" style="color: green">
+                                            bạn có muốn xóa <span
+                                                th:text="${contract.personName}"></span> với id
+                                            = <span
+                                                th:text="${contract.id}"></span> ?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <a th:href="@{/contract/{id}/xóa(id=${contract.getId()})}">
+                                                <button class="btn btn-success ">xóa</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <div style="float: right">
+                    <h3>
+                        <a th:if="${contractList.hasPrevious()}"
+                           th:href="@{/contract/(page=${contractList.number - 1} , keyword= ${keywordVal})}">
+                            <i style="color: yellow" class="fa-solid fa-backward"></i>
+                        </a>
+                        <span th:text="${contractList.number +1}"></span>
+                        /
+                        <span th:text="${contractList.totalPages}"></span>
+                        <a th:if="${contractList.hasNext()}"
+                           th:href="@{/contract/(page=${contractList.number + 1} , keyword= ${keywordVal})}">
+                            <i style="color: yellow" class="fa-solid fa-forward"></i>
+                        </a>
+                    </h3>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-footer text-muted">
+        ToNgPhUc@gmail.com
+    </div>
+</div>
+
+
+</body>
+<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
+</html>
+
