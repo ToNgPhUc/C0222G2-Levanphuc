@@ -5,10 +5,11 @@
     <title>Title</title>
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
     <style>
-        #body{
+        #body {
             width: 100%;
-            height:100vh;
+            height: 100vh;
         }
+
         #menu {
             background-repeat: no-repeat;
             background-size: cover;
@@ -62,14 +63,13 @@
                 </div>
             </div>
         </nav>
-
         <div class="container mt-4">
             <div class="row w-50 mx-auto">
                 <div class="row">
                     <h2>Create customer</h2>
-                    <form action="/customer/save" th:object="${customerDto}" method="post">
+                    <form th:action="@{/customer/edit}" th:object="${customer}" method="post">
                         <div class="form-outline mb-4">
-                            <input class="form-control" type="hidden"/>
+                            <input th:field="*{id}" class="form-control" type="hidden"/>
                         </div>
                         <div class="row">
 
@@ -78,7 +78,6 @@
                                     <label class="form-label">Name Customer</label>
                                     <input th:field="*{nameCustomer}" class="form-control"/>
                                 </div>
-                                <div style="color: brown" class="form-outline mb-4" th:errors="*{nameCustomer}"></div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Date Of Birth</label>
@@ -88,7 +87,8 @@
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Gender</label>
 
-                                    <select class="form-select" aria-label="Default select example" th:field="*{gender}">
+                                    <select class="form-select" aria-label="Default select example"
+                                            th:field="*{gender}">
                                         <option value="1">
                                             nam
                                         </option>
@@ -102,9 +102,9 @@
                                 <div class="form-outline mb-4">
                                     <label class="form-label">id Card</label>
                                     <input th:field="*{idCard}" class="form-control"/>
-                                </div>
-                                <div style="color: brown" class="form-outline mb-4" th:errors="*{idCard}"></div>
 
+
+                                </div>
 
 
                             </div>
@@ -116,15 +116,11 @@
                                     <label class="form-label">Phone Number</label>
                                     <input th:field="*{phoneNumber}" class="form-control"/>
                                 </div>
-                                <div style="color: brown" class="form-outline mb-4" th:errors="*{phoneNumber}"></div>
-
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Email</label>
                                     <input th:field="*{email}" class="form-control"/>
                                 </div>
-                                <div style="color: brown" class="form-outline mb-4" th:errors="*{email}"></div>
-
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Address</label>
@@ -147,7 +143,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block bg-momo">
-                          save
+                            edit
                         </button>
                         <a th:href="@{/customer}">
                             <button type="button" class="btn btn-primary btn-block bg-momo">
