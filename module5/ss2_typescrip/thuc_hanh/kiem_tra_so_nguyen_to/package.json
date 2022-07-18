@@ -1,7 +1,6 @@
 {
-  "name": "$name$",
-  "version": "$version$",
+  "name": "kiem_tra_so_nguyen_to",
+  "version": "1.0.0",
   "dependencies": {
-    $END$
   }
 }
