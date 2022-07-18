@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
         #body {
             width: 100%;
@@ -28,7 +32,7 @@
     <div id="menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" th:href="@{resort}">Furama resort</a>
+                <a class="navbar-brand" href="@{resort}">Furama resort</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +41,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/customer}">Customer</a>
+                            <a class="nav-link" href="@{/customer}">Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/employee}">Employee</a>
+                            <a class="nav-link" href="@{/employee}">Employee</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,9 +52,9 @@
                                 Other
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
-                                <li><a class="dropdown-item" th:href="@{/contract}">Contract</a></li>
-                                <li><a class="dropdown-item" th:href="@{/booking}">Booking</a></li>
+                                <li><a class="dropdown-item" href="@{/resort/facility}">Facility</a></li>
+                                <li><a class="dropdown-item" href="@{/contract}">Contract</a></li>
+                                <li><a class="dropdown-item" href="@{/booking}">Booking</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,28 +71,28 @@
             <div class="row w-50 mx-auto">
                 <div class="row">
                     <h2>Create customer</h2>
-                    <form th:action="@{/customer/edit}" th:object="${customer}" method="post">
+                    <form action="@{/customer/edit}" object="${customer}" method="post">
                         <div class="form-outline mb-4">
-                            <input th:field="*{id}" class="form-control" type="hidden"/>
+                            <input field="*{id}" class="form-control" type="hidden"/>
                         </div>
                         <div class="row">
 
                             <div class="col-6">
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Name Customer</label>
-                                    <input th:field="*{nameCustomer}" class="form-control"/>
+                                    <input field="*{nameCustomer}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Date Of Birth</label>
-                                    <input type="date" th:field="*{dateOfBirth}" class="form-control"/>
+                                    <input type="date" field="*{dateOfBirth}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Gender</label>
 
                                     <select class="form-select" aria-label="Default select example"
-                                            th:field="*{gender}">
+                                            field="*{gender}">
                                         <option value="1">
                                             nam
                                         </option>
@@ -101,7 +105,7 @@
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">id Card</label>
-                                    <input th:field="*{idCard}" class="form-control"/>
+                                    <input field="*{idCard}" class="form-control"/>
 
 
                                 </div>
@@ -114,26 +118,26 @@
                             <div class="col-6">
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Phone Number</label>
-                                    <input th:field="*{phoneNumber}" class="form-control"/>
+                                    <input field="*{phoneNumber}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Email</label>
-                                    <input th:field="*{email}" class="form-control"/>
+                                    <input field="*{email}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Address</label>
-                                    <input th:field="*{address}" class="form-control"/>
+                                    <input field="*{address}" class="form-control"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Name Customer Type</label>
-                                    <select th:field="*{customerType}" class="form-select"
+                                    <select field="*{customerType}" class="form-select"
                                             aria-label="Default select example">
-                                        <option th:each="customerType:${customerTypeList}"
-                                                th:text="${customerType.nameCustomerType}"
-                                                th:value="${customerType.id}">
+                                        <option each="customerType:${customerTypeList}"
+                                                text="${customerType.nameCustomerType}"
+                                                value="${customerType.id}">
 
                                         </option>
                                     </select>
@@ -145,7 +149,7 @@
                         <button type="submit" class="btn btn-primary btn-block bg-momo">
                             edit
                         </button>
-                        <a th:href="@{/customer}">
+                        <a href="@{/customer}">
                             <button type="button" class="btn btn-primary btn-block bg-momo">
                                 Back To List
                             </button>
@@ -161,6 +165,8 @@
     </div>
 </div>
 </body>
-<th:block th:replace="~{common-html :: boostrapScript}"></th:block>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script></html>
 

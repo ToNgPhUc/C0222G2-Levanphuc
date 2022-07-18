@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
         #body {
             width: 100%;
@@ -69,90 +70,63 @@
         <div class="container mt-4">
             <div class="row w-50 mx-auto">
                 <div class="row">
-                    <h2>Create customer</h2>
-                    <form action="@{/customer/edit}" object="${customer}" method="post">
+                    <h2>Create contract</h2>
+                    <form action="/contract/save" object="${contract}" method="post">
                         <div class="form-outline mb-4">
                             <input field="*{id}" class="form-control" type="hidden"/>
                         </div>
-                        <div class="row">
+                        <div class="form-outline mb-4">
+                            <label class="form-label">START DAY</label>
+                            <input type="date" field="*{startDate}" class="form-control"/>
 
-                            <div class="col-6">
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Name Customer</label>
-                                    <input field="*{nameCustomer}" class="form-control"/>
-                                </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">END DAY</label>
+                            <input type="date" field="*{endDate}" class="form-control"/>
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Date Of Birth</label>
-                                    <input type="date" field="*{dateOfBirth}" class="form-control"/>
-                                </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">DEPOSIT</label>
+                            <input field="*{deposit}" class="form-control"/>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label">CUSTOMER</label>
+                            <select field="*{customer}" class="form-select"
+                                    aria-label="Default select example">
+                                <option each="customer:${customerList}"
+                                        text="${customer.nameCustomer}"
+                                        value="${customer.id}">
 
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Gender</label>
-
-                                    <select class="form-select" aria-label="Default select example"
-                                            field="*{gender}">
-                                        <option value="1">
-                                            nam
-                                        </option>
-                                        <option value="0">
-                                            nữ
-                                        </option>
-                                    </select>
-
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">id Card</label>
-                                    <input field="*{idCard}" class="form-control"/>
-
-
-                                </div>
-
-
-                            </div>
-
-                            <!---------------------------->
-
-                            <div class="col-6">
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Phone Number</label>
-                                    <input field="*{phoneNumber}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Email</label>
-                                    <input field="*{email}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Address</label>
-                                    <input field="*{address}" class="form-control"/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <label class="form-label">Name Customer Type</label>
-                                    <select field="*{customerType}" class="form-select"
-                                            aria-label="Default select example">
-                                        <option each="customerType:${customerTypeList}"
-                                                text="${customerType.nameCustomerType}"
-                                                value="${customerType.id}">
-
-                                        </option>
-                                    </select>
-                                </div>
-
-                            </div>
+                                </option>
+                            </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block bg-momo">
-                            edit
-                        </button>
-                        <a href="@{/customer}">
-                            <button type="button" class="btn btn-primary btn-block bg-momo">
-                                Back To List
-                            </button>
-                        </a>
+                        <div class="row">
+                            <div class="m-auto">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">SERVICE</label>
+                                    <select field="*{facility}" class="form-select"
+                                            aria-label="Default select example">
+                                        <option each="facility:${facilityList}"
+                                                text="${facility.nameFacility}"
+                                                value="${facility.id}">
+
+                                        </option>
+                                    </select>
+                                </div>
+                                <label class="form-label">Attach Facility</label>
+                                <a href="@{/contract}"><button class="btn btn-success ">+</button></a>
+
+                                <button type="submit" class="btn btn-primary btn-block bg-momo">
+                                    save
+                                </button>
+                                <a href="@{/contract}">
+                                    <button type="button" class="btn btn-primary btn-block bg-momo">
+                                        Back To List
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </form>
 
                 </div>
