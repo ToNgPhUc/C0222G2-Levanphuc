@@ -1,0 +1,27 @@
+<h3>calculator</h3>
+<label>number 1</label>
+<input type="text" [(ngModel)]="numberOne">
+<label>number 1</label>
+<input type="text"[(ngModel)]="numberTwo">
+<button (click)="calculator('+')">+</button>
+<button (click)="calculator('-')">-</button>
+<button (click)="calculator('*')">*</button>
+<button (click)="calculator('/')">/</button>
+
+
+                                                             <!--cách 2 dùng id của thẻ input-->
+
+                                                    <!--<label>number 1</label>-->
+                                                    <!--<input type="text"id="numberOne"#numberOne>-->
+                                                    <!--<label>number 2</label>-->
+                                                    <!--<input type="text"id="numberTwo"#numberTwo>-->
+
+                                                    <!--<br>-->
+                                                    <!--<button class="bnt" (click)="calculator(numberOne.value,numberTwo.value,'+')">+</button>-->
+                                                    <!--<button (click)="calculator(numberOne.value,numberTwo.value,'-')">-</button>-->
+                                                    <!--<button (click)="calculator(numberOne.value,numberTwo.value,'*')">*</button>-->
+                                                    <!--<button (click)="calculator(numberOne.value,numberTwo.value,'/')">/</button>-->
+
+<p style="color: blue">result: {{result}}</p>
+<p style="color: red">result: Error: {{error}}</p>
+

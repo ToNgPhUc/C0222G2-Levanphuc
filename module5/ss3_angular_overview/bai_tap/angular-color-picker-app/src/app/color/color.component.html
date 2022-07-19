@@ -1,0 +1,12 @@
+<p>color works!</p>
+<label>xin mời nhập màu bạn thích</label>
+<input #element type="text" (click)="clickColor(element.value)">
+<p [style.color]="chooseColor">{{chooseColor}}</p>
+
+
+
+<!--cách 2:-->
+
+<!--<input type="color"[(ngModel)]="chooseColor">-->
+<!--<p>result :{{chooseColor}} </p>-->
+
