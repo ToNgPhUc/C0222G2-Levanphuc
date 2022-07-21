@@ -1,0 +1,117 @@
+<div id="body" class="card text-center">
+<div id="menu">
+<div class="container mt-4">
+  <div class="row w-50 mx-auto">
+    <div class="row">
+      <h2>Edit facility</h2>
+      <form action="@{/resort/edit}" object="${facilityOject}" method="post">
+        <div class="form-outline mb-4">
+          <input field="*{id}" class="form-control" type="hidden"/>
+        </div>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="form-outline mb-4">
+              <label class="form-label">Name </label>
+              <input field="*{nameFacility}" class="form-control"/>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label">Area</label>
+              <input field="*{areaFacility}" class="form-control"/>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label">Cost</label>
+              <input field="*{costFacility}" class="form-control"/>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label">Max People</label>
+              <input field="*{maxPeople}" class="form-control"/>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label">Name RentType</label>
+              <select field="*{rentType}" class="form-select"
+                      aria-label="Default select example">
+                <option each="renType: ${rentTypeList}"
+                        value="${renType.id}"
+                        text="${renType.nameRentType}"
+                >
+                </option>
+              </select>
+            </div>
+
+
+          </div>
+
+          <!---------------------------->
+
+
+
+
+          <div class="col-6">
+            <div class="form-outline mb-4">
+              <label class="form-label">Name Facility Type</label>
+              <select field="*{facilityType}" class="form-select" id="selectType"
+                      aria-label="Default select example" onchange="getForm()">
+                <option each="facilityType: ${facilityTypeList}"
+                        value="${facilityType.id}"
+                        text="${facilityType.nameFacilityType}">
+                </option>
+              </select>
+            </div>
+
+            <div id="room-facility">
+              <div class="form-outline mb-4">
+                <label class="form-label">facility Free</label>
+                <input field="*{facilityFree}" class="form-control"/>
+              </div>
+            </div>
+
+
+            <div id="villa-facility" style="display: none">
+              <div class="form-outline mb-4">
+                <label class="form-label">Pool Area</label>
+                <input field="*{poolArea}" class="form-control"/>
+              </div>
+
+            </div>
+
+            <div id="house-facility" style="display: none">
+              <div class="form-outline mb-4">
+                <label class="form-label">Standard Room</label>
+                <input field="*{standardRoom}" class="form-control"/>
+              </div>
+
+
+              <div class="form-outline mb-4">
+                <label class="form-label">Description Other Convenience</label>
+                <input field="*{descriptionOtherConvenience}" class="form-control"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label">Number Of Floors</label>
+                <input field="*{numberOfFloors}" class="form-control"/>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block bg-momo">
+          save
+        </button>
+        <a href="@{/resort/facility}">
+          <button type="button" class="btn btn-primary btn-block bg-momo">
+            Back To List
+          </button>
+        </a>
+      </form>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>

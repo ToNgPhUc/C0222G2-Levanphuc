@@ -46,4 +46,5 @@ public class TypeMusic {
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
+
 }
