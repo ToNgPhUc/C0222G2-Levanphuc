@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FacilityListComponent } from './facility-list/facility-list.component';
 import { FacilityCreateComponent } from './facility-create/facility-create.component';
 import { FacilityEditComponent } from './facility-edit/facility-edit.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FacilityEditComponent } from './facility-edit/facility-edit.component';
     FooterComponent,
     FacilityListComponent,
     FacilityCreateComponent,
-    FacilityEditComponent
+    FacilityEditComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
