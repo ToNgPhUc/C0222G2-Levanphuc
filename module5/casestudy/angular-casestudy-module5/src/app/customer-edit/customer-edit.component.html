@@ -1,0 +1,95 @@
+<div id="body" class="card text-center">
+  <div id="menu">
+    <div class="container mt-4">
+      <div class="row w-50 mx-auto">
+        <div class="row">
+          <h2>edit customer</h2>
+          <form action="@{/customer/edit}" object="${customer}" method="post">
+            <div class="form-outline mb-4">
+              <input field="*{id}" class="form-control" type="hidden"/>
+            </div>
+            <div class="row">
+
+              <div class="col-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label">Name Customer</label>
+                  <input field="*{nameCustomer}" class="form-control"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Date Of Birth</label>
+                  <input type="date" field="*{dateOfBirth}" class="form-control"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Gender</label>
+
+                  <select class="form-select" aria-label="Default select example"
+                          field="*{gender}">
+                    <option value="1">
+                      nam
+                    </option>
+                    <option value="0">
+                      nữ
+                    </option>
+                  </select>
+
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">id Card</label>
+                  <input field="*{idCard}" class="form-control"/>
+
+
+                </div>
+
+
+              </div>
+
+              <!---------------------------->
+
+              <div class="col-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label">Phone Number</label>
+                  <input field="*{phoneNumber}" class="form-control"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Email</label>
+                  <input field="*{email}" class="form-control"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Address</label>
+                  <input field="*{address}" class="form-control"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Name Customer Type</label>
+                  <select field="*{customerType}" class="form-select"
+                          aria-label="Default select example">
+                    <option each="customerType:${customerTypeList}"
+                            text="${customerType.nameCustomerType}"
+                            value="${customerType.id}">
+
+                    </option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block bg-momo">
+              edit
+            </button>
+            <a href="@{/customer}">
+              <button type="button" class="btn btn-primary btn-block bg-momo">
+                Back To List
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

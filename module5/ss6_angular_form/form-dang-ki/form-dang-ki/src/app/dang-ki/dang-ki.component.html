@@ -1,0 +1,113 @@
+<div class="container ">
+  <h3>Form Dang Ki</h3>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form [formGroup]="registerFormDangKi" (ngSubmit)="registerWithFormDangKi()">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email </label>
+          <input type="email" class="form-control" formControlName="email" name="email" id="exampleFormControlInput1"
+                 placeholder="name@example.com">
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.email.hasError('required') && registerFormDangKi.controls.email.touched">
+            email không được để trống </p>
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.email.hasError('email')&& registerFormDangKi.controls.email.touched">
+            không đúng định dạng</p>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">password</label>
+          <input type="text" class="form-control" id="exampleFormControlInput2" name="password"
+                 formControlName="password">
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.password.hasError('required')&&registerFormDangKi.controls.password.touched">
+            không được để trống</p>
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.password.hasError('minlength')&&registerFormDangKi.controls.password.touched">
+            it nhất 6 kí tự </p>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">confirmPassword</label>
+          <input type="text" class="form-control" id="exampleFormControlInput3" formControlName="confirmPassword"
+                 name="confirmPassword">
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.confirmPassword.hasError('required')&&registerFormDangKi.controls.confirmPassword.touched">
+            không được để trống</p>
+
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.confirmPassword.hasError('minlength')&&registerFormDangKi.controls.confirmPassword.touched">
+            ít nhất 6 kí tự</p>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">country</label>
+          <select class="form-select" aria-label="Default select example" formControlName="country" name="country">
+            <option value="1">viet nam</option>
+            <option value="2"> japan</option>
+            <option value="3"> france</option>
+            <option value="4"> italia</option>
+          </select>
+        </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">age</label>
+            <input type="text" class="form-control" id="exampleFormControlInput5" formControlName="age" name="age">
+            <p style="color: red"
+               *ngIf="registerFormDangKi.controls.age.hasError('min')&&registerFormDangKi.controls.age.touched">
+              trên 18 tuổi</p>
+            <p style="color: red"
+               *ngIf="registerFormDangKi.controls.age.hasError('required')&&registerFormDangKi.controls.age.touched">
+              trên 18 tuổi</p>
+          </div>
+
+          <div  class="mb-3" >
+            <div>
+              <label for="exampleFormControlInput1" class="form-label">nam</label>
+            </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">nam</label>
+            <input type="radio" class=""  value="0" formControlName="gender" name="gender">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">nữ</label>
+            <input type="radio" class="" id="nữ" value="1" formControlName="gender" name="gender" >
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">khác</label>
+            <input type="radio" class="" value="2" name="gender" formControlName="gender" >
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">phone</label>
+          <input type="text" class="form-control" id="exampleFormControlInput7" formControlName="phone" name="phone">
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.phone.hasError('pattern') && registerFormDangKi.controls.phone.touched">
+            phải theo định dạng +84xxxxxxxxx
+          </p>
+          <p style="color: red"
+             *ngIf="registerFormDangKi.controls.phone.hasError('required') && registerFormDangKi.controls.phone.touched">
+            không được để trống
+          </p>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">dang ki</button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <p>-------------------------------------------------------------------------------------------</p>
+</div>
+
+

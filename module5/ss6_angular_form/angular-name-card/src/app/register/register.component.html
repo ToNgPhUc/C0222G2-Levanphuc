@@ -1,0 +1,41 @@
+<form [formGroup]= "registerFormDangKi" (ngSubmit)="registerWithReactive()">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">password</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">confirmPassword</label>
+    <input type="text" class="form-control" id="exampleFormControlInput3" >
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">country</label>
+    <select  class="form-select" aria-label="Default select example">
+      <option>viet nam</option>
+      <option> japan</option>
+      <option> france</option>
+    </select>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">age</label>
+    <input type="text" class="form-control" id="exampleFormControlInput5">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">gender</label>
+    <input type="radio" class="form-control" id="exampleFormControlInput6">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">phone</label>
+    <input type="text" class="form-control" id="exampleFormControlInput7">
+  </div>
+</form>

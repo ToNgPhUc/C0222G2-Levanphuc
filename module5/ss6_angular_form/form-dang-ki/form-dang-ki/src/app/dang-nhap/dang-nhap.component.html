@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-8">
+      <div class="mb-3 row">
+        <h3> Form Đăng Nhập</h3>
+      </div>
+      <form [formGroup]="formDangNhap" (ngSubmit)="registerWithFormDangNhap()">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="staticEmail" formControlName="email" name="email">
+            <p style="color: red"
+               *ngIf="formDangNhap.controls.email.hasError('required')&&formDangNhap.controls.email.touched">
+              không được để trống
+            </p>
+            <p style="color: red"
+               *ngIf="formDangNhap.controls.email.hasError('email')&&formDangNhap.controls.email.touched">
+              không đúng định dạng </p>
+
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" formControlName="password" name="password">
+            <p style="color: red"
+               *ngIf="formDangNhap.controls.password.hasError('required') &&formDangNhap.controls.password.touched">
+              không được để trống
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="btn bg-primary"> đăng nhập</button>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
