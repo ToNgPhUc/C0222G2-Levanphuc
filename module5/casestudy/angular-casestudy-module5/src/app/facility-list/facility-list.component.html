@@ -10,8 +10,8 @@
       <td>AREA</td>
       <td>COST</td>
       <td>MAX PEOPLE</td>
-      <td>NAME RENT TYPE</td>
-      <td>NAME FACILITY TYPE</td>
+<!--      <td>NAME RENT TYPE</td>-->
+<!--      <td>NAME FACILITY TYPE</td>-->
       <td>STANDARD ROOM</td>
       <td>POOL AREA</td>
       <td>NUMBER OF FLOORS</td>
@@ -21,19 +21,16 @@
     </thead>
     <thead>
 
-    <tr>
+    <tr *ngFor="let item of facility">
 
-      <td>1</td>
-      <td>Lê Văn phúc</td>
-      <td>1000</td>
-      <td>100</td>
-      <td>10</td>
-      <td>Year</td>
-      <td>Villa</td>
-      <td>Vip</td>
-      <td>100</td>
-      <td>10</td>
-
+      <td >{{item.id}}</td>
+      <td>{{item.nameFacility}}</td>
+      <td>{{item.areaFacility}}</td>
+      <td>{{item.costFacility}}</td>
+      <td>{{item.maxPeople}}</td>
+      <td>{{item.standardRoom}}</td>
+      <td>{{item.poolArea}}</td>
+      <td>{{item.numberOfFloors}}</td>
       <td><a [routerLink]="['/facility-edit']">
         <button class="btn btn-primary" >edit</button>
       </a></td>

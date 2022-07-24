@@ -21,6 +21,7 @@ public class Facility {
     @ManyToOne
     @JoinColumn(name = "facility_type",referencedColumnName = "id")
     private FacilityType facilityType;
+
     private String standardRoom;
     private String descriptionOtherConvenience;
     private Double poolArea;

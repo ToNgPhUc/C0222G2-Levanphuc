@@ -23,10 +23,13 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.css",
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.js"]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hackernews"
+    }
+  },
+  "defaultProject": "hackernews",
+  "cli": {
+    "analytics": "25075bee-f70b-474f-bc58-cffc878ab55b"
+  }
 }
