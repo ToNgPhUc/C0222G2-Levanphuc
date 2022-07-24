@@ -1,0 +1,86 @@
+<div id="menu" class="container-fluid">
+  <div class="container text-center ">
+    <a [routerLink]="['/customer-user-facility-create']" class="btn btn-outline-success">Create New customer-user-facility</a>
+  </div>
+<table class="table table-dark table-striped">
+  <thead>
+  <tr>
+    <td>STT</td>
+    <td>NAME</td>
+    <td>DATE OF BIRTH</td>
+    <td>GENDER</td>
+    <td>ID CARD</td>
+    <td>PHONE NUMBER</td>
+    <td>EMAIL</td>
+    <td>ADDRESS</td>
+    <td>CUSTOMER TYPE NAME</td>
+    <td> Attach Facility </td>
+  </tr>
+  </thead>
+<thead>
+  <tr>
+    <td>1</td>
+    <td>lê văn phúc</td>
+    <td>14-02-1995</td>
+    <td>nam</td>
+    <td>12345677</td>
+    <td>0911463781</td>
+    <td>tongphuc1495@gmail.com</td>
+    <td>quảng bình</td>
+    <td> gold</td>
+
+    <td>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success " data-bs-toggle="modal"
+              data-bs-target=" '#exampleModal' + ${customer.id}">
+        Attach Facility
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal  + ${customer.id}" tabindex="-1"
+           aria-labelledby="exampleModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 style="color: green" class="modal-title" id="exampleModalLabel">
+                Attach Facility list </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: green">
+
+              <table class="table">
+                <tr each="contract: ${customer.contractList}">
+                  <td each="contractDetail: ${contract.contractDetailList}"
+                      text="${contractDetail.attachFacility.nameAttach}">
+
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success " data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</thead>
+</table>
+
+  <div id="page" class="d-flex justify-content-end ">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+</div>
+

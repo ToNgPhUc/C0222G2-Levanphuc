@@ -6,6 +6,9 @@ import {FacilityCreateComponent} from './facility-create/facility-create.compone
 import {CustomerListComponent} from './customer-list/customer-list.component';
 import {CustomerEditComponent} from './customer-edit/customer-edit.component';
 import {CustomerCreateComponent} from './customer-create/customer-create.component';
+import {ContractListComponent} from './contract-list/contract-list.component';
+import {CustomerUserFacilityComponent} from './customer-user-facility/customer-user-facility.component';
+import {FuramaComponent} from './furama/furama.component';
 
 
 const routes: Routes = [
@@ -14,7 +17,11 @@ const routes: Routes = [
   {path: 'facility-create', component: FacilityCreateComponent},
   {path: 'customer-list', component: CustomerListComponent},
   {path: 'customer-edit', component: CustomerEditComponent},
-  {path: 'customer-create', component: CustomerCreateComponent}
+  {path: 'customer-create', component: CustomerCreateComponent},
+  {path: 'contract-list', component: ContractListComponent},
+  {path: 'customer-user-facility', component: CustomerUserFacilityComponent},
+  {path: 'furama', component: FuramaComponent}
+
 ];
 
 @NgModule({

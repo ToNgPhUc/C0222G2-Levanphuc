@@ -1,4 +1,7 @@
-
+.card-title{
+  font-family: 'Dancing Script',sans-serif !important;
+  font-size: 22px;
+}
 .nav-link{
   font-family: 'Dancing Script',sans-serif !important;
   font-size: 22px;

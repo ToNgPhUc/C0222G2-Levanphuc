@@ -1,0 +1,155 @@
+<div id="menu" class="container-fluid">
+  <div class="container text-center ">
+    <a [routerLink]="['/contract-create']" class="btn btn-outline-success">Create New contract</a>
+  </div>
+
+  <table class="table table-dark table-striped">
+    <thead>
+    <tr>
+      <td>STT</td>
+      <td>SERVICE</td>
+      <td>CUSTOMER</td>
+      <td>STAR DAY</td>
+      <td>END DAY</td>
+      <td>DEPOSIT</td>
+      <td>TOTAL</td>
+      <td colspan="2">OTHER SERVICE</td>
+    </tr>
+    </thead>
+    <thead>
+    <tr>
+      <td>1</td>
+      <td>villa</td>
+      <td>Lê Văn Phúc</td>
+      <td>14-02-2022</td>
+      <td>14-03-2022</td>
+      <td>100</td>
+      <td>1000</td>
+
+      <td>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success " data-bs-toggle="modal"
+                attr="data-bs-target='#exampleModalCreate'+${contract.id}">
+          +
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" attr="id='exampleModalCreate'+${contract.id}" tabindex="-1"
+             aria-labelledby="exampleModalLabel1"
+             aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="color: green" class="modal-title" id="exampleModalLabel1">create
+                  contract Detail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="color: green">
+
+                <form action="/contract/saveContractDetail" method="post"
+                      object="${contractDetail}">
+
+                  <div class="row">
+                    <div class="container">
+
+                      <div class="form-outline mb-4">
+                        <select class="form-select"
+                                aria-label="Default select example"
+                                field="*{contract}" hidden>
+                          <option value="${contract.id}"></option>
+                        </select>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Quantity</label>
+                        <input field="*{quantity}" type="text"
+                               class="form-control"/>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Attach Facility</label>
+                        <select class="form-select"
+                                aria-label="Default select example"
+                                field="*{attachFacility}">
+                          <option value="1">karaoke</option>
+                          <option value="2">thuê xe máy</option>
+                          <option value="3">tay vịn</option>
+                          <option value="4">hồ bơi</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+
+                      <a>
+                        <button type="submit" class="btn btn-success ">save</button>
+                      </a>
+                      <button type="button" class="btn btn-secondary"
+                              data-bs-dismiss="modal">Close
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success " data-bs-toggle="modal"
+                attr="data-bs-target='#exampleModalDanhSach'+${contract.id}">
+          danh sách các dịch vụ đi kèm
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" attr="id='exampleModalDanhSach'+${contract.id}" tabindex="-1"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="color: green" class="modal-title" id="exampleModalLabel">List Attach Facility</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="color: green">
+                <table class="table">
+                  <tr>
+                    <td>STT</td>
+                    <td>Quantity</td>
+                    <td>Name Attach</td>
+                  </tr>
+
+                  <tr each="contractDetail, loop: ${contract.contractDetailList} ">
+                    <td text="${loop.count}"></td>
+                    <td text="${contractDetail.quantity}"></td>
+                    <td text="${contractDetail.attachFacility.nameAttach}"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success " data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </thead>
+  </table>
+
+
+  <div id="page" class="d-flex justify-content-end ">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+</div>

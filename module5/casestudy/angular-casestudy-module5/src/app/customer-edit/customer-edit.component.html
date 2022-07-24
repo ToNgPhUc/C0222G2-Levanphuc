@@ -82,11 +82,13 @@
             <button type="submit" class="btn btn-primary btn-block bg-momo">
               edit
             </button>
-            <a href="@{/customer}">
+
+            <a [routerLink]="['/customer-list']">
               <button type="button" class="btn btn-primary btn-block bg-momo">
                 Back To List
               </button>
             </a>
+
           </form>
         </div>
       </div>

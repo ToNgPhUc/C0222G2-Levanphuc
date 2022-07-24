@@ -11,6 +11,9 @@ import { FacilityEditComponent } from './facility-edit/facility-edit.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
+import { ContractListComponent } from './contract-list/contract-list.component';
+import { CustomerUserFacilityComponent } from './customer-user-facility/customer-user-facility.component';
+import { FuramaComponent } from './furama/furama.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CustomerCreateComponent } from './customer-create/customer-create.compo
     FacilityEditComponent,
     CustomerListComponent,
     CustomerEditComponent,
-    CustomerCreateComponent
+    CustomerCreateComponent,
+    ContractListComponent,
+    CustomerUserFacilityComponent,
+    FuramaComponent
   ],
   imports: [
     BrowserModule,
