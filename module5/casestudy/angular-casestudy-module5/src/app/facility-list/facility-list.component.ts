@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Facility} from "../model/facility";
+import {Facility} from "../model/facility/facility";
 
 @Component({
   selector: ' app-facility-list',
