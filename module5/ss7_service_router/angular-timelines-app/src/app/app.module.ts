@@ -9,6 +9,10 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { DanhSachTuDienComponent } from './tra-cuu-tu-dien/danh-sach-tu-dien/danh-sach-tu-dien.component';
+import { ChiTietTuDienComponent } from './tra-cuu-tu-dien/chi-tiet-tu-dien/chi-tiet-tu-dien.component';
+import { ProductEditComponent } from './product/product-edit/product-edit.component';
+import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import {ReactiveFormsModule} from '@angular/forms';
     YoutubePlaylistComponent,
     YoutubePlayerComponent,
     ProductCreateComponent,
-    ProductListComponent
+    ProductListComponent,
+    DanhSachTuDienComponent,
+    ChiTietTuDienComponent,
+    ProductEditComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,

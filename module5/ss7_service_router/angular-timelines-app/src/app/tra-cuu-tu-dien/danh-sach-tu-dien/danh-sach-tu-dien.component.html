@@ -1,0 +1,15 @@
+<h3>danh sách từ điển</h3>
+<table>
+  <tr>
+    <td>stt</td>
+    <td>từ</td>
+    <td>chi tiết</td>
+  </tr>
+  <tr *ngFor="let item of tuDienList index as i ">
+    <td>{{i + 1}}</td>
+    <td>{{item.name}}</td>
+    <td>
+      <button [routerLink]="['/chiTiet',item.id]"> chi tiết</button>
+    </td>
+  </tr>
+</table>
