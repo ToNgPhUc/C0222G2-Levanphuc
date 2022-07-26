@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Todo} from '../todo';
+import {Todo} from '../model/todo';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
-// tslint:disable-next-line:variable-name
 let _id = 1;
 
 @Component({

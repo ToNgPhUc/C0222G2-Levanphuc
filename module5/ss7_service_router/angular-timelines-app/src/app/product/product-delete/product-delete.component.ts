@@ -33,8 +33,9 @@ export class ProductDeleteComponent implements OnInit {
   private getProduct(id: number) {
     return this.productService.findById(id)
   }
-  deleteProduct(id:number){
-    this.productService.deleteProduct(id)
+
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id);
     this.router.navigate(['/product/list'])
   }
 }

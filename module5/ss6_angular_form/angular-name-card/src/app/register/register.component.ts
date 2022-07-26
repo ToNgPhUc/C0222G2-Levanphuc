@@ -25,10 +25,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // registerWithReactive() {
-  //   console.log(this.registerFormReactive);
-  //   if (this.registerFormReactive.valid){
-  //   }
-  // }
+  registerWithReactive() {
+    console.log(this.registerFormDangKi.value)
+  }
 
 }

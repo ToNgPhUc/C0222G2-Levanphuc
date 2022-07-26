@@ -20,10 +20,11 @@ import { ProductDeleteComponent } from './product/product-delete/product-delete.
     TimelinesComponent,
     YoutubePlaylistComponent,
     YoutubePlayerComponent,
-    ProductCreateComponent,
-    ProductListComponent,
     DanhSachTuDienComponent,
     ChiTietTuDienComponent,
+    ProductCreateComponent,
+    ProductListComponent,
+
     ProductEditComponent,
     ProductDeleteComponent
   ],
