@@ -16,9 +16,9 @@
   "product": [
     {
       "id": 14,
-      "name": "12",
-      "price": 1,
-      "description": "1",
+      "name": "i phone 13 pro",
+      "price": 1000,
+      "description": "new",
       "category": {
         "name": "vip",
         "id": 1
@@ -26,9 +26,9 @@
     },
     {
       "id": 15,
-      "name": "234",
-      "price": 234,
-      "description": "234",
+      "name": "iphone 12",
+      "price": 1000,
+      "description": "new",
       "category": {
         "name": "trung bình",
         "id": 3
@@ -36,19 +36,9 @@
     },
     {
       "id": 16,
-      "name": "hoan ngu",
-      "price": 234,
-      "description": "ngu vl",
-      "category": {
-        "name": "trung bình",
-        "id": 3
-      }
-    },
-    {
-      "id": 17,
-      "name": "12",
-      "price": 12,
-      "description": "1212",
+      "name": "i phone X",
+      "price": 100,
+      "description": "xách tay",
       "category": {
         "name": "thường",
         "id": 2

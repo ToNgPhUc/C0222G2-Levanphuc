@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {ProductService} from '../../service/product.service';
+import {Category} from '../../model/category';
 
 @Component({
   selector: 'app-product-delete',
@@ -27,7 +28,11 @@ export class ProductDeleteComponent implements OnInit {
   getProduct(id: number) {
     return this.productService.findById(id).subscribe(product => {
       this.productForm = new FormGroup({
+        id: new FormControl(product.id),
         name: new FormControl(product.name),
+        price: new FormControl(product.price),
+        description: new FormControl(product.description),
+        category: new FormControl(product.category.name)
       });
     });
   }

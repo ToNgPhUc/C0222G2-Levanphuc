@@ -24,8 +24,6 @@ export class ProductEditComponent implements OnInit {
       this.getProduct(this.id);
     });
   }
-
-
   ngOnInit(): void {
     this.getAll();
   }

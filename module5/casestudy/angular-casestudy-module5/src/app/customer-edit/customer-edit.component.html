@@ -4,28 +4,36 @@
       <div class="row w-50 mx-auto">
         <div class="row">
           <h2>edit customer</h2>
-          <form action="@{/customer/edit}" object="${customer}" method="post">
-            <div class="form-outline mb-4">
-              <input field="*{id}" class="form-control" type="hidden"/>
-            </div>
-            <div class="row">
 
+          <form [formGroup]="formCustomer" (ngSubmit)="editCustomer()">
+            <div class="row">
               <div class="col-6">
                 <div class="form-outline mb-4">
+                  <input type="text" class="form-control" hidden/>
+                </div>
+                <div class="form-outline mb-4">
                   <label class="form-label">Name Customer</label>
-                  <input field="*{nameCustomer}" class="form-control"/>
+                  <input formControlName="nameCustomer" name="nameCustomer" class="form-control"/>
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.nameCustomer.hasError('pattern') && formCustomer.controls.nameCustomer.touched">-->
+                  <!--                   tên không đúng định dạng </p>         required -->
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.nameCustomer.hasError('required') && formCustomer.controls.nameCustomer.touched">
+                    không được để trống </p>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label">Date Of Birth</label>
-                  <input type="date" field="*{dateOfBirth}" class="form-control"/>
+                  <input type="date" formControlName="dateOfBirth" name="dateOfBirth" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.dateOfBirth.hasError('required') && formCustomer.controls.dateOfBirth.touched">
+                    không được để trống </p>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label">Gender</label>
-
-                  <select class="form-select" aria-label="Default select example"
-                          field="*{gender}">
+                  <select class="form-select" aria-label="Default select example" formControlName="gender"
+                          name="gender">
                     <option value="1">
                       nam
                     </option>
@@ -38,11 +46,15 @@
 
                 <div class="form-outline mb-4">
                   <label class="form-label">id Card</label>
-                  <input field="*{idCard}" class="form-control"/>
-
+                  <input formControlName="idCard" name="idCard" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.idCard.hasError('pattern') && formCustomer.controls.idCard.touched">
+                    định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9) </p>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.idCard.hasError('required') && formCustomer.controls.idCard.touched">
+                    không được để trống </p>
 
                 </div>
-
 
               </div>
 
@@ -51,28 +63,38 @@
               <div class="col-6">
                 <div class="form-outline mb-4">
                   <label class="form-label">Phone Number</label>
-                  <input field="*{phoneNumber}" class="form-control"/>
+                  <input formControlName="phoneNumber" name="phoneNumber" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.phoneNumber.hasError('required') && formCustomer.controls.phoneNumber.touched">
+                    không được để trống </p>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.phoneNumber.hasError('pattern') && formCustomer.controls.phoneNumber.touched">
+                    định dạng 090xxxxxxx hoặc 091xxxxxxx </p>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label">Email</label>
-                  <input field="*{email}" class="form-control"/>
+                  <input formControlName="email" name="email" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.email.hasError('required') && formCustomer.controls.email.touched">
+                    không được để trống </p>
+                  <p style="color: red"
+                     *ngIf="formCustomer.controls.email.hasError('email') && formCustomer.controls.email.touched">
+                    không đúng định dạng : vd tongphuc1495@gmail.com</p>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label">Address</label>
-                  <input field="*{address}" class="form-control"/>
+                  <input class="form-control" formControlName="address" name="address"/>
                 </div>
 
                 <div class="form-outline mb-4">
                   <label class="form-label">Name Customer Type</label>
-                  <select field="*{customerType}" class="form-select"
+                  <select formControlName="customerType" name="customerType" class="form-select"
                           aria-label="Default select example">
-                    <option each="customerType:${customerTypeList}"
-                            text="${customerType.nameCustomerType}"
-                            value="${customerType.id}">
-
-                    </option>
+                    <option>villa</option>
+                    <option>house</option>
+                    <option>room</option>
                   </select>
                 </div>
 
@@ -80,7 +102,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary btn-block bg-momo">
-              edit
+             edit
             </button>
 
             <a [routerLink]="['/customer-list']">

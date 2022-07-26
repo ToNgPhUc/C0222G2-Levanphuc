@@ -8,10 +8,11 @@
     <th:block th:replace="~{common-html :: bootstrapCss}"></th:block>
 
     <style>
-        #body{
+        #body {
             width: 100%;
-            height:100vh;
+            height: 100vh;
         }
+
         #menu {
             background-repeat: no-repeat;
             background-size: cover;
@@ -30,7 +31,9 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" th:href="@{/resort}">Furama </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,20 +45,22 @@
                                 <a class="nav-link" th:href="@{/customerUserFacility}">customer-Facility</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
                                     Other
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
-                                    <li><a class="dropdown-item"  th:href="@{/contract}">Contract</a></li>
-                                    <li><a class="dropdown-item"  th:href="@{/employee}">Employee</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/contract}">Contract</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/employee}">Employee</a></li>
 
                                 </ul>
                             </li>
                         </ul>
 
-                        <form class="d-flex"action="/resort/facility">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"name="keyword" th:value="${keywordVal}">
+                        <form class="d-flex" action="/resort/facility">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                   name="keyword" th:value="${keywordVal}">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
@@ -116,17 +121,20 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel">Delete Facility</h5>
+                                            <h5 style="color: green" class="modal-title" id="exampleModalLabel">Delete
+                                                Facility</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body" style="color: green">
-                                            bạn có muốn xóa <span th:text="${facility.facilityType.nameFacilityType}"></span> với id
+                                            bạn có muốn xóa <span
+                                                th:text="${facility.facilityType.nameFacilityType}"></span> với id
                                             = <span
                                                 th:text="${facility.id}"></span> ?
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
                                             </button>
                                             <a th:href="@{/resort/{id}/delete(id=${facility.getId()})}">
                                                 <button class="btn btn-success ">delete</button>
@@ -145,7 +153,7 @@
                     <h3>
                         <a th:if="${facilityList.hasPrevious()}"
                            th:href="@{/resort/facility/(page=${facilityList.number - 1} , keyword= ${keywordVal})}">
-                            <i  style="color: green" class="fa-solid fa-backward"></i>
+                            <i style="color: green" class="fa-solid fa-backward"></i>
                         </a>
                         <span th:text="${facilityList.number +1}"></span>
                         /
@@ -165,7 +173,7 @@
     </div>
 
     <div class="card-footer text-muted">
-ToNgPhUc@gmail.com
+        ToNgPhUc@gmail.com
     </div>
 </div>
 

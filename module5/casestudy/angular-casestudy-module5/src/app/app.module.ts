@@ -14,6 +14,7 @@ import { CustomerCreateComponent } from './customer-create/customer-create.compo
 import { ContractListComponent } from './contract-list/contract-list.component';
 import { CustomerUserFacilityComponent } from './customer-user-facility/customer-user-facility.component';
 import { FuramaComponent } from './furama/furama.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { FuramaComponent } from './furama/furama.component';
     CustomerUserFacilityComponent,
     FuramaComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

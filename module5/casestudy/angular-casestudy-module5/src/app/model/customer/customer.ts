@@ -9,5 +9,5 @@ export interface Customer {
   phoneNumber?: string,
   email?: string,
   address?: string,
-  // customerType?: CustomerType
+  customerType?: CustomerType
 }

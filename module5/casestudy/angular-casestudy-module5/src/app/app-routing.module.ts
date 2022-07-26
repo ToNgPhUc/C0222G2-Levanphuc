@@ -21,7 +21,6 @@ const routes: Routes = [
   {path: 'contract-list', component: ContractListComponent},
   {path: 'customer-user-facility', component: CustomerUserFacilityComponent},
   {path: 'furama', component: FuramaComponent}
-
 ];
 
 @NgModule({

@@ -16,7 +16,7 @@ export class FacilityListComponent implements OnInit {
         areaFacility: 25000,
         costFacility: 100,
         maxPeople: 10,
-        standardRoom: 'vip',
+        kindOfRoom: 'vip',
         poolArea: 100,
         numberOfFloors: 10
       },
@@ -26,7 +26,7 @@ export class FacilityListComponent implements OnInit {
         areaFacility: 20000,
         costFacility: 200,
         maxPeople: 10,
-        standardRoom: 'normal',
+        kindOfRoom: 'normal',
         poolArea: 50,
         numberOfFloors: 15
       },
@@ -37,7 +37,7 @@ export class FacilityListComponent implements OnInit {
         areaFacility: 30000,
         costFacility: 200,
         maxPeople: 10,
-        standardRoom: 'vip',
+        kindOfRoom: 'vip',
         poolArea: 150,
         numberOfFloors: 20
       })
