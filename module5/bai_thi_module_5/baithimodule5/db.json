@@ -1,0 +1,38 @@
+{
+  "exam": [
+    {
+      "id": 1,
+      "name": "bai 1",
+      "point": "9",
+      "subject": "toán",
+      "hocLuc": {
+        "id": 1,
+        "name": "giỏi"
+      }
+    },  {
+      "id": 2,
+      "name": "bai 2",
+      "point": "5",
+      "subject": "ngữ văn",
+      "hocLuc": {
+        "id": 2,
+        "name": "khá"
+      }
+    }
+  ],
+  "hoc-luc": [
+    {
+      "id": 1,
+      "name": "giỏi"
+    },{
+      "id": 2,
+      "name": "khá"
+    },{
+      "id": 3,
+      "nam": "trung bình"
+    },{
+      "id": 4,
+      "name": "yếu"
+    }
+  ]
+}

@@ -15,14 +15,14 @@
           <td>PHONE NUMBER</td>
           <td>EMAIL</td>
           <td>ADDRESS</td>
-          <!--      <td>CUSTOMER TYPE NAME</td>-->
+          <td>CUSTOMER TYPE NAME</td>
           <td>EDIT</td>
           <td>DELETE</td>
 
         </tr>
         </thead>
         <thead>
-        <tr *ngFor="let item of customer; index as i ">
+        <tr *ngFor="let item of customerList; index as i ">
           <td>{{i + 1}}</td>
           <td>{{item.nameCustomer}}</td>
           <td>{{item.dateOfBirth}}</td>
@@ -33,8 +33,7 @@
           <td>{{item.phoneNumber}}</td>
           <td>{{item.email}}</td>
           <td>{{item.address}}</td>
-          <!--      <td>villa</td>-->
-
+          <td>{{item.customerType.name}}</td>
           <td><a [routerLink]="['/customer-edit']">
             <button class="btn btn-primary">edit</button>
           </a></td>
