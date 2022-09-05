@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c98ee920-6b8e-46fc-b066-d6b03b94ed63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/BaiThiModule5Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/controller/LoHangController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/LoHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/SanPham.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ILoHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ISanPhamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ILoHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ISanPhamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/LoHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/SanPhamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_module_5/ket_noi_database/src/test/java/com/phuc/baithimodule5/BaiThiModule5ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/customer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/customer_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /ss12_jquery_ajax/bai_tap/bai2_mo_rong_ung_dung_dien_thoai/front_end_mo_rong_quan_li_dien_thoai/smartPhone_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /ss12_jquery_ajax/bai_tap/bai2_mo_rong_ung_dung_dien_thoai/front_end_mo_rong_quan_li_dien_thoai/smartPhone_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4 /ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/model/lo-hang.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/model/lo-hang.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/model/san-pham.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/model/san-pham.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_thi_module_5/baithimodule5/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/src/main/java/com/phuc/connect/ConnectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect/src/test/java/com/phuc/connect/ConnectApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/controller/LoHangController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/model/LoHang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/model/SanPham.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/repository/ILoHangRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/ILoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/ISanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/LoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/SanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/main/resources/templates/lo-hang-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/connect_api/src/test/java/com/phuc/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/src/main/java/com/phuc/connect_api/ConnectApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_thi_module_5/src/test/java/com/phuc/connect_api/ConnectApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-type-list/customer-type-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/customer/customer-type-list/customer-type-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/furama/furama.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/furama/furama.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/model/customer/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/model/customer/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/service/customer-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/service/customer-type.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/angular-casestudy-module5/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/casetudy_module5/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/casetudy_module5/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@cspotcode/source-map-support/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@cspotcode/source-map-support/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/resolve-uri/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/resolve-uri/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/sourcemap-codec/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/sourcemap-codec/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/trace-mapping/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/trace-mapping/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node10/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node10/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node12/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node12/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node14/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node16/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node16/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@types/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@types/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/acorn-walk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/acorn-walk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/acorn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ansi-styles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ansi-styles/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/arg/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/arg/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/array-differ/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/array-differ/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/array-union/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/array-union/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/arrify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/arrify/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/balanced-match/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/chalk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/chalk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/color-convert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/color-convert/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/color-name/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/color-name/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/concat-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/create-require/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/create-require/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/cross-spawn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/cross-spawn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/diff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/end-of-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/end-of-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/execa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/execa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/find-up/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/find-up/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/get-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/get-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/has-flag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/human-signals/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/human-signals/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/husky/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/husky/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ignore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ignore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/is-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/is-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/isexe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/isexe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/locate-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/locate-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/make-error/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/make-error/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/merge-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/merge-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/mimic-fn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/mimic-fn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/mri/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/mri/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/multimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/multimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/npm-run-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/npm-run-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/once/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/once/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/onetime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/onetime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-limit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-limit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-locate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-locate/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-try/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/p-try/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/path-exists/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/path-exists/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/path-key/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/path-key/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/prettier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/prettier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/pretty-quick/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/pretty-quick/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/pump/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/pump/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-command/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-command/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/signal-exit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/signal-exit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/strip-final-newline/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/strip-final-newline/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/supports-color/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ts-node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/ts-node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/v8-compile-cache-lib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/v8-compile-cache-lib/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/which/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/which/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/wrappy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/wrappy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/yn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/node_modules/yn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2_typescrip/bai_tap/fibonaci/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea 15.59.35/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea 15.59.35/bai_tap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea 15.59.35/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea 15.59.35/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea 15.59.35/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-calculator-app/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/color/color.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/color/color.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/color/color.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/app/color/color.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-color-picker-app/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea 11.06.44/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea 11.06.44/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea 11.06.44/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea 11.06.44/thuc_hanh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea 11.06.44/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/thuc_hanh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size 10.52.05/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/dog/dog.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/dog/dog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/dog/dog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/dog/dog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/pet.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/pet/pet.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/pet/pet.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/pet/pet.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/app/pet/pet.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-show-pet-info/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/product/product.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/product/product.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/product/product.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/app/product/product.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-using-bootstrap/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.06.42/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo 11.49.48/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/demo2/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/font-size-editor/font-size-editor.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/font-size-editor/font-size-editor.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/font-size-editor/font-size-editor.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/app/font-size-editor/font-size-editor.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/font_size/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/.idea/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/canvas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/js/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/js/mdb.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/untitled1/js/mdb.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_angular_form/angular-name-card/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_angular_form/angular-name-card/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_angular_form/angular-name-card/src/app/todo/todo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_angular_form/angular-name-card/src/app/todo/todo.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_angular_form/form-dang-ki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_angular_form/form-dang-ki/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/product/product-create/product-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/product/product-create/product-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/service/product.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2CjNBYbQOsK23IWiC1TlOYAaXal" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuanLiKhoHangApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="quan_li_kho_hang.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phuc.quan_li_kho_hang.QuanLiKhoHangApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c98ee920-6b8e-46fc-b066-d6b03b94ed63" name="Default Changelist" comment="" />
+      <created>1659311903487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659311903487</updated>
+      <workItem from="1659311904875" duration="1071000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

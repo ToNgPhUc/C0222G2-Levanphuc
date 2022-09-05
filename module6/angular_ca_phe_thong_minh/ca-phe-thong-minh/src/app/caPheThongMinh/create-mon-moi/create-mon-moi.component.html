@@ -1,0 +1,78 @@
+<body>
+<div id="menu">
+  <div class="container">
+
+    <div class="row col-lg-12" style="padding: 120px 20px 50px 120px">
+      <div id="logo" class=" col-lg-6">
+      </div>
+
+      <div id="them" class=" col-lg-6">
+        <h2 id="doUong" class="text-primary" style="text-align: center">Sửa</h2>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label">tên món</label>
+              <input type="text" class="form-control" placeholder="vd: Cà Phê Muối">
+            </div>
+
+            <div class="col-sm-6">
+              <label class="form-label">Mã Số Món</label>
+              <input type="text" class="form-control" placeholder="vd: CF123">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">giá (VNĐ) </label>
+              <input type="text" class="form-control" placeholder="Vd: 10000">
+            </div>
+
+
+            <div class="col-md-6">
+              <label class="form-label">Nhóm Món</label>
+              <select class="form-select">
+                <option><----------></option>
+                <option value="caPhe">Cà Phê</option>
+                <option value="tra">Trà</option>
+                <option value="bia">sinh tố</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label">ảnh </label>
+              <input  id="avata" formControlName="img" name="img" type="file" #fileUploader
+                     (change)="showAnh($event)" class="form-control"/>
+
+              <div class="row">
+                <div class="col-6">
+                  <button type="submit" class="w-10 btn btn btn-danger col-sm-10">Hủy</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="w-10 btn btn-primary col-sm-10">Thêm</button>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="col-sm-6">
+              <div style="width: 15rem;">
+                <img [src]="imgSrc" height="100%" width="100%" (click)="fileUploader.click()">
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </form>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+</body>

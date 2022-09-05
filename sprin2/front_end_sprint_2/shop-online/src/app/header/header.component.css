@@ -1,0 +1,12 @@
+.a{
+  text-align: center;
+ display: block;
+  float: left;
+  background-color: black;
+}
+.b{
+  text-align: center;
+  display: block;
+  float: right;
+  background-color: lavender;
+}
