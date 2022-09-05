@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5751cbe0-e46c-4a89-b95d-d8befba5e647" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/case_study_cuoi_module3/case_study_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/customer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/customer_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/facility_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /casestudy_module4/casestudy_module4_furamaresort/src/main/resources/templates/facility_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai1_mo_rong_blog/ss_12_front_end_mo_rong_blog/List_Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai1_mo_rong_blog/ss_12_front_end_mo_rong_blog/List_Blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai1_mo_rong_blog/ss_12jquey_backEnd_mo_rong_blog/src/main/java/com/phuc/blog_springboot/controller/BlogRestfulController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai1_mo_rong_blog/ss_12jquey_backEnd_mo_rong_blog/src/main/java/com/phuc/blog_springboot/controller/BlogRestfulController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai2_mo_rong_ung_dung_dien_thoai/front_end_mo_rong_quan_li_dien_thoai/smartPhone_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss12_jquery_ajax/bai_tap/bai2_mo_rong_ung_dung_dien_thoai/front_end_mo_rong_quan_li_dien_thoai/smartPhone_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/util/EncrytedPasswordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss14_spring_security/bai_tap/spring_security/src/main/java/com/phuc/spring_security/util/EncrytedPasswordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss5_thao_tac_voi_csld_va_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4 /ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4 /ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_cuoi_module_5/quan-li-kho-hang/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/model/lo-hang.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/model/lo-hang.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/model/san-pham.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/model/san-pham.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-create/lo-hang-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-edit/lo-hang-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/lo-hang-list/lo-hang-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/quanLiKhoHang/san-pham/san-pham.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/lo-hang.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/app/service/san-pham.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/baithimodule5/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/src/main/java/com/phuc/connect/ConnectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect/src/test/java/com/phuc/connect/ConnectApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/controller/LoHangController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/model/LoHang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/model/SanPham.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/repository/ILoHangRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/ILoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/ISanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/LoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/java/com/phuc/demo/service/SanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/connect_api/src/test/java/com/phuc/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/controller/LoHangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/controller/LoHangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/LoHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/LoHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/model/SanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ILoHangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ILoHangRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ISanPhamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/repository/ISanPhamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ILoHangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ILoHangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ISanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/ISanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/LoHangService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/LoHangService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/SanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/java/com/phuc/baithimodule5/service/impl/SanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/bai_thi_module_5/ket_noi_database/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/src/main/java/com/phuc/backendbaithimodule5/BackendBaiThiModule5Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/src/main/java/com/phuc/connect_api/ConnectApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/src/test/java/com/phuc/backendbaithimodule5/BackendBaiThiModule5ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/bai_thi_module_5/src/test/java/com/phuc/connect_api/ConnectApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-type-list/customer-type-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/customer/customer-type-list/customer-type-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/facility-edit/facility-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/facility-edit/facility-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/furama/furama.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/furama/furama.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/model/customer/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/model/customer/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/service/customer-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/service/customer-type.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/angular-casestudy-module5/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/casestudy/casetudy_module5/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/casestudy/casetudy_module5/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/QuanLiKhoHangApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/controller/LoHangController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/model/LoHang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/model/SanPham.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/repository/ISanPhamRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/repository/IloHangRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/service/ILoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/service/ISanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/service/LoHangService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/java/com/phuc/quan_li_kho_hang/service/SanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/quan_li_kho_hang/src/test/java/com/phuc/quan_li_kho_hang/QuanLiKhoHangApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@cspotcode/source-map-support/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@cspotcode/source-map-support/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/resolve-uri/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/resolve-uri/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/sourcemap-codec/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/sourcemap-codec/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/trace-mapping/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@jridgewell/trace-mapping/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node10/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node10/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node12/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node12/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node14/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node16/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@tsconfig/node16/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@types/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@types/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/acorn-walk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/acorn-walk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/acorn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ansi-styles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ansi-styles/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/arg/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/arg/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/array-differ/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/array-differ/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/array-union/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/array-union/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/arrify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/arrify/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/balanced-match/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/chalk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/chalk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/color-convert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/color-convert/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/color-name/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/color-name/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/concat-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/create-require/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/create-require/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/cross-spawn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/cross-spawn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/diff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/end-of-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/end-of-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/execa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/execa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/find-up/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/find-up/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/get-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/get-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/has-flag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/human-signals/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/human-signals/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/husky/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/husky/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ignore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ignore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/is-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/is-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/isexe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/isexe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/locate-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/locate-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/make-error/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/make-error/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/merge-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/merge-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/mimic-fn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/mimic-fn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/mri/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/mri/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/multimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/multimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/npm-run-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/npm-run-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/once/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/once/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/onetime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/onetime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-limit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-limit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-locate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-locate/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-try/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/p-try/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/path-exists/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/path-exists/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/path-key/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/path-key/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/prettier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/prettier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/pretty-quick/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/pretty-quick/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/pump/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/pump/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-command/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-command/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/shebang-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/signal-exit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/signal-exit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/strip-final-newline/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/strip-final-newline/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/supports-color/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ts-node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/ts-node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/v8-compile-cache-lib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/v8-compile-cache-lib/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/which/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/which/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/wrappy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/wrappy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/yn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/node_modules/yn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss2_typescrip/bai_tap/fibonaci/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss6_angular_form/angular-name-card/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss6_angular_form/angular-name-card/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss6_angular_form/angular-name-card/src/app/todo/todo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss6_angular_form/angular-name-card/src/app/todo/todo.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss6_angular_form/form-dang-ki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss6_angular_form/form-dang-ki/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/product/product-create/product-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/product/product-create/product-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/ss9_ket_noi_back_end/thuc_hanh/quan-li-san-pham/src/app/service/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV/create-mon-moi/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV/create-mon-moi/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV/edit/edit-mon-moi.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/[C0222G2]_Prototype_PhucLV/edit/edit-mon-moi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/model/dish-type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/model/dish-type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/model/dish.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/model/dish.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/service/dish-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/service/dish-type.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/service/dish.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/app/service/dish.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/angular_ca_phe_thong_minh/ca-phe-thong-minh/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/dto/DishDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/dto/DishDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/model/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/model/DishType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/model/DishType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/repository/IDishRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/repository/IDishRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/repository/IDishTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/repository/IDishTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/IDishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/IDishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/IDishTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/IDishTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/impl/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/impl/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/impl/DishTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/java/com/phuc/ca_phe_thong_minh/service/impl/DishTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/resources/templates/dish-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/back_end_ca_phe_thong_minh/ca_phe_thong_minh/src/main/resources/templates/dish-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/repository/ISanPhamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/repository/ISanPhamRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/ILoaiSanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/ILoaiSanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/ISanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/ISanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/LoaiSanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/LoaiSanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/SanPhamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/java/com/example/demo/service/sanPham/SanPhamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/back_end_bai_thi_cuoi_ki/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/model/loai-san-pham.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/model/loai-san-pham.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/model/san-pham.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/model/san-pham.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/dish-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/dish-type.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/dish.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/dish.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/loai-san-pham.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/loai-san-pham.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/san-pham.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/bai_thi_cuoi_ki_/frond-end-bai-thi-cuoi-ki/baithicuoiki/src/app/service/san-pham.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/create-mon-moi/create-mon-moi.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/caPheThongMinh/list-mon-moi/list-mon-moi.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/footer/footer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/header/header.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/app/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/ca_phe_thong_minh/ca-phe-thong-minh/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/create-prototype.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/css/bootstrap-5.1.3-dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/assets/image/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/create-mon-moi/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/edit/edit-mon-moi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/create-prototype/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/test spring 2/src/CheckNPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/test spring 2/src/CheckNPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/test spring 2/src/Test2CheckSoLanLapKiTu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/test spring 2/src/Test2CheckSoLanLapKiTu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/test spring 2/src/TinhBatPhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/test spring 2/src/TinhBatPhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/test spring 2/src/dayfibonaci.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/test spring 2/src/dayfibonaci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/ShopOnlineApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/config/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/bill/Bill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/customer/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/product/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/product/TypeProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/userPassword/AppRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/userPassword/AppUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/java/phuc/com/shoponline/model/userPassword/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/back_end_sprint_2/shop-online/src/test/java/phuc/com/shoponline/ShopOnlineApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/detail/detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/footer/footer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/header/header.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/home-page/home-page.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/home-page/home-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/home-page/home-page.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/home-page/home-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/login/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/app/share/share.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/Magnific-Popup-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/OwlCarousel2-2.3.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/SlickNav-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/bootstrap-4.2.1-dist.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/elegant_font.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/font-awesome-4.7.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/Source/jquery-nice-select-1.1.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/elegant-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/slicknav.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/ElegantIcons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/ElegantIcons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/ElegantIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/ElegantIcons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/breadcrumb-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/clients/client-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/icon/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/icon/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/icon/compare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/icon/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/icon/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/instagram/instagram-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop 12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop13.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop14.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop15.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop16.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop17.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/laptop/laptop9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/logo_media_mart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/logo_may_anh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/logo_may_anh2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/logo_may_anh_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh13.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh14.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh15.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh17.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh18.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh19.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/may_anh_logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/máy_ảnh/phu_kien_may_anh.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/payment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product-sale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/product/product-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/details-payment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/product-big-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/product-big-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/product-big-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/product-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/thumb-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/thumb-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/thumb-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shop-details/thumb-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shopping-cart/cart-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shopping-cart/cart-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shopping-cart/cart-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/img/shopping-cart/cart-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery.countdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/jquery.slicknav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/mixitup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_blog-details.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_blog-sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_checkout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_hero.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_home-page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_product.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_shop-details.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_shop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_shopping-cart.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/_variable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/assets/sass/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprin2/front_end_sprint_2/shop-online/tslint.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2ELj0tdDek7x4Rov76xN22oCdFV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/máy_ảnh" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/máy_ảnh" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5751cbe0-e46c-4a89-b95d-d8befba5e647" name="Changes" comment="" />
+      <created>1662381544112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662381544112</updated>
+      <workItem from="1662381545610" duration="754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
