@@ -1,28 +1,71 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {CustomerService} from "../../service/customer.service";
+import {CustomerTypeService} from "../../service/customer-type.service";
+import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {CustomerType} from "../../model/customer/customerType";
+import {Customer} from "../../model/customer/customer";
 
 @Component({
   selector: 'app-customer-edit',
   templateUrl: './customer-edit.component.html',
   styleUrls: ['./customer-edit.component.css']
 })
+
 export class CustomerEditComponent implements OnInit {
   formCustomer: FormGroup;
+  id: number
+  customer: Customer;
 
-  constructor() {
-  }
+  customerTypeList: CustomerType[] = [];
 
-  ngOnInit(): void {
-    this.formCustomer = new FormGroup({
-      nameCustomer: new FormControl("", [Validators.pattern(" "), Validators.required]),
-      dateOfBirth: new FormControl("", [Validators.required]),
-      idCard: new FormControl("", [Validators.pattern("^([0-9]{9})|([0-9]{12})$"), Validators.required]),
-      phoneNumber: new FormControl("", [Validators.required, Validators.pattern("^([0][9][0][0-9]{7})|([0][9][1][0-9]{7})$")]),
-      email: new FormControl("", [Validators.email, Validators.required]),
+  constructor(private customerService: CustomerService,
+              private customerTypeService: CustomerTypeService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = +paramMap.get('id');
+      this.getCustomer(this.id);
     })
   }
 
-  editCustomer() {
-    console.log(this.formCustomer)
+  ngOnInit(): void {
+    this.getAllCustomerType()
+
   }
+
+  editCustomer(id: number) {
+    const customer = this.formCustomer.value;
+    this.customerService.editCustomer(id, customer).subscribe(() => {
+        this.router.navigateByUrl('/customer-list').then()
+        alert("thành công")
+      },
+      error => {
+        console.log(error)
+      });
+  }
+
+  private getCustomer(id: number) {
+    return this.customerService.findById(id).subscribe(data => {
+      this.customer = data;
+      this.formCustomer = new FormGroup({
+        id: new FormControl(data.id),
+        nameCustomer: new FormControl(this.customer.nameCustomer),
+        dateOfBirth: new FormControl(this.customer.dateOfBirth),
+        gender: new FormControl(this.customer.gender),
+        idCard: new FormControl(this.customer.idCard),
+        phoneNumber: new FormControl(this.customer.phoneNumber),
+        email: new FormControl(this.customer.email),
+        address: new FormControl(this.customer.address),
+        customerType: new FormControl(this.customer.customerType.name)
+      });
+    });
+  }
+
+  getAllCustomerType() {
+    this.customerTypeService.getAll().subscribe(data => {
+      this.customerTypeList = data
+    })
+  }
+
 }

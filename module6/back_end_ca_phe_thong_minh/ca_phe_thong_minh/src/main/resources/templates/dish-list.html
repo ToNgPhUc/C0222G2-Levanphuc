@@ -1,10 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        #body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #menu {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-image: url("//bizweb.dktcdn.net/100/033/603/themes/852890/assets/slider_1.jpg?1649413074140");
+
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="body" class="card text-center">
+
+    <div class="card-body">
+        <div id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" th:href="@{/resort}">Furama </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/customer}">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/customerUserFacility}">customer-Facility</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Other
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/resort/facility}">Facility</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/contract}">Contract</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/employee}">Employee</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" action="/resort/facility">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                   name="keyword" th:value="${keywordVal}">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container text-center m-5">
+                <a href="/resort/create" class="btn btn-outline-success">Create New Facility</a>
+            </div>
+
+            <div class="container">
+
+                <table class="table table-dark table-striped">
+                    <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>DishCode</td>
+                        <td>Name</td>
+                        <td>group Dish</td>
+                        <td>edit</td>
+                        <td>delete</td>
+
+
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr th:each="dish :  ${dishList}">
+
+                        <td th:text="${dish.id}"></td>
+                        <td th:text="${dish.dishCode}"></td>
+                        <td th:text="${dish.name}"></td>
+                        <td th:text="${dish.typeOfDish.name}"></td>
+
+                        <td><a th:href="@{/ca_phe_thong_minh/{id}/edit(id=${dish.getId()})}">
+                            <button class="btn btn-success ">edit</button>
+                        </a></td>
+
+                    </tr>
+                    </thead>
+                    </tbody>
+                </table>
+
+                <div style="float: right">
+                    <h3>
+                        <a th:if="${dishList.hasPrevious()}"
+                           th:href="@{/resort/facility/(page=${dishList.number - 1} , keyword= ${keywordVal})}">
+                            <i style="color: green" class="fa-solid fa-backward"></i>
+                        </a>
+                        <span th:text="${dishList.number +1}"></span>
+                        /
+                        <span th:text="${dishList.totalPages}"></span>
+                        <a th:if="${dishList.hasNext()}"
+                           th:href="@{/ca_phe_thong_minh/dish/(page=${dishList.number + 1} , keyword= ${keywordVal})}">
+                            <i style="color: green" class="fa-solid fa-forward"></i>
+                        </a>
+                    </h3>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-footer text-muted">
+        ToNgPhUc@gmail.com
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
+

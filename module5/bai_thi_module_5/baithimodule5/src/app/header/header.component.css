@@ -1,8 +1,9 @@
 
-.nav-link{
-  font-family: 'Dancing Script',sans-serif !important;
+.nav-link {
+  font-family: 'Dancing Script', sans-serif !important;
   font-size: 22px;
 }
+
 .img {
   width: 100%;
   height: 210px;
@@ -24,7 +25,8 @@ a {
 .card-body {
   background-color: lightblue;
 }
-.iconEdit a{
+
+.iconEdit a {
   color: black;
   font-size: 30px;
 }

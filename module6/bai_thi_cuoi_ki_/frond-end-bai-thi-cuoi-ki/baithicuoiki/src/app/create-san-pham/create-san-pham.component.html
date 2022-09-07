@@ -1,0 +1,157 @@
+<div id="body" class="card text-center">
+  <div id="menu">
+    <div class="container mt-4" style="background-color: darkcyan">
+      <div class="row w-50 mx-auto">
+        <div class="row">
+          <h2>Thêm Mới Sản Phẩm</h2>
+          <form [formGroup]="formSanPham" (ngSubmit)="createSanPham()">
+            <div class="row">
+
+
+              <div class="col-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label">Loại Sản Phẩm</label>
+                  <select id="selectType" class="form-select"
+                          aria-label="Default select example" onchange="getForm()"
+                          formControlName="loaiSanPham" name="loaiSanPham">
+                    <option>Thức Uống</option>
+                    <option>Đồ Ăn</option>
+                    <option>Sách Truyện</option>
+                  </select>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Mã Sản Phẩm</label>
+                  <input type="text" formControlName="maSanPham" name="maSanPham" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.maSanPham.hasError('required') && formSanPham.controls.maSanPham.touched">
+                    không được để trống </p>
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.maSanPham.hasError('maSanPhamExists') && formSanPham.controls.maSanPham.touched">
+                    Mã sản phẩm đã tồn tại. </p>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">Ngày Xuất Bản</label>
+                  <input type="date" formControlName="" name="ngayXuatBan" class="form-control"/>
+
+                </div>
+
+
+
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Giá</label>
+                  <input type="text" formControlName="gia" name="gia" class="form-control"/>
+
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.gia.hasError('required') && formSanPham.controls.gia.touched">
+                    không được để trống </p>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">Tình Trạng</label>
+                  <input type="text" formControlName="tinhTrang" name="tinhTrang" class="form-control"/>
+
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.tinhTrang.hasError('required') && formSanPham.controls.tinhTrang.touched">
+                    không được để trống </p>
+
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Tên Sản Phẩm</label>
+                  <input formControlName="tenSanPham" name="tenSanPham" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.tenSanPham.hasError('required') && formSanPham.controls.tenSanPham.touched">
+                    không được để trống </p>
+                </div>
+
+
+
+              </div>
+
+              <!---------------------------->
+              <div class="col-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label">Bánh Ngọt/ Mặn</label>
+                  <input type="text" formControlName="banhNgotMan" name="banhNgotMan" class="form-control"/>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">Không Có Gas</label>
+                  <input type="text" formControlName="khongCoGas" name="khongCoGas" class="form-control"/>
+
+                </div>
+
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Ngày Nhập Hàng</label>
+                  <input type="date" formControlName="ngayNhap" name="ngayNhap" class="form-control"/>
+
+                  <p style="color: red"
+                     *ngIf="formSanPham.controls.ngayNhap.hasError('required') && formSanPham.controls.ngayNhap.touched">
+                    không được để trống</p>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Xuất Xứ</label>
+                  <input type="text" formControlName="xuatXu" name="xuatXu" class="form-control"/>
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.email.hasError('required') && formCustomer.controls.email.touched">-->
+                  <!--                    không được để trống </p>-->
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.email.hasError('email') && formCustomer.controls.email.touched">-->
+                  <!--                    không đúng định dạng : vd tongphuc1495@gmail.com</p>-->
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Tác Giả</label>
+                  <input type="text" class="form-control" formControlName="tacGia" name="tacGia"/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Thể Loại</label>
+                  <input type="text" class="form-control" formControlName="theLoai" name="theLoai"/>
+                </div>
+
+
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block bg-momo">
+              save
+            </button>
+            <a [routerLink]="['/san-pham-list']">
+              <button type="button" class="btn btn-primary btn-block bg-momo">
+                Back To List
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+
+  function getForm() {
+    let valueSelectType = $('#selectType').val();
+    if (valueSelectType === '3') {
+      $('#room-facility').show();
+      $('#villa-facility').hide();
+      $('#house-facility').hide();
+    }
+    if (valueSelectType === '2') {
+      $('#house-facility').show();
+      $('#room-facility').hide();
+      $('#villa-facility').hide();
+    }
+    if (valueSelectType === '1') {
+      $('#villa-facility').show();
+      $('#house-facility').show();
+      $('#room-facility').hide();
+    }
+  }
+
+</script>

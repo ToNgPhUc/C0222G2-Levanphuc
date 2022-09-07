@@ -1,18 +1,17 @@
-
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/furama']"><img id="logoFurama"
-                                                           src="https://img.freepik.com/premium-vector/palm-realestate-logo_8050-36.jpg?w=2000"></a>
+                                                            src="https://img.freepik.com/premium-vector/palm-realestate-logo_8050-36.jpg?w=2000"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link"[routerLink]="['/customer-list']" >Customer</a>
+          <a class="nav-link" [routerLink]="['/customer-list']">Customer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  [routerLink]="['/customer-user-facility']">customer-facility</a>
+          <a class="nav-link" [routerLink]="['/customer-user-facility']">customer-facility</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/contract-list']">Contract</a>
@@ -24,7 +23,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" [routerLink]="['/facility-list']">Facility</a></li>
-            <li><a class="dropdown-item"[routerLink]="['/employee-list']">Employee</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/employee-list']">Employee</a></li>
             <li><a class="dropdown-item" href="@{/contract}">Plane ticket</a></li>
             <li><a class="dropdown-item" href="@{/employee}">Spaceship</a></li>
 
@@ -54,8 +53,8 @@
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">Video Header</h1>
-        <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>
+        <!--        <h1 class="display-3">Video Header</h1>-->
+        <!--        <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>-->
       </div>
     </div>
   </div>
@@ -66,9 +65,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
-        <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
-        <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+
         <p class="mb-0">
           Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
         </p>
@@ -76,4 +73,71 @@
     </div>
   </div>
 </section>
-<div></div>
+
+
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-4">-->
+
+<!--      <div class="card" style="width: 100%;">-->
+<!--        <img class="img"-->
+<!--             src="http://khunghiduong.vn/wp-content/uploads/2017/12/5-resort-sang-ch%E1%BA%A3nh-n%C3%A0o-t%E1%BA%A1i-Vi%E1%BB%87t-Nam-%C4%91%C6%B0%E1%BB%A3c-h%E1%BB%99i-Rich-Kid-%C6%B0a-th%C3%ADch-nh%E1%BA%A5t1.png">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title"> GIC Luxury Hotel & Spa</h5>-->
+<!--          <p class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star-half-stroke"></i></p>-->
+<!--          <p style="color: brown"><i class="fa-solid fa-dollar-sign"></i>20</p>-->
+<!--          <div class="iconEdit">-->
+<!--            <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>-->
+<!--            <a href="#"><i class="fa-solid fa-trash-can"></i></a>-->
+<!--          </div>-->
+
+<!--          <a href="#" class="btn btn-success">Đặt Phòng</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-4">-->
+
+<!--      <div class="card" style="width: 100%;">-->
+<!--        <img class="img" src="https://dulichdaibang.com/wp-content/uploads/2021/04/Naman-Retreat-03.jpg">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">Novotel Danang Premier</h5>-->
+<!--          <p class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star-half-stroke"></i></p>-->
+<!--          <p style="color: brown"><i class="fa-solid fa-dollar-sign"></i>20</p>-->
+<!--          <div class="iconEdit">-->
+<!--            <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>-->
+<!--            <a href="#"><i class="fa-solid fa-trash-can"></i></a>-->
+<!--          </div>-->
+<!--          <a href="#" class="btn btn-success">Đặt Phòng</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-4">-->
+
+
+<!--      <div class="card" style="width: 100%;">-->
+
+<!--        <img class="img" src=" https://travelgear.vn/blog/wp-content/uploads/2019/02/resort-da-nang.jpg">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">Khách sạn Mường Thanh</h5>-->
+<!--          <p class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i-->
+<!--            class="fa-solid fa-star-half-stroke"></i></p>-->
+<!--          <p style="color: brown"><i class="fa-solid fa-dollar-sign"></i>20</p>-->
+<!--          <div class="iconEdit">-->
+<!--            <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>-->
+<!--            <a href="#"><i class="fa-solid fa-trash-can"></i></a>-->
+<!--          </div>-->
+<!--          <a href="#" class="btn btn-success">Đặt Phòng</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+

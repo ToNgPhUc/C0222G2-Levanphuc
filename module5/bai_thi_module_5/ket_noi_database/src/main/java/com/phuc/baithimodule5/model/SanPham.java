@@ -1,8 +1,8 @@
-package com.phuc.demo.model;
+package com.phuc.baithimodule5.model;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
-
-
 import java.util.List;
 
 @Entity
@@ -12,21 +12,13 @@ public class SanPham {
     private Integer id;
     private String tenSanPham;
     private String xuatXu;
-    private Integer giaTien;
     private String donVi;
+    private Integer giaTien;
     @OneToMany(mappedBy = "sanPham")
+    @JsonBackReference
     List<LoHang> loHangList;
 
     public SanPham() {
-    }
-
-    public SanPham(Integer id, String tenSanPham, String xuatXu, Integer giaTien, String donVi, List<LoHang> loHangList) {
-        this.id = id;
-        this.tenSanPham = tenSanPham;
-        this.xuatXu = xuatXu;
-        this.giaTien = giaTien;
-        this.donVi = donVi;
-        this.loHangList = loHangList;
     }
 
     public Integer getId() {
@@ -53,14 +45,6 @@ public class SanPham {
         this.xuatXu = xuatXu;
     }
 
-    public Integer getGiaTien() {
-        return giaTien;
-    }
-
-    public void setGiaTien(Integer giaTien) {
-        this.giaTien = giaTien;
-    }
-
     public String getDonVi() {
         return donVi;
     }
@@ -69,11 +53,28 @@ public class SanPham {
         this.donVi = donVi;
     }
 
+    public Integer getGiaTien() {
+        return giaTien;
+    }
+
+    public void setGiaTien(Integer giaTien) {
+        this.giaTien = giaTien;
+    }
+
     public List<LoHang> getLoHangList() {
         return loHangList;
     }
 
     public void setLoHangList(List<LoHang> loHangList) {
+        this.loHangList = loHangList;
+    }
+
+    public SanPham(Integer id, String tenSanPham, String xuatXu, String donVi, Integer giaTien, List<LoHang> loHangList) {
+        this.id = id;
+        this.tenSanPham = tenSanPham;
+        this.xuatXu = xuatXu;
+        this.donVi = donVi;
+        this.giaTien = giaTien;
         this.loHangList = loHangList;
     }
 }

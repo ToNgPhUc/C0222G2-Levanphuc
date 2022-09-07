@@ -1,13 +1,13 @@
-package com.phuc.demo.repository;
+package com.phuc.baithimodule5.repository;
 
-import com.phuc.demo.model.LoHang;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+
+import com.phuc.baithimodule5.model.LoHang;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
-public interface ILoHangRepository extends JpaRepository<LoHang,Integer> {
-//    @Query(value = "select *from lo_hang where ten_san_pham like :keywordVal",nativeQuery = true,
-//            countQuery = "select count(*)from (select *from lo-hang where ten_san_pham like :keywordVal)temp_table")
-//    Page<LoHang> findAllByName(String keywordVal, Pageable pageable);
+
+public interface ILoHangRepository extends JpaRepository<LoHang, Integer> {
+
+//    @Query(value = "select *from lo_hang where ma_lo_hang like :searchName", nativeQuery = true,
+//            countQuery = "select count(*)from (select *from lo_hang where ma_lo_hang like :searchName)temp_table")
+//    Page<LoHang> getAllByName(@Param("searchName")String searchName, Pageable pageable);
 }

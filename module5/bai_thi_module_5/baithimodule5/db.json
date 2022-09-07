@@ -1,38 +1,139 @@
 {
-  "exam": [
+  "loHang": [
     {
-      "id": 1,
-      "name": "bai 1",
-      "point": "9",
-      "subject": "toán",
-      "hocLuc": {
+      "id": 3,
+      "maLoHang": "LH-1111",
+      "soLuong": "1000",
+      "ngayNhapHang": "2022-07-23",
+      "ngaySanXuat": "2022-07-23",
+      "ngayHetHan": "2022-07-30",
+      "sanPham": {
         "id": 1,
-        "name": "giỏi"
+        "tenSanPham": "Larue",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
       }
-    },  {
-      "id": 2,
-      "name": "bai 2",
-      "point": "5",
-      "subject": "ngữ văn",
-      "hocLuc": {
+    },
+    {
+      "id": 4,
+      "maLoHang": "LH-1111",
+      "sanPham": {
         "id": 2,
-        "name": "khá"
-      }
+        "tenSanPham": "Oshi",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-23",
+      "ngaySanXuat": "2022-07-15",
+      "ngayHetHan": "2022-07-24"
+    },
+    {
+      "id": 5,
+      "maLoHang": "LH-1111",
+      "sanPham": {
+        "id": 2,
+        "tenSanPham": "Oshi",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-30",
+      "ngaySanXuat": "2022-07-24",
+      "ngayHetHan": "2022-07-15"
+    },
+    {
+      "id": 6,
+      "maLoHang": "LH-1111",
+      "sanPham": {
+        "id": 1,
+        "tenSanPham": "Larue",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-10",
+      "ngaySanXuat": "2022-07-17",
+      "ngayHetHan": "2022-07-02"
+    },
+    {
+      "id": 7,
+      "maLoHang": "LH-1111",
+      "sanPham": {
+        "id": 1,
+        "tenSanPham": "Larue",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-31",
+      "ngaySanXuat": "2022-07-08",
+      "ngayHetHan": "2022-07-27"
+    },
+    {
+      "id": 8,
+      "maLoHang": "LH-1111",
+      "sanPham": {
+        "id": 1,
+        "tenSanPham": "Larue",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-08",
+      "ngaySanXuat": "2022-07-08",
+      "ngayHetHan": "2022-07-09"
+    },
+    {
+      "id": 9,
+      "maLoHang": "LH-1111",
+      "sanPham": {
+        "id": 2,
+        "tenSanPham": "Oshi",
+        "xuatXu": "quang binh",
+        "giaTien": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "12",
+      "ngayNhapHang": "2022-07-15",
+      "ngaySanXuat": "2022-07-21",
+      "ngayHetHan": "2022-07-20"
     }
   ],
-  "hoc-luc": [
+  "sanPham": [
     {
       "id": 1,
-      "name": "giỏi"
-    },{
+      "tenSanPham": "tiger",
+      "xuatXu": "quang binh",
+      "giaTien": 1000,
+      "donVi": "thùng"
+    },
+    {
       "id": 2,
-      "name": "khá"
-    },{
-      "id": 3,
-      "nam": "trung bình"
-    },{
-      "id": 4,
-      "name": "yếu"
+      "tenSanPham": "Oshi",
+      "xuatXu": "quang binh",
+      "giaTien": 1000,
+      "donVi": "thùng"
+    },
+    {
+      "id": 1,
+      "tenSanPham": "Larue",
+      "xuatXu": "quang binh",
+      "giaTien": 1000,
+      "donVi": "thùng"
+    },
+    {
+      "id": 1,
+      "tenSanPham": "String",
+      "xuatXu": "quang binh",
+      "giaTien": 1000,
+      "donVi": "thùng"
     }
   ]
 }

@@ -1,0 +1,26 @@
+#menu {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-color:powderblue;
+  /*background-image: url("https://digialai.com/dlg_media/2021/08/04-top-10-diem-den-du-lich-chup-anh-dep-nhat-viet-nam-ha-long.jpg");*/
+}
+#padding{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+#iconEdit{
+  color: coral;
+  font-size: 30px;
+}#iconDelete{
+   color: darkred;
+   font-size: 30px;
+ }
+#table{
+  background-color: beige;
+}
+#search{
+  padding-bottom: 30px;
+}
+

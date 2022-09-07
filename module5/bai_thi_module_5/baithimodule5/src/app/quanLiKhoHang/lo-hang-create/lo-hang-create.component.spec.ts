@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LoHangCreateComponent } from './lo-hang-create.component';
+import {LoHangCreateComponent} from './lo-hang-create.component';
 
 describe('LoHangCreateComponent', () => {
   let component: LoHangCreateComponent;
@@ -8,9 +8,9 @@ describe('LoHangCreateComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoHangCreateComponent ]
+      declarations: [LoHangCreateComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

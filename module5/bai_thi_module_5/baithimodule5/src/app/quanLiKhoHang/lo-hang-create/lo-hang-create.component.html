@@ -4,9 +4,18 @@
       <div class="row w-50 mx-auto">
         <div id="row" class="row">
           <h2>Nhập Hàng</h2>
-          <form [formGroup]="formLoHang" (ngSubmit)="createLoHang()">
+
+          <form [formGroup]="formLoHang" (ngSubmit)="createLoHang()"*ngIf="formLoHang">
             <div class="row">
               <div class="container">
+                <div class="form-outline mb-4">
+                  <label class="form-label">ảnh </label>
+                  <input id="avata" formControlName="img"
+                         name="img" type="file"#fileUploader (change)="showPreview($event)" class="form-control"/>
+                  <img [src]="imgSrc" height="125" width="100"alt="ảnh đại diện"(click)="fileUploader.click()">
+
+                </div>
+
                 <div class="form-outline mb-4">
                   <label class="form-label">Mã Lô Hàng </label>
                   <input type="text" formControlName="maLoHang" name="maLoHang" class="form-control"/>
@@ -15,12 +24,12 @@
                     không được để trống </p>
                   <p style="color: red"
                      *ngIf="formLoHang.controls.maLoHang.hasError('pattern') && formLoHang.controls.maLoHang.touched">
-                   Định dạng là : LH-XXXX </p>
+                    Định dạng là : LH-XXXX </p>
                 </div>
                 <div class="form-outline mb-4">
                   <label class="form-label">sản Phẩm</label>
                   <select formControlName="sanPham" name="sanPham" class="form-select"
-                          aria-label="Default select example" >
+                          aria-label="Default select example">
                     <option *ngFor="let item of sanPham" [ngValue]="item">{{item.tenSanPham}}</option>
                   </select>
                   <p style="color: red"
@@ -33,9 +42,10 @@
                   <input type="text" formControlName="soLuong" name="soLuong" class="form-control"/>
                   <p style="color: red"
                      *ngIf="formLoHang.controls.soLuong.hasError('required') && formLoHang.controls.soLuong.touched">
-                    không được để trống </p>    <p style="color: red"
+                    không được để trống </p>
+                  <p style="color: red"
                      *ngIf="formLoHang.controls.soLuong.hasError('min') && formLoHang.controls.soLuong.touched">
-                    phải là số nguyên dương  </p>
+                    phải là số nguyên dương </p>
                 </div>
 
 

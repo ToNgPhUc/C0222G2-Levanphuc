@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LoHangListComponent } from './lo-hang-list.component';
+import {LoHangListComponent} from './lo-hang-list.component';
 
 describe('LoHangListComponent', () => {
   let component: LoHangListComponent;
@@ -8,9 +8,9 @@ describe('LoHangListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoHangListComponent ]
+      declarations: [LoHangListComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

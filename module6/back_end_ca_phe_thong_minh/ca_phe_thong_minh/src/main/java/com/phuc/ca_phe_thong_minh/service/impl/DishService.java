@@ -1,8 +1,9 @@
-package com.phuc.ca_phe_thong_minh.service;
+package com.phuc.ca_phe_thong_minh.service.impl;
 
 
 import com.phuc.ca_phe_thong_minh.model.Dish;
 import com.phuc.ca_phe_thong_minh.repository.IDishRepository;
+import com.phuc.ca_phe_thong_minh.service.IDishService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
 
 
 @Service
-public class DishService implements IDishService{
+public class DishService implements IDishService {
     @Autowired
     private IDishRepository iDishRepository;
 
@@ -23,12 +24,23 @@ public class DishService implements IDishService{
     }
 
     @Override
-    public Dish save(Dish dish) {
-        return iDishRepository.saveDish(dish);
+    public void save(Dish dish) {
+         iDishRepository.saveDish(dish);
     }
 
     @Override
     public Optional<Dish> findById(int id) {
         return iDishRepository.findByIdDish(id);
     }
+
+    @Override
+    public void editDish( Dish dish) {
+        iDishRepository.editDish(dish);
+    }
+
+
+//@Override
+//public Dish editDish(Dish dish) {
+//    return iDishRepository.save(dish);
+//}
 }

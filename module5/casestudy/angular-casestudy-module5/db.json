@@ -1,19 +1,75 @@
 {
-  "posts": [
+  "customer": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": 2,
+      "nameCustomer": "phúc",
+      "dateOfBirth": "",
+      "gender": "0",
+      "idCard": "1234",
+      "phoneNumber": "0123456789",
+      "email": "tongphuc1495@gmail.com",
+      "address": "quảng bình",
+      "customerType": "Platinium"
+    },
+    {
+      "id": 3,
+      "nameCustomer": "trần đức phương",
+      "dateOfBirth": "2022-07-07",
+      "gender": "0",
+      "idCard": "1111111111111111",
+      "phoneNumber": "0123456789",
+      "address": "quảng bình",
+      "email": "tongphuc1495@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 4,
+      "nameCustomer": "trần đức phương",
+      "dateOfBirth": "2022-07-14",
+      "gender": "0",
+      "idCard": "1111111111111111",
+      "phoneNumber": "0123456789",
+      "address": "quảng bình",
+      "email": "tongphuc1495@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      }
+    },
+    {
+      "id": 5,
+      "nameCustomer": "trần đức phương",
+      "dateOfBirth": "2022-07-14",
+      "gender": "1",
+      "idCard": "121234",
+      "phoneNumber": "0911234567",
+      "address": "quảng bình",
+      "email": "tongphuc1495@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
     }
   ],
-  "comments": [
+  "customerType": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Member"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

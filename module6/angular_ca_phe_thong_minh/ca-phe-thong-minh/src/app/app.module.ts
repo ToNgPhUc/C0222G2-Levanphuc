@@ -11,6 +11,9 @@ import {environment} from '../environments/environment';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireModule} from '@angular/fire';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { EditMonMoiComponent } from './caPheThongMinh/edit-mon-moi/edit-mon-moi.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,19 @@ import {AngularFireModule} from '@angular/fire';
     ListMonMoiComponent,
     FooterComponent,
     HeaderComponent,
-    CreateMonMoiComponent
+    CreateMonMoiComponent,
+    EditMonMoiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    ReactiveFormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

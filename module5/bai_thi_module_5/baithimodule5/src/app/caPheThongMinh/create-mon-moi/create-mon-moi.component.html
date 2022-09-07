@@ -1,1 +1,102 @@
-<p>create-mon-moi works!</p>
+<div id="body" class="card text-center">
+  <div id="menu">
+    <div class="container mt-4">
+      <div class="row w-50 mx-auto">
+        <div id="row" class="row">
+          <h2>Nhập Hàng</h2>
+          <form [formGroup]="formMonMoi" (ngSubmit)="createMonMoi()"*ngIf="formMonMoi">
+            <div class="row">
+              <div class="container">
+                <div class="form-outline mb-4">
+                  <label class="form-label">ảnh </label>
+                  <input id="avata" formControlName="img" name="img" type="file"#fileUploader (change)="showAnh($event)" class="form-control"/>
+                  <img [src]="imgSrc" height="125" width="100"alt="ảnh đại diện"(click)="fileUploader.click()">
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Mã Lô Hàng </label>
+                  <input type="text" formControlName="maLoHang" name="maLoHang" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.maLoHang.hasError('required') && formMonMoi.controls.maLoHang.touched">
+                    không được để trống </p>
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.maLoHang.hasError('pattern') && formMonMoi.controls.maLoHang.touched">
+                    Định dạng là : LH-XXXX </p>
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">sản Phẩm</label>
+                  <select formControlName="sanPham" name="sanPham" class="form-select"
+                          aria-label="Default select example">
+                  </select>
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.sanPham.hasError('required') && formMonMoi.controls.sanPham.touched">
+                    không được để trống </p>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Số Lượng</label>
+                  <input type="text" formControlName="soLuong" name="soLuong" class="form-control"/>
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.soLuong.hasError('required') && formMonMoi.controls.soLuong.touched">
+                    không được để trống </p>
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.soLuong.hasError('min') && formMonMoi.controls.soLuong.touched">
+                    phải là số nguyên dương </p>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                  <label class="form-label">Ngày Nhập Hàng</label>
+                  <input type="date" formControlName="ngayNhapHang" name="ngayNhapHang" class="form-control"/>
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.idCard.hasError('pattern') && formCustomer.controls.idCard.touched">-->
+                  <!--                    định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9) </p>-->
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.ngayNhapHang.hasError('required') && formMonMoi.controls.ngayNhapHang.touched">
+                    không được để trống </p>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">Ngày Sản Xuất</label>
+                  <input type="date" formControlName="ngaySanXuat" name="ngaySanXuat" class="form-control"/>
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.idCard.hasError('pattern') && formCustomer.controls.idCard.touched">-->
+                  <!--                    định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9) </p>-->
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.ngaySanXuat.hasError('required') && formMonMoi.controls.ngaySanXuat.touched">
+                    không được để trống </p>
+
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label">Ngày Hết Hạn</label>
+                  <input type="date" formControlName="ngayHetHan" name="ngayHetHan" class="form-control"/>
+                  <!--                  <p style="color: red"-->
+                  <!--                     *ngIf="formCustomer.controls.idCard.hasError('pattern') && formCustomer.controls.idCard.touched">-->
+                  <!--                    định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9) </p>-->
+                  <p style="color: red"
+                     *ngIf="formMonMoi.controls.ngayHetHan.hasError('required') && formMonMoi.controls.ngayHetHan.touched">
+                    không được để trống </p>
+
+                </div>
+
+
+              </div>
+
+
+              <!---------------------------->
+
+            </div>
+            <button type="submit" class="btn btn-primary btn-block bg-momo">
+              Thêm
+            </button>
+            <a [routerLink]="['/lo-hang-list']">
+              <button type="button" class="btn btn-primary btn-block bg-momo">
+                Trở Lại
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

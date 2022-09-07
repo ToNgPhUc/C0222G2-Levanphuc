@@ -1,4 +1,6 @@
-package com.phuc.demo.model;
+package com.phuc.baithimodule5.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 
@@ -19,5 +21,69 @@ public class LoHang {
     public LoHang() {
     }
 
+    public LoHang(Integer id, String maLoHang, Integer soLuong, String ngayNhapHang, String ngaySanXuat, String ngayHetHan, SanPham sanPham) {
+        this.id = id;
+        this.maLoHang = maLoHang;
+        this.soLuong = soLuong;
+        this.ngayNhapHang = ngayNhapHang;
+        this.ngaySanXuat = ngaySanXuat;
+        this.ngayHetHan = ngayHetHan;
+        this.sanPham = sanPham;
+    }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getMaLoHang() {
+        return maLoHang;
+    }
+
+    public void setMaLoHang(String maLoHang) {
+        this.maLoHang = maLoHang;
+    }
+
+    public Integer getSoLuong() {
+        return soLuong;
+    }
+
+    public void setSoLuong(Integer soLuong) {
+        this.soLuong = soLuong;
+    }
+
+    public String getNgayNhapHang() {
+        return ngayNhapHang;
+    }
+
+    public void setNgayNhapHang(String ngayNhapHang) {
+        this.ngayNhapHang = ngayNhapHang;
+    }
+
+    public String getNgaySanXuat() {
+        return ngaySanXuat;
+    }
+
+    public void setNgaySanXuat(String ngaySanXuat) {
+        this.ngaySanXuat = ngaySanXuat;
+    }
+
+    public String getNgayHetHan() {
+        return ngayHetHan;
+    }
+
+    public void setNgayHetHan(String ngayHetHan) {
+        this.ngayHetHan = ngayHetHan;
+    }
+
+    public SanPham getSanPham() {
+        return sanPham;
+    }
+
+    public void setSanPham(SanPham sanPham) {
+        this.sanPham = sanPham;
+    }
 }

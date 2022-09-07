@@ -1,0 +1,30 @@
+#menu {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../../../assets/image/background.png");
+
+
+  /*background-image: url("https://media.discordapp.net/attachments/1004041400112922655/1004244771331653662/background.jpg");*/
+}
+
+.validate {
+  color: red;
+}
+
+#suaMonMoi {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+#selectChonAnh {
+  margin-bottom: 30px;
+}
+#avata{
+  margin-bottom: 50px;
+}.form-label{
+   color: sandybrown;
+ }.complain{
+    color: red;
+  }
+

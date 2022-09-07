@@ -1,15 +1,26 @@
 #menu {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 500px;
   width: 100%;
-  background-image: url("//bizweb.dktcdn.net/100/033/603/themes/852890/assets/slider_1.jpg?1649413074140");
+  background-color:powderblue;
+  /*background-image: url("https://digialai.com/dlg_media/2021/08/04-top-10-diem-den-du-lich-chup-anh-dep-nhat-viet-nam-ha-long.jpg");*/
 }
-table {
-  position: absolute;
-  top: 200px;
+#padding{
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
-#page{
-  position: absolute;
-  top: 500px;
+#iconEdit{
+color: coral;
+ font-size: 30px;
+}#iconDelete{
+  color: darkred;
+  font-size: 30px;
+ }
+ #table{
+   background-color: beige;
+ }
+#search{
+padding-bottom: 30px;
 }
+

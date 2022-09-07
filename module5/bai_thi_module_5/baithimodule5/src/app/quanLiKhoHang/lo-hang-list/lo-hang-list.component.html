@@ -1,1 +1,164 @@
-<p>lo-hang-list works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<div id="menu">
+
+  <div id="padding" class="container text-center ">
+    <a [routerLink]="['/lo-hang-create']" class="btn btn-success">Nhập Hàng</a>
+  </div>
+
+  <div id="search" class="d-flex justify-content-end container ">
+    <div class="d-flex justify-content-end container "> tên sẩn phẩm</div>
+    <form [formGroup]="loHangSeachForm" (ngSubmit)="searchLoHang()">
+      <div class="d-flex">
+        <input type="text" placeholder="Search" name="searchName" formControlName="searchName">
+      </div>
+
+            <div class="d-flex">
+              <input type="date" placeholder="Search" name="NgayNhapHangSearch" formControlName="NgayNhapHangSearch">
+            </div>
+
+      <!--      <div class="d-flex">-->
+      <!--        <input type="date" placeholder="Search" name="NgaySanXuatSearch" formControlName="NgaySanXuatSearch">-->
+      <!--      </div>-->
+
+      <!--      <div class="d-flex">-->
+      <!--        <input type="date" placeholder="Search" name="NgayHetHanSearch" formControlName="NgayHetHanSearch">-->
+      <!--      </div>-->
+
+      <button class="btn btn-primary" type="submit">Tìm</button>
+    </form>
+  </div>
+
+
+  <div class="container ">
+    <div class="row">
+      <table id="table" class="table table-striped">
+        <thead>
+        <tr>
+          <td>Mã Lô Hàng</td>
+          <td>ảnh</td>
+          <td>Tên Sản Phẩm</td>
+          <td>Giá Tiền</td>
+          <td>Đơn Vị</td>
+          <td>Số Lượng</td>
+          <td>Ngày Nhập Hàng</td>
+          <td>Ngày Sản Xuất</td>
+          <td>Ngày Hết Hạn</td>
+
+          <td>Action</td>
+
+        </tr>
+        </thead>
+        <thead>
+<!--        phan trang -->
+<!--        | paginate:{itemsPerPage: 2, currentPage: p};-->
+
+<!--<div class="d-flex justify-content-end container " style="color: black">-->
+<!--  <pagination-controls (pageChange)="p = $event"></pagination-controls>-->
+<!--</div>-->
+        <tr *ngFor="let item of loHangList  index as i ">
+          <td>{{item.maLoHang}}</td>
+          <td><img style="width: 100px; height: 100px" src="{{item.img}}"></td>
+          <td>{{item.sanPham.tenSanPham}}</td>
+          <td>{{item.sanPham.giaTien}}</td>
+          <td>{{item.sanPham.donVi}}</td>
+          <td>{{item.soLuong}}</td>
+
+          <td>{{item.ngayNhapHang| date }}</td>
+          <td>{{item.ngaySanXuat | date}}</td>
+          <td>{{item.ngayHetHan | date}}</td>
+
+          <td><a [routerLink]="['/lo-hang-edit',item.id]" id="iconEdit">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a>
+          </td>
+          <td>
+            <!-- Button trigger modal -->
+            <button type="button" id="iconDelete" data-bs-toggle="modal"
+                    [attr.data-bs-target]="'#exampleModal'+item.id">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{item.id}}" tabindex="-1"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 style="color: sandybrown" class="modal-title" id="exampleModalLabel">XÓA SẢN PHẨM</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                  </div>
+                  <div style="color: brown" class="modal-body">
+                    bạn có muốn xóa thông tin lô hàng <span>{{item.sanPham.tenSanPham}}</span> nhập ngày
+                    <span> {{item.ngayNhapHang}}</span>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Không
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            (click)="deleteLoHang(item.id)">Có
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid mt-3">
+    <ul class="pagination float-end">
+      <div *ngIf="number == 0">
+        <li class="page-item disabled">
+          <button class="page-link" (click)="goPrevious()">Previous</button>
+        </li>
+      </div>
+      <div *ngIf="number != 0">
+        <li class="page-item">
+          <button class="page-link" (click)="goPrevious()">Previous</button>
+        </li>
+      </div>
+      <div *ngFor="let count of countTotalPages; index as i">
+        <div *ngIf="i == number">
+          <li class="page-item active">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+        <div *ngIf="i != number">
+          <li class="page-item">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+      </div>
+      <div *ngIf="number == totalPages - 1">
+        <li class="page-item disabled">
+          <button class="page-link" (click)="goNext()">Next</button>
+        </li>
+      </div>
+
+      <div *ngIf="number != totalPages - 1">
+        <li class="page-item">
+          <button class="page-link" (click)="goNext()">Next</button>
+        </li>
+      </div>
+
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+

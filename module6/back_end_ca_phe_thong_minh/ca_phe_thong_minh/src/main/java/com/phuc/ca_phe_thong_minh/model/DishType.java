@@ -1,27 +1,33 @@
 package com.phuc.ca_phe_thong_minh.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class TypeOfDish {
+public class DishType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String groupCode;
+    private String code;
     private String name;
-    @OneToMany(mappedBy = "typeOfDish")
-    private List<Dish> dishList;
+    @Column(columnDefinition = "bit(1) default 0")
+    private Boolean isDeleted;
+    @OneToMany(mappedBy = "dishType")
+    @JsonBackReference
+    private List<Dish> dishes;
 
-    public TypeOfDish() {
+    public DishType() {
     }
 
-    public TypeOfDish(Integer id, String groupCode, String name, List<Dish> dishList) {
+    public DishType(Integer id, String code, String name, Boolean isDeleted, List<Dish> dishes) {
         this.id = id;
-        this.groupCode = groupCode;
+        this.code = code;
         this.name = name;
-        this.dishList = dishList;
+        this.isDeleted = isDeleted;
+        this.dishes = dishes;
     }
 
     public Integer getId() {
@@ -32,12 +38,12 @@ public class TypeOfDish {
         this.id = id;
     }
 
-    public String getGroupCode() {
-        return groupCode;
+    public String getCode() {
+        return code;
     }
 
-    public void setGroupCode(String groupCode) {
-        this.groupCode = groupCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getName() {
@@ -48,11 +54,19 @@ public class TypeOfDish {
         this.name = name;
     }
 
-    public List<Dish> getDishList() {
-        return dishList;
+    public Boolean getDeleted() {
+        return isDeleted;
     }
 
-    public void setDishList(List<Dish> dishList) {
-        this.dishList = dishList;
+    public void setDeleted(Boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public List<Dish> getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(List<Dish> dishes) {
+        this.dishes = dishes;
     }
 }
