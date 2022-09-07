@@ -3,14 +3,16 @@ package com.phuc.jwt.controller;
 import com.phuc.jwt.config.JwtTokenUtil;
 import com.phuc.jwt.model.JwtRequest;
 import com.phuc.jwt.model.JwtResponse;
-import com.phuc.jwt.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -18,8 +20,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Objects;
 
-@RestController
-@CrossOrigin
+@Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class JwtAuthenticationController {
 
 	@Autowired
@@ -28,9 +31,8 @@ public class JwtAuthenticationController {
 	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
 
-
 	@Autowired
-	private JwtUserDetailsService jwtInMemoryUserDetailsService;
+	private UserDetailsService jwtInMemoryUserDetailsService;
 
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest)

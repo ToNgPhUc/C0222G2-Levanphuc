@@ -13,6 +13,7 @@ CREATE TABLE `app_user` (
   `is_deleted` bit(1) DEFAULT b'0',
   `password` varchar(255) NOT NULL,
   `user_name` varchar(255) NOT NULL ,
+  `creation_date` date,
   PRIMARY KEY (`id`)
 );
 CREATE TABLE `user_role` (

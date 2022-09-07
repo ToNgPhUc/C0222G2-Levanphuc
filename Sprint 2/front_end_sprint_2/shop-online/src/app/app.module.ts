@@ -16,6 +16,8 @@ import { ProductCreateComponent } from './product/product-create/product-create.
 import {ProductModule} from './product/product.module';
 import { CardComponent } from './card/card.component';
 import {CardModule} from './card/card.module';
+import {ReactiveFormsModule} from '@angular/forms';
+import {ToastrModule} from 'ngx-toastr';
 
 
 @NgModule({
@@ -30,15 +32,25 @@ import {CardModule} from './card/card.module';
     ProductCreateComponent,
     CardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    LoginModule,
-    ShareModule,
-    DetailModule,
-    ProductModule,
-    CardModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        LoginModule,
+        ShareModule,
+        DetailModule,
+        ProductModule,
+        CardModule,
+        ReactiveFormsModule,
+      ToastrModule.forRoot(
+        {
+          timeOut: 2000,
+          closeButton: true,
+          progressBar: true,
+          positionClass: 'toast-top-left',
+          preventDuplicates: true,
+        }
+      ),
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

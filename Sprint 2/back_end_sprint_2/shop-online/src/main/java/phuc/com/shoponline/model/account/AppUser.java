@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.hibernate.Hibernate;
+import phuc.com.shoponline.model.customer.Customer;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -36,6 +37,8 @@ public class AppUser {
     @OneToMany(mappedBy = "appUser")
     @JsonIgnore
     private List<UserRole> userRoles;
+    @OneToMany(mappedBy = "appUser")
+    private List<Customer>customerList;
 
 
     @Override
