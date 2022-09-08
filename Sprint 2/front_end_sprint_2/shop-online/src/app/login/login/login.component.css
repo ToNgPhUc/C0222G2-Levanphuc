@@ -39,6 +39,10 @@ section .noi-dung{
 
 section .noi-dung .form{
   width: 50%;
+
+}
+section .noi-dung .form.h2{
+  text-align: center;
 }
 
 
@@ -56,6 +60,8 @@ section .noi-dung .form h2{
 
 section .noi-dung .form .input-form{
   margin-bottom: 20px;
+  text-align: center;
+
 }
 
 
@@ -101,6 +107,7 @@ section .noi-dung .form .nho-dang-nhap{
   margin-bottom: 10px;
   color: #607d8b;
   font-size: 14px;
+  text-align: center;
 }
 
 section .noi-dung .form .input-form p{

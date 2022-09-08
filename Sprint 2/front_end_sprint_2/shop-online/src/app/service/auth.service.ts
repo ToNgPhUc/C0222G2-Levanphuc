@@ -8,7 +8,7 @@ export class AuthService {
 
   constructor(private cookieService:CookieService) { }
 
-  islogin(value: any) {
+  isLogin(value: any) {
     if (this.isAdmin(value.grantList)) {
       this.cookieService.setCookie("role", "ROLE_ADMIN", 1);
     } else if (this.isStaff(value.grantList)) {

@@ -1,9 +1,12 @@
 package phuc.com.shoponline.model.jwt;
 
+import lombok.ToString;
+
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-
+// đặt tostring ở đây để có thể sout ra được các đối tượng ở trong class này
+@ToString
 public class JwtRequest implements Serializable {
 
     private static final long serialVersionUID = 5926468583005150707L;

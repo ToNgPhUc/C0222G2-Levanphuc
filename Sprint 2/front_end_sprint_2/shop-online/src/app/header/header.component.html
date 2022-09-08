@@ -15,19 +15,21 @@
           <div class="header__top__right">
             <div class="header__top__links" >
               <a routerLink="/login">Sign in</a>
+              <a  (click)="onLogout()">Log out</a>
             </div>
           </div>
         </div>
 
-<!--        <li class="nav-item dropdown" *ngIf="token !== ''">-->
-<!--          <button class="btn btn-light nav-link d-flex align-items-center nav-link dropdown-toggle" id="navbarDropdown" role="button" style="height: 100%;border: solid 1px; border-radius: 10px">-->
-<!--            {{username}}-->
-<!--          </button>-->
-<!--          <ul id="dropdown-menu" class="dropdown-menu dropdown-menu-end" style="background-color: #f8f9fa; right: 0 !important;">-->
-<!--            <li><a class="dropdown-item" style="font-size: 100%; color: #707071">Chi tiết tài khoản</a></li>-->
-<!--            <li><button class="dropdown-item" style="font-size: 100%; color: #707071" (click)="onLogout()">Đăng xuất</button></li>-->
-<!--          </ul>-->
-<!--        </li>-->
+
+        <li class="nav-item dropdown" *ngIf="token !== ''">
+          <button class="btn btn-light nav-link d-flex align-items-center nav-link dropdown-toggle" id="navbarDropdown" role="button" style="height: 100%;border: solid 1px; border-radius: 10px">
+            {{username}}
+          </button>
+          <ul id="dropdown-menu" class="dropdown-menu dropdown-menu-end" style="background-color: #f8f9fa; right: 0 !important;">
+            <li><a class="dropdown-item" style="font-size: 100%; color: #707071">Chi tiết tài khoản</a></li>
+            <li><button class="dropdown-item" style="font-size: 100%; color: #707071" (click)="onLogout()">Đăng xuất</button></li>
+          </ul>
+        </li>
 
 
       </div>
@@ -44,7 +46,9 @@
         <nav class="header__menu mobile-menu">
           <ul>
             <li class="active"><a routerLink="/">Home</a></li>
-            <li><a routerLink="/detail">details</a>
+            <li class="active"><a routerLink="/">Service </a></li>
+            <li>
+              <a [routerLink]="['/detail']">detail</a>
             </li>
           </ul>
         </nav>
