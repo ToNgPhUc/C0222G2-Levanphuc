@@ -93,7 +93,7 @@ public class JwtAuthenticationController {
                 .collect(Collectors.toList());
 //        hàm này để lấy tokken
         final String token = jwtTokenUtil.generateToken(userDetails);
-
+        System.out.println(token);
         this.loginUtil.getTokenMap().put(userDetails.getUsername(), token);
 
         return ResponseEntity.ok(new JwtResponse(token, grantList, userDetails.getUsername()));

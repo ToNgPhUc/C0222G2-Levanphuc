@@ -29,5 +29,4 @@ public class Oder {
     @JoinColumn(name = "id_product",referencedColumnName = "id")
     private Product product;
 
-
 }

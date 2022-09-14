@@ -1,8 +1,7 @@
-
-<section>
+<section id="footer">
   <!--Bắt Đầu Phần Hình Ảnh-->
   <div class="img-bg">
-    <img src="assets/img/máy_ảnh/may_anh_logo.jpeg"
+    <img src="../../../assets/img/máy_ảnh/may_anh_logo.jpeg"
          alt="Hình Ảnh Minh Họa">
   </div>
   <!--Kết Thúc Phần Hình Ảnh-->
@@ -13,8 +12,7 @@
     <div class="form">
       <div class="row">
 
-
-        <form [formGroup]="loginForm" (ngSubmit)="onLogin()"*ngIf="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()" *ngIf="loginForm">
           <div class="mb-4 text-center m-auto">
             <h2>Log in</h2>
           </div>
@@ -23,7 +21,7 @@
             <input type="text" name="" formControlName="username">
           </div>
           <div class="input-form">
-            <span >Password</span>
+            <span>Password</span>
             <input type="password" name="" formControlName="password">
           </div>
           <div class="nho-dang-nhap">
@@ -31,7 +29,7 @@
           </div>
 
           <div class="input-form">
-            <button class="btn btn-info w-100 fs-6 " type="submit">
+            <button class="btn btn-info w-50 fs-6 " id="login" type="submit">
               Log in
             </button>
           </div>
@@ -44,13 +42,14 @@
       </div>
 
 
-      <h3>
-        Sign in with another way</h3>
-      <ul class="icon-dang-nhap">
-        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-        <li><i class="fa fa-google" aria-hidden="true"></i></li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-      </ul>
+      <!--      <h3>Sign in with another way</h3>-->
+      <!--      <ul class="icon-dang-nhap">-->
+      <!--        <li><i class="fa-brands fa-facebook"></i></li>-->
+      <!--        <li><i class="fa fa-google" aria-hidden="true"></i></li>-->
+      <!--        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>-->
+      <!--      </ul>-->
+
+
     </div>
   </div>
   <!--Kết Thúc Phần Nội Dung-->

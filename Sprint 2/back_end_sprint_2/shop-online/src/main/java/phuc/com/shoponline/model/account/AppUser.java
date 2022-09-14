@@ -37,7 +37,9 @@ public class AppUser {
     @OneToMany(mappedBy = "appUser")
     @JsonIgnore
     private List<UserRole> userRoles;
+
     @OneToMany(mappedBy = "appUser")
+    @JsonIgnore
     private List<Customer>customerList;
 
 

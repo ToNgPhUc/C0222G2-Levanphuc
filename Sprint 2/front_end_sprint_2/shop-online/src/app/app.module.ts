@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import {ProductModule} from './product/product.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ToastrModule} from 'ngx-toastr';
 import {HttpClientModule} from '@angular/common/http';
@@ -14,6 +13,12 @@ import {ProductListComponent} from './product/product-list/product-list.componen
 import {DetailComponent} from './detail/detail.component';
 import {HomePageComponent} from './home-page/home-page.component';
 import {ProductCreateComponent} from './product/product-create/product-create.component';
+import { CartComponent } from './cart/cart/cart.component';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
 
 
 @NgModule({
@@ -25,13 +30,13 @@ import {ProductCreateComponent} from './product/product-create/product-create.co
     ProductListComponent,
     ProductCreateComponent,
     DetailComponent,
-    HomePageComponent
+    HomePageComponent,
+    CartComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductModule,
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(
@@ -44,7 +49,11 @@ import {ProductCreateComponent} from './product/product-create/product-create.co
       }
     ),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    CKEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

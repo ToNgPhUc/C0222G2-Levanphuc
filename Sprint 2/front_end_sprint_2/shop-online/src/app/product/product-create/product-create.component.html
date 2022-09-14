@@ -1,1 +1,202 @@
-<p>product-create works!</p>
+<div id="menu">
+  <div id="radius"class="container bg-light" style="padding-bottom: 30px" >
+
+    <div class="row col-lg-12 management">
+
+      <div  class=" col-lg-8 ">
+        <h2 id="suaMonMoi"  style="text-align: center">Create Product</h2>
+        <form [formGroup]="formProduct" (ngSubmit)="createProduct()" *ngIf="formProduct">
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="name" class="form-label font-weight-bold">name (<span class="complain">*</span><span class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <input id="name" type="text" class="form-control" placeholder="vd: Canon EOS M50" formControlName="name"
+                       name="name">
+              </div>
+
+
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.name.hasError('required') && formProduct.controls.name.touched">Tên sản phẩm không được để trống. </p>
+                <p style="color: red" *ngIf="formProduct.controls.name.hasError('minlength') && formProduct.controls.name.touched">Tên sản phẩm phải nhiều hơn 5 kí tự. </p>
+                <p style="color: red" *ngIf="formProduct.controls.name.hasError('maxlength') && formProduct.controls.name.touched">Tên sản phẩm phải dưới 250 kí tự. </p>
+<!--                <p style="color: red" *ngIf="formProduct.controls.name.hasError('pattern') && formProduct.controls.name.touched"> chỉ viết hoa chữ cái đầu mỗi từ, không chứa ký tự đặc biệt, không chứa khoảng trắng thừa. </p>-->
+
+              </div>
+            </div>
+
+
+            <div class="col-sm-6">
+              <label for="loaiSanPham"class="form-label font-weight-bold">Type Product (<span class="complain">*</span> <span
+                class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-align-justify"></i></span>
+                <select id="loaiSanPham" class="form-select" formControlName="typeProduct" name="typeProduct">
+                  <option id="opt" value="">Please choose</option>
+                  <option *ngFor="let item of typeProductList" [ngValue]="item"> {{item.name}}</option>
+                </select>
+              </div>
+              <div class="validate">
+                <p style="color: red"
+                   *ngIf="formProduct.controls.typeProduct.hasError('required') && formProduct.controls.typeProduct.touched">Lọa sản phẩm không được để trống. </p>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-6">
+              <label for="maSoMon" class="form-label font-weight-bold">Code Product (<span class="complain">*</span>  <span class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"> <i class="fa-solid fa-qrcode"></i></span>
+                <input id="maSoMon" type="text" class="form-control" placeholder="vd: C-001" formControlName="code"
+                       name="code">
+              </div>
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.code.hasError('required') && formProduct.controls.code.touched">Mã số sản phẩm không được để trống. </p>
+                <p style="color: red" *ngIf="formProduct.controls.code.hasError('minlength') && formProduct.controls.code.touched">Mã số sản phẩm phải nhiều hơn 3 kí tự. </p>
+                <p style="color: red" *ngIf="formProduct.controls.code.hasError('maxlength') && formProduct.controls.code.touched">Mã số sản phẩm phải it hơn 250 kí tự. </p>
+                <p style="color: red" *ngIf="formProduct.controls.code.hasError('pattern') && formProduct.controls.code.touched"> Mã sản phẩm phải bắt đầu bằng C-/ S-/ P- và kết thúc bằng số. </p>
+                <p style="color: red" *ngIf="formProduct.controls.code.hasError('codeExists') && formProduct.controls.code.touched"> Mã số sản phẩm đã tồn tại. </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="gia" class="form-label font-weight-bold">Price ($) (<span class="complain">*</span>  <span class="form-label">) :</span> </label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-dollar-sign"></i></span>
+                <input id="gia" type="text" class="form-control" placeholder="Vd: 500" formControlName="price"
+                       name="price">
+              </div>
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.price.hasError('required') && formProduct.controls.price.touched">Giá không được để trống. </p>
+                <p style="color: red" *ngIf="formProduct.controls.price.hasError('min') && formProduct.controls.price.touched">Giá phải lớn hơn 200. </p>
+                <p style="color: red" *ngIf="formProduct.controls.price.hasError('max') && formProduct.controls.price.touched">Giá phải nhỏ hơn 5000. </p>
+                <p style="color: red" *ngIf="formProduct.controls.price.hasError('pattern') && formProduct.controls.price.touched">Giá Phải là số , không có kí tự đặc biệt. </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="soLuong" class="form-label font-weight-bold">Quantity (<span class="complain">*</span><span class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <input id="soLuong" type="text" class="form-control" placeholder="vd: 10" formControlName="quantity"
+                       name="quantity">
+              </div>
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.quantity.hasError('required') && formProduct.controls.quantity.touched">Số lượng không được để trống. </p>
+                <p style="color: red" *ngIf="formProduct.controls.quantity.hasError('min') && formProduct.controls.quantity.touched">Số lượng phải lớn hơn 1. </p>
+                <p style="color: red" *ngIf="formProduct.controls.quantity.hasError('max') && formProduct.controls.quantity.touched">Số lượng phải nhỏ hơn 1000. </p>
+                <p style="color: red" *ngIf="formProduct.controls.quantity.hasError('pattern') && formProduct.controls.quantity.touched">Số lượng Phải là số , không có kí tự đặc biệt. </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="origin" class="form-label font-weight-bold">Origin (<span class="complain">*</span><span class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <input id="origin" type="text" class="form-control" placeholder="vd: Japan" formControlName="origin"
+                       name="origin">
+              </div>
+            </div>
+
+            <div class="col-xl-12 mt-3" data-toggle="description" data-content="" data-trigger="manual" data-placement="top">
+              <label for="description" class="form-label font-weight-bold">Product Description<span class="text-danger">(*)</span>: </label>
+              <div class="input-group has-validation">
+                <ckeditor (change)="checkErrorDescription()" class="w-100 border border-primary" data="<b>description</b>" id="description"
+                          [editor]="Editor" formControlName="productDescription"></ckeditor>
+                <div class="validate">
+                  <p style="color: red" *ngIf="formProduct.controls.productDescription.hasError('required') && formProduct.controls.productDescription.touched">Chi tiết sản phẩm không được để trống. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 mt-3" data-toggle="specifications1" data-content="" data-trigger="manual" data-placement="top">
+              <label for="specifications1" class="form-label font-weight-bold">Specifications <span class="text-danger">(*)</span>: </label>
+              <div class="input-group has-validation">
+                <ckeditor (change)="checkErrorSpecifications()" class="w-100 border border-primary" data="<b>specifications </b>" id="specifications1"
+                          [editor]="Editor" formControlName="specification"></ckeditor>
+              </div>
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.specification.hasError('required') && formProduct.controls.specification.touched">Thông số kĩ thuật không được để trống. </p>
+                 </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="avata" class="form-label font-weight-bold">image (<span class="complain">*</span>  <span class="form-label">) :</span></label>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-image"></i></span>
+                <input id="avata" formControlName="image" name="image"
+                       type="file" accept="image/png, image/gif, image/jpeg" #fileUploader (change)="showPreview($event)" class="form-control"/>
+              </div>
+              <div class="validate">
+                <p style="color: red" *ngIf="formProduct.controls.image.hasError('required') && formProduct.controls.image.touched">Ảnh không được để trống. </p>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 " id="xoa" >
+              <div class=" form-outline mb-2"  >
+                <img id="img" [src]="imgSrc"   style=" height: auto;width: 100% "
+                     (click)="fileUploader.click()">
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+          <div class="row" style="padding-bottom: 20px">
+            <div class="col-lg-4 col-sm-4">
+              <button type="button"routerLink="/product-list" class="w-100 btn btn-danger col-sm-10" ><i class="fa-solid fa-delete-left"></i> Hủy
+              </button>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <button type="button" (click)="resetForm()" class="w-100 btn btn-warning col-sm-10" ><i class="fa-solid fa-rotate-left"></i> Xóa Biểu Mẫu
+              </button>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <button type="submit" class="w-100 btn btn-success col-sm-10"><i class="fa-solid fa-circle-plus"></i>Create</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <div class=" col-lg-4 order-md-last block-2" style="margin-top: 40px">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span>*Top favorite cameras  : </span>
+          <span class="badge bg-black rounded-pill">!</span>
+        </h4>
+        <div id="carouselExampleIndicators" class="carousel slide sliceCss" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/máy_ảnh/may_anh_sau_4.jpeg" class="d-block w-100 sliceCss" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/máy_ảnh/may_anh_truoc_3.jpeg" class="d-block w-100 sliceCss" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/máy_ảnh/may_anh_sau_4.jpeg" class="d-block w-100 sliceCss" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/máy_ảnh/may_anh_sau_4.jpeg" class="d-block w-100 sliceCss" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
