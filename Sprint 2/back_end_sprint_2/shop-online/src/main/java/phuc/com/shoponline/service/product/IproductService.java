@@ -5,6 +5,7 @@ import org.springframework.data.domain.Pageable;
 import phuc.com.shoponline.model.product.Product;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IproductService {
 
@@ -13,4 +14,9 @@ public interface IproductService {
     List<Product> findAll();
 
     Page<Product> findAllProductByName(Pageable pageable, String searchName);
+
+    Product findByIdProduct(int id);
+
+    List<Product> newProduct();
 }
+

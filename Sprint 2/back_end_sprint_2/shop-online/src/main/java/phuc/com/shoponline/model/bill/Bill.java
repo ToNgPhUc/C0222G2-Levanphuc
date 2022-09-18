@@ -19,9 +19,11 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String code;
-    private Date creation_date;
+    private Date creationDate;
     @JsonIgnore
     @OneToMany(mappedBy = "bill")
     private List<Oder>oderList;
+    @Column(columnDefinition = "bit(1) default 0")
+    private Boolean isDeleted;
 
 }

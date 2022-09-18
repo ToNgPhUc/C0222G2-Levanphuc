@@ -13,13 +13,14 @@ import {ProductListComponent} from './product/product-list/product-list.componen
 import {DetailComponent} from './detail/detail.component';
 import {HomePageComponent} from './home-page/home-page.component';
 import {ProductCreateComponent} from './product/product-create/product-create.component';
-import { CartComponent } from './cart/cart/cart.component';
+import {CartComponent} from './cart/cart/cart.component';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
-
+import { LoadingComponent } from './loading/loading.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,9 +33,11 @@ import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
     DetailComponent,
     HomePageComponent,
     CartComponent,
+    LoadingComponent,
 
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,

@@ -32,11 +32,14 @@ public class Product {
     private String origin;
     private Integer quantity;
     private Date creationDate;
+    @Column(columnDefinition = "double default 0")
+    private Double discountPercent;
     @ManyToOne
     @JoinColumn(name = "id_type_product",referencedColumnName = "id")
     private TypeProduct typeProduct;
     @JsonIgnore
     @OneToMany(mappedBy = "product")
     private  List<Oder> oderList;
+
 
 }

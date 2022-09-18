@@ -143,14 +143,19 @@
             <div class="col-lg-4 col-md-6 col-sm-6 pb-1" *ngFor="let element of productList; index as i">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100"  src="{{element.image}}"  [routerLink]="['/detail']" alt="">
-                  <div class="product-action">
-                    <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                    <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                  <img class="img-fluid w-100"  src="{{element.image}}"  [routerLink]="['/detail',element.id]" alt="">
+                  <div class="product-action" >
+<!--                    <a class="btn btn-outline-dark btn-square" href="">-->
+<!--                      <i class="fa fa-shopping-cart"></i>-->
+<!--                    </a>-->
+                    <a *ngIf="role === 'ROLE_USER'" [routerLink]="" (click)="addToCart(element)" class="btn btn-outline-dark btn-square">
+                      <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <a class="btn btn-outline-dark btn-square" [routerLink]="['/detail',element.id]"><i class="fa fa-search"></i></a>
                   </div>
                 </div>
                 <div class="text-center py-4">
-                  <a class="h6 text-decoration-none text-truncate" href="">{{element.name}}</a>
+                  <a class="h6 text-decoration-none text-truncate" [routerLink]="['/detail',element.id]">{{element.name}}</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
                     <h5>$ {{element.price}}</h5><h6 class="text-muted ml-2"><del>{{element.price}}</del></h6>
                   </div>

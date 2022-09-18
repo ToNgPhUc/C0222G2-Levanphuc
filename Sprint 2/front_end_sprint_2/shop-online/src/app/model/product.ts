@@ -13,4 +13,5 @@ export interface Product {
   quantity?: number
   creationDate?: string
   typeProduct?: TypeProduct
+  discountPercent?: number
 }

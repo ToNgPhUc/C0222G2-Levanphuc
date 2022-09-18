@@ -113,16 +113,7 @@ export class HeaderComponent implements OnInit {
     if (nameSearch == null) {
       nameSearch = '';
     }
-    this.router.navigate(['/product-list/', nameSearch]).then();
-      // this.productService.findAllProduct(this.page,nameSearch).subscribe((data)=>{
-      //   if (data!= null){
-      //     this.router.navigate(['/product-list/', nameSearch]).then();
-      //     console.log(data)
-      //   }else {
-      //     this.toastrService.error("không có dữ liệu")
-      //   }
-    //
-    // });
+    this.router.navigate(['/product-list/', nameSearch]);
   }
 
   formSearch() {

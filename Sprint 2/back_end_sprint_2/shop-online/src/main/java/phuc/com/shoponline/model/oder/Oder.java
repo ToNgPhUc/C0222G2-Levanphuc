@@ -28,5 +28,6 @@ public class Oder {
     @ManyToOne
     @JoinColumn(name = "id_product",referencedColumnName = "id")
     private Product product;
-
+    @Column(columnDefinition = "bit(1) default 0")
+    private Boolean isDeleted;
 }

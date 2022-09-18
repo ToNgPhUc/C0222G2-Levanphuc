@@ -19,7 +19,16 @@ export class ProductService {
   }
 
   saveProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.API_URL + '/create-product', product,{headers: new HttpHeaders({'authorization': this.header})}).pipe();
+    return this.http.post<Product>(this.API_URL + '/create-product', product, {headers: new HttpHeaders({'authorization': this.header})}).pipe();
   }
 
+  findDetailProductById(id: number): Observable<Product> {
+    return this.http.get<Product>(this.API_URL + '/detail/' + id);
+
+  }
+
+  getNewProduct(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.API_URL + '/new-product',{headers: new HttpHeaders({'authorization': this.header})})
+
+  }
 }

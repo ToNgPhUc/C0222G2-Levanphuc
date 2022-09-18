@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 import phuc.com.shoponline.model.product.Product;
 import phuc.com.shoponline.repository.product.IProductRepository;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService implements IproductService {
@@ -30,6 +33,17 @@ public class ProductService implements IproductService {
     @Override
     public Page<Product> findAllProductByName(Pageable pageable, String searchName) {
         return this.iProductRepository.findAllProductByName("%"+ searchName +"%",pageable);
+    }
+
+    @Override
+    public Product findByIdProduct(int id) {
+        return this.iProductRepository.findDetailProductById(id);
+    }
+
+    @Override
+    public List<Product> newProduct() {
+
+        return this.iProductRepository.getNewProduct();
     }
 
 
