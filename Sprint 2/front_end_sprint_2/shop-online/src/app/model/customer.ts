@@ -6,6 +6,9 @@ export interface Customer {
   email?: string ;
   address?: string ;
   phoneNumber?: string ;
+  age?: number ;
+  image?: string ;
+  gender?: number ;
   appUser?: AppUser ;
 
 }

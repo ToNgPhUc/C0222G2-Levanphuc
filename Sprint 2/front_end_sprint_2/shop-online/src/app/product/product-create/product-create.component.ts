@@ -115,7 +115,6 @@ export class ProductCreateComponent implements OnInit {
     return formatDate(new Date(), 'dd-MM-YYY', 'en-US');
   }
 
-
   showPreview(event: any) {
     if (event.target.files && event.target.files[0]) {
       const reader = new FileReader();

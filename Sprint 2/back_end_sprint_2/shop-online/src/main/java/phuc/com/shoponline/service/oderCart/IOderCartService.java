@@ -25,6 +25,7 @@ public interface IOderCartService {
 
     PaymentDto goPayment(Customer customer);
 
+    Page<Oder> getHistoryOder(Pageable pageable ,Customer customer);
 
 
     //    Oder save(Oder oder);

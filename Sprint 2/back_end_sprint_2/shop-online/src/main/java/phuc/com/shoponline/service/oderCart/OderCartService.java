@@ -120,6 +120,10 @@ public class OderCartService implements IOderCartService{
         return paymentDto;
     }
 
+    @Override
+    public Page<Oder> getHistoryOder( Pageable pageable,Customer customer) {
+        return this.iOderCartRepository.getHistoryOder(pageable,customer);
+    }
 
 
     private int getRandomNumber(List<Bill> billList) {

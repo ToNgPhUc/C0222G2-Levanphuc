@@ -1,0 +1,66 @@
+
+<div class="container" style="text-align: center; padding: 50px 50px 50px 50px"> <h2>Danh sách hóa đơn</h2></div>
+<table class="table" >
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">Customer Name</th>
+    <th scope="col">Product Name</th>
+    <th scope="col">Code Bill</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let element of historyOderList; index as i">
+    <th scope="row">{{i + 1 +size*number}}</th>
+    <td>{{element.quantity}}</td>
+    <td>{{element.customer.name}}</td>
+    <td>{{element.product.name}}</td>
+    <td>{{element.bill.code}}</td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="container">
+  <div id="page">
+    <ul class="pagination text-center justify-content-center">
+      <div *ngIf="number == 0">
+        <li class="page-item disabled">
+          <button class="page-link" (click)="goPrevious()">Previous</button>
+        </li>
+      </div>
+      <div *ngIf="number != 0">
+        <li class="page-item">
+          <button class="page-link" (click)="goPrevious()">Previous</button>
+        </li>
+      </div>
+      <div *ngFor="let count of countTotalPages; index as i">
+        <div *ngIf="i == number">
+          <li class="page-item active">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+        <div *ngIf="i != number">
+          <li class="page-item">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+      </div>
+      <div *ngIf="number == totalPages - 1">
+        <li class="page-item disabled">
+          <button class="page-link" (click)="goNext()">Next</button>
+        </li>
+      </div>
+
+      <div *ngIf="number != totalPages - 1">
+        <li class="page-item">
+          <button class="page-link" (click)="goNext()">Next</button>
+        </li>
+      </div>
+
+    </ul>
+  </div>
+
+</div>
+

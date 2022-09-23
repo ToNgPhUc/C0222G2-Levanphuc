@@ -1,6 +1,0 @@
-
-v
-java:S1210""YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ø Ë¾8ø¤¡ï±0
-S	java:S106:"9Replace this use of System.out or System.err by a logger.(ÍŸ¬Êýÿÿÿÿ
-Z	java:S106="9Replace this use of System.out or System.err by a logger.(²ñ˜Áüÿÿÿÿ8‘Š¤ï±0
-Z	java:S106?"9Replace this use of System.out or System.err by a logger.(Û½±àýÿÿÿÿ8“Š¤ï±0

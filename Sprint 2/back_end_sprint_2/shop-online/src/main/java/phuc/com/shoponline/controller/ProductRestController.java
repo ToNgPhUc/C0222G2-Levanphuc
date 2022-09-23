@@ -26,7 +26,7 @@ public class ProductRestController {
     @Autowired
     private IproductService iproductService;
     @GetMapping(value = "/product-search")
-    public ResponseEntity<Page<Product>> getAllProduct(@PageableDefault(12) Pageable pageable,
+    public ResponseEntity<Page<Product>> getAllProduct(@PageableDefault(9) Pageable pageable,
                                                        @RequestParam("searchName") Optional<String> search){
 
         String searchName = search.orElse("");
@@ -69,6 +69,29 @@ public class ProductRestController {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }return new ResponseEntity<>(productList,HttpStatus.OK);
     }
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Product> getIdProduct(@PathVariable int id){
+        Product product = iproductService.findByIdProduct(id);
+                if (product==null){
+                    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+                }
+                return new ResponseEntity<>(product,HttpStatus.OK);
+    }
+    @PatchMapping(value = "/edit/{id}")
+    public ResponseEntity<FieldError> editProduct(@PathVariable int id, @RequestBody
+    @Valid ProductDto productDto,BindingResult bindingResult ){
+        Product product= iproductService.findByIdProduct(id);
+        if (product==null){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }if (bindingResult.hasErrors()){
+            return new ResponseEntity<>(bindingResult.getFieldError(),HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        productDto.setId(product.getId());
+        BeanUtils.copyProperties(productDto,product);
+        iproductService.save(product);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 
 
 }

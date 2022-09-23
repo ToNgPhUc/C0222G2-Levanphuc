@@ -4,14 +4,14 @@
     <div class="row col-lg-12 management">
 
       <div  class=" col-lg-8 ">
-        <h2 id="suaMonMoi"  style="text-align: center">Create Product</h2>
+        <h2 id="suaMonMoi"  style="text-align: center">Add Product</h2>
         <form [formGroup]="formProduct" (ngSubmit)="createProduct()" *ngIf="formProduct">
 
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="name" class="form-label font-weight-bold">name (<span class="complain">*</span><span class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="input-group-text"></span>
                 <input id="name" type="text" class="form-control" placeholder="vd: Canon EOS M50" formControlName="name"
                        name="name">
               </div>
@@ -31,7 +31,7 @@
               <label for="loaiSanPham"class="form-label font-weight-bold">Type Product (<span class="complain">*</span> <span
                 class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-align-justify"></i></span>
+                <span class="input-group-text"></span>
                 <select id="loaiSanPham" class="form-select" formControlName="typeProduct" name="typeProduct">
                   <option id="opt" value="">Please choose</option>
                   <option *ngFor="let item of typeProductList" [ngValue]="item"> {{item.name}}</option>
@@ -48,7 +48,7 @@
             <div class="col-md-6">
               <label for="maSoMon" class="form-label font-weight-bold">Code Product (<span class="complain">*</span>  <span class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"> <i class="fa-solid fa-qrcode"></i></span>
+                <span class="input-group-text"> </span>
                 <input id="maSoMon" type="text" class="form-control" placeholder="vd: C-001" formControlName="code"
                        name="code">
               </div>
@@ -64,7 +64,7 @@
             <div class="col-md-6">
               <label for="gia" class="form-label font-weight-bold">Price ($) (<span class="complain">*</span>  <span class="form-label">) :</span> </label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-dollar-sign"></i></span>
+                <span class="input-group-text"></span>
                 <input id="gia" type="text" class="form-control" placeholder="Vd: 500" formControlName="price"
                        name="price">
               </div>
@@ -78,7 +78,7 @@
             <div class="col-sm-6">
               <label for="soLuong" class="form-label font-weight-bold">Quantity (<span class="complain">*</span><span class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="input-group-text"></span>
                 <input id="soLuong" type="text" class="form-control" placeholder="vd: 10" formControlName="quantity"
                        name="quantity">
               </div>
@@ -93,7 +93,7 @@
             <div class="col-sm-6">
               <label for="origin" class="form-label font-weight-bold">Origin (<span class="complain">*</span><span class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="input-group-text"></span>
                 <input id="origin" type="text" class="form-control" placeholder="vd: Japan" formControlName="origin"
                        name="origin">
               </div>
@@ -121,9 +121,9 @@
             </div>
 
             <div class="col-sm-6">
-              <label for="avata" class="form-label font-weight-bold">image (<span class="complain">*</span>  <span class="form-label">) :</span></label>
+              <label for="avata" class="form-label font-weight-bold">Image (<span class="complain">*</span>  <span class="form-label">) :</span></label>
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fa-solid fa-image"></i></span>
+                <span class="input-group-text"></span>
                 <input id="avata" formControlName="image" name="image"
                        type="file" accept="image/png, image/gif, image/jpeg" #fileUploader (change)="showPreview($event)" class="form-control"/>
               </div>

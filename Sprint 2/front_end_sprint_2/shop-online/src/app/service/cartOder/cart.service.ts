@@ -34,7 +34,7 @@ export class CartService {
   }
 
   plusQuantity(productOrder: Oder): Observable<Oder[]> {
-    return this.httpClient.post<Oder[]>(this.API_URL + '/cart/plus/quantity', productOrder, {headers: new HttpHeaders({'authorization:': this.header})});
+    return this.httpClient.post<Oder[]>(this.API_URL + '/cart/plus/quantity', productOrder,{headers: new HttpHeaders({'authorization':this.header})});
   }
 
   deleteProductInCard(po: Oder): Observable<any> {
@@ -43,5 +43,9 @@ export class CartService {
 
   goPayment(customer: Customer): Observable<any> {
     return this.httpClient.post(this.API_URL + '/cart/payment', customer, {headers: new HttpHeaders({'authorization': this.header})});
+  }
+
+  historyOder(page:number,customer: Customer): Observable<Oder[]> {
+    return this.httpClient.post<Oder[]>(this.API_URL + '/history/oder?page=' + page, customer,{headers: new HttpHeaders({'authorization': this.header})});
   }
 }

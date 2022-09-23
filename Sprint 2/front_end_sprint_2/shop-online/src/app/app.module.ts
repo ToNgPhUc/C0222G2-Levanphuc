@@ -21,6 +21,8 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
 import { LoadingComponent } from './loading/loading.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HistoryCartComponent } from './cart/history-cart/history-cart.component';
+import { PersonalInformationComponent } from './customer/personal-information/personal-information.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HomePageComponent,
     CartComponent,
     LoadingComponent,
+    HistoryCartComponent,
+    PersonalInformationComponent,
 
   ],
   imports: [

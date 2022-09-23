@@ -7,6 +7,8 @@ import {ProductListComponent} from './product/product-list/product-list.componen
 import {ProductCreateComponent} from './product/product-create/product-create.component';
 import {CartComponent} from './cart/cart/cart.component';
 import {LoadingComponent} from './loading/loading.component';
+import {HistoryCartComponent} from './cart/history-cart/history-cart.component';
+import {PersonalInformationComponent} from './customer/personal-information/personal-information.component';
 
 
 const routes: Routes = [
@@ -22,7 +24,9 @@ const routes: Routes = [
   {path: 'product-list', component: ProductListComponent},
   {path: 'product-create', component: ProductCreateComponent},
   {path: 'product-list/:name', component: ProductListComponent},
-  {path:'loading',component: LoadingComponent}
+  {path:'loading',component: LoadingComponent},
+  {path: 'history-oder', component: HistoryCartComponent},
+  {path: 'personal-information',component: PersonalInformationComponent}
 ];
 
 @NgModule({

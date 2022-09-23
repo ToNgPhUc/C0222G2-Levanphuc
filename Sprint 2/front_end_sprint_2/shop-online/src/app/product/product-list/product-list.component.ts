@@ -129,7 +129,6 @@ export class ProductListComponent implements OnInit {
       customer: this.customer,
       product: product,
       quantity: 1
-
     };
     this.cartService.addOrder(oder).subscribe((po: Oder) => {
       console.log(po);

@@ -8,7 +8,8 @@ import {Oder} from '../../model/oder';
 import {Customer} from '../../model/customer';
 import {CookieService} from '../../service/jwt/cookie.service';
 import {Subscription} from 'rxjs';
-import {render} from 'creditcardpayments/creditCardPayments'
+import {render} from 'creditcardpayments/creditCardPayments';
+
 declare var $: any;
 
 @Component({
@@ -45,13 +46,15 @@ export class CartComponent implements OnInit {
       this.role = this.readCookieService('role');
       this.username = this.readCookieService('username');
       this.token = this.readCookieService('jwToken');
-      this.getCustomerByUsername(this.username)
+      this.getCustomerByUsername(this.username);
     });
 
   }
+
   readCookieService(key: string): string {
     return this.cookieService.getCookie(key);
   }
+
   ngOnInit(): void {
     this.sendMessage();
     this.getCustomerByUsername(this.username);
@@ -72,7 +75,7 @@ export class CartComponent implements OnInit {
     this.totalMoney = 0;
     for (let i = 0; i < pos.length; i++) {
       // @ts-ignore
-      this.totalMoney += (pos[i].quantity*pos[i].product.price);
+      this.totalMoney += (pos[i].quantity * pos[i].product.price);
     }
     const target = $('#paymentsBtn');
     target.remove('#payments');
@@ -82,7 +85,7 @@ export class CartComponent implements OnInit {
         {
           id: '#payments',
           currency: 'USD',
-          value: String((this.totalMoney + 5) .toFixed(2)),
+          value: String((this.totalMoney + 5).toFixed(2)),
           onApprove: (details) => {
             console.log(details);
             if (details.status == 'COMPLETED') {
@@ -99,9 +102,9 @@ export class CartComponent implements OnInit {
     this.router.navigateByUrl('/loading').then(() => {
       this.cartService.goPayment(this.customer).subscribe(() => {
         setTimeout(() => {
-          this.router.navigateByUrl("/product-list").then(() => {
+          this.router.navigateByUrl('/product-list').then(() => {
             this.toastrService.success('Thanh toán thành công!');
-          })
+          });
         }, 500);
       });
       this.sendMessage();
@@ -133,18 +136,19 @@ export class CartComponent implements OnInit {
 
   plusQuantity(productOrder: Oder) {
     this.cartService.plusQuantity(productOrder).subscribe(value => {
+      console.log('value = ' + value);
       this.productOrders = value;
       this.caculateTotalMoney(value);
       this.sendMessage();
     }, error => {
       if (error.error.message == 'maximum') {
-        this.toastrService.warning('Số lượng sản phẩm đã tối đa.');
+        this.toastrService.warning('số lượng sản phẩm này trong shop đã hết');
       }
     });
   }
 
   maximumQuantity() {
-    this.toastrService.warning('Số lượng sản phẩm đã tối đa.');
+    this.toastrService.warning('số lượng sản phẩm này trong shop đã hết.');
   }
 
   sendMessage(): void {
@@ -165,9 +169,6 @@ export class CartComponent implements OnInit {
       }
     });
   }
-
-
-
 
 
   //

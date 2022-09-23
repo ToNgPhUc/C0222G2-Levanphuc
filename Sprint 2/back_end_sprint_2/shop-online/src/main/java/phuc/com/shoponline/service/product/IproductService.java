@@ -18,5 +18,6 @@ public interface IproductService {
     Product findByIdProduct(int id);
 
     List<Product> newProduct();
+
 }
 

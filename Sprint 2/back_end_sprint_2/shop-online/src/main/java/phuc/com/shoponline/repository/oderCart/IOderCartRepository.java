@@ -19,14 +19,15 @@ public interface IOderCartRepository extends JpaRepository<Oder, Integer> {
     @Query(value = "select  o.* from oder o " +
             " join customer c on c.id = o.id_customer " +
             " join product p on p.id = o.id_product where o.id_customer = c.id ", nativeQuery = true,
-    countQuery = "select count(*) from (select  o.* from oder o " +
-            " join customer c on c.id = o.id_customer " +
-            " join product p on p.id = o.id_product where o.id_customer = c.id ) as abc")
+            countQuery = "select count(*) from (select  o.* from oder o " +
+                    " join customer c on c.id = o.id_customer " +
+                    " join product p on p.id = o.id_product where o.id_customer = c.id ) as abc")
     Page<Oder> getAllOderCartByCustomer(Pageable pageable);
 
 
     /**
      * phương thức thêm product vào bảng oder
+     *
      * @param productOrder
      * @return
      */
@@ -41,6 +42,7 @@ public interface IOderCartRepository extends JpaRepository<Oder, Integer> {
 
     /**
      * lấy danh sách oder dựa vào customer
+     *
      * @param customer
      * @return
      */
@@ -56,5 +58,17 @@ public interface IOderCartRepository extends JpaRepository<Oder, Integer> {
     @Query(value = " UPDATE `oder` SET `id_bill` = :billId WHERE (`id_customer` = :customerId) and `id_bill` is null ", nativeQuery = true)
     void setBill(@Param("customerId") Integer customerId, @Param("billId") Integer billId);
 
+    @Query(value =
+            " select o.* from oder o " +
+                    " join customer c on c.id = o.id_customer " +
+                    " join product p on p.id = o.id_product " +
+                    " join bill b on b.id = o.id_bill" +
+                    " where o.id_customer = :#{#customer.id} and b.id is not null ", nativeQuery = true,
+            countQuery = "select count(*) from ( select o.* from oder o " +
+                    "   join customer c on c.id = o.id_customer " +
+                    "   join product p on p.id = o.id_product " +
+                    "   join bill b on b.id = o.id_bill" +
+                    "   where o.id_customer = :#{#customer.id} and b.id is not null) as abc")
+    Page<Oder> getHistoryOder(Pageable pageable, Customer customer);
 }
 

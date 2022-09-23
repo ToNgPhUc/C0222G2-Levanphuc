@@ -8,6 +8,10 @@ import {Subscription} from 'rxjs';
 import {FormControl, FormGroup} from '@angular/forms';
 import {ProductService} from '../service/product/product.service';
 import {Product} from '../model/product';
+import {Customer} from '../model/customer';
+import {Oder} from '../model/oder';
+import {CartService} from '../service/cartOder/cart.service';
+import {CustomerService} from '../service/customer.service';
 
 
 @Component({
@@ -25,13 +29,18 @@ export class HeaderComponent implements OnInit {
   searchForm: FormGroup;
   product: Product[] = [];
   page: number = 0;
+  productOrders: Oder[] = [];
+  countProduct: number = 0;
+  customer: Customer;
 
   constructor(private cookieService: CookieService,
               private toastrService: ToastrService,
               private logoutService: LogoutService,
               private router: Router,
               private commonService: CommonService,
-              private productService: ProductService
+              private productService: ProductService,
+              private cartService: CartService,
+              private customerService: CustomerService
   ) {
     this.role = this.readCookieService('role');
     this.username = this.readCookieService('username');
@@ -42,11 +51,13 @@ export class HeaderComponent implements OnInit {
       this.role = this.readCookieService('role');
       this.username = this.readCookieService('username');
       this.token = this.readCookieService('jwToken');
+      this.getCustomerByUsername(this.username)
     });
   }
 
   ngOnInit(): void {
     this.formSearch();
+    this.getCustomerByUsername(this.username);
   }
 
   /**
@@ -119,6 +130,29 @@ export class HeaderComponent implements OnInit {
   formSearch() {
     this.searchForm = new FormGroup({
       searchName: new FormControl()
+    });
+  }
+
+  getCustomerByUsername(username: string) {
+    this.customerService.getCustomerByUserName(username).subscribe(value => {
+      this.customer = value;
+      this.getProductInCardByCustomer(value);
+    });
+  }
+
+  getProductInCardByCustomer(customer: Customer) {
+    this.cartService.getProductInCardByCustomer(customer).subscribe((pos: Oder[]) => {
+      console.log(pos);
+      this.countProduct = 0;
+      if (pos != null) {
+        this.productOrders = pos;
+
+        for (let i = 0; i < pos.length; i++) {
+          this.countProduct += pos[i].quantity;
+        }
+      } else {
+        this.productOrders = [];
+      }
     });
   }
 }

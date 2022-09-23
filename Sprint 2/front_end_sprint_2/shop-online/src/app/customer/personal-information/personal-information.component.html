@@ -1,0 +1,52 @@
+
+<div class="container" id="customer">
+
+  <!-- About Start -->
+  <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about" *ngIf="customer">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="about-img">
+            <img id="image" src="{{customer.image}}" alt="Image">
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="about-content">
+            <div class="section-header text-left">
+              <h2>Thông tin cá nhân </h2>
+            </div>
+
+            <div class="about-text">
+
+            </div>
+            <div class="skills">
+              <div class="skill-name">
+                <p> Name: {{customer.name}}</p>
+              </div>
+              <div class="skill-name">
+                <p> Age: {{customer.age}}</p>
+              </div>
+              <div class="skill-name">
+                <p> Address: {{customer.address}}</p>
+              </div>
+              <div class="skill-name">
+                <p> PhoneNumber: {{customer.phoneNumber}}</p>
+              </div>
+              <div class="skill-name">
+                <p> Email: {{customer.email}}</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+
+</div>
+

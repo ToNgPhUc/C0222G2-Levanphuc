@@ -22,6 +22,11 @@ public class Customer {
     private String email;
     private String address;
     private String phoneNumber;
+    private Integer age;
+    private String image;
+    @Column()
+    private Integer gender;
+
     @ManyToOne
     @JoinColumn(name = "user_id",referencedColumnName = "id")
     private AppUser appUser;

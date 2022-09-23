@@ -31,7 +31,7 @@ public class OderCartRestController {
     @Autowired
     public JavaMailSender emailSender;
 
-//    @PreAuthorize("isAuthenticated()")
+    //    @PreAuthorize("isAuthenticated()")
     @GetMapping(value = "/oder-cart-list")
     public ResponseEntity<Page<Oder>> getAllOderCart(@PageableDefault(1) Pageable pageable) {
         Page<Oder> oderPage = iOderCartService.getAllOderCartByCustomer(pageable);
@@ -43,27 +43,27 @@ public class OderCartRestController {
     }
 
 
-//@PreAuthorize("isAuthenticated()")
-@PostMapping("/add/cart")
-public ResponseEntity<?> addToCart(@RequestBody Oder productOrder) {
-    ErrorDto err = this.iOderCartService.saveOrder(productOrder);
+    //@PreAuthorize("isAuthenticated()")
+    @PostMapping("/add/cart")
+    public ResponseEntity<?> addToCart(@RequestBody Oder productOrder) {
+        ErrorDto err = this.iOderCartService.saveOrder(productOrder);
 
-    if (err.getMessage() != null) {
-        return new ResponseEntity<>(err, HttpStatus.INTERNAL_SERVER_ERROR);
+        if (err.getMessage() != null) {
+            return new ResponseEntity<>(err, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return new ResponseEntity<>(productOrder, HttpStatus.OK);
     }
-    return new ResponseEntity<>(productOrder, HttpStatus.OK);
-}
 
 
-//@PreAuthorize("isAuthenticated()")
-@PostMapping("/cart/products")
-public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
-    List<Oder> oderList = this.iOderCartService.getProductInCardByCustomer(customer);
-    if (oderList.isEmpty()) {
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    //@PreAuthorize("isAuthenticated()")
+    @PostMapping("/cart/products")
+    public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
+        List<Oder> oderList = this.iOderCartService.getProductInCardByCustomer(customer);
+        if (oderList.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(oderList, HttpStatus.OK);
     }
-    return new ResponseEntity<>(oderList, HttpStatus.OK);
-}
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/cart/minus/quantity")
@@ -78,7 +78,7 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
         return new ResponseEntity<>(errorDto, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @PreAuthorize("isAuthenticated()")
+//    @PreAuthorize("isAuthenticated()")
     @PostMapping("/cart/plus/quantity")
     public ResponseEntity<?> plusQuantityCart(@RequestBody Oder productOrder) {
         List<Oder> productOrderList = this.iOderCartService.getProductInCardByCustomer(productOrder.getCustomer());
@@ -104,6 +104,16 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
         return new ResponseEntity<>(errorDto, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @PostMapping(value = "/history/oder")
+    public ResponseEntity<Page<Oder>> getHistoryOder( @PageableDefault(12) Pageable pageable,
+                                                      @RequestBody Customer customer) {
+        Page<Oder> oderList = iOderCartService.getHistoryOder(pageable,customer);
+        if (oderList.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(oderList, HttpStatus.OK);
+    }
+
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/cart/payment")
     public ResponseEntity<?> goPayment(@RequestBody Customer customer) throws MessagingException {
@@ -113,17 +123,18 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
 
         MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 
-        String htmlMsg =createHTMLMailForm(paymentDto);
+        String htmlMsg = createHTMLMailForm(paymentDto);
         message.setContent(htmlMsg, "text/html; charset=UTF-8");
 
         helper.setTo(paymentDto.getCustomer().getEmail());
 
-        helper.setSubject("[XIAOMI Store] Hóa đơn thanh toán");
+        helper.setSubject("[CAMERA SHOP] Your Payment Bill");
 
         this.emailSender.send(message);
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
     private String createHTMLMailForm(PaymentDto paymentDto) {
         String template = "<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
@@ -275,7 +286,7 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                                        <tbody>\n" +
                 "                                        <tr>\n" +
                 "                                            <td align=\"left\"><span style=\"font-size: 26px\"><strong\n" +
-                "                                                    style=\"text-transform: uppercase; color: #D19C97\">XIAOMI</strong> Store</span>\n" +
+                "                                                    style=\"text-transform: uppercase; color: #D19C97\">CAMERA</strong> SHOP</span>\n" +
                 "                                            </td>\n" +
                 "                                        </tr>\n" +
                 "                                        <tr class=\"hiddenMobile\">\n" +
@@ -286,8 +297,9 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                                        </tr>\n" +
                 "                                        <tr>\n" +
                 "                                            <td style=\"font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;\">\n" +
-                "                                                Chào, <strong>" + paymentDto.getCustomer().getName() + "</strong>.\n" +
-                "                                                <br> Cảm ơn bạn đã mua sắm từ cửa hàng của chúng tôi.\n" +
+                "                                               Hi, <strong>" + paymentDto.getCustomer().getName() + "</strong>.\n" +
+                "                                                <br> \n" +
+                                                                    "Thank you for shopping from our store.\n" +
                 "                                            </td>\n" +
                 "                                        </tr>\n" +
                 "                                        </tbody>\n" +
@@ -303,7 +315,7 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                                        </tr>\n" +
                 "                                        <tr>\n" +
                 "                                            <td style=\"font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right;\">\n" +
-                "                                                Hóa đơn thanh toán\n" +
+                "                                               your payment bill\n" +
                 "                                             </td>\n" +
                 "                                        </tr>\n" +
                 "                                        <tr>\n" +
@@ -315,8 +327,8 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                                        </tr>\n" +
                 "                                        <tr>\n" +
                 "                                            <td style=\"font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;\">\n" +
-                "                                                <small>Hóa đơn: </small> #" + paymentDto.getBill().getCode() + "<br/>\n" +
-                "                                                <small>Ngày tạo: </small>" + new SimpleDateFormat("dd/MM/yyyy").format(paymentDto.getBill().getCreationDate()) + "\n" +
+                "                                                <small>Bill: </small> #" + paymentDto.getBill().getCode() + "<br/>\n" +
+                "                                                <small> Creation Date: </small>" + new SimpleDateFormat("dd/MM/yyyy").format(paymentDto.getBill().getCreationDate()) + "\n" +
                 "                                            </td>\n" +
                 "                                        </tr>\n" +
                 "                                        </tbody>\n" +
@@ -355,15 +367,15 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                            <tr>\n" +
                 "                                <th style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;\"\n" +
                 "                                    width=\"52%\" align=\"left\">\n" +
-                "                                    Sản phẩm\n" +
+                "                                    Product\n" +
                 "                                </th>\n" +
                 "                                <th style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;\"\n" +
                 "                                    align=\"center\">\n" +
-                "                                    Số lượng\n" +
+                "                                    Quantity\n" +
                 "                                </th>\n" +
                 "                                <th style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;\"\n" +
                 "                                    align=\"right\">\n" +
-                "                                    Thành tiền\n" +
+                "                                    Total\n" +
                 "                                </th>\n" +
                 "                            </tr>\n" +
                 "                            <tr>\n" +
@@ -377,7 +389,7 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
         for (int i = 0; i < paymentDto.getProductOrderList().size(); i++) {
             Double productPrice = paymentDto.getProductOrderList().get(i).getProduct().getPrice();
             Integer quantity = paymentDto.getProductOrderList().get(i).getQuantity();
-            totalMoney += productPrice*quantity ;
+            totalMoney += productPrice * quantity;
             template += "                            <tr>\n" +
                     "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;\"\n" +
                     "                                    class=\"article\">\n" +
@@ -387,7 +399,7 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                     "                                    align=\"center\">" + paymentDto.getProductOrderList().get(i).getQuantity() + "\n" +
                     "                                </td>\n" +
                     "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;\"\n" +
-                    "                                    align=\"right\">" + new DecimalFormat("###,###,###.##").format(totalMoney) + "<sup>đ</sup>\n" +
+                    "                                    align=\"right\">" + new DecimalFormat("###,###,###.##").format(totalMoney) + "<sup>$</sup>\n" +
                     "                                </td>\n" +
                     "                            </tr>\n";
         }
@@ -424,26 +436,26 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                            <tbody>\n" +
                 "                            <tr>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 28px; vertical-align: top; text-align:right; \">\n" +
-                "                                    Tổng tiền:\n" +
+                "                                    Total:\n" +
                 "                                </td>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right;\"width=\"160\">\n" +
-                "                                    " + new DecimalFormat("###,###,###.##").format(totalMoney) + "<sup>đ</sup>\n" +
+                "                                    " + new DecimalFormat("###,###,###.##").format(totalMoney) + "<sup>$</sup>\n" +
                 "                                </td>\n" +
                 "                            </tr>\n" +
                 "                            <tr>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 28px; vertical-align: top; text-align:right; \">\n" +
-                "                                    Phí vận chuyển:\n" +
+                "                                    shipping fee:\n" +
                 "                                </td>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right; \">\n" +
-                "                                    " + new DecimalFormat("###,###,###.##").format(shipMoney) + "<sup>đ</sup>\n" +
+                "                                    " + new DecimalFormat("###,###,###.##").format(shipMoney) + "<sup>$</sup>\n" +
                 "                                </td>\n" +
                 "                            </tr>\n" +
                 "                            <tr>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 28px; vertical-align: top; text-align:right; \">\n" +
-                "                                    <strong>Tổng thanh toán: </strong>\n" +
+                "                                    <strong>Total payment: </strong>\n" +
                 "                                </td>\n" +
                 "                                <td style=\"font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; \">\n" +
-                "                                    <strong>" + new DecimalFormat("###,###,###.##").format(totalMoney + shipMoney) + "<sup>$</sup> - đ" + new DecimalFormat("###,###,###.##").format((totalMoney + shipMoney) * 23000) + "</strong>\n" +
+                "                                    <strong>" + new DecimalFormat("###,###,###.##").format(totalMoney + shipMoney) + "<sup>$</sup> - " + new DecimalFormat("###,###,###.##").format((totalMoney + shipMoney) * 23000) + "đ" + "</strong>\n" +
                 "                                </td>\n" +
                 "                            </tr>\n" +
                 "                            </tbody>\n" +
@@ -473,12 +485,14 @@ public ResponseEntity<?> getProductInCard(@RequestBody Customer customer) {
                 "                            <tbody>\n" +
                 "                            <tr>\n" +
                 "                                <td style=\"font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;\">\n" +
-                "                                    Chúc bạn 1 ngày tốt lành.\n" +
+                "                                    Have a nice day drawing.\n" +
                 "                                </td>\n" +
                 "                            </tr>\n" +
                 "                            <tr>\n" +
                 "                                <td style=\"font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;\">\n" +
-                "                                    Xem thêm các sản phẩm khác <a style=\"font-weight: bold\" target=\"_blank\" href=\"" + "http://localhost:8080/product" + "/product/list\">tại đây</a>.\n" +
+                "                                    \n" +
+                "                                       View more products" +
+                "                                        <a style=\"font-weight: bold\" target=\"_blank\" href=\"" + "http://localhost:8080/product" + "/product/list\">here</a>.\n" +
                 "                                </td>\n" +
                 "                            </tr>\n" +
                 "                            </tbody>\n" +
